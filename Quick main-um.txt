@@ -1,0 +1,88 @@
+var landing = {
+	init: function() {
+		this.getPrice();
+		this.formSubmit();
+	}, 
+	getPrice: function() {
+		$('.new-price').each(function () {
+			var p = parseInt($(this).text());
+	                var currency = $(this).text().replace(/[0-9]/g, '');
+			p = p * 100 / 40;
+			p2 = Math.ceil(p);
+			$(this).closest('.price').find('.old-price').text(p2 + ' ' + currency);
+		});
+
+	},
+	formSubmit: function () {
+		$(".order-form").submit(function(event) {
+			var size = $(this).find('.jq-selectbox__dropdown .selected').text();
+
+			console.log(size);
+
+			if ( size !== undefined ) {
+				$(this).find('input[name=comment]').val('Размер: ' + size);
+			}
+		});
+	}
+}
+
+$(document).ready(function() {
+	landing.init();
+});
+
+function priceWithDiscount (price, discount) {
+	const priceArray = price.toString().split(".")
+
+	if(priceArray.length === 1) {
+		let priceNormal = price * 100 / (100 - discount)
+		priceNormal = Math.ceil(priceNormal);
+		return priceNormal;
+	}
+
+	let priceDots = priceArray.join("")
+	priceDots = priceDots * 100 / (100 - discount)
+	priceDots = Math.ceil(priceDots);
+
+	return priceDots.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
+
+
+function priceWithDiscount (targetPrice, discount) {
+    let re = /[0-9\s.,]+/g;
+    let result = targetPrice.match(re);
+    if (result.length > 0) {
+        let hasDots = result[0].indexOf(".") > -1;
+        let priceNumber = result[0].replace(/(\.|,|\s)/g, "");
+        console.log(priceNumber)
+        let discountPrice = Math.ceil(priceNumber * 100 / (100 - discount));
+        let newPrice = hasDots
+            ? ("" + discountPrice).replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+            : discountPrice;
+        return targetPrice.replace(re, newPrice);
+    }
+    return targetPrice;
+}
+
+$(".new__price").each(function() {
+	var price = $(this).text().trim()
+	$(this).closest(".price").find(".old__price").text(priceWithDiscount(price, 50))
+})
+
+
+function getDate(plusDays) {
+			var now = new Date;
+			now.setDate(now.getDate() + plusDays);
+			var dayNum = "";
+			if (now.getDate() < 10) {
+				dayNum = "0"
+			}
+			dayNum += now.getDate();
+			var monthNum = "";
+			if (now.getMonth() + 1 < 10) {
+				monthNum = "0"
+			}
+			monthNum += now.getMonth() + 1;
+			
+			// return dayNum + "." + monthNum + "." + now.getFullYear();
+			return dayNum + "." + monthNum + "." + String(now.getFullYear()).substr(String(now.getFullYear()).length - 2);
+		}

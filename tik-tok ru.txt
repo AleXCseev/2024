@@ -1,0 +1,149 @@
+﻿<div class="wrapper" style="margin-top: 10px;">
+            <p>Скидка действует с <span class="date__1"></span> по <span class="date__2"></span> на весь товар интернет-магазина на всей территории Украины, кроме зон, не контролируемых властями</p>
+         </div>
+         <div class="wrapper">
+            <ul class="footer-info">
+               <li>LLC "MONSTR-MEDIA" ИНН 7701071884</li>
+               <li>ЕГРПОУ 39149245</li>
+               <li>Tel.: +380951976859</li>
+               <li>mail halo@matahari.com</li>
+               <li><a data-fancybox data-src="#modal-privacy" href="javascript:;">Политика конфиденциальности</a></li>
+               <li><a data-fancybox data-src="#modal-delivery" href="javascript:;">Оплата и доставка</a></li>
+               <li><a data-fancybox data-src="#modal-refusal" href="javascript:;">Отказ от ответственности</a></li>
+            </ul>
+         </div>
+
+
+<div class="footer__modal" id="modal-privacy">
+    <h6>Политика конфиденциальности</h6>
+    <p>Наш интернет-магазин уважительно относится к правам клиента. Соблюдается строгая конфиденциальность при оформлении заказа. Сведения надежно хранятся и защищены от передачи данных.</p>
+    <p>Согласие на обработку данных клиента исключительно с целью предоставления услуг – размещение заказа на сайте.</p>
+    <p>К персональным данным относится личная информация о клиенте: домашний адрес; имя фамилия отчество; сведения о рождении; имущественное, семейное положение; личные контакты (телефон, электронная почта) и другие сведения, перечисленные в Законе "О персональных данных".</p>
+    <p>Клиент вправе отказаться от обработки персональных данных. Нами в данном случае гарантируется удаление с сайта всех персональных данных в трехдневный срок в рабочее время. Подобный отказ клиент может оформить простым электронным письмом по адресу, указанному на странице нашего сайта.</p>
+</div>
+
+<div class="footer__modal" id="modal-delivery">
+    <h6>Доставка и оплата</h6>
+    <p>По Украине доставка производится с помощью компании «Новая Почта» в течение 2-х дней с момента заказа. Стоимость и детали такой доставки разнятся в зависимости от региона вашего проживания и размера посылки.</p>
+    <p>Продавец не берет на себя никаких обязательств по возмещению любого ущерба Клиента, связанного с несвоевременной доставкой заказа, а также освобождается от любых возможных штрафных санкций.</p>
+    <p>Клиент, получивший товар, должен проверить его на предмет качества и количества.</p>
+</div>
+
+<div class="footer__modal" id="modal-refusal">
+    <h6>Отказ от ответственности</h6>
+    <p>Интернет-магазин оставляет за собой право в любое время без уведомления Клиента вносить изменения в товары, материалы и услуги, предоставляемые на сайте.</p>
+    <p>Интернет-магазин не несет ответственности за какие-либо убытки (включая моральный ущерб, ущерб от потери прибыли (упущенная выгода), данных или от прерывания деловой активности), возникший вследствие использования или невозможности использования данного сайта.</p>
+</div>
+
+.sale-text{
+  color: #fff;
+  text-align: center;
+  font-size: 19px;
+}
+
+.sale-text span{
+    font-weight: bold;
+    color: #f53e3e;
+}
+
+.footer-info{
+    margin: 15px auto;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    list-style-type: none;
+    color: #fff;
+    text-align: center;
+}
+
+.footer .wrapper p {
+    text-align: center;
+}
+
+.footer-info a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-info a:hover{
+    text-decoration: underline;
+}
+
+.footer__modal{
+    display: none;
+    max-width: 600px !important;
+    margin: auto;
+    background-color: #fff;
+}
+
+.footer__modal p{
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #111;
+}
+
+.footer__modal h2{
+    margin-bottom: 20px;
+    line-height: 1.4;
+    color: #111;
+}
+
+.footer__modal h6{
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    color: #111;
+}
+
+.sale-text {
+    margin-top: 10px;
+}
+
+
+
+
+ Date.prototype.daysInMonth = function () {
+        return 32 - new Date(this.getFullYear(), this.getMonth(), 32).getDate();
+    };
+    
+    if (!String.prototype.padStart) {
+        String.prototype.padStart = function padStart(targetLength, padString) {
+            targetLength = targetLength >> 0; //truncate if number or convert non-number to 0;
+            padString = String((typeof padString !== 'undefined' ? padString : ' '));
+            if (this.length > targetLength) {
+                return String(this);
+            }
+            else {
+                targetLength = targetLength - this.length;
+                if (targetLength > padString.length) {
+                    padString += padString.repeat(targetLength / padString.length); //append to original to ensure we are longer than needed
+                }
+                return padString.slice(0, targetLength) + String(this);
+            }
+        };
+    }
+
+    function getDate(plusDays) {
+        var today = new Date();
+        var dd = String(today.getDate() + plusDays).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0');
+        if (+dd < 0) {
+            mm = String(today.getMonth()).padStart(2, '0');
+        }
+        
+        var yyyy = String(today.getFullYear());
+        yyyy = yyyy.substr(yyyy.length - 2);
+        var currentDaysInMonth = new Date().daysInMonth()
+        if (+dd > currentDaysInMonth) {
+            dd = String(dd - currentDaysInMonth).padStart(2, '0');
+            mm++
+        }
+        if (+dd < 0) {
+            dd = String(currentDaysInMonth + +dd).padStart(2, '0');
+        }
+        return dd + "." + mm + "." + yyyy
+    }
+
+    $(".date__1").text(getDate(-5));
+    $(".date__2").text(getDate(2));
