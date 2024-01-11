@@ -24,7 +24,7 @@ const path = {
         css: sourceFolder + "/scss/style.scss",
         js: sourceFolder + "/js/script.js",
         img: sourceFolder + "/img/**/*.{jpg,png,svg,gif,ico,webp,mp4}",
-        fonts: sourceFolder + "/fonts/*.{woff, woff2, ttf}",
+        fonts: sourceFolder + "/fonts/*.{woff,woff2,ttf}",
         libs: sourceFolder + "/libs/*",
     },
     watch: {
@@ -32,7 +32,7 @@ const path = {
         css: sourceFolder + "/scss/**/*.scss",
         js: sourceFolder + "/js/**/*.js",
         img: sourceFolder + "/img/**/*.{jpg,png,svg,gif,ico,webp,mp4}",
-        fonts: sourceFolder + "/fonts/*.{woff, woff2, ttf}",
+        fonts: sourceFolder + "/fonts/*.{woff,woff2,ttf}",
         libs: sourceFolder + "/libs/*",
     },
     clean: "./" + projectFolder + "/"

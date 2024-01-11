@@ -1,0 +1,151 @@
+.review__section-wrapper {
+    padding: 43px 0 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review__title {
+    color: #111;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.review__divider {
+    background: #C7C7C7;
+    width: 100%;
+    height: 2px;
+    margin: 30px 0 20px;
+    border: none;
+}
+
+.review__slider {
+    width: 100%;
+    height: auto;
+}
+
+.review {
+}
+
+.review__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review__photo {
+    width: 30px !important;
+    flex-shrink: 0;
+    height: auto;
+    margin-right: 10px;
+}
+
+.review__name {
+    color: #222;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.review__date {
+    color: #666;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    margin-left: auto;
+}
+
+.review__rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 8px;
+
+    img {
+        width: 18px !important;
+        height: auto;
+        margin-right: 3px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.review__text {
+    color: #222;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 13px;
+}
+
+.review__img {
+    width: 100%;
+    height: auto;
+}
+
+.add__review {
+    color: #555;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    display: inline-block;
+    background: none;
+    cursor: pointer;
+}
+
+.owl-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+    button {
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+        border: 1px solid #C7C7C7 !important;
+        background-image: url(../img/array.png) !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+
+        span {
+            display: none;
+        }
+    }
+
+    .owl-next {
+        transform: rotate(180deg);
+    }
+}
+
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    margin-bottom: 17px;
+
+    button {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: #444 !important;
+        transition: 0.3s ease;
+        border: 2px solid #444 !important;
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.active {
+            background-color: transparent !important;
+        }
+    }
+}
