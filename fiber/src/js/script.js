@@ -20,6 +20,28 @@ var landingFunctions = {
 			e.preventDefault();
 		});
 
+		function priceWithDiscount (targetPrice, discount) {
+			let re = /[0-9\s.,]+/g;
+			let result = targetPrice.match(re);
+			if (result.length > 0) {
+				let hasDots = result[0].indexOf(".") > -1;
+				let priceNumber = result[0].replace(/(\.|,|\s)/g, "");
+				console.log(priceNumber)
+				let discountPrice = Math.ceil(priceNumber * 100 / (100 - discount));
+				let newPrice = hasDots
+					? ("" + discountPrice).replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+					: discountPrice;
+				return targetPrice.replace(re, newPrice);
+			}
+			return targetPrice;
+		}
+		
+		$(".new__price").each(function() {
+			var price = $(this).text().trim()
+			$(this).closest(".price").find(".old__price").text(priceWithDiscount(price, 50))
+			$(this).text(priceWithDiscount(price, 0))
+		})
+
 	
 		$(".review__slider").owlCarousel({
 			loop: true,
