@@ -1,0 +1,73 @@
+.advantage__section-wrapper {
+    padding: 134px 0 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantage__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.advantage__item {
+    width: 440px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.advantage__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.advantage__title {
+    color: #21252B;
+    text-align: center;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.advantage__text {
+    color: #21252B;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.advantage__item-1, .advantage__item-3  {
+    padding-top: 90px;
+    margin-top: 150px;
+}
+
+.advantage__item-2 {
+    padding-top: 180px;
+
+    .advantage__icon {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.advantage__item-3 {
+
+    .advantage__icon {
+        left: auto;
+        right: 0;
+    }
+}
+
+.order__btn {
+}

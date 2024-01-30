@@ -1,0 +1,74 @@
+<ul class="footer-info">
+ <li>LLC "MONSTR-MEDIA"</li>
+ <li>INN 7701071884</li>
+ <li>Tel.: +62251 4488877</li>
+ <li>mail halo@matahari.com</li>
+ <li><a data-fancybox data-src="#modal" href="javascript:;">Kebijakan pribadi </a></li>
+ <li><a data-fancybox data-src="#modal-2" href="javascript:;">Penafian</a></li>
+ <li><a data-fancybox data-src="#modal-3" href="javascript:;">Syarat dan Ketentuan</a></li>
+</ul>
+
+
+<div id="modal">
+  <h2>Kebijakan pribadi</h2>
+  <p>Toko online kami menghormati hak pelanggan. Kerahasiaan yang ketat dijaga saat melakukan pemesanan. Informasi disimpan dengan aman dan dilindungi dari transmisi.</p>
+  <p>Melakukan pemesanan pada Situs merupakan persetujuan terhadap pemrosesan Data Pelanggan semata-mata untuk tujuan penyediaan layanan.</p>
+  <p>Data pribadi mencakup informasi pribadi tentang Klien: alamat rumah; Nama depan, patronimik; informasi kelahiran; properti, status perkawinan; Kontak pribadi (telepon, email) dan informasi lain yang tercantum dalam undang-undang "Tentang data pribadi".</p>
+  <p>Pelanggan berhak menolak pemrosesan data pribadi. Dalam hal ini, kami menjamin untuk menghapus semua data pribadi dari situs dalam waktu tiga hari selama jam kerja. Klien dapat mengeluarkan penolakan tersebut melalui email sederhana ke alamat yang ditentukan pada halaman situs kami. </p>
+</div>
+
+<div id="modal-2">
+   <h2>Penafian</h2>
+   <p>Toko Online berhak melakukan perubahan terhadap barang, materi, dan layanan yang disediakan di Situs sewaktu-waktu tanpa pemberitahuan kepada Pelanggan</p>
+   <p>Toko Online tidak bertanggung jawab atas segala kerusakan (termasuk kerusakan non-ekonomi, hilangnya keuntungan (lost profit), data atau gangguan aktivitas bisnis) yang timbul dari penggunaan atau ketidakmampuan Anda menggunakan situs ini.</p>
+</div>
+
+<div id="modal-3">
+   <h2>Syarat dan Ketentuan</h2>
+   <p>Halaman ini menguraikan syarat dan ketentuan MTP. Syarat dan ketentuan berikut ("Syarat dan Ketentuan") mengatur penggunaan Anda terhadap situs web ini. Dengan mengakses, melihat atau menggunakan konten dan fungsi di atas, Anda menunjukkan bahwa Anda memahami syarat dan ketentuan ini. Apakah dan menerima.
+   </p>
+   <p>Semua materi yang terkandung dalam layanan ini dilindungi undang-undang. Seluruh hak cipta. Dilarang menghapus atau mengubah informasi pada materi pelaporan hak cipta. Segala penggunaan komersial atas materi ini dilarang tanpa izin tertulis sebelumnya dari MTP.</p>
+   <p>MTP berhak untuk memodifikasi, memperbarui atau terus mengembangkan platform dan layanannya serta memperbarui teknologi dan layanannya secara publik dari waktu ke waktu.</p>
+   <p>Dengan menyerahkan data pribadi Anda kepada MTP, Anda setuju bahwa informasi pribadi Anda dibagikan kepada broker lain dan/atau afiliasi yang dikelola pihak ketiga.</p>
+   <p>Layanan ini dirancang untuk memberikan informasi umum tentang broker serta produk dan layanannya. Informasi Layanan tidak dimaksudkan sebagai penawaran untuk menjual atau menjual produk atau layanan tertentu</p>
+   <p>Penggunaan layanan ini sepenuhnya merupakan risiko Anda sendiri. MTP tidak bertanggung jawab atas konsekuensi mengandalkan informasi apa pun yang dikirim ke atau dikirim ke Layanan sebagai akibat dari hal tersebut di atas. Risiko cedera sepenuhnya menjadi tanggung jawab Anda. Materi ini disediakan "apa adanya" tanpa pemberitahuan apa pun baik tersurat maupun tersirat. MTP tidak bertanggung jawab atas kerugian langsung apa pun, khususnya, namun tidak terbatas pada, kecoa sebagai akibat atau hukuman, kehilangan penjualan atau keuntungan yang mungkin hilang karena akses, penggunaan, atau ketidakmampuan menggunakan materi ini.</p>
+   <p>Penggunaan Internet sepenuhnya merupakan risiko Anda sendiri dan tunduk pada semua undang-undang dan peraturan yang berlaku, provinsi, nasional, dan internasional. MTP tidak akan bertanggung jawab atas segala kerusakan yang disebabkan oleh hal-hal yang tidak dapat mereka kendalikan secara langsung, termasuk, namun tidak terbatas pada, kegagalan peralatan mekanis atau elektronik pada jalur komunikasi, masalah telepon atau koneksi lainnya, virus komputer, Sekolah DhéD. Rambut putih. Cuaca operator kesalahan, cuaca terukir. Cakram</p>
+</div>
+
+
+
+.footer-info{
+  margin: 15px 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  list-style-type: none;
+  color: #000;
+  text-align: center;
+}
+
+.footer-info a{
+    color: #000;
+}
+
+.footer-info a:hover{
+  text-decoration: underline;
+}
+
+[id^="modal"]{
+  display: none;
+  max-width: 600px !important;
+  margin: auto;
+}
+[id^="modal"] p{
+    margin-bottom: 10px;
+}
+
+[id^="modal"] h2{
+    margin-bottom: 20px;
+}
+
+[id^="modal"] h6{
+    font-size: 20px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,59 @@
+.info__section {
+    background-color: #F9E4D8;
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+}
+
+.info__section-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.info__content {
+    width: 658px;
+    height: auto;
+    position: relative;
+    padding: 12px 0 99px;
+}
+
+.info__title {
+    color: #21252B;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.info__text {
+    color: #21252B;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-left: 40px;
+    border-left: 2px solid #21252B;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.info__decor-1 {
+    position: absolute;
+    width: 500px;
+    height: auto;
+    top: -44px;
+    left: -535px;
+}
+
+.info__decor-2 {
+    position: absolute;
+    width: 380px;
+    height: auto;
+    top: -67px;
+    right: -415px;
+}
