@@ -1,0 +1,270 @@
+.card__section {
+    background-color: #21252B;
+}
+
+.card__section-wrapper {
+    padding: 100px 0 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.card__decor {
+    position: absolute;
+}
+
+.card__decor-1 {
+    top: 40px;
+    left: -300px;
+}
+
+.card__decor-2 {
+    bottom: 324px;
+    right: -340px;
+}
+
+.card__section-title {
+    color: #FFF;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 440px;
+    height: auto;
+    background: #181B21;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+.card__slider-wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.card__discount {
+    position: absolute;
+    width: auto;
+    top: 25px;
+    right: 20px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.25);
+    padding: 5px 15px;
+    color: #21252B;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.card__slider {
+    width: 100%;
+    height: auto;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+        max-height: 440px;
+    }
+}
+
+.card__slide {
+    display: flex;
+    justify-content: center;
+}
+
+.card .owl-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+
+    button {
+        width: 10px;
+        height: 10px;
+        border-radius: 100% !important;
+        background-color: #FFF !important;
+        transition: 0.3s ease;
+        margin-right: 5px;
+
+        &:last-child {
+            margin-right: 0;
+            width: 20px;
+            height: 20px;
+            background-color: transparent !important;
+            background-image: url(../img/play.png) !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+        }
+
+        &.active {
+            background-color: #A34634 !important;
+        }
+    }
+}
+
+.card__wrapper {
+    padding: 20px 22px 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__title {
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.card__rating {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.card__star-rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 15px;
+    width: auto;
+
+    img {
+        width: 15px;
+        height: auto;
+        margin-right: 2px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.card__rating-text {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    width: auto;
+}
+
+.card__price {
+    margin-bottom: 21px;
+
+    .price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .old__price {
+        color: #6D7076;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.87;
+        text-decoration: line-through;
+        margin-right: 25px;
+    }
+
+    .new__price {
+        color: #DD644C;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.5;
+    }
+}
+
+
+
+.card__form {
+    width: 100%;
+    height: auto;
+}
+
+.card__input-wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card__input {
+    width: 100%;
+    height: auto;
+    border: 1px solid #FFF;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 22px 10px;
+}
+
+.card__submit {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background: #FFF;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 22px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: 0.3s ease;
+
+    &:hover {
+        background-color: #DD644C;
+    }
+}
+
+
+.card__1 {
+}
+
+.card__2 {
+    .owl-dots button {
+        &:nth-last-child(2) {
+            width: 20px;
+            height: 20px;
+            background-color: transparent !important;
+            background-image: url(../img/play.png) !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+        }
+        &.active {
+            background-color: #DD644C !important;
+        }
+    }
+}

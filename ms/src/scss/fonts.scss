@@ -20,6 +20,13 @@
 }
 
 @font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Cormorant Garamond';
     src: url("../fonts/CormorantGaramond-Medium.woff2") format("woff2"), url("../fonts/CormorantGaramond-Medium.woff") format("woff");
     font-weight: 500;
