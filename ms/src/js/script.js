@@ -8,7 +8,7 @@ var landingFunctions = {
 	initLibraris: function() {
 		
 		$('[href*="#"]').on('click', function (e) {
-			var fixedOffset = -50;
+			var fixedOffset = -40;
 			// var cardHeight = $($(this).attr("href")).outerHeight(false)
 			// var windowHeight = $(window).height()
 
