@@ -380,6 +380,10 @@
     .review__block {
         width: 100%;
         margin-top: 235px;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         &:first-child {
             margin-bottom: 41px;
@@ -393,7 +397,7 @@
     }    
     .review__decor-2 {
         width: 38%;
-        bottom: 96px;
+        bottom: 260px;
         right: auto;
         left: 31%;
     }
@@ -699,7 +703,7 @@
         padding-bottom: 19vw;
     }
     .footer__section-wrapper {
-        padding: 8.5vw 0 10vw;
+        padding: 8.5vw 0 18vw;
     }
     .footer__logo {
         width: 15vw;

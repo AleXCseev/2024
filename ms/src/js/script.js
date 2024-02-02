@@ -55,7 +55,12 @@ var landingFunctions = {
 		});
 	
 		AOS.init({
-			disable : 'mobile',
+			disable : function() {
+				if( $(window).width() <= 1080) {
+					return true;
+				}
+				return false
+			},
 			once: true,
 			duration: 1000,
 			offset : 0,
