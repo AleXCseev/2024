@@ -9,7 +9,7 @@ var landingFunctions = {
 
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = 0;
-			var cardHeight = $("#card").outerHeight(false)
+			var cardHeight = $("#order").outerHeight(false)
 			var windowHeight = $(window).height()
 
 			$('html, body')
