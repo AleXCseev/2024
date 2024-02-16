@@ -321,8 +321,27 @@
     text-align: center;
 }
 
-.header__prod-bottom {
+.header__bottom-wrapper {
+    position: relative;
     width: 100%;
     height: auto;
     margin-bottom: 20px;
+
+    &:before {
+        content: "";
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(50.00% 50.00% at 50% 50%,rgba(42, 126, 224, 0.5),rgba(44, 10, 97, 0) 100%);
+        opacity: 0.5;
+        position: absolute;
+        top: -23px;
+        right: -18px;
+    }
+}
+
+.header__prod-bottom {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
 }
