@@ -1,0 +1,51 @@
+.video__section {
+    background-image: url(../img/video-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.video__section-wrapper {
+    padding: 95px 0;
+}
+
+.video__btn {
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    border: 2px solid #f46042;
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(20px);
+    }
+}
+
+.video__block {
+    width: auto;
+    position: relative;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 20px;
+
+    span {
+        color: #f46042;
+        text-decoration: underline;
+    }
+
+    img {
+        position: absolute;
+        top: 5px;
+        left: -20px;
+    }
+}
