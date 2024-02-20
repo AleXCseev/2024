@@ -1,0 +1,95 @@
+.footer__section {
+    
+}
+
+.footer__section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    z-index: 1;
+    padding-top: 50px;
+    padding-bottom: 230px;
+
+    &:before {
+        content: "";
+        width: 856px;
+        height: 100%;
+        background-image: url(../img/footer-decor-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: -280px;
+        z-index: -1;
+    }
+
+    .header__top {
+        margin-bottom: 70px;
+    }
+
+    .header__name {
+        color: #fff;
+    }
+
+    .header__nav-link {
+        color: #303030;
+
+        &:before {
+            background-color: #303030;
+        }
+    }
+    .header__price-text {
+        color: #303030;
+    }
+    .header__date {
+        color: #303030;
+    }
+    .order__btn {
+        border: 1px solid #303030;
+    }
+    .header__discount {
+        background: none;
+        background-color: #f46042;
+        border-radius: 100%;
+        width: 130px;
+        height: 130px;
+        padding: 0;
+        align-items: center;
+        z-index: 2;
+        top: -34px;
+        left: -250px;
+    }
+}
+
+.footer__title {
+    font-weight: 900;
+    font-size: 140px;
+    letter-spacing: 0.1em;
+    line-height: normal;
+    text-align: right;
+    color: #f46042;
+    margin-bottom: 30px;
+    margin-right: -18px;
+}
+
+.footer__text {
+    width: 100%;
+    max-width: 690px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: right;
+    color: #303030;
+    margin-bottom: 64px;
+}
+
+.footer__decor {
+    width: 553px;
+    height: auto;
+    position: absolute;
+    top: -10px;
+    left: -738px;
+}

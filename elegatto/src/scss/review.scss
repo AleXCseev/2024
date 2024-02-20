@@ -1,5 +1,8 @@
 .review__section-wrapper {
     padding: 100px 0 137px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .review__section-title {
@@ -16,10 +19,10 @@
 .review__slider {
     width: 100%;
     height: auto;
-}
 
-.owl-carousel .owl-stage-outer {
-    padding-top: 85px;
+    .owl-stage-outer {
+        padding-top: 85px;
+    }
 }
 
 .review {
@@ -75,5 +78,42 @@
     }
 }
 
+.owl-nav {
+    width: 100%;
+    max-width: 940px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px auto 0;
+
+    button {
+        width: 95px;
+        height: 70px;
+        background-image: url(../img/review-array.png) !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: cover;
+        transition: 0.3s ease;
+
+        &:hover {
+            background-image: url(../img/review-array-hover.png) !important;
+        }
+
+        span {
+            display: none;
+        }
+
+        &.owl-next {
+            transform: rotate(180deg);
+        }
+    }
+}
+
 .add__review {
+    width: auto;
+    padding: 15px 40px;
+    cursor: pointer;
+    margin-top: -64px;
+    position: relative;
+    z-index: 2;
 }

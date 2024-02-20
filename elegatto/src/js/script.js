@@ -1,7 +1,132 @@
+var cards = {
+	'helix': [
+		{
+			name: 'helix black',
+			color: 'Чорний',
+			id: 1,
+			price: 1234,
+			imgs: ['helix/black/1.jpg', 'helix/black/2.jpg', 'helix/black/3.jpg'],
+			isNew: true,
+			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+		},
+		{
+			name: 'helix navy blue',
+			color: 'Темно-синій',
+			id: 2,
+			price: 4321,
+			imgs: ['helix/navy-blue/1.jpg', 'helix/navy-blue/2.jpg', 'helix/navy-blue/3.jpg'],
+			isNew: false,
+			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+		},
+		{
+			name: 'helix vintage',
+			color: 'Вінтаж',
+			id: 3,
+			price: 1234,
+			imgs: ['helix/vintage/1.jpg', 'helix/vintage/2.jpg', 'helix/vintage/3.jpg'],
+			isNew: true,
+			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+		},
+		{
+			name: 'helix all black',
+			color: 'Весь чорний',
+			id: 4,
+			price: 4321,
+			imgs: ['helix/all-black/1.jpg', 'helix/all-black/2.jpg', 'helix/all-black/3.jpg'],
+			isNew: false,
+			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+		},
+	],
+	'orion-gray': [
+		{
+			name: 'orion gray',
+			color: 'Сірий',
+			id: 5,
+			price: 1234,
+			imgs: ['orion-gray/1.jpg', 'orion-gray/2.jpg', 'orion-gray/3.jpg'],
+			isNew: true,
+			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+		},
+	],
+	'anchor-platinum': [
+		{
+			name: 'anchor platinum black',
+			color: 'Чорний',
+			id: 6,
+			price: 4321,
+			imgs: ['anchor-platinum/black/1.jpg', 'anchor-platinum/black/2.jpg', 'anchor-platinum/black/3.jpg'],
+			isNew: false,
+			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+		},
+		{
+			name: 'anchor platinum gray',
+			color: 'Сірий',
+			id: 7,
+			price: 1234,
+			imgs: ['anchor-platinum/gray/1.jpg', 'anchor-platinum/gray/2.jpg', 'anchor-platinum/gray/3.jpg'],
+			isNew: true,
+			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+		},
+		{
+			name: 'anchor platinum navy',
+			color: 'Tемно-синій',
+			id: 8,
+			price: 4321,
+			imgs: ['anchor-platinum/navy/1.jpg', 'anchor-platinum/navy/2.jpg', 'anchor-platinum/navy/3.jpg'],
+			isNew: false,
+			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+		},
+		{
+			name: 'anchor platinum red',
+			color: 'Червоний',
+			id: 9,
+			price: 1234,
+			imgs: ['anchor-platinum/red/1.jpg', 'anchor-platinum/red/2.jpg', 'anchor-platinum/red/3.jpg'],
+			isNew: true,
+			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+		},
+	],
+	'anchor-leather': [
+		{
+			name: 'anchor leather black',
+			color: 'Чорний',
+			id: 10,
+			price: 1234,
+			imgs: ['anchor-leather/black/1.jpg', 'anchor-leather/black/2.jpg', 'anchor-leather/black/3.jpg'],
+			isNew: true,
+			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+		},
+		{
+			name: 'anchor leather silver',
+			color: 'Срібний',
+			id: 11,
+			price: 4321,
+			imgs: ['anchor-leather/silver/1.jpg', 'anchor-leather/silver/2.jpg', 'anchor-leather/silver/3.jpg'],
+			isNew: false,
+			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+		},
+	],
+	'kellmore': [
+		{
+			name: 'kellmore red',
+			color: 'Червоний',
+			id: 12,
+			price: 1234,
+			imgs: ['kellmore/red/1.jpg', 'kellmore/red/2.jpg', 'kellmore/red/3.jpg'],
+			isNew: true,
+			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+		},
+	]
+}
+
+
+
 var landingFunctions = {
+
 	init: function() {
 		this.initLibraris()
 		this.time()
+		this.card()
 		this.modal()
 	}, 
 
@@ -46,24 +171,6 @@ var landingFunctions = {
 
 			// }
 		});
-
-		// if($(window).on("resize", function() {
-		// 	if($(window).width() <= 540) {
-		// 		$(".galary").addClass("owl-carousel").owlCarousel({
-		// 			loop: true,
-		// 			nav: true,
-		// 			dots: true,
-		// 			dotsEach: true,
-		// 			items: 1,
-		// 			margin: 30,
-		// 			autoHeight: true,
-		// 		});
-		// 	} else {
-		// 		$(".galary").owlCarousel('destroy')
-		// 	}
-		// })) 
-		
-		
 
 		$.raty.path = $("body").data("path") +  '/img/raty';
 
@@ -158,6 +265,129 @@ var landingFunctions = {
 		$(".date").text(getDate(7))
 		
 		// $(".year").text(new Date().getFullYear())
+	},
+
+	card: function() {
+		var currency = $('body').data('currency')
+		var path = $('body').data('path')
+
+		function generateCard(item, product) {
+			var cloneCard = $('.card__none').clone().removeClass('card__none')
+
+			if(item.isNew) {
+				cloneCard.find('.card__new').addClass('active');
+			}
+			
+			cloneCard.find('.card__name').text(item.name)
+			cloneCard.find('.card__img-1').attr('src', path + '/img/card/' + item.imgs[0])
+			cloneCard.find('.card__img-2').attr('src', path + '/img/card/' + item.imgs[1])
+			cloneCard.find('.new__price').text(item.price + " " + currency)
+			cloneCard.find('.old__price').text(item.price * 2 + " " + currency)
+			cloneCard.find('.card__btn').attr('data-info', product)
+			cloneCard.find('.card__btn').attr('data-id', item.id)
+
+			$('.cards').append(cloneCard)
+		}
+
+		for(brend in cards) {
+			cards[brend].forEach(bracelet => {
+				generateCard(bracelet, brend)
+			})
+		}
+
+		function generateModal(brend, id) {
+			var modalClone = $('.card__modal-overlay').clone().removeClass('card__modal-none');
+
+			var el = cards[brend].find(item => item.id === id);
+
+			modalClone.find('.card__name').text(el.name)
+			modalClone.find('.new__price').text(el.price + " " + currency)
+			modalClone.find('.old__price').text(el.price * 2 + " " + currency)
+
+			el.imgs.forEach(img => {
+				var imgItem = `
+					<a href="${path + '/img/card/' + img}" data-fancybox="card">
+						<img src="${path + '/img/card/' + img}" alt="" />
+					</a>
+				`
+				modalClone.find('.card__slider').append(imgItem)
+			})
+
+			var owl = modalClone.find(".card__slider").owlCarousel({
+				loop: true,
+				nav: false,
+				dots: true,
+				dotsEach: true,
+				items: 1,
+				margin: 0,
+				autoHeight: true,
+			});
+
+			cards[brend].forEach(item => {
+				var colorBtn = `
+					<button type="button" data-id="${item.id}" data-color="${item.color}" class="card__color-btn">
+						${item.color}
+					</button>
+				`
+				if(item.id === id) {
+					colorBtn = `
+						<button type="button" data-id="${item.id}" data-color="${item.color}" class="card__color-btn active">
+							${item.color}
+						</button>
+					`
+				}
+
+				$(modalClone).find('.card__color-btns').append(colorBtn)
+			})
+
+			el.sizes.forEach(item => {
+
+				var sizeBtn = `
+					<button type="button" class="card__size-btn">
+						${item}
+					</button>
+				`
+
+				modalClone.find('.card__size-btns').append(sizeBtn)
+			})
+
+			modalClone.find('.card__size-btns button').eq(0).addClass('active')
+
+			$('body').append(modalClone)
+
+			$('.card__color-btn').click(function() {
+				if($(this).hasClass('active')) {
+					return
+				}
+				var id = $(this).data('id')
+				modalClone.remove()
+				owl.on("destroy.owl.carousel")
+
+				generateModal(brend, id)
+			})
+
+			modalClone.click(function(e) {
+				var target = e.target;
+				if(target.classList.contains("card__modal-overlay")) {
+					$(this).remove()
+					owl.on("destroy.owl.carousel")
+				}
+			})
+
+			$('.card__size-btn').click(function() {
+				$('.card__size-btn').removeClass('active')
+				$(this).addClass("active")
+			})
+		}
+
+		$('.card__btn').click(function() {
+			var brend = $(this).data('info')
+			var id = $(this).data('id')
+
+			generateModal(brend, id)
+		})
+		
+		
 	},
 
 	modal: function() {
