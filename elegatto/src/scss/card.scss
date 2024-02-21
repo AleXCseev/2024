@@ -117,10 +117,6 @@
     }
 }
 
-.card__img-1 {
-
-}
-
 .card__img-2 {
     opacity: 0;
 }
@@ -131,9 +127,6 @@
     align-items: flex-start;
     padding: 0 25px;
 
-}
-
-.card__info-left {
 }
 
 .card__name {
@@ -240,8 +233,10 @@
     background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     z-index: 100;
+    overflow: auto;
+    padding: 50px 0;
 }
 
 .card__modal {
@@ -256,6 +251,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+.close__modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    z-index: 4;
 }
 
 .card__slider {

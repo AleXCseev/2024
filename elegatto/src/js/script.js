@@ -152,24 +152,18 @@ var landingFunctions = {
 			items: 3,
 			margin: 20,
 			autoHeight: true,
-			// responsive:{
-			// 	0:{
-			// 		items: 1,
-			// 		nav: true,
-			// 		dots: true,
-			// 	},
-			// 	541:{
-			// 		items: 2,
-			// 		nav: false,
-			// 		dots: false,
-			// 	},
-			// 	1081:{
-			// 		items: 3,
-			// 		nav: false,
-			// 		dots: false,
-			// 	}
+			responsive:{
+				0:{
+					items: 1,
+				},
+				1081:{
+					items: 2,
+				},
+				1281:{
+					items: 3,
+				}
 
-			// }
+			}
 		});
 
 		$.raty.path = $("body").data("path") +  '/img/raty';
@@ -298,6 +292,8 @@ var landingFunctions = {
 		function generateModal(brend, id) {
 			var modalClone = $('.card__modal-overlay').clone().removeClass('card__modal-none');
 
+			$('body').css('overflow', 'hidden')
+
 			var el = cards[brend].find(item => item.id === id);
 
 			modalClone.find('.card__name').text(el.name)
@@ -305,10 +301,14 @@ var landingFunctions = {
 			modalClone.find('.old__price').text(el.price * 2 + " " + currency)
 
 			el.imgs.forEach(img => {
+				// var imgItem = `
+				// 	<a href="${path + '/img/card/' + img}" data-fancybox="card-${el.id}" >
+				// 		<img src="${path + '/img/card/' + img}" alt="" />
+				// 	</a>
+				// `
+
 				var imgItem = `
-					<a href="${path + '/img/card/' + img}" data-fancybox="card">
-						<img src="${path + '/img/card/' + img}" alt="" />
-					</a>
+					<img src="${path + '/img/card/' + img}" alt="" />
 				`
 				modalClone.find('.card__slider').append(imgItem)
 			})
@@ -322,6 +322,7 @@ var landingFunctions = {
 				margin: 0,
 				autoHeight: true,
 			});
+
 
 			cards[brend].forEach(item => {
 				var colorBtn = `
@@ -362,15 +363,15 @@ var landingFunctions = {
 				var id = $(this).data('id')
 				modalClone.remove()
 				owl.on("destroy.owl.carousel")
-
 				generateModal(brend, id)
 			})
 
 			modalClone.click(function(e) {
 				var target = e.target;
-				if(target.classList.contains("card__modal-overlay")) {
+				if(target.classList.contains("card__modal-overlay") || target.classList.contains("close__modal")) {
 					$(this).remove()
 					owl.on("destroy.owl.carousel")
+					$('body').css('overflow', 'auto')
 				}
 			})
 

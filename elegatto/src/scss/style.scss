@@ -105,6 +105,10 @@
     .card__section-wrapper {
         padding: 70px 0 100px;
     }
+    .card__modal {
+        max-width: 1200px;
+        padding: 46px 50px;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -198,6 +202,30 @@
     .advantage__text {
         font-size: 14px;
         margin-bottom: 20px;
+    }
+    .cards {
+        justify-content: space-around;
+    }
+    .card {
+        width: 440px;
+    }
+    .card__modal {
+        max-width: 100%;
+        padding: 46px 50px;
+        justify-content: center;
+    }
+    .card__modal-overlay {
+        padding: 50px;
+    }
+    .card__slider {
+        margin-right: 50px;
+    }
+    .video__section-wrapper {
+        padding: 50px 0;
+    }
+    .video__btn {
+        width: 400px;
+        height: 400px;
     }
 }
 
@@ -325,6 +353,43 @@
         margin-right: -30px;
         margin-bottom: 48px;
     }
+    .card__decor-1 {
+        width: 190px;
+        top: 588px;
+        left: -20px;
+    }
+    .card__decor-2 {
+        width: 120px;
+        top: 1289px;
+        right: -20px;
+    }
+    .card__decor-3 {
+        width: 150px;
+        bottom: 800px;
+        left: -20px;
+    }
+    .card__decor-4 {
+        width: 130px;
+        bottom: 245px;
+        right: -20px;
+    }
+    .card__modal {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .card__slider {
+        margin-right: 0px;
+        margin-bottom: 45px;
+    }
+    .close__modal {
+        top: 30px;
+        right: 30px;
+    }
+    .video__btn {
+        width: 300px;
+        height: 300px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -335,6 +400,12 @@
         text-align: center;
         margin-bottom: 585px;
         font-size: 15vw;
+    }
+    .card__decor {
+        display: none;
+    }
+    .add__review {
+        margin-top: 40px;
     }
 }
 
@@ -444,5 +515,133 @@
         width: 100%;
         padding: 5.6vw;
         overflow: hidden;
+    }
+    .card__section-wrapper {
+        padding: 19vw 0 4vw;
+    }
+    .card__section-title {
+        font-size: 15vw;
+        margin-bottom: 14vw;
+    }
+    .card {
+        width: 100%;
+        margin-bottom: 3vw;
+    }
+    .card__info {
+        padding: 0;
+    }
+    .card__img-wrapper {
+        height: calc(100vw - 30px);
+        margin-bottom: 5.8vw;
+    }
+    .card__name {
+        font-size: 4.8vw;
+        margin-bottom: 2vw;
+    }
+    .card__price .new__price {
+        font-size: 4.8vw;
+        margin-bottom: 2vw;
+    }
+    .card__price .old__price {
+        font-size: 3vw;
+    }
+    .card__modal-overlay {
+        padding: 50px 10px;
+    }
+    .card__modal {
+        padding: 6vw 4vw 8vw;
+    }
+    .card__slider {
+        width: 100%;
+        height: 87.1vw;
+        margin-bottom: 11vw;
+        position: relative;
+    }
+    .card__right {
+        width: 100%;
+    }
+    .owl-dots {
+        margin-top: -30px;
+        position: relative;
+        z-index: 4;
+    }
+    .card__modal-header {
+        margin-bottom: 3vw;
+    }
+    .card__modal-price {
+        margin-bottom: 6vw;
+    }
+    .card__modal-price .new__price {
+        font-size: 4.8vw;
+    }
+    .card__modal-price .old__price {
+        font-size: 3vw;
+    }
+    .card__modal-text {
+        font-size: 4.5vw;
+        margin-bottom: 2vw;
+    }
+    .card__color-btns button, .card__size-btns button {
+        padding: 1vw 4.8vw;
+        font-size: 4.5vw;
+        margin-right: 4.8vw;
+        margin-bottom: 2vw;
+    }
+    .card__table {
+        font-size: 3vw;
+    }
+    .card__size {
+        margin-bottom: 2vw;
+    }
+    .card__input {
+        height: 13.5vw;
+        font-size: 4.5vw;
+    }
+    .close__modal {
+        top: 10vw;
+        right: 7.5vw;
+    }
+    .video__btn {
+        width: 42vw;
+        height: 42vw;
+    }
+    .video__section-wrapper {
+        padding: 5.5vw 0;
+    }
+    .video__block {
+        font-size: 4.5vw;
+        margin-left: 4.8vw;
+    }
+    .video__block img {
+        width: 4vw;
+        height: auto;
+        top: 1.3vw;
+        left: -4.8vw;
+    }
+    .review__section-wrapper {
+        padding: 14vw 0 15vw;
+    }
+    .review__section-title {
+        font-size: 16vw;
+        margin-bottom: 5vw;
+    }
+    .review__name {
+        font-size: 4.5vw;
+        margin-bottom: 2vw;
+    }
+    .review__text {
+        font-size: 4.5vw;
+    }
+    .owl-nav {
+        padding: 0 4.8vw;
+        margin: 8.5vw auto 0;
+    }
+    .owl-nav button {
+        width: 21.5vw;
+        height: 16vw;
+        background-size: cover !important;
+    }
+    .review {
+        padding: 0 5.5vw 5.5vw;
     }
 }   
