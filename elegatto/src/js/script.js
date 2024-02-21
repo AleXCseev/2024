@@ -5,36 +5,36 @@ var cards = {
 			color: 'Чорний',
 			id: 1,
 			price: 1234,
-			imgs: ['helix/black/1.jpg', 'helix/black/2.jpg', 'helix/black/3.jpg'],
+			imgs: ['helix/black/1-1000.jpg', 'helix/black/2-1000.jpg', 'helix/black/3-1000.jpg'],
 			isNew: true,
-			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+			sizes: ['5.9”', '6,3”', '7.1”', '7,67”', '8,3”']
 		},
 		{
 			name: 'helix navy blue',
 			color: 'Темно-синій',
 			id: 2,
 			price: 4321,
-			imgs: ['helix/navy-blue/1.jpg', 'helix/navy-blue/2.jpg', 'helix/navy-blue/3.jpg'],
+			imgs: ['helix/navy-blue/1-1000.jpg', 'helix/navy-blue/2-1000.jpg', 'helix/navy-blue/3-1000.jpg'],
 			isNew: false,
-			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+			sizes: ['5.9”', '6,3”', '7.1”', '7,67”', '8,3”']
 		},
 		{
 			name: 'helix vintage',
 			color: 'Вінтаж',
 			id: 3,
 			price: 1234,
-			imgs: ['helix/vintage/1.jpg', 'helix/vintage/2.jpg', 'helix/vintage/3.jpg'],
+			imgs: ['helix/vintage/1-1000.jpg', 'helix/vintage/2-1000.jpg', 'helix/vintage/3-1000.jpg'],
 			isNew: true,
-			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+			sizes: ['5.9”', '6,3”', '7.1”', '7,67”', '8,3”']
 		},
 		{
 			name: 'helix all black',
 			color: 'Весь чорний',
 			id: 4,
 			price: 4321,
-			imgs: ['helix/all-black/1.jpg', 'helix/all-black/2.jpg', 'helix/all-black/3.jpg'],
+			imgs: ['helix/all-black/1-1000.jpg', 'helix/all-black/2-1000.jpg', 'helix/all-black/3-1000.jpg'],
 			isNew: false,
-			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+			sizes: ['5.9”', '6,3”', '7.1”', '7,67”', '8,3”']
 		},
 	],
 	'orion-gray': [
@@ -43,9 +43,9 @@ var cards = {
 			color: 'Сірий',
 			id: 5,
 			price: 1234,
-			imgs: ['orion-gray/1.jpg', 'orion-gray/2.jpg', 'orion-gray/3.jpg'],
+			imgs: ['orion-gray/1-1000.jpg', 'orion-gray/2-1000.jpg', 'orion-gray/3-1000.jpg'],
 			isNew: true,
-			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+			sizes: ['5.9”', '6,3”', '7.1”', '7,67”', '8,3”']
 		},
 	],
 	'anchor-platinum': [
@@ -54,36 +54,36 @@ var cards = {
 			color: 'Чорний',
 			id: 6,
 			price: 4321,
-			imgs: ['anchor-platinum/black/1.jpg', 'anchor-platinum/black/2.jpg', 'anchor-platinum/black/3.jpg'],
+			imgs: ['anchor-platinum/black/1-1000.jpg', 'anchor-platinum/black/3-1000.jpg'],
 			isNew: false,
-			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+			sizes: ['5.9”', '6,3”', '7.1”', '7,67”', '8,3”']
 		},
 		{
 			name: 'anchor platinum gray',
 			color: 'Сірий',
 			id: 7,
 			price: 1234,
-			imgs: ['anchor-platinum/gray/1.jpg', 'anchor-platinum/gray/2.jpg', 'anchor-platinum/gray/3.jpg'],
+			imgs: ['anchor-platinum/gray/1-1000.jpg', 'anchor-platinum/gray/2-1000.jpg', 'anchor-platinum/gray/3-1000.jpg'],
 			isNew: true,
-			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+			sizes: ['5.9”', '6,3”', '7.1”', '7,67”', '8,3”']
 		},
 		{
 			name: 'anchor platinum navy',
 			color: 'Tемно-синій',
 			id: 8,
 			price: 4321,
-			imgs: ['anchor-platinum/navy/1.jpg', 'anchor-platinum/navy/2.jpg', 'anchor-platinum/navy/3.jpg'],
+			imgs: ['anchor-platinum/navy/1-1000.jpg', 'anchor-platinum/navy/2-1000.jpg', 'anchor-platinum/navy/3-1000.jpg'],
 			isNew: false,
-			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+			sizes: ['5.9”', '6,3”', '7.1”', '7,67”', '8,3”']
 		},
 		{
 			name: 'anchor platinum red',
 			color: 'Червоний',
 			id: 9,
 			price: 1234,
-			imgs: ['anchor-platinum/red/1.jpg', 'anchor-platinum/red/2.jpg', 'anchor-platinum/red/3.jpg'],
+			imgs: ['anchor-platinum/red/1-1000.jpg', 'anchor-platinum/red/2-1000.jpg', 'anchor-platinum/red/3-1000.jpg'],
 			isNew: true,
-			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+			sizes: ['5.9”', '6,3”', '7.1”', '7,67”', '8,3”']
 		},
 	],
 	'anchor-leather': [
@@ -92,18 +92,18 @@ var cards = {
 			color: 'Чорний',
 			id: 10,
 			price: 1234,
-			imgs: ['anchor-leather/black/1.jpg', 'anchor-leather/black/2.jpg', 'anchor-leather/black/3.jpg'],
+			imgs: ['anchor-leather/black/1-1000.jpg', 'anchor-leather/black/2-1000.jpg', 'anchor-leather/black/3-1000.jpg'],
 			isNew: true,
-			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+			sizes: ['5.9”', '6,3”', '7.1”', '7,67”', '8,3”']
 		},
 		{
 			name: 'anchor leather silver',
 			color: 'Срібний',
 			id: 11,
 			price: 4321,
-			imgs: ['anchor-leather/silver/1.jpg', 'anchor-leather/silver/2.jpg', 'anchor-leather/silver/3.jpg'],
+			imgs: ['anchor-leather/silver/1-1000.jpg', 'anchor-leather/silver/2-1000.jpg', 'anchor-leather/silver/3-1000.jpg'],
 			isNew: false,
-			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+			sizes: ['5.9”', '6,3”', '7.1”', '7,67”', '8,3”']
 		},
 	],
 	'kellmore': [
@@ -112,9 +112,9 @@ var cards = {
 			color: 'Червоний',
 			id: 12,
 			price: 1234,
-			imgs: ['kellmore/red/1.jpg', 'kellmore/red/2.jpg', 'kellmore/red/3.jpg'],
+			imgs: ['kellmore/red/1-1000.jpg', 'kellmore/red/2-1000.jpg', 'kellmore/red/3-1000.jpg'],
 			isNew: true,
-			sizes: ['6”', '6,5”', '7”', '7,67”', '8,3”']
+			sizes: ['5.9”', '6,3”', '7.1”', '7,67”', '8,3”']
 		},
 	]
 }
@@ -134,13 +134,13 @@ var landingFunctions = {
 		
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = 0;
-			var cardHeight = $(".card").outerHeight(false)
-			var windowHeight = $(window).height()
+			// var cardHeight = $(".card").outerHeight(false)
+			// var windowHeight = $(window).height()
 
 			$('html, body')
 				.stop()
-				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
-				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
 			e.preventDefault();
 		})
 

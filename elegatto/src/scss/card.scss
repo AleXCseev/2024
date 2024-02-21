@@ -1,5 +1,38 @@
 .card__section-wrapper {
     padding: 70px 0 194px;
+    position: relative;
+}
+
+.card__decor {
+    position: absolute;
+}
+
+.card__decor-1 {
+    width: 266px;
+    height: auto;
+    top: 588px;
+    left: -326px;
+}
+
+.card__decor-2 {
+    width: 177px;
+    height: auto;
+    top: 1289px;
+    right: -244px;
+}
+
+.card__decor-3 {
+    width: 204px;
+    height: auto;
+    bottom: 758px;
+    left: -258px;
+}
+
+.card__decor-4 {
+    width: 195px;
+    height: auto;
+    bottom: 243px;
+    right: -248px;
 }
 
 .card__section-title {
@@ -10,6 +43,7 @@
     line-height: normal;
     color: #303030;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .cards {
@@ -403,4 +437,19 @@
 
 .card__modal-none {
     display: none !important;
+}
+
+.card__size .card__modal-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__table {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-decoration: underline;
+    text-align: right;
+    color: #303030;
 }

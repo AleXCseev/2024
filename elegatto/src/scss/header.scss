@@ -7,10 +7,12 @@
         height: 490px;
         position: absolute;
         bottom: 0;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
         background-image: url(../img/header-decor-2.jpg);
         background-repeat: no-repeat;
         background-position: center;
+        background-size: cover;
     }
 }
 
@@ -122,7 +124,7 @@
 
 .header__video {
     position: absolute;
-    top: -100px;
+    top: -110px;
     right: 0;
     width: 227px;
     height: 64px;
@@ -167,7 +169,7 @@
     align-items: flex-start;
     padding-top: 35px;
     top: 33px;
-    left: -244px;
+    left: -250px;
 
     span {
         display: inline-block;
