@@ -257,8 +257,6 @@ var landingFunctions = {
     	// $(".date__2").text(getDate(2));
 
 		$(".date").text(getDate(7))
-		
-		// $(".year").text(new Date().getFullYear())
 	},
 
 	card: function() {
@@ -307,9 +305,8 @@ var landingFunctions = {
 				// 	</a>
 				// `
 
-				var imgItem = `
-					<img src="${path + '/img/card/' + img}" alt="" />
-				`
+				var imgItem = `<img src="${path + '/img/card/' + img}" alt="" />`
+
 				modalClone.find('.card__slider').append(imgItem)
 			})
 
@@ -319,7 +316,7 @@ var landingFunctions = {
 				dots: true,
 				dotsEach: true,
 				items: 1,
-				margin: 0,
+				margin: 10,
 				autoHeight: true,
 			});
 

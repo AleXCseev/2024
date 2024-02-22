@@ -315,11 +315,11 @@
 .size-table-wrapper {
 	position: relative;
 	width: 100%;
-	background-color: #1a2e80;
+	background-color: #FFFFFF;
 	padding: 25px;
 	max-width: 690px;
 	margin: 0 auto;
-	color: #fff;
+	color: #303030;
 	display: none;
   }
   
@@ -345,7 +345,7 @@
   }
   
   .size-table tbody tr:nth-of-type(even) td {
-	background-color: #162a7c;
+	background-color: rgba(0, 0, 0, 0.1);
   }
   
   .size-table tbody td:first-child {
@@ -356,7 +356,7 @@
   }
   
   .size-table thead th:nth-child(2) {
-	border-left: 1px solid #fff;
+	border-left: 1px solid #303030;
   }
   
   .size-table tbody td {
@@ -366,7 +366,7 @@
   
   .size-table thead th {
 	padding: 8px 10px;
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid #303030;
 	/*color: #000;*/
   }
   

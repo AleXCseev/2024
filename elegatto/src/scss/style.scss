@@ -109,6 +109,39 @@
         max-width: 1200px;
         padding: 46px 50px;
     }
+    .footer__title {
+        font-size: 120px;
+        margin-bottom: 20px;
+        margin-right: -18px;
+    }
+    .footer__text {
+        max-width: 610px;
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    .footer__section-wrapper {
+        padding-bottom: 160px;
+    }
+    .footer__section-wrapper:before {
+        width: 760px;
+        height: 100%;
+        left: -140px;
+    }
+    .footer__decor {
+        width: 500px;
+        top: -10px;
+        left: -590px;
+    }
+    .footer__section-wrapper .header__discount {
+        width: 110px;
+        height: 110px;
+        top: -34px;
+        left: -155px;
+
+        span {
+            font-size: 30px;
+        }
+    }
 }
 
 @media (max-width: 1280px) {
@@ -227,6 +260,34 @@
         width: 400px;
         height: 400px;
     }
+    .footer__title {
+        font-size: 110px;
+        margin-bottom: 10px;
+        margin-right: -15px;
+    }
+    .footer__section-wrapper:before {
+        width: 620px;
+        left: -160px;
+    }
+    .footer__section-wrapper .header__top {
+        margin-bottom: 50px;
+    }
+    .footer__text {
+        max-width: 530px;
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    .footer__decor {
+        width: 420px;
+        top: 20px;
+        left: -480px;
+    }
+    .footer__section-wrapper .header__discount {
+        width: 110px;
+        height: 110px;
+        top: 0px;
+        left: -130px;
+    }
 }
 
 @media (max-width: 1080px) {
@@ -257,7 +318,7 @@
         font-size: 110px;
     }
     .header__section:before {
-        width: 1000px;
+        width: 1024px;
         height: 900px;
         background-image: url(../img/header-decor-2-mobile.jpg);
     }
@@ -382,6 +443,9 @@
         margin-right: 0px;
         margin-bottom: 45px;
     }
+    .card__btn {
+        opacity: 1;
+    }
     .close__modal {
         top: 30px;
         right: 30px;
@@ -390,6 +454,69 @@
         width: 300px;
         height: 300px;
     }
+    .footer__decor {
+        position: static;
+        // display: block;
+        width: 400px;
+        margin-left: 180px;
+        margin-bottom: 40px;
+    }
+    .footer__section {
+        position: relative;
+    }
+    .footer__section-wrapper:after {
+        content: "";
+        width: 100vw;
+        height: 400px;
+        opacity: 0.34;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+        z-index: 1;
+    }
+    .footer__section-wrapper:before {
+        width: 610px;
+        height: 84%;
+        top: auto;
+        bottom: 0;
+        left: -200px;
+    }
+    .footer__section-wrapper .header__name {
+        color: #303030;
+    }
+    .footer__title {
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 160px;
+    }
+    .footer__text {
+        display: none;
+    }
+    .footer__section-wrapper {
+        padding-bottom: 50px;
+        padding-top: 0;
+
+        .header__block {
+            position: relative;
+            z-index: 2;
+        }
+    }
+    .footer__section-wrapper .header__discount {
+        width: 110px;
+        height: 110px;
+        top: -75px;
+        left: auto;
+        right: -20px;
+    }
+    .footer__section-wrapper .header__price-text {
+        color: #fff;
+    }
+    .footer__section-wrapper .header__date {
+        color: #fff;
+    }
+    
 }
 
 @media (max-width: 700px) {
@@ -407,6 +534,9 @@
     .add__review {
         margin-top: 40px;
     }
+    .footer__title {
+        font-size: 15vw;
+    }
 }
 
 @media (max-width: 540px) {
@@ -422,13 +552,11 @@
     .header__text {
         font-size: 4.3vw;
         margin-bottom: 6vw;
+        text-align: justify;
 
         span {
             display: none;
         }
-    }
-    .header__title {
-        font-size: 14.6vw;
     }
     .header__block {
         width: 89.4vw;
@@ -455,8 +583,9 @@
         height: 135vw;
     }
     .header__title {
-        margin-bottom: 77vw;
-        font-size: 15vw;
+        width: 100%;
+        margin-bottom: 76vw;
+        font-size: 14.5vw;
     }
     .header__discount {
         width: 16.6vw;
@@ -479,7 +608,8 @@
         margin-bottom: 9.8vw;
     }
     .info__text {
-        font-size: 4.5vw;
+        font-size: 4.3vw;
+        text-align: justify;
     }
     .info__text-1 {
         margin-bottom: 6vw;
@@ -517,7 +647,7 @@
         overflow: hidden;
     }
     .card__section-wrapper {
-        padding: 19vw 0 4vw;
+        padding: 19vw 0 10vw;
     }
     .card__section-title {
         font-size: 15vw;
@@ -556,6 +686,10 @@
         height: 87.1vw;
         margin-bottom: 11vw;
         position: relative;
+ 
+        .owl-stage-outer {
+            min-height: 87.1vw;
+        }
     }
     .card__right {
         width: 100%;
@@ -643,5 +777,55 @@
     }
     .review {
         padding: 0 5.5vw 5.5vw;
+    }
+    .fancybox-slide {
+        padding: 40px 10px;
+    }
+    .add__review {
+        margin-top: 10vw;
+    }
+    .footer__section-wrapper {
+        padding-bottom: 8.5vw;
+        padding-top: 12vw;
+    }
+    .footer__title {
+        margin-bottom: 55vw;
+    }
+    .footer__section-wrapper:before {
+        width: 63vw;
+        height: 80%;
+        left: -4vw;
+    }
+    .footer__decor {
+        position: relative;
+        width: 53vw;
+        top: auto;
+        left: auto;
+        right: -5vw;
+        margin-left: auto;
+        margin-bottom: 9.8vw;
+    }
+    .footer__section-wrapper .header__discount {
+        width: 31.4vw;
+        height: 31.4vw;
+        top: -26vw;
+        left: auto;
+        right: 4.8vw;
+    }
+    .footer__section-wrapper .header__discount span {
+        font-size: 8.8vw;
+    }
+    .footer__section-wrapper:after {
+        height: 66vw;
+    }
+    .footer__title {
+        font-size: 14.6vw;
+    }
+    .footer__section-wrapper .header__top {
+        margin-bottom: 12vw;
+    }
+    .footer__section-wrapper .order__btn {
+        border: none;
+        box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.25);
     }
 }   
