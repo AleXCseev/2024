@@ -17,11 +17,18 @@
 .header__title {
     font-weight: 700;
     font-size: 40px;
-    line-height: 1;
+    line-height: 1em;
     text-transform: uppercase;
     text-align: center;
     color: #fff;
+
+    .word {
+        display: inline-block;
+        line-height: 1em;
+    }
 }
+
+
 
 .header__section-block {
     width: 400px;
@@ -36,6 +43,13 @@
     height: auto;
     top: 28px;
     right: -80px;
+    transition: 1s ease;
+    opacity: 1;
+}
+
+.header__prod-anim {
+    transform: translateX(80px);
+    opacity: 0;
 }
 
 .header__subtitle {
@@ -129,6 +143,25 @@
     color: #111;
     background: #ffff07;
     border-radius: 10px;
+    animation: btn 10s infinite;
+}
+
+@keyframes btn {
+    0% {
+        background: #ffff07;
+    }
+    25% {
+        background: #f3f35e;
+    }
+    50% {
+        background: #f0ae21;
+    }
+    75% {
+        background: #fcb419;
+    }
+    100% {
+        background: #ffff07;
+    }
 }
 
 .header__alert {

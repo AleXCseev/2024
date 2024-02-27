@@ -1,0 +1,53 @@
+.info-3__section {
+    background-image: url(../img/info-3-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.info-3__section-wrapper {
+    padding-top: 41px;
+}
+
+.info-3__section-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.info-3__section-text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.3;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.info-3__wrapper-img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.info-3__ruler {
+    width: 105px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    margin-left: 15px;
+    margin-bottom: -32px;
+}
+
+.info-3__banana {
+    position: absolute;
+    top: 65px;
+    left: -160px;
+    width: 651px;
+    height: auto;
+}

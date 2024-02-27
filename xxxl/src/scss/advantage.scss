@@ -1,0 +1,76 @@
+.advantage__section {
+    background-image: url(../img/advantage-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.advantage__section-wrapper {
+    padding: 91px 0 50px;
+
+    .header__price {
+        margin-top: 54px;
+        margin-bottom: 14px;
+    }
+    .price {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .old__price {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+    .header__alert {
+        padding-left: 0;
+    }
+}
+
+.advantage__block {
+    width: 320px;
+    height: auto;
+    margin-left: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .header__subtitle {
+        width: 285px;
+        height: auto;
+        text-align: left;
+        padding: 0 20px;
+        margin-bottom: 21px;
+    }
+
+    .header__info {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 15px 0 15px 57px;
+        margin-bottom: 30px;
+        font-size: 24px;
+        line-height: 1;
+
+        img {
+            width: auto;
+            height: 32px;
+            margin-right: 15px;
+        }
+    }
+
+    .header__info-2 {
+        padding-left: 67px;
+    }
+    .header__info-3 {
+        padding-left: 77px;
+    }
+    .header__prod {
+        right: auto;
+        left: -128px;
+        transform: rotate(-5deg);
+        top: -38px;
+        width: 195px;
+    }
+    
+}
+
