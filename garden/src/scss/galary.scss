@@ -1,0 +1,115 @@
+.line {
+    width: 4608px;
+    background-color: #D7E5C0;
+}
+
+.line__wrapper {
+    width: 100%;
+    height: auto;
+    padding: 13px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: line 20s infinite linear;
+
+    span {
+        padding-right: 90px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #000;
+        position: relative;
+
+        &:before {
+            content: "";
+            width: 15px;
+            height: 15px;
+            background-image: url(../img/line-logo.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 50%;
+            left: -20px;
+            transform: translateY(-50%);
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}
+
+.line__2 .line__wrapper {
+    animation-direction: reverse;
+}
+
+@keyframes line {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-16%);
+    }
+}
+
+
+.galary__section {
+    background-image: url(../img/galary-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.galary__section-wrapper {
+    padding: 130px 0;
+}
+
+.galary__left {
+    height: 420px;
+    width: 516px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.galary__tag {
+    width: auto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    border-radius: 40px;
+    padding: 5px 20px;
+    margin-bottom: 15px;
+}
+
+.galary__title {
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 1.56522;
+    letter-spacing: 0.02em;
+    color: #fff;
+
+    &:after {
+        display: inline-block;
+        content: "";
+        width: 30px;
+        height: 30px;
+        background-image: url(../img/galary-array.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: 10px;
+        margin-bottom: -5px;
+    }
+}
+
+.galary__slider {
+}
+.owl-carousel {
+}
+.galary__slide {
+}
