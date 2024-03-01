@@ -61,10 +61,13 @@
 
 .galary__section-wrapper {
     padding: 130px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 .galary__left {
-    height: 420px;
+    height: auto;
     width: 516px;
     display: flex;
     flex-direction: column;
@@ -108,8 +111,69 @@
 }
 
 .galary__slider {
+    width: 700px;
+    height: 420px;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(../img/galary-slide.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    .owl-nav {
+
+        button {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+            background-color: #D7E5BE !important;
+            background-image: url(../img/galary-btn.png) !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            transition: 0.3s ease;
+            
+
+            span {
+                display: none;
+            }
+
+            &:hover {
+                background-color: #F46042 !important;
+                background-image: url(../img/galary-btn-hover.png) !important;
+            }
+
+            &.owl-next {
+                bottom: 0;
+                right: 0;
+                transform: rotate(180deg);
+            }
+
+            &.owl-prev {
+                top: 0;
+                left: 0;
+            }
+        }
+    }
 }
-.owl-carousel {
-}
+
+
 .galary__slide {
+    overflow: hidden;
+    clip-path: polygon(1.7% 24%, 10% 20%, 15% 2%, 85% 0%, 100% 0, 100% 15%, 98.4% 78%, 89% 84%, 85.5% 99.5%, 15% 100%, 0 100%, 0% 85%);
+
+    img {
+        border-radius: 50px;
+        
+    }
 }

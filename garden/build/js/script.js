@@ -2,13 +2,13 @@ var landingFunctions = {
 	init: function() {
 		this.initLibraris()
 		this.time()
-		// this.modal()
+		this.modal()
 	}, 
 
 	initLibraris: function() {
 		
 		$('[href*="#"]').on('click', function (e) {
-			var fixedOffset = -40;
+			var fixedOffset = 50;
 			// var cardHeight = $($(this).attr("href")).outerHeight(false)
 			// var windowHeight = $(window).height()
 
@@ -19,28 +19,25 @@ var landingFunctions = {
 			e.preventDefault();
 		})
 
-		var owl = $('.card__slider').owlCarousel({
+		$('.galary__slider').owlCarousel({
 			items: 1,
 			margin: 0,
-			dots: true,
-			nav: false,
+			dots: false,
+			nav: true,
 			loop: true,
+			autoplay: true,
+			autoplayHoverPause: true,
+			autoplayTimeout: 3000,
+			mouseDrag: false,
+			touchDrag: false,
+			animateOut: 'fadeOut',
 		});
 
-
-		function stopVideo(video) {
-			// console.log(video)
-			video.trigger('pause');
-	   }
-
-		owl.on('changed.owl.carousel', function(event) {
-			stopVideo($(this).closest(".card").find("video"))
-		})
-
 		$('.review__slider').owlCarousel({
-			items: 1,
-			margin: 50,
+			items: 3,
+			margin: 20,
 			dots: true,
+			dotsEach: true,
 			nav: false,
 			loop: true,
 			autoHeight: true,

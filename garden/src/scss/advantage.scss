@@ -1,0 +1,122 @@
+.advantage__section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.advantage__tag {
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.advantage__title {
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: justify;
+    color: #000;
+    margin-bottom: 48px;
+
+    span {
+        background: #d7e5be;
+        border-radius: 20px;
+        padding: 0 10px;
+    }
+}
+
+.advantage__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 60px;
+}
+
+.advantage__item {
+    height: auto;
+    width: 325px;
+    padding: 30px 30px 25px;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.advantage__items-title {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.advantage__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: justify;
+    color: #000;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.advantage__item-1 {
+    background: #efefef;
+}
+
+.advantage__item-2 {
+    background: #efefef;
+}
+
+.advantage__item-3 {
+    padding: 0;
+
+    img {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.advantage__item-4 {
+    background: #d7e5be;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 218px;
+        height: 218px;
+        border-radius: 100%;
+        background: rgba(255, 255, 255, 0.34);
+        position: absolute;
+        bottom: -88px;
+        left: 35px;
+    }
+
+    &:after {
+        content: "";
+        width: 110px;
+        height: 110px;
+        border-radius: 100%;
+        background: rgba(255, 255, 255, 0.34);
+        position: absolute;
+        bottom: 50px;
+        right: 25px;
+    }
+}
+
+.advantage__imgs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.advantage__img {
+    width: 49.2%;
+    height: auto;
+}
+

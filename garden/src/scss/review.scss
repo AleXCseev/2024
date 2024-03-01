@@ -1,0 +1,124 @@
+.review__section-wrapper {
+    padding: 100px 0 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.review__tag {
+    margin-bottom: 30px;
+}
+ 
+.review__title {
+    width: 100%;
+    max-width: 1300px;
+    font-weight: 600;
+    font-size: 46px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #000;
+    margin-bottom: 50px;
+
+    span {
+        background: #d7e5be;
+        border-radius: 20px;
+        padding: 0 10px;
+    }
+}
+
+.review__slider {
+    margin-bottom: 48px;
+
+    .owl-dots {
+        margin-top: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: #D7E5BE !important;
+            margin-right: 8px;
+            transition: 0.3s ease;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.active {
+                background-color: #024636 !important;
+            }
+        }
+    }
+}
+
+.review {
+    position: relative;
+    background-image: url(../img/review-bg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+    padding: 45px 30px 30px;
+    overflow: hidden;
+    border-radius: 0 0 40px 40px; 
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 20%;
+        background-color: #EFEFEF;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.review__photo {
+    width: 100px !important;
+    height: auto;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.review__name {
+    padding-left: 135px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #000;
+    margin-bottom: 36px;
+}
+
+.review__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #000;
+    text-indent: 120px;
+    position: relative;
+    z-index: 1;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.add__review {
+    align-self: flex-end;
+    background: #d7e5bf;
+    border-radius: 40px;
+    padding: 15px 40px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s ease;
+}

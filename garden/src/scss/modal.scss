@@ -116,7 +116,7 @@
 	align-items: center;
 	cursor: pointer;
 	align-self: flex-start;
-	margin: 20px 0 0;
+	margin: 20px 0;
   }
 
   .file span {
@@ -126,9 +126,9 @@
   }
   
   .file div {
-	width: 60px;
-	height: 40px;
-	border-radius: 4px;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
 	background-color: transparent;
 	flex-shrink: 0;
 	margin-right: 15px;
@@ -140,9 +140,9 @@
   
   .file div img {
 	display: none;
-	width: 58px;
-	height: auto;
-	border-radius: 4px;
+	width: 48px;
+	height: 48px;
+	border-radius: 100%;
 	position: absolute;
 	top: 50%;
 	left: 50%;

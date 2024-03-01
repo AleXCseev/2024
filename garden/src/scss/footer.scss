@@ -1,0 +1,76 @@
+.footer__section {
+    background-color: #000;
+}
+
+.footer__section-wrapper {
+    padding: 72px 0 76px;
+}
+
+.footer__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+        width: 15px;
+        height: auto;
+        margin-right: 5px;
+    }
+
+    span {
+        font-weight: 600;
+        font-size: 20px;
+        color: #fff;
+    }
+}
+
+.footer__title {
+    width: 100%;
+    max-width: 1040px;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #fff;
+
+    span {
+        background: #024636;
+        border-radius: 30px;
+        padding: 0 10px;
+    }
+}
+
+.footer__prod {
+}
+.footer__form {
+}
+.footer__discount {
+}
+.pulse {
+}
+.footer__price {
+}
+.price {
+}
+.old__price {
+}
+.new__price {
+}
+.card__input-wrapper {
+}
+.card__input {
+}
+.card__submit {
+}
+.card__date {
+}
+.date {
+}
+.footer__line {
+}
+.footer__line-wrapper {
+}
+.footer__line-list {
+}
+.footer__line-item {
+}
