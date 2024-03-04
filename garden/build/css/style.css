@@ -1727,9 +1727,18 @@ body {
 .advantage__item-3 {
   padding: 0;
 }
-.advantage__item-3 img {
-  width: auto;
+
+.twentytwenty-wrapper {
   height: 100%;
+}
+
+.advantage__slide {
+  width: 100%;
+  height: 100% !important;
+}
+.advantage__slide img {
+  width: auto !important;
+  height: 100% !important;
 }
 
 .advantage__item-4 {
@@ -2555,6 +2564,8 @@ body {
   background: #024636;
   width: 100%;
   height: auto;
+  position: relative;
+  z-index: 2;
 }
 
 .footer__line-wrapper {
@@ -2677,6 +2688,9 @@ body {
   .card__line {
     width: 700px;
     height: auto;
+  }
+  .footer__prod {
+    right: 140px;
   }
 }
 @media (max-width: 1280px) {
@@ -2821,6 +2835,20 @@ body {
   .card__icon-4 {
     top: -60px;
     right: 40px;
+  }
+  .footer__title {
+    font-size: 56px;
+  }
+  .footer__prod {
+    right: -70px;
+  }
+  .footer__decor-1 {
+    width: 610px;
+    right: -330px;
+  }
+  .footer__decor-2 {
+    width: 580px;
+    left: -640px;
   }
 }
 @media (max-width: 1080px) {
@@ -3041,6 +3069,55 @@ body {
   }
   .review:before {
     height: 40%;
+  }
+  .footer__prod {
+    position: static;
+    bottom: auto;
+    right: auto;
+    margin-bottom: 8px;
+  }
+  .footer__section-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+  .footer__form {
+    margin: 0;
+  }
+  .footer__section-wrapper .card__date {
+    margin-left: 0;
+  }
+  .footer__section-wrapper .header__decor-left {
+    display: none;
+  }
+  .footer__logo {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    margin-bottom: 47px;
+  }
+  .footer__title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 0;
+  }
+  .footer__title br {
+    display: none;
+  }
+  .footer__decor-1 {
+    width: 540px;
+    right: -425px;
+  }
+  .footer__decor-2 {
+    width: 580px;
+    left: -555px;
   }
 }
 @media (max-width: 700px) {
@@ -3390,7 +3467,7 @@ body {
   }
   .advantage__item-3 {
     padding: 0;
-    height: calc(100vw - 30px);
+    height: 110vw;
   }
   .advantage__item-3 img {
     width: 100%;
@@ -3577,5 +3654,99 @@ body {
   }
   .card__section-wrapper {
     padding: 24vw 0 10vw;
+  }
+  .review__section-wrapper {
+    padding: 14vw 0 22vw;
+  }
+  .review__title {
+    font-size: 5.5vw;
+    margin-bottom: 12vw;
+  }
+  .review__name {
+    font-size: 5.5vw;
+    padding-left: 33vw;
+  }
+  .review__text {
+    font-size: 4.8vw;
+  }
+  .add__review {
+    -webkit-align-self: center;
+            align-self: center;
+    border-radius: 10vw;
+    padding: 3vw 10vw;
+    font-size: 4.8vw;
+  }
+  .footer__section-wrapper {
+    padding: 9.8vw 0 9.5vw;
+  }
+  .footer__logo {
+    margin-bottom: 6vw;
+  }
+  .footer__logo img {
+    width: 3.7vw;
+    margin-right: 1.5vw;
+  }
+  .footer__logo span {
+    font-size: 4.8vw;
+  }
+  .footer__title {
+    font-size: 6.8vw;
+  }
+  .footer__prod {
+    width: 67vw;
+    margin-bottom: 2vw;
+  }
+  .footer__form {
+    width: 100%;
+    background-position: left top;
+    background-size: 520px auto;
+    border-radius: 0 40px 40px 40px;
+    padding: 20px 15px 25px;
+  }
+  .footer__form:after {
+    content: "";
+    width: 20%;
+    height: 100%;
+    background-color: #D7E5BE;
+    top: 0;
+    right: 0;
+  }
+  .footer__price {
+    margin-bottom: 23px;
+  }
+  .footer__price .price {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+            align-items: flex-end;
+  }
+  .footer__price .old__price {
+    padding-right: 0;
+  }
+  .footer__price .new__price {
+    font-size: 7vw;
+  }
+  .footer__decor-1 {
+    top: 4vw;
+    width: 84vw;
+    right: -63vw;
+  }
+  .footer__decor-2 {
+    width: 83vw;
+    left: -72vw;
+  }
+  .footer__line-item {
+    font-size: 4vw;
+  }
+}
+@media (max-width: 320px) {
+  .footer__form {
+    padding: 32px 15px 25px;
   }
 }

@@ -19,9 +19,13 @@ var landingFunctions = {
 			e.preventDefault();
 		})
 
+		$(".advantage__slide").twentytwenty({
+			no_overlay: true,
+		});
+
 		$('.galary__slider').owlCarousel({
 			items: 1,
-			margin: 0,
+			margin: 20,
 			dots: false,
 			nav: true,
 			loop: true,
