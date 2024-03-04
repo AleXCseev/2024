@@ -28,28 +28,28 @@
 
 .review__slider {
     margin-bottom: 48px;
+}
 
-    .owl-dots {
-        margin-top: 45px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.owl-dots {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        button {
-            width: 10px;
-            height: 10px;
-            border-radius: 100%;
-            background-color: #D7E5BE !important;
-            margin-right: 8px;
-            transition: 0.3s ease;
+    button {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: #D7E5BE !important;
+        margin-right: 8px;
+        transition: 0.3s ease;
 
-            &:last-child {
-                margin-right: 0;
-            }
+        &:last-child {
+            margin-right: 0;
+        }
 
-            &.active {
-                background-color: #024636 !important;
-            }
+        &.active {
+            background-color: #024636 !important;
         }
     }
 }

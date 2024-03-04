@@ -31,6 +31,18 @@ var landingFunctions = {
 			mouseDrag: false,
 			touchDrag: false,
 			animateOut: 'fadeOut',
+			responsive:{
+				0:{
+					mouseDrag: true,
+					touchDrag: true,
+					animateOut: 'fadeOut',
+				},
+				700:{
+					mouseDrag: false,
+					touchDrag: false,
+					animateOut: 'fadeOut',
+				}
+			}
 		});
 
 		$('.review__slider').owlCarousel({
@@ -42,6 +54,21 @@ var landingFunctions = {
 			loop: true,
 			autoHeight: true,
 		});
+
+		if($(window).width() <= 700) {
+			var owl = $('.header__items').addClass('owl-carousel').owlCarousel({
+				items: 1,
+				margin: 42,
+				dots: true,
+				dotsEach: true,
+				nav: false,
+				loop: true,
+				center: true,
+			});
+
+			owl.trigger('next.owl.carousel')
+			owl.trigger('next.owl.carousel')
+		}
 
 		$.raty.path = $("body").data("path") +  '/img/raty';
 

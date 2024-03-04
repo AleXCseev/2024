@@ -177,3 +177,18 @@
         
     }
 }
+
+.galary__slider-wrapper {
+    width: auto;
+    height: auto;
+    position: relative;
+
+    .header__item-text-bg {
+        position: absolute;
+        left: 40px;
+        bottom: 40px;
+        pointer-events: none;
+        z-index: 5;
+        width: auto;
+    }
+}

@@ -162,6 +162,11 @@
     }
 }
 
+// .header__items-wrapper {
+//     width: 100%;
+//     height: auto;
+// }
+
 .header__items {
     display: flex;
     justify-content: space-between;
@@ -183,7 +188,7 @@
 
 .header__item-1 {
     .header__item-wrapper {
-        width: 200px;
+        width: 100%;
         height: 200px;
         border-radius: 50px;
         background-image: url(../img/header-img-1.jpg);
@@ -312,7 +317,7 @@
         padding: 15px;
 
         .header__item-text {
-            font-size: 400;
+            font-weight: 400;
             font-size: 16px;
             line-height: 1.875;
             letter-spacing: 0.02em;
