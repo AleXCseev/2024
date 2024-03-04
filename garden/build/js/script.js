@@ -53,6 +53,17 @@ var landingFunctions = {
 			nav: false,
 			loop: true,
 			autoHeight: true,
+			responsive:{
+				0:{
+					items: 1,
+				},
+				701:{
+					items: 2,
+				},
+				1281: {
+					items: 3,
+				}
+			}
 		});
 
 		if($(window).width() <= 700) {
