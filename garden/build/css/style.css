@@ -253,6 +253,17 @@ body {
   margin-bottom: 20px;
 }
 
+@media (max-width: 540px) {
+  .footer__modal h2 {
+    font-size: 6vw;
+  }
+  .footer__modal h6 {
+    font-size: 5vw;
+  }
+  .footer__modal p {
+    font-size: 4vw;
+  }
+}
 .modal__review {
   display: block;
   position: fixed;
@@ -3350,6 +3361,7 @@ body {
   }
   .info__title {
     font-size: 9vw;
+    margin-bottom: 3vw;
   }
   .info__title:after {
     width: 5vw;
@@ -3463,7 +3475,7 @@ body {
     margin-bottom: 4.8vw;
   }
   .advantage__text {
-    font-size: 4.8vw;
+    font-size: 4.6vw;
   }
   .advantage__item-3 {
     padding: 0;
@@ -3743,6 +3755,9 @@ body {
   }
   .footer__line-item {
     font-size: 4vw;
+  }
+  .fancybox-content {
+    padding: 40px 20px;
   }
 }
 @media (max-width: 320px) {

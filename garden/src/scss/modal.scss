@@ -21,6 +21,18 @@
     }
 }
 
+@media (max-width: 540px) {
+	.footer__modal h2 {
+		font-size: 6vw;
+	}
+	.footer__modal h6 {
+		font-size: 5vw;
+	}
+	.footer__modal p {
+		font-size: 4vw;
+	}
+}
+
 .modal__review {
 	display: block;
 	position: fixed;

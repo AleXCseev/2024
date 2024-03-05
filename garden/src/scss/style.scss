@@ -674,6 +674,12 @@
         width: 4.8vw;
         height: auto;
     }
+    // .header__item {
+    //     height: auto;
+    // }
+    // .header__item-3 {
+    //     height: 440px;
+    // }
     .header__item-2 .header__item-title {
         font-size: 16px;
         padding: 0 10px;
@@ -727,6 +733,7 @@
     }
     .info__title {
         font-size: 9vw;
+        margin-bottom: 3vw;
     }
     .info__title:after {
         width: 5vw;
@@ -832,7 +839,7 @@
         margin-bottom: 4.8vw;
     }
     .advantage__text {
-        font-size: 4.8vw;
+        font-size: 4.6vw;
     }
     .advantage__item-3 {
         padding: 0;
@@ -1104,6 +1111,9 @@
     }
     .footer__line-item {
         font-size: 4vw;
+    }
+    .fancybox-content {
+        padding: 40px 20px;
     }
 }
 
