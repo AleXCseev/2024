@@ -3,10 +3,10 @@
 </div>
 <div class="wrapper">
 <ul class="footer-info">
-    <li>LLC "MONSTR-MEDIA" ИНН 7701071884</li>
-    <li>ЕГРПОУ 39149245</li>
+    <li>LLC "MONSTR-MEDIA" ІПН 7701071884</li>
+    <li>ЄДРПОУ 39149245</li>
     <li>Tel.: +380951976859</li>
-    <li>mail halo@matahari.com</li>
+    <li>mail: halo@matahari.com</li>
     <li><a data-fancybox data-src="#modal-privacy" href="javascript:;">Політика конфіденційності</a></li>
     <li><a data-fancybox data-src="#modal-delivery" href="javascript:;">Оплата і доставка</a></li>
     <li><a data-fancybox data-src="#modal-refusal" href="javascript:;">Відмова від відповідальності</a></li>

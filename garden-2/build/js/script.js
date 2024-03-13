@@ -1,7 +1,7 @@
 var landingFunctions = {
 	init: function() {
 		this.initLibraris()
-		// this.time()
+		this.time()
 		this.modal()
 		this.quantity()
 	}, 
@@ -20,50 +20,21 @@ var landingFunctions = {
 			e.preventDefault();
 		});
 
-		setTimeout(function() {
-			$(".header__prod").removeClass("header__animation")
-		}, 1000);
-
-
-		// $(window).scroll(function() {
-		// 	$('.header__prod').each(function(){
-		// 		var imagePos = $(this).offset().top;
+		$(window).scroll(function() {
+			$('.card__prod, .footer__prod').each(function(){
+				var imagePos = $(this).offset().top;
 		
-		// 		var topOfWindow = $(window).scrollTop();
-		// 		if (imagePos < topOfWindow+400) {
-		// 			$(this).removeClass("header__animation");
-		// 		}
-		// 	});
-		// });
-
-		function cardSlider (selector) {
-			var owl = $(selector + " .card__main-photo").owlCarousel({
-				items: 1,
-				margin: 100,
-				dots: false,
-				nav: false,
-				loop: true,
-				mouseDrag: false,
-				touchDrag: false,
-				animateOut: 'fadeOut',
+				var topOfWindow = $(window).scrollTop();
+				if (imagePos < topOfWindow + 400) {
+					$(this).removeClass("card__animation");
+				}
 			});
-	
-			$(selector + " .card__btn").each(function() {
-				$(this).click(function() {
-					$(selector + " .card__btn").removeClass("active")
-					var position = $(this).data("slide") - 1
-					owl.trigger("to.owl.carousel", [position, 300])
-					$(this).addClass("active")
-				})
-			})
-		}
-	
-		cardSlider(".card__section")
+		});
 
 	
 		$(".review__slider").owlCarousel({
 			loop: true,
-			margin: 10,
+			margin: 20,
 			nav: true,
 			items: 1,
 			dots: true,
@@ -175,7 +146,7 @@ var landingFunctions = {
 			return dayNum + "." + monthNum + "." + String(now.getFullYear()).substr(String(now.getFullYear()).length - 2);
 		}
 
-		$(".review__date-1").text(getDate(0))
+		$(".review__date-1").text(getDate(-1))
 		$(".review__date-2").text(getDate(-1))
 		$(".review__date-3").text(getDate(-1))
 		$(".review__date-4").text(getDate(-2))
