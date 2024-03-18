@@ -1,0 +1,22 @@
+@import "fonts";
+@import "main";
+@import "modal";
+@import "header";
+@import "galary";
+@import "info";
+@import "advantage";
+@import "video";
+@import "card";
+@import "review";
+@import "footer";
+
+@media (max-width: 1920px) {
+    .header__section:before {
+        width: 1920px;
+        height: 2060px;
+    }
+}
+
+
+@media (max-width: 1480px) {
+}

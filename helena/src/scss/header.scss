@@ -1,0 +1,257 @@
+.header__section {
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 100vw;
+        height: 2060px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(../img/decor.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+    }
+}
+
+.bg {
+	position: absolute;
+    z-index: -1;
+	top: 0;
+	left: 50%;
+    transform: translateX(-50%);
+	width: 100vw;
+	height: 100%;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url(../img/bg.png);
+		background-repeat: repeat;
+		background-position: center;
+		background-size: cover;
+		z-index: -1;
+	}
+	
+	mix-blend-mode: plus-lighter;
+}
+
+.header__section-wrapper {
+    padding: 5px 0 129px;
+}
+
+.decor {
+    position: absolute;
+    z-index: -1;
+}
+
+.header__top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 47px;
+}
+
+.header__logo {
+    width: 118px;
+    height: auto;
+}
+
+.header__nav {
+    width: auto;
+}
+
+.header__nav-link {
+    font-weight: 500;
+    font-size: 20px;
+    color: #252525;
+    margin-right: 80px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.header__content {
+    width: 554px;
+    height: auto;
+    position: relative;
+}
+
+.header__star {
+    position: absolute;
+    left: -112px;
+    top: 56px;
+}
+
+.header__title {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    color: #252525;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.header__date {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 700;
+    font-size: 128px;
+    color: #252525;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.header__block {
+    width: 100%;
+    height: auto;
+}
+
+.header__decor-img {
+    position: absolute;
+    top: -115px;
+    right: -401px;
+    width: 380px;
+    height: 617px;
+    background-image: url(../img/header-decor.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header__boot-decor {
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: -200px;
+    right: -920px;
+}
+
+.header__boot {
+    width: 650px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.header__boot-text {
+    position: absolute;
+    animation-duration: 5s;
+}
+
+.header__boot-text-1 {
+    width: 856px;
+    height: auto;
+    left: -150px;
+    top: -55px;
+}
+
+.header__boot-text-2 {
+    width: 851px;
+    height: auto;
+    top: 40px;
+    left: -194px;
+    z-index: 2;
+} 
+
+.header__text {
+    width: 100%;
+    max-width: 460px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #252525;
+    margin-bottom: 19px;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.header__price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.header__price-text {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #252525;
+    width: auto;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+
+.price {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.new__price {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #f00;
+    line-height: 1;
+}
+
+.old__price-text {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #252525;
+    text-align: right;
+}
+
+.order__btn {
+    width: 323px;
+    height: 69px;
+    background-color: #fff;
+    border: 1px solid #252525;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 3px 3px 40px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: #252525;
+    transition: 0.3s ease;
+
+    &:hover {
+        color: #fff;
+        background-color: #252525;
+
+        .order__array {
+            background-color: #3a3a3a;
+        }
+    }
+}
+
+.order__array {
+    width: 63px;
+    height: 63px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252525;
+}
