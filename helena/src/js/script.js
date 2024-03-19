@@ -28,52 +28,57 @@ var landingFunctions = {
 			}
 		})
 
-		$('.galary__slider').owlCarousel({
+		var owl = $('.galary__slider').owlCarousel({
 			items: 1,
-			margin: 20,
-			dots: false,
+			margin: 0,
+			dots: true,
 			nav: true,
 			loop: true,
-			autoplay: true,
-			autoplayHoverPause: true,
-			autoplayTimeout: 3000,
-			mouseDrag: false,
-			touchDrag: false,
-			animateOut: 'fadeOut',
-			responsive:{
-				0:{
-					mouseDrag: true,
-					touchDrag: true,
-					animateOut: 'fadeOut',
-				},
-				700:{
-					mouseDrag: false,
-					touchDrag: false,
-					animateOut: 'fadeOut',
-				}
-			}
+			// autoplay: true,
+			// autoplayHoverPause: true,
+			// autoplayTimeout: 3000,
+			// mouseDrag: false,
+			// touchDrag: false,
+			// animateOut: 'fadeOut',
+			// responsive:{
+			// 	0:{
+			// 		mouseDrag: true,
+			// 		touchDrag: true,
+			// 		animateOut: 'fadeOut',
+			// 	},
+			// 	700:{
+			// 		mouseDrag: false,
+			// 		touchDrag: false,
+			// 		animateOut: 'fadeOut',
+			// 	}
+			// }
 		});
 
-		$('.review__slider').owlCarousel({
-			items: 3,
-			margin: 20,
-			dots: true,
-			dotsEach: true,
-			nav: false,
-			loop: true,
-			autoHeight: true,
-			responsive:{
-				0:{
-					items: 1,
-				},
-				701:{
-					items: 2,
-				},
-				1281: {
-					items: 3,
-				}
-			}
+		owl.on("changed.owl.carousel", function(e) {
+			var index = e.relatedTarget.relative(e.item.index);
+			$(this).closest(".galary__slider-wrapper").find(".slider__number-current span").html(String(index + 1));
 		});
+
+		// $('.review__slider').owlCarousel({
+		// 	items: 3,
+		// 	margin: 20,
+		// 	dots: true,
+		// 	dotsEach: true,
+		// 	nav: false,
+		// 	loop: true,
+		// 	autoHeight: true,
+		// 	responsive:{
+		// 		0:{
+		// 			items: 1,
+		// 		},
+		// 		701:{
+		// 			items: 2,
+		// 		},
+		// 		1281: {
+		// 			items: 3,
+		// 		}
+		// 	}
+		// });
 
 		// if($(window).width() <= 700) {
 		// 	var owl = $('.header__items').addClass('owl-carousel').owlCarousel({
