@@ -1,6 +1,7 @@
 var landingFunctions = {
 	init: function() {
 		this.initLibraris()
+		this.card()
 		this.time()
 		this.modal()
 	}, 
@@ -59,51 +60,35 @@ var landingFunctions = {
 			$(this).closest(".galary__slider-wrapper").find(".slider__number-current span").html(String(index + 1));
 		});
 
-		// $('.review__slider').owlCarousel({
-		// 	items: 3,
-		// 	margin: 20,
-		// 	dots: true,
-		// 	dotsEach: true,
-		// 	nav: false,
-		// 	loop: true,
-		// 	autoHeight: true,
-		// 	responsive:{
-		// 		0:{
-		// 			items: 1,
-		// 		},
-		// 		701:{
-		// 			items: 2,
-		// 		},
-		// 		1281: {
-		// 			items: 3,
-		// 		}
-		// 	}
-		// });
+		$('.review__slider').owlCarousel({
+			items: 2,
+			margin: 40,
+			dots: true,
+			dotsEach: true,
+			nav: false,
+			loop: true,
+			// autoHeight: true,
+			// responsive:{
+			// 	0:{
+			// 		items: 1,
+			// 	},
+			// 	701:{
+			// 		items: 2,
+			// 	},
+			// 	1281: {
+			// 		items: 3,
+			// 	}
+			// }
+		});
 
-		// if($(window).width() <= 700) {
-		// 	var owl = $('.header__items').addClass('owl-carousel').owlCarousel({
-		// 		items: 1,
-		// 		margin: 32,
-		// 		dots: true,
-		// 		dotsEach: true,
-		// 		nav: false,
-		// 		loop: true,
-		// 		center: true,
-		// 	});
 
-		// 	setTimeout(function() {
-		// 		owl.trigger('next.owl.carousel')
-		// 		owl.trigger('next.owl.carousel')
-		// 	}, 0)
-		// }
+		$.raty.path = $("body").data("path") +  '/img/raty';
 
-		// $.raty.path = $("body").data("path") +  '/img/raty';
-
-		// $('.modal__raiting').raty({
-		// 	half: true,
-		// 	space: false,
-		// 	number: 5,
-		// });
+		$('.modal__raiting').raty({
+			half: true,
+			space: false,
+			number: 5,
+		});
 	
 		AOS.init({
 			disable : function() {
@@ -128,6 +113,45 @@ var landingFunctions = {
 			backFocus: false,
 			hash: false,
 		});
+	},
+
+	card: function() {
+		function cardImg(selector) {
+			function toggleDataSrcAtribute(string) {
+				$(selector + " .card__photos img").each(function() {
+					$(this).parent().attr("href",  $(this).attr("data-" + string))
+					$(this)
+						.hide()
+						.attr("src",  $(this).attr("data-" + string))
+						.fadeIn(1000)
+				})
+			}
+	
+			$(selector + " .card__color").click(function () {
+
+				$(selector + " .card__color").removeClass("active")
+				$(this).addClass("active")
+
+				var color = $(this).data("color")
+				toggleDataSrcAtribute(color)
+	
+				var price = $(this).data("price")
+				var currency = $(this).data("currency");
+				$(selector + " .new__price").text(price + " " + currency)
+
+				var pricePlusSale = Math.floor(price * 100 / 50); 
+				$(selector + " .old__price").text(pricePlusSale + " " + currency)
+	
+				var id = $(this).data("id")
+	
+				if ( id !== undefined ) {
+					$(this).closest(".card").find('input[name=products]').val(id);
+				}
+			})
+		}
+		
+		// cardImg(".card__1")
+		cardImg(".card__2")
 	},
 
 	time: function() {
@@ -173,8 +197,10 @@ var landingFunctions = {
 		// $(".date__1").text(getDate(-5));
     	// $(".date__2").text(getDate(2));
 
-		$(".date").text(getDate(7))
-		
+		$(".review__date-1").text(getDate(0))
+		$(".review__date-2").text(getDate(-1))
+		$(".review__date-3").text(getDate(-1))
+		$(".review__date-4").text(getDate(-2))
 	},
 
 	modal: function() {

@@ -1,0 +1,276 @@
+.card__section-wrapper {
+    padding: 94px 0 0;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__1 {
+    margin-bottom: 179px;
+}
+
+.card__2 {
+    .card__discount {
+        top: 164px;
+        right: auto;
+        left: 42px;
+    }
+}
+
+.card__left {
+    width: 724px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.card__main-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card__discount {
+    position: absolute;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    text-align: center;
+    color: #252525;
+    top: 106px;
+    right: 102px;
+    display: inline-block;
+    width: auto;
+}
+
+.card__photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        margin-right: 5px;
+        transition: 0.3s ease;
+
+        &:last-child {
+             margin-right: 0;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    img {
+       width: 170px;
+       height: auto;
+    }
+}
+
+.card__right {
+    width: 440px;
+    height: auto;
+}
+
+.card__header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.card__rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    margin-right: 15px;
+
+    img {
+        width: 31px;
+        height: auto;
+    }
+}
+
+.card__type {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #252525;
+    width: auto;
+    line-height: normal;
+}
+
+.card__name {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: right;
+    color: #252525;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.card__info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 10px;
+
+    .price {
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+        flex-direction: row;
+        width: auto;
+        flex-shrink: 0;
+    }
+
+    .old__price {
+        font-family: "Inter", sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        text-decoration: line-through;
+        color: #252525;
+        margin-right: 10px;
+        line-height: 1;
+    }
+
+    .new__price {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        color: #ff5922;
+        line-height: 1;
+        text-transform: none;
+    }
+}
+
+.card__info-left {
+    font-weight: 300;
+    font-size: 20px;
+    color: #252525;
+    line-height: normal;
+}
+
+.card__info-divider {
+    border-bottom: 1px dotted #252525;
+    margin-bottom: 5px;
+}
+
+.card__info-right {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: right;
+    color: #252525;
+    line-height: normal;
+    flex-shrink: 0;
+}
+
+
+.card__form {
+    width: 100%;
+    height: auto;
+}
+
+.card__input-wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card__input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #c4c4c4;
+    border-radius: 40px;
+    background: #fff;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+}
+
+.card__select {
+}
+
+.card__select-wrapper {
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 46px;
+        height: 46px;
+        border-radius: 100%;
+        background-color: #252525;
+        background-image: url(../img/tringle.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 50%;
+        right: 2px;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+}
+
+.card__submit {
+    width: 100%;
+    padding-left: 80px;
+    cursor: pointer;
+    margin-top: 20px;
+
+    .order__array {
+        background-color: #FF5922;
+    }
+}
+
+.card__text {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: #252525;
+    margin: auto;
+    margin-top: 6px;
+    width: 100%;
+    max-width: 380px;
+
+    span {
+        font-weight: 500;
+    }
+}
+
+.red {
+    color: #ff5922;
+}
+
+.card__colors {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: auto;
+    font-weight: 500;
+    font-size: 20px;
+    color: #252525;
+}
+
+.card__color {
+    cursor: pointer;
+
+    &.active {
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,173 @@
+.review__section {
+    position: relative;
+}
+
+.review__bg {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.review__section-wrapper {
+    padding: 191px 0 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.review__title {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    color: #252525;
+    margin-bottom: 70px;
+    line-height: normal;
+}
+
+.review__slider-wrapper {
+    width: 1000px;
+    height: auto;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.review__decor {
+    width: 1135px;
+    height: auto;
+    position: absolute;
+    top: -208px;
+    right: -749px;
+}
+
+.review__boot-block {
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: -200px;
+    right: -674px;
+}
+
+.review__boot-text {
+    position: absolute;
+    animation-duration: 5s;
+}
+
+.review__boot-text-1 {
+    top: -36px;
+    left: -110px;
+}
+
+.review__boot {
+    width: 255px;
+    height: auto;
+    position: relative;
+}
+
+.review__boot-text-2 {
+    top: -95px;
+    left: -268px;
+}
+
+.review__slider {
+    width: 100%;
+    height: auto;
+
+    .owl-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1360px;
+        height: auto;
+        position: absolute;
+        bottom: -45px;
+        left: 0;
+
+        button {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: #d9d9d9 !important;
+            margin-right: 5px;
+            transition: 0.3s ease;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.active {
+                background-color: #ff5922 !important;
+            }
+        }
+    }
+}
+
+
+.review {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #fff;
+    padding: 30px 20px;
+}
+
+.review__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.review__name {
+    width: auto;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+    line-height: normal;
+}
+
+.review__rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+
+    img {
+        width: 20px !important;
+        height: auto;
+    }
+}
+
+.review__text {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.review__date {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: right;
+    color: #000;
+}
+
+.add__review {
+    align-self: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 15px 62px;
+    border-radius: 30px;
+    background: #ff5922;
+    cursor: pointer;
+}
