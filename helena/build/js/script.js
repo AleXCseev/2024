@@ -41,18 +41,14 @@ var landingFunctions = {
 			// mouseDrag: false,
 			// touchDrag: false,
 			// animateOut: 'fadeOut',
-			// responsive:{
-			// 	0:{
-			// 		mouseDrag: true,
-			// 		touchDrag: true,
-			// 		animateOut: 'fadeOut',
-			// 	},
-			// 	700:{
-			// 		mouseDrag: false,
-			// 		touchDrag: false,
-			// 		animateOut: 'fadeOut',
-			// 	}
-			// }
+			responsive:{
+				0:{
+					dots: false,
+				},
+				1081:{
+					dots: true,
+				}
+			}
 		});
 
 		owl.on("changed.owl.carousel", function(e) {
