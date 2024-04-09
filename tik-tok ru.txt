@@ -1,4 +1,4 @@
-﻿<div class="wrapper" style="margin-top: 10px;">
+<div class="wrapper" style="margin-top: 10px;">
             <p>Скидка действует с <span class="date__1"></span> по <span class="date__2"></span> на весь товар интернет-магазина на всей территории Украины, кроме зон, не контролируемых властями</p>
          </div>
          <div class="wrapper">
@@ -12,6 +12,7 @@
                <li><a data-fancybox data-src="#modal-refusal" href="javascript:;">Отказ от ответственности</a></li>
             </ul>
          </div>
+
 
 
 <div class="footer__modal" id="modal-privacy">
