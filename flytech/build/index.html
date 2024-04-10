@@ -29,11 +29,13 @@
                     Обновка до осені <br>
                     Випробуйте свою вдачу!
                 </h1>
-                <div class="header__decor header__decor-1">
-                    <img src="img/header-decor-1.jpg" alt="">
-                </div>
-                <div class="header__decor header__decor-2">
-                    <img src="img/header-decor-2.jpg" alt="">
+                <div class="header__decor-wrapper">
+                    <div class="header__decor header__decor-1">
+                        <img src="img/header-decor-1.jpg" alt="">
+                    </div>
+                    <div class="header__decor header__decor-2">
+                        <img src="img/header-decor-2.jpg" alt="">
+                    </div>
                 </div>
                 <div class="header__block">
                     <div class="header__discount">
@@ -164,6 +166,7 @@
         <section class="bar__section">
     <div class="container">
         <div class="bar__section-wrapper">
+            <div id="order"></div>
             <div class="bar__top">
                 <h2 class="bar__title">
                     Розыгрываем скидку на обувь <br>
@@ -252,6 +255,7 @@
                 </div>  
             </div>
             
+       
             
         </div>
     </div>
@@ -259,6 +263,8 @@
         <section class="card__section">
     <div class="container">
         <div class="card__section-wrapper">
+            <img src="img/card-decor-1.png" alt="" class="card__decor card__decor-1">
+            <img src="img/card-decor-2.png" alt="" class="card__decor card__decor-2">
             <h2 class="card__section-title">
                 <span>Вітаємо!</span> <br>
                 Ваша персональна знижка склала 70%
@@ -338,7 +344,7 @@
                     <p class="card__info">
                         Країна бренду: Норвегія
                     </p>
-                    <form class="card__form">
+                    <form class="card__form" id="card">
                         <div class="card__input-wrapper">
                             <label for="name">
                                 <img src="img/name.png" alt="">
@@ -376,10 +382,68 @@
         </div>
     </div>
 </section>
-        
-        
-
-<!-- <div class="footer__line">
+        <section class="review__section">
+    <div class="container">
+        <div class="review__section-wrapper">
+            <div class="review__block">
+                <h2 class="review__title">
+                    Відгуки наших покупців
+                </h2>
+                <div class="review__slider-wrapper">
+                    <div class="review__slider owl-carousel">
+                        <div class="review">
+                            <img src="img/quote.png" alt="" class="review__quote">
+                            <div class="review__top">
+                                <p class="review__name">Александер</p>
+                                <p class="review__top-info">
+                                    <img src="img/cart.png" alt="">
+                                    Отзыв от покупателя
+                                </p>
+                            </div>
+                            <p class="review__text">
+                                Lorem ipsum dolor sit amet consectetur. Venenatis accumsan diam sit nunc tristique. Sit nec volutpat in lectus massa diam non pellentesque egestas.
+                            </p>
+                        </div>
+                        <div class="review">
+                            <img src="img/quote.png" alt="" class="review__quote">
+                            <div class="review__top">
+                                <p class="review__name">Александер</p>
+                                <p class="review__top-info">
+                                    <img src="img/cart.png" alt="">
+                                    Отзыв от покупателя
+                                </p>
+                            </div>
+                            <p class="review__text">
+                                Lorem ipsum dolor sit amet consectetur. Venenatis accumsan diam sit nunc tristique. Sit nec volutpat in lectus massa diam non pellentesque egestas.
+                            </p>
+                        </div>
+                        <div class="review">
+                            <img src="img/quote.png" alt="" class="review__quote">
+                            <div class="review__top">
+                                <p class="review__name">Александер</p>
+                                <p class="review__top-info">
+                                    <img src="img/cart.png" alt="">
+                                    Отзыв от покупателя
+                                </p>
+                            </div>
+                            <p class="review__text">
+                                Lorem ipsum dolor sit amet consectetur. Venenatis accumsan diam sit nunc tristique. Sit nec volutpat in lectus massa diam non pellentesque egestas.
+                            </p>
+                        </div>
+                    </div>
+                    <button type="button" class="add__review">
+                        Оставить отзыв
+                    </button>
+                    <img src="img/review-decor.jpg" alt="" class="review__decor">
+                </div>
+            </div>
+            <a href="#order" class="card__submit">
+                <span>заказать со скидкой</span>
+            </a>
+        </div>
+    </div>
+</section>
+        <div class="footer__line">
     <div class="container">
         <div class="footer__line-wrapper">
             <ul class="footer__line-list">
@@ -393,7 +457,7 @@
             </ul>
         </div>
     </div>
-</div> -->
+</div>
 
  
 
@@ -436,9 +500,9 @@
                 </div>
                 <span>Додати фото</span> 
             </label> -->
-            <div class="modal__star-raiting">
+            <!-- <div class="modal__star-raiting">
                 Рейтинг: <div class="modal__raiting"></div>
-            </div>
+            </div> -->
             <textarea cols="30" rows="10" class="modal__area" placeholder="Ваш відгук..."></textarea>
             <button type="submit" class="send">Надіслати</button>
         </form>

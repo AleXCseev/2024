@@ -10,15 +10,13 @@ var landingFunctions = {
 		
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = 50;
-			var cardHeight = $(".card").outerHeight(false)
-			var windowHeight = $(window).height()
-
-			fixedOffset = -50;
+			// var cardHeight = $("#order").outerHeight(false)
+			// var windowHeight = $(window).height()
 
 			$('html, body')
 			.stop()
-			.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
-			// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+			// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+			.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
 			e.preventDefault();
 		})
 
@@ -40,10 +38,11 @@ var landingFunctions = {
 
 		$('.review__slider').owlCarousel({
 			items: 1,
-			margin: 20,
+			margin: 40,
 			dots: true,
 			nav: true,
 			loop: true,
+			stagePadding: 20,
 		});
 
 
@@ -88,6 +87,8 @@ var landingFunctions = {
 			start.find("span").hide()
 			start.find(".win, .win__big").fadeIn(100)
 			$(".bar__light").addClass("active")
+			$('[href*="#"]').attr("href", "#card");
+			$(".card__section, .review__section").fadeIn(1000)
 		}
 
 		if(localStorage.getItem("rotate")) {
@@ -97,6 +98,9 @@ var landingFunctions = {
 		}
 
 		start.click(function() {
+			if(localStorage.getItem("rotate")) {
+				return false;
+			}
 			localStorage.setItem("rotate", "true");
 			$(".bar").addClass("active")
 
@@ -104,6 +108,12 @@ var landingFunctions = {
 				$(".bar__light").addClass("active");
 				barActive()
 			}, 3000)
+
+			setTimeout(function() {
+				$([document.documentElement, document.body]).animate({
+					scrollTop: $(".card__section-wrapper").offset().top
+				}, 1200);
+			}, 4000)
 		})
 	},
 

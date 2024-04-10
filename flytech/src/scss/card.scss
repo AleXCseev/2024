@@ -1,6 +1,27 @@
+.card__section {
+    background-color: #EEEFF1;
+    display: none;
+}
+
 .card__section-wrapper {
     position: relative;
     padding: 88px 0 98px;
+    z-index: 1;
+}
+
+.card__decor {
+    position: absolute;
+    z-index: -1;
+}
+
+.card__decor-1 {
+    top: 0;
+    left: -392px;
+}
+
+.card__decor-2 {
+    bottom: 0;
+    right: -392px;
 }
 
 .card__section-title {
