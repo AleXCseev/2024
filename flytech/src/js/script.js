@@ -43,32 +43,8 @@ var landingFunctions = {
 			nav: true,
 			loop: true,
 			stagePadding: 20,
+			autoHeight: true,
 		});
-
-
-		$.raty.path = $("body").data("path") +  '/img/raty';
-
-		$('.modal__raiting').raty({
-			half: true,
-			space: false,
-			number: 5,
-		});
-	
-		AOS.init({
-			disable : function() {
-				if( $(window).width() <= 1080) {
-					return true;
-				}
-				return false
-			},
-			once: true,
-			duration: 1000,
-			offset : 0,
-		});
-	
-		$(window).resize(function() {
-			AOS.refresh();
-		})
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
