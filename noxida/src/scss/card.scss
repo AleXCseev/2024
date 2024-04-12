@@ -1,0 +1,188 @@
+.card__section-wrapper {
+    padding: 70px 0;
+
+    .header__price {
+        margin-bottom: 40px;
+    }
+}
+
+.card__title {
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+    color: #a33b5a;
+    margin-bottom: 10px;
+}
+
+.card__text {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #000;
+    margin-bottom: 104px;
+}
+
+.card__prod-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 31px;
+}
+
+.card__decor {
+    position: absolute;
+}
+
+.card__decor-1 {
+    top: 28%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: multiply;
+}
+
+.card__decor-2 {
+    top: -120px;
+    right: -125px;
+}
+
+.card__info {
+    position: absolute;
+    width: auto;
+    z-index: 3;
+}
+
+.card__info-title {
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+    color: #a33b5a;
+    margin-bottom: 5px;
+}
+
+.card__info-text {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #a33b5a;
+}
+
+.card__info-arrow {
+    position: absolute;
+}
+
+.card__info-1 {
+    top: -78px;
+    left: 27px;
+
+    .card__info-arrow {
+        width: 68px;
+        height: auto;
+        top: 17px;
+        right: -56px;
+    }
+}
+
+.card__info-2 {
+    top: 65px;
+    left: 0px;
+
+    .card__info-arrow {
+        width: 55px;
+        height: auto;
+        top: 17px;
+        right: -32px;
+    }
+}
+
+.card__info-3 {
+    top: -78px;
+    right: 0px;
+
+    .card__info-arrow {
+        width: 68px;
+        height: auto;
+        top: 24px;
+        left: -40px;
+        transform: scaleX(-1) rotate(-10deg);
+    }
+}
+
+.card__info-4 {
+    top: 65px;
+    right: 0px;
+
+    .card__info-arrow {
+        width: 55px;
+        height: auto;
+        top: 28px;
+        left: -41px;
+        transform: scaleX(-1);
+    }
+}
+
+.card__prod {
+    width: 136px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.card__stand {
+    width: 438px;
+    height: auto;
+    margin-top: -18px;
+    position: relative;
+    z-index: 1;
+}
+
+.card__flower {
+    position: absolute;
+    z-index: 2;
+}
+
+.card__flower-1 {
+    bottom: -58px;
+    left: 20px;
+    width: 140px;
+}
+
+.card__flower-2 {
+    bottom: 52px;
+    right: 44px;
+    width: 72px;
+}
+
+.card__form {
+    width: 100%;
+    height: auto;
+}
+
+.card__input-wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.card__input {
+    width: 100%;
+    height: auto;
+    border: 1px solid #000;
+    border-radius: 60px;
+    background: none;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #000;
+    padding: 20px;
+}   
+
+.card__submit {
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.header__delivery {
+}

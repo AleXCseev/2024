@@ -1,0 +1,47 @@
+.review__section {
+    .container {
+        width: 470px;
+    }
+}
+
+.review__section-wrapper {
+    padding-bottom: 30px;
+}
+
+.review {
+    width: 100%;
+    border-radius: 30px;
+    background: #fff;
+    padding: 10px 10px 44px;
+    margin-bottom: 40px;
+}
+
+.review__img {
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.review__title {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.review__text {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.review__info {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+}

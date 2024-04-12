@@ -1,0 +1,78 @@
+.advantage__section {
+    background: #c68497;
+    overflow: hidden;
+}
+
+.advantage__section-wrapper {
+    padding: 60px 0 7px;
+    position: relative;
+}
+
+.advantage__decor {
+    position: absolute;
+}
+
+.advantage__decor-1 {
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(138deg);
+    mix-blend-mode: multiply;
+}
+
+.advantage__decor-2 {
+    top: 100px;
+    left: -82px;
+    transform: rotate(-205deg);
+    mix-blend-mode: multiply;
+    width: 310px;
+}
+
+.advantage__title {
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.advantage__list {
+    position: relative;
+    z-index: 1;
+}
+
+.advantage__list-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+
+    img {
+        width: 15px;
+        height: auto;
+        margin-right: 15px;
+    }
+}
+
+.advantage__prod {
+    margin-top: 50px;
+    margin-left: 244px;
+    position: relative;
+    z-index: 1;
+    width: 140px;
+}
+
+.advantage__girl {
+    position: absolute;
+    bottom: 0;
+    left: -55px;
+}
+
+.advantage__flower {
+    position: absolute;
+    bottom: 6px;
+    right: -15px;
+    z-index: 2;
+}
