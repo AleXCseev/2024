@@ -212,7 +212,7 @@ body {
 .header__section:before {
   content: "";
   width: 100%;
-  height: 322px;
+  height: 828px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -391,6 +391,12 @@ body {
   color: #fff;
 }
 
+.header__img {
+  width: 480px;
+  height: auto;
+  margin-bottom: 28px;
+}
+
 .order__btn {
   width: 100%;
   height: auto;
@@ -423,6 +429,7 @@ body {
   -webkit-animation: btn 5s infinite;
      -moz-animation: btn 5s infinite;
           animation: btn 5s infinite;
+  border-radius: 20px;
 }
 
 @-webkit-keyframes btn {
@@ -502,7 +509,9 @@ body {
      -moz-transform: translate(-50%, -50%) rotate(138deg);
       -ms-transform: translate(-50%, -50%) rotate(138deg);
           transform: translate(-50%, -50%) rotate(138deg);
+  -webkit-backface-visibility: visible;
   mix-blend-mode: multiply;
+  z-index: 1;
 }
 
 .advantage__decor-2 {
@@ -512,8 +521,10 @@ body {
      -moz-transform: rotate(-205deg);
       -ms-transform: rotate(-205deg);
           transform: rotate(-205deg);
+  -webkit-backface-visibility: visible;
   mix-blend-mode: multiply;
   width: 310px;
+  z-index: 1;
 }
 
 .advantage__title {
@@ -561,7 +572,7 @@ body {
 .advantage__girl {
   position: absolute;
   bottom: 0;
-  left: -55px;
+  left: 18px;
 }
 
 .advantage__flower {
@@ -647,7 +658,9 @@ body {
      -moz-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-backface-visibility: visible;
   mix-blend-mode: multiply;
+  z-index: 1;
 }
 
 .info__decor-2 {
@@ -668,7 +681,7 @@ body {
 .info__girl {
   position: absolute;
   bottom: 0;
-  right: -15px;
+  right: -58px;
 }
 
 .info-2__section-wrapper {
@@ -825,7 +838,9 @@ body {
      -moz-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-backface-visibility: visible;
   mix-blend-mode: multiply;
+  z-index: 1;
 }
 
 .card__decor-2 {
@@ -845,6 +860,10 @@ body {
   text-align: center;
   color: #a33b5a;
   margin-bottom: 5px;
+  opacity: 0;
+}
+.card__info-title:after {
+  content: "%";
 }
 
 .card__info-text {

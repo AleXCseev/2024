@@ -16,15 +16,19 @@
     top: 44%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(138deg);
+    -webkit-backface-visibility: visible;
     mix-blend-mode: multiply;
+    z-index: 1;
 }
 
 .advantage__decor-2 {
     top: 100px;
     left: -82px;
     transform: rotate(-205deg);
+    -webkit-backface-visibility: visible;
     mix-blend-mode: multiply;
     width: 310px;
+    z-index: 1;
 }
 
 .advantage__title {
@@ -67,7 +71,7 @@
 .advantage__girl {
     position: absolute;
     bottom: 0;
-    left: -55px;
+    left: 18px;
 }
 
 .advantage__flower {

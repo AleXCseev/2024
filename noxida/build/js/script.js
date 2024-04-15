@@ -8,7 +8,7 @@ var landingFunctions = {
 	initLibraris: function() {
 
 		$('[href*="#"]').on('click', function (e) {
-			var fixedOffset = 0;
+			var fixedOffset = 80;
 			var cardHeight = $("#card").outerHeight(false)
 			var windowHeight = $(window).height()
 
@@ -19,64 +19,26 @@ var landingFunctions = {
 			e.preventDefault();
 		});
 
-		setTimeout(function() {
-			$(".header__prod").removeClass("header__animation")
-		}, 1000);
-
-
-		// $(window).scroll(function() {
-		// 	$('.header__prod').each(function(){
-		// 		var imagePos = $(this).offset().top;
-		
-		// 		var topOfWindow = $(window).scrollTop();
-		// 		if (imagePos < topOfWindow+400) {
-		// 			$(this).removeClass("header__animation");
-		// 		}
-		// 	});
-		// });
-
-		// function cardSlider (selector) {
-		// 	var owl = $(selector + " .card__main-photo").owlCarousel({
-		// 		items: 1,
-		// 		margin: 100,
-		// 		dots: false,
-		// 		nav: false,
-		// 		loop: true,
-		// 		mouseDrag: false,
-		// 		touchDrag: false,
-		// 		animateOut: 'fadeOut',
-		// 	});
 	
-		// 	$(selector + " .card__btn").each(function() {
-		// 		$(this).click(function() {
-		// 			$(selector + " .card__btn").removeClass("active")
-		// 			var position = $(this).data("slide") - 1
-		// 			owl.trigger("to.owl.carousel", [position, 300])
-		// 			$(this).addClass("active")
-		// 		})
-		// 	})
-		// }
-	
-		// cardSlider(".card__section")
-
-	
-		// $(".review__slider").owlCarousel({
-		// 	loop: true,
-		// 	margin: 10,
-		// 	nav: true,
-		// 	items: 1,
-		// 	dots: true,
-		// 	dotsEach: true,
-		// 	autoHeight: true,
-		// })
-
-		// $.raty.path = $("body").data("path") +  '/img/raty';
-
-		// $('.modal__raiting').raty({
-		// 	half: true,
-		// 	space: false,
-		// 	number: 5,
-		// });
+		var show = true;
+		var countbox = ".card__section";
+		$(window).on("scroll load resize", function () {
+			if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+			var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+			var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
+			var w_height = $(window).height(); // Высота окна браузера
+			var d_height = $(document).height(); // Высота всего документа
+			var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+			if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+				$('.card__info-title').css('opacity', '1');
+				$('.card__info-title').spincrement({
+					thousandSeparator: "",
+					duration: 2000
+				});
+				 
+				show = false;
+			}
+		});
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
