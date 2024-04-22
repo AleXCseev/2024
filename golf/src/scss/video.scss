@@ -1,0 +1,77 @@
+.video__section-wrapper {
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.video__link {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding: 156px 0 206px;
+    border-radius: 40px;
+    background-image: url(../img/video-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.video__play {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.video__logo {
+    width: 482px;
+    height: auto;
+}
+
+.video__block {
+    width: 100%;
+    height: auto;
+    padding: 18px 60px;
+    backdrop-filter: blur(20px);
+    background: rgba(218, 191, 225, 0.2);
+    border: 1px solid rgba(218, 191, 225, 0.5);
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.video__title {
+    font-weight: 700;
+    font-size: 64px;
+    color: #2f2f2f;
+    width: 48%;
+
+    span {
+        font-weight: 900;
+    }
+}
+
+.video__text {
+    width: 48%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2f2f2f;
+}
+
+.video__flower {
+    position: absolute;
+    width: 1244px;
+    height: auto;
+    top: -452px;
+    right: -971px;
+}

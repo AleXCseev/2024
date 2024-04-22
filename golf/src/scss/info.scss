@@ -1,0 +1,138 @@
+.info__section-wrapper {
+    position: relative;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 54px;
+}
+
+.info__section-title {
+    font-weight: 700;
+    font-size: 64px;
+    color: #2f2f2f;
+    width: auto;
+    flex-shrink: 0;
+}
+
+.info__section-text {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: right;
+    color: #2f2f2f;
+    width: 425px;
+    height: auto;
+    padding-top: 19px;
+}
+
+.info__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 50px;
+}
+
+.info__item {
+    width: 25%;
+    height: auto;
+    border: 1px solid #2f2f2f;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+.info__item-block {
+    width: 100%;
+    height: 249px;
+    padding: 25px 25px 23px;
+}
+
+.info__title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #2f2f2f;
+    margin-bottom: 10px;
+}
+
+.info__item-text {
+    font-weight: 500;
+    font-size: 18px;
+    // text-align: justify;
+    color: #2f2f2f;
+}
+
+.info__img {
+    width: 100%;
+    height: 250px;
+}
+
+.info__item-1 {
+    border-radius: 40px 0 0 40px;
+    
+    .info__img {
+        border-top: 1px solid #2f2f2f;
+    }
+}
+
+.info__item-2 {
+    flex-direction: column-reverse;
+    border-left: none;
+    border-right: none;
+
+    .info__img {
+        border-bottom: 1px solid #2f2f2f;
+    }
+}
+
+.info__item-3 {
+    border-right: none;
+
+    .info__img {
+        border-top: 1px solid #2f2f2f;
+    }
+}
+
+.info__item-4 {
+    border-radius: 0 40px 40px 0;
+    flex-direction: column-reverse;
+
+    .info__img {
+        border-bottom: 1px solid #2f2f2f;
+    }
+}
+
+.info__btn {
+    width: 100%;
+    max-width: 470px;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #8c3ca0;
+    border-radius: 30px;
+    padding: 18px;
+    text-align: center;
+    transition: 0.3s ease;
+
+    &:hover {
+        background-color: #2f2f2f;
+    }
+}
+
+.info__flower {
+    position: absolute;
+    width: 1516px;
+    height: auto;
+    right: -1170px;
+    top: -500px;
+    z-index: 1;
+}
