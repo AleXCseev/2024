@@ -46,23 +46,23 @@ var landingFunctions = {
 			// }
 		});
 
-		// $('.review__slider').owlCarousel({
-		// 	items: 2,
-		// 	margin: 40,
-		// 	dots: true,
-		// 	dotsEach: true,
-		// 	nav: false,
-		// 	loop: true,
-		// 	autoHeight: true,
-		// 	responsive:{
-		// 		0:{
-		// 			items: 1,
-		// 		},
-		// 		1081: {
-		// 			items: 2,
-		// 		}
-		// 	}
-		// });
+		$('.review__slider').owlCarousel({
+			items: 1,
+			margin: 40,
+			dots: false,
+			dotsEach: true,
+			nav: true,
+			loop: true,
+			autoHeight: true,
+			// responsive:{
+			// 	0:{
+			// 		items: 1,
+			// 	},
+			// 	1081: {
+			// 		items: 2,
+			// 	}
+			// }
+		});
 
 	
 		// AOS.init({
