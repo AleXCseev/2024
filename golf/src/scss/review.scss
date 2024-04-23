@@ -8,6 +8,23 @@
     align-items: flex-start;
 }
 
+.review__flower {
+    position: absolute;
+    width: 720px;
+    height: auto;
+    top: -250px;
+    right: -600px;
+    transform: rotate(-21deg);
+}
+
+.review__arrow {
+    position: absolute;
+    width: 241px;
+    height: auto;
+    top: 243px;
+    left: 457px;
+}
+
 .review__title {
     font-weight: 700;
     font-size: 64px;
@@ -34,10 +51,41 @@
 
 .review__slider {
     padding-left: 50px;
-}
 
-.review {
+    .owl-nav {
+        width: 220px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: -626px;
 
+        button {
+            width: 85px;
+            height: 85px;
+            border-radius: 100%;
+            border: 1px solid #2F2F2F !important;
+            background-image: url(../img/review-arrow.png) !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+            background-color: transparent !important;
+            transition: 0.3s ease;
+
+            span {
+                display: none;
+            }
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.1) !important;
+            }
+
+            &.owl-next {
+                transform: rotate(180deg);
+            }
+        }
+    }
 }
 
 .review__massage {
