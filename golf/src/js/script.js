@@ -34,14 +34,9 @@ var landingFunctions = {
 			dots: true,
 			nav: true,
 			loop: true,
-			// responsive:{
-			// 	0:{
-			// 		dots: false,
-			// 	},
-			// 	1081:{
-			// 		dots: true,
-			// 	}
-			// }
+			autoplay: true,
+			autoplayTimeout: 3000,
+			autoplayHoverPause: true,
 		});
 
 		$('.review__slider').owlCarousel({
@@ -52,32 +47,24 @@ var landingFunctions = {
 			nav: true,
 			loop: true,
 			autoHeight: true,
-			// responsive:{
-			// 	0:{
-			// 		items: 1,
-			// 	},
-			// 	1081: {
-			// 		items: 2,
-			// 	}
-			// }
 		});
 
 	
-		// AOS.init({
-		// 	disable : function() {
-		// 		if( $(window).width() <= 1080) {
-		// 			return true;
-		// 		}
-		// 		return false
-		// 	},
-		// 	once: true,
-		// 	duration: 1000,
-		// 	offset : 0,
-		// });
+		AOS.init({
+			disable : function() {
+				if( $(window).width() <= 1080) {
+					return true;
+				}
+				return false
+			},
+			once: true,
+			duration: 1000,
+			offset : 0,
+		});
 	
-		// $(window).resize(function() {
-		// 	AOS.refresh();
-		// })
+		$(window).resize(function() {
+			AOS.refresh();
+		})
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
