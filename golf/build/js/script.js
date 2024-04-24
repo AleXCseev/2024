@@ -30,7 +30,7 @@ var landingFunctions = {
 
 		$('.galary__slider').owlCarousel({
 			items: 1,
-			margin: 0,
+			margin: 40,
 			dots: true,
 			nav: true,
 			loop: true,

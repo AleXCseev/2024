@@ -757,7 +757,7 @@
     }
     .card__photos {
         border-radius: 10vw;
-        padding: 2vw;
+        padding: 2vw 2vw 1vw;
     }
     .card__photos a {
         width: 24%;
@@ -919,7 +919,7 @@
         transform: rotate(-28deg);
     }
     .footer__section-wrapper:before {
-        height: 75%;
+        height: 73%;
         background-image: url(../img/footer-bg-mobile.jpg);
     }
     .footer__content {
@@ -950,5 +950,8 @@
     }
     .footer__line-item {
         font-size: 4vw;
+    }
+    .footer__content .header__price {
+        margin-bottom: 4.8vw;
     }
 }

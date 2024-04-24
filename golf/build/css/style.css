@@ -1600,7 +1600,9 @@ body {
 }
 .card__photos a img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
@@ -1716,6 +1718,14 @@ body {
 
 .card__select {
   position: relative;
+}
+.card__select select {
+  text-align: -moz-center;
+  text-align: -webkit-center;
+  -moz-text-align-last: center;
+       text-align-last: center;
+  -webkit-text-align-last: center;
+  text-indent: 44% hanging;
 }
 .card__select:before {
   content: "";
@@ -3085,7 +3095,7 @@ body {
   }
   .card__photos {
     border-radius: 10vw;
-    padding: 2vw;
+    padding: 2vw 2vw 1vw;
   }
   .card__photos a {
     width: 24%;
@@ -3256,7 +3266,7 @@ body {
             transform: rotate(-28deg);
   }
   .footer__section-wrapper:before {
-    height: 75%;
+    height: 73%;
     background-image: url(../img/footer-bg-mobile.jpg);
   }
   .footer__content {
@@ -3290,5 +3300,8 @@ body {
   }
   .footer__line-item {
     font-size: 4vw;
+  }
+  .footer__content .header__price {
+    margin-bottom: 4.8vw;
   }
 }

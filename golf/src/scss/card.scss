@@ -68,7 +68,8 @@
 
         img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover;
             transition: 0.3s ease;
         }
     }
@@ -170,6 +171,14 @@
 
 .card__select {
     position: relative;
+
+    select {
+        text-align:-moz-center;
+        text-align:-webkit-center;
+        text-align-last: center;
+        -webkit-text-align-last: center;
+        text-indent: 44% hanging;
+    }
 
     &:before {
         content: "";
