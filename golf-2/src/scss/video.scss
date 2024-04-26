@@ -1,0 +1,116 @@
+.video__section-wrapper {
+    position: relative;
+}
+
+.video {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    width: 393px;
+    height: 700px;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/video-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    cursor: pointer;
+    overflow: hidden;
+
+    img {
+        transition: 0.3s ease;
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.video__block {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: linear-gradient(90deg, #fee8dc 50%, #73c0ff 100%);
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 50px;
+    padding-right: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.video__decor {
+    position: absolute;
+}
+
+.video__decor-1 {
+    width: 194px;
+    height: auto;
+    top: -93px;
+    left: -75px;
+    z-index: -1;
+}
+
+.video__decor-2 {
+    width: 113px;
+    height: auto;
+    bottom: -181px;
+    right: -80px;
+    z-index: -1;
+    filter: blur(2px);
+}
+
+.video__logo {
+    width: auto;
+    height: 40px;
+    margin-bottom: 25px;
+}
+
+.video__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 22px;
+}
+
+.video__list {
+    margin-bottom: 13px;
+}
+
+.video__list-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #2e6995;
+    margin-bottom: 20px;
+
+    img {
+        width: 30px;
+        height: auto;
+        margin-right: 15px;
+    }
+}
+
+.order__btn {
+}
