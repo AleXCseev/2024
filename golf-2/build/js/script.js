@@ -1,7 +1,7 @@
 var landingFunctions = {
 	init: function() {
 		this.initLibraris()
-		// this.card()
+		this.card()
 		this.time()
 		this.video()
 		this.modal()
@@ -90,6 +90,10 @@ var landingFunctions = {
 			backFocus: false,
 			hash: false,
 		});
+	},
+
+	card: function() {
+		
 	},
 
 	video: function() {
