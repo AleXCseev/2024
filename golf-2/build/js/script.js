@@ -28,15 +28,16 @@ var landingFunctions = {
 			nav: true,
 			loop: true,
 			stagePadding: 20,
-			
-			// responsive:{
-			// 	0:{
-			// 		dots: false,
-			// 	},
-			// 	1081:{
-			// 		dots: true,
-			// 	}
-			// }
+			responsive:{
+				0:{
+					items: 1,
+					dots: true,
+				},
+				1081:{
+					items: 3,
+					dots: false,
+				}
+			}
 		});
 
 
