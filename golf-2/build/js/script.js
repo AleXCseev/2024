@@ -10,7 +10,7 @@ var landingFunctions = {
 	initLibraris: function() {
 		
 		$('[href*="#"]').on('click', function (e) {
-			var fixedOffset = 50;
+			var fixedOffset = 0;
 			var cardHeight = $(".card").outerHeight(false)
 			var windowHeight = $(window).height()
 
@@ -41,21 +41,13 @@ var landingFunctions = {
 
 
 		$('.review__slider').owlCarousel({
-			items: 2,
+			items: 1,
 			margin: 40,
 			dots: true,
 			dotsEach: true,
-			nav: false,
+			nav: true,
 			loop: true,
 			autoHeight: true,
-			responsive:{
-				0:{
-					items: 1,
-				},
-				1081: {
-					items: 2,
-				}
-			}
 		});
 
 
@@ -93,7 +85,14 @@ var landingFunctions = {
 	},
 
 	card: function() {
-		
+		$(".card__size").click(function() {
+			var size = $(this).data('size');
+			var size_2 = $(this).data("size-2");
+			$(this).closest(".card").find(".size").text(size)
+			$(this).closest(".card").find(".size__2").text(size_2)
+			$(".card__size").removeClass("active");
+			$(this).addClass("active");
+		})
 	},
 
 	video: function() {
