@@ -1,0 +1,249 @@
+.header__section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.header__logo {
+    width: 176px;
+    height: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav__link {
+    font-weight: 500;
+    font-size: 18px;
+    color: #1c1c1c;
+    margin-right: 74px;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: #1c1c1c;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.5s ease;
+    }
+
+    &:hover {
+        &:before {
+            width: 100%;
+        }
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.line {
+    width: 100vw;
+    height: 1px;
+    background: #9b9b9b;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.header__title-wrapper {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header__title {
+    font-family: "Actay Wide", sans-serif;
+    font-weight: 700;
+    font-size: 76px;
+    color: #1c1c1c;
+}
+
+.header__title-info {
+    width: auto;
+}
+
+.header__title-item {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.35em;
+    text-align: right;
+    color: #1c1c1c;
+    margin-bottom: 40px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.header__decor-star {
+    position: absolute;
+    top: 36px;
+    right: -220px;
+    width: 140px;
+    height: auto;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 68px 0 28px;
+}
+
+.header__content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 300px;
+    flex-shrink: 0;
+    padding-bottom: 48px;
+}
+
+.header__block {
+    width: 1035px;
+    height: auto;
+    position: absolute;
+    top: -135px;
+    right: -1060px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.header__man {
+    width: 100%;
+    height: auto;
+}
+
+.header__discount {
+    position: absolute;
+    top: 178px;
+    right: 53px;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    width: auto;
+}
+
+.header__icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header__icon-1 {
+    width: 120px;
+    height: auto;
+    margin-right: -30px;
+    position: relative;
+    z-index: 1;
+}
+
+.header__icon-2 {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #e05013;
+}
+
+.header__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #1c1c1c;
+    margin-bottom: 40px;
+}
+
+.header__price {
+    width: 100%;
+}
+
+.price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.new__price {
+    font-family: "Actay Wide", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: right;
+    color: #e05013;
+    margin-right: 15px;
+}
+
+.old__price {
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: line-through;
+    color: #1c1c1c;
+}
+
+.header__content-right {
+    width: 315px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order__btn {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    background: #e05013;
+    padding: 20px;
+    font-family: "Actay Wide", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    transition: 0.3s ease;
+
+    &:hover {
+        background-color: #1c1c1c;
+    }
+}
+
+.video__btn {
+    width: 100%;
+    height: 70px;
+    padding-left: 35px;
+    background-image: url(../img/video-btn-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-family: "Actay Wide", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 12px;
+}
