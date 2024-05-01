@@ -22,6 +22,7 @@
 .card__decor {
     position: absolute;
     z-index: 2;
+    animation-duration: 5s;
 }
 
 .card__decor-1 {
@@ -36,6 +37,7 @@
     height: auto;
     top: 70px;
     right: -380px;
+    animation-delay: 2.5s;
 }
 
 .card__left {
@@ -281,7 +283,7 @@
     background: linear-gradient(90deg, #ff6c17 0%, #ff3d00 100%);
     padding: 18px 0 0;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1;
     text-transform: uppercase;
     text-align: center;
@@ -330,7 +332,7 @@
         top: 99px;
     }
     .card__boot {
-        margin-top: -20px;
+        margin-top: -10px;
         margin-bottom: -110px;
     }
 }

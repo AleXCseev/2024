@@ -560,12 +560,14 @@
     }
     .info__item-img {
         margin-bottom: 2vw;
+        width: 78%;
     }
     .info__text {
         font-size: 5.8vw;
     }
     .info__item {
         margin-bottom: 10vw;
+        width: 100vw;
     }
     .info__decor-1 {
         width: 30vw;
@@ -574,7 +576,7 @@
     }
     .info__decor-2 {
         width: 45vw;
-        bottom: 57vw;
+        bottom: 58vw;
         right: -21vw;
         transform: rotate(-150deg);
     }
@@ -733,6 +735,7 @@
         bottom: -24vw;
         transform: scaleX(-1);
         z-index: -1;
+        animation: none;
     }
     .sprey {
         z-index: -1;
