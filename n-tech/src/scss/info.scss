@@ -175,6 +175,12 @@
     border-radius: 30px;
     background: rgba(255, 255, 255, 0.1);
     position: absolute;
+    transition: 0.3s ease;
+
+    &:hover {
+        background: #e05013;
+        border-color: #e05013;
+    }
 }
 
 .block__item-title {
@@ -201,8 +207,6 @@
 }
 
 .info__block-item-1 {
-    background: #e05013;
-    border: none;
     top: 55px;
     right: 118px;
 

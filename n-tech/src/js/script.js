@@ -11,14 +11,23 @@ var landingFunctions = {
 		
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = 0;
-			var cardHeight = $(".card").outerHeight(false)
-			var windowHeight = $(window).height()
 
-			$('html, body')
-			.stop()
-			.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
-			// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
-			e.preventDefault();
+			if($(window).width() <= 1080) {
+				var cardHeight = $(".card").outerHeight(false)
+				var windowHeight = $(window).height()
+
+				$('html, body')
+					.stop()
+					.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+					// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+				e.preventDefault();
+			} else {
+				$('html, body')
+					.stop()
+					// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+					.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+				e.preventDefault();
+			}
 		})
 
 		var show = true;
@@ -73,13 +82,13 @@ var landingFunctions = {
 
 
 		$('.review__slider').owlCarousel({
-			items: 1,
-			margin: 40,
+			items: 3,
+			margin: 20,
 			dots: true,
 			dotsEach: true,
-			nav: true,
+			nav: false,
 			loop: true,
-			autoHeight: true,
+			autoHeight: false,
 		});
 
 
