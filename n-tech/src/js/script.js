@@ -43,22 +43,33 @@ var landingFunctions = {
 
 		$('.galary__slider').owlCarousel({
 			items: 3,
-			margin: 31,
-			dots: false,
-			nav: true,
+			margin: 20,
+			dots: true,
+			dotsEach: true,
+			nav: false,
 			loop: true,
-			stagePadding: 20,
-			responsive:{
-				0:{
-					items: 1,
-					dots: true,
-				},
-				1081:{
-					items: 3,
-					dots: false,
-				}
-			}
+			autoplay: true,
+			autoplayTimeout: 3000,
+			autoplayHoverPause: true,
+			// responsive:{
+			// 	0:{
+			// 		items: 1,
+			// 		dots: true,
+			// 	},
+			// 	1081:{
+			// 		items: 3,
+			// 		dots: false,
+			// 	}
+			// }
 		});
+
+
+		$(".advantage__btn").click(function() {
+			$(".advantage__btn").removeClass("active")
+			$(".advantage__text").removeClass("active").hide()
+			$(this).addClass("active")
+			$(this).closest(".advantage__item").find(".advantage__text").fadeIn(600)
+		})
 
 
 		$('.review__slider').owlCarousel({

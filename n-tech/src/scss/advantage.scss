@@ -1,0 +1,138 @@
+.advantage__section-wrapper {
+    padding: 72px 0 71px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &:before, &:after {
+        content: "";
+        box-sizing: border-box;
+        border-radius: 100%;
+        position: absolute;
+        border: 150px solid #fff;
+        z-index: -1;
+        animation-name: pulse;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    &:before {
+        width: 800px;
+        height: 800px;
+        top: 75px;
+        left: -477px;
+    }
+
+    &:after {
+        width: 600px;
+        height: 600px;
+        top: 175px;
+        right: -380px;
+        animation-delay: 2.5s;
+    }
+}
+
+.advantage__block {
+    width: 701px;
+    height: auto;
+    position: absolute;
+    top: -19px;
+    left: 0;
+}
+
+.advantage__man {
+    width: 100%;
+    height: auto;
+}
+
+.advantage__star {
+    position: absolute;
+    bottom: -11px;
+    left: 120px;
+    width: 140px;
+    height: auto;
+}
+
+.advantage__items {
+    width: 800px;
+    height: auto;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 125px;
+}
+
+.advantage__item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+
+.advantage__btn {
+    width: auto;
+    font-family: "Actay Wide", sans-serif;
+    font-weight: 700;
+    font-size: 76px;
+    color: #9b9b9b;
+    position: relative;
+    line-height: auto;
+    width: auto;
+    transition: 0.3s ease;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+    &.active {
+        color: #e05013;
+    }
+}
+
+.advantage__number {
+    position: absolute;
+    left: -56px;
+    top: 0px;
+    font-size: 32px;
+}
+
+.advantage__text {
+    width: 100%;
+    max-width: 555px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: right;
+    color: #1c1c1c;
+    margin-bottom: 54px;
+    display: none;
+
+    span {
+        font-weight: 700;
+    }
+
+    &.active {
+        display: block;
+    }
+}
+
+.advantage__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        width: 315px;
+    }
+
+    .order__btn {
+        margin-right: 20px;
+    }
+    
+    .video__btn {
+        margin-top: 0;
+    }
+}
+
