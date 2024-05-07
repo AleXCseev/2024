@@ -661,7 +661,7 @@
     }
     .header__title {
         text-align: center;
-        font-size: 11vw;
+        font-size: 9vw;
     }
     .header__decor-star {
         right: -6vw;
@@ -745,6 +745,32 @@
     }
     .info__block-footer .order__btn {
         margin-bottom: 7.6vw;
+    }
+    .header__content-right a {
+        height: 16.9vw;
+    }
+    .header__content-right, .footer__bottom {
+        width: 76vw;
+    }
+    .footer__bottom a {
+        width: 100%;
+    }
+    .advantage__footer a {
+        width: 76vw;
+    }
+    .info__block-footer a {
+        width: 76vw;
+    }
+    .order__btn {
+        border-radius: 7.8vw !important;
+        padding: 4vw 4.8vw !important;
+        font-size: 5.8vw !important;
+        height: 16.9vw !important;
+    }
+    .video__btn {
+        padding-left: 9vw !important;
+        font-size: 5.8vw !important;
+        height: 16.9vw !important;
     }
     .block__item-title {
         font-size: 7.5vw;
@@ -864,6 +890,14 @@
         border-radius: 4.8vw;
         padding: 4.8vw 3.5vw;
     }
+    .card__input {
+        height: 12vw;
+        font-size: 4.5vw;
+    }
+    .card__select:before {
+        width: 12vw;
+        height: 12vw;
+    }
     .card__1 {
         margin-bottom: 24vw;
     }
@@ -943,5 +977,8 @@
         width: 624vw;
         bottom: -45vw;
         left: 50%;
+    }
+    .fancybox-slide--video .fancybox-content {
+        height: 165vw !important;
     }
 }

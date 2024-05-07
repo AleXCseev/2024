@@ -195,6 +195,14 @@
         background-position: center;
         pointer-events: none;
     }
+
+    select {
+        text-align:-moz-center;
+        text-align:-webkit-center;
+        text-align-last: center;
+        -webkit-text-align-last: center;
+        text-indent: 36% hanging;
+    }
 }
 
 .card__submit {
