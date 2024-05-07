@@ -95,6 +95,20 @@ var landingFunctions = {
 			nav: false,
 			loop: true,
 			autoHeight: false,
+			responsive:{
+				0:{
+					items: 1,
+					autoHeight: true,
+				},
+				1081: {
+					items: 2,
+					autoHeight: false,
+				},
+				1281:{
+					items: 3,
+					autoHeight: false,
+				}
+			}
 		});
 	
 		AOS.init({
