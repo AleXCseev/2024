@@ -7,7 +7,7 @@ var landingFunctions = {
 	initLibraris: function() {
 		
 		$('[href*="#"]').on('click', function (e) {
-			var fixedOffset = 0;
+			var fixedOffset = -50;
 			$('html, body')
 				.stop()
 				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
@@ -33,13 +33,13 @@ var landingFunctions = {
 	
 		menu()
 
-		$('[data-fancybox]').fancybox({
-			loop: true,
-			infobar: false,
-			animationEffect: false,
-			backFocus: false,
-			hash: false,
-		});
+		// $('[data-fancybox]').fancybox({
+		// 	loop: true,
+		// 	infobar: false,
+		// 	animationEffect: false,
+		// 	backFocus: false,
+		// 	hash: false,
+		// });
 	},
 
 	time: function() {
