@@ -1,0 +1,52 @@
+.info__section-wrapper {
+    padding: 47px 0 122px;
+    position: relative;
+}
+
+.info__content {
+    width: 100%;
+    max-width: 785px;
+    margin-left: auto;
+}
+
+.info__title {
+    font-family: "Clash Display", sans-serif;
+    font-weight: 600;
+    font-size: 96px;
+    margin-bottom: 30px;
+    line-height: normal;
+    background: linear-gradient(167deg, #fbc400 0%, #dd9200 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    span {
+        // background: linear-gradient(167deg, #fbc400 0%, #dd9200 100%);
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        color: #353535;
+        background: none;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: #353535;
+    }
+}
+
+.info__img {
+    position: absolute;
+    top: 0;
+    width: 480px;
+    height: auto;
+    left: 0;
+
+}
+
+.info__text {
+    font-size: 20px;
+    color: #353535;
+
+    span {
+        font-weight: 700;
+    }
+}

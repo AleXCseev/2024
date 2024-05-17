@@ -1,0 +1,124 @@
+.header__section-wrapper {
+    position: relative;
+    padding: 40px 0 161px;
+}
+
+.header__logo {
+    width: 131px;
+    height: auto;
+    margin-bottom: 85px;
+}
+
+.nav {
+    width: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background: rgba(69, 161, 231, 0.4);
+    padding: 5px;
+    position: fixed;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+}
+
+.nav__link {
+    border-radius: 20px;
+    padding: 10px 40px;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    transition: 0.3s ease;
+    flex-shrink: 0;
+
+    &:hover {
+        background: #94bbda;
+    }
+
+    &.active {
+        background: #45a1e7;
+    }
+}
+
+.header__title {
+    width: 100%;
+    max-width: 920px;
+    font-family: "Clash Display", sans-serif;
+    font-weight: 700;
+    font-size: 120px;
+    background: linear-gradient(167deg, #fbc400 0%, #dd9200 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 24px;
+    line-height: normal;
+}
+
+.header__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #353535;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 600px;
+
+    span {
+        font-weight: 700;
+    }
+
+    &:nth-last-child(n) {
+        margin-bottom: 30px;
+    }
+}
+
+.header__img {
+    width: 554px;
+    height: auto;
+    position: absolute;
+    bottom: 150px;
+    right: 0;
+}
+
+.order__btn {
+    padding: 20px 60px;
+    display: inline-block;
+    width: auto;
+    font-family: "Clash Display", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    border-radius: 20px;
+    z-index: 1;
+    background: linear-gradient(167deg, #387adf 0%, #50c4ed 100%);
+
+    span {
+        position: relative;
+        z-index: 2;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        background: linear-gradient(-13deg, #387adf 0%, #50c4ed 100%);
+        opacity: 0;
+        transition: 1s ease;
+    }
+
+    &:hover {
+        &:before {
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,334 @@
+@import "fonts";
+@import "main";
+@import "header";
+@import "info";
+@import "themes";
+@import "community";
+@import "footer";
+
+@media (max-width: 1480px) {
+    .container {
+        width: 1200px;
+    }
+    .header__title {
+        max-width: 800px;
+        font-size: 108px;
+    }
+    .info__content {
+        max-width: 700px;
+    }
+    .info__title {
+        font-size: 84px;
+    }
+    .ton__decor {
+        width: 220px;
+        top: -61px;
+        left: -50px;
+    }
+    .community__img {
+        right: -80px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        width: 1000px;
+    }
+    .header__section-wrapper {
+        padding: 40px 0 100px;
+    }
+    .header__logo {
+        margin-bottom: 60px;
+    }
+    .nav__link {
+        padding: 6px 30px;
+        border-radius: 14px;
+    }
+    .header__title {
+        margin-bottom: 10px;
+    }
+    .header__img {
+        width: 420px;
+    }
+    .header__text {
+        font-size: 18px;
+        max-width: 500px;
+    }
+    .info__section-wrapper {
+        padding: 30px 0 120px;
+    }
+    .info__img {
+        width: 380px;
+    }
+    .info__content {
+        max-width: 580px;
+    }
+    .info__title {
+        font-size: 70px;
+        margin-bottom: 20px;
+    }
+    .info__text {
+        font-size: 18px;
+    }
+    .theme__section-wrapper {
+        padding: 60px 0 50px;
+    }
+    .theme__title {
+        font-size: 84px;
+        margin-bottom: 40px;
+    }
+    .theme__text {
+        max-width: 600px;
+        font-size: 18px;
+    }
+    .theme__img {
+        width: 32.5%;
+    }
+    .ton__decor {
+        width: 180px;
+        top: -50px;
+        left: 0px;
+    }
+    .community__section-wrapper {
+        padding: 50px 0 120px;
+    }
+    .community__title {
+        font-size: 86px;
+        margin-bottom: 40px;
+    }
+    .community__links {
+        margin-bottom: 40px;
+    }
+    .community__link {
+        width: 260px;
+        padding: 16px 20px;
+        font-size: 20px;
+        margin-right: 30px;
+    }
+    .community__img {
+        width: 290px;
+        right: -80px;
+        bottom: 80px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .container {
+        width: 700px;
+    }
+    .nav {
+        display: none;
+    }
+    .header__section-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__logo {
+        margin-bottom: 5px;
+    }
+    .header__title {
+        max-width: 100%;
+        font-size: 86px;
+        text-align: center;
+    }
+    .header__text {
+        font-size: 20px;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+        position: relative;
+        z-index: 1;
+
+        &:last-of-type {
+            display: none;
+        }
+    }
+    .header__img {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: -60px;
+        margin-bottom: 19px;
+    }
+    .info__section-wrapper {
+        padding: 0 0 80px;
+    }
+    .info__content {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info__title {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .info__img {
+        position: static;
+        top: auto;
+        left: auto;
+        margin-bottom: 35px;
+    }
+    .info__text {
+        font-size: 20px;
+        text-align: center;
+    }
+    .theme__title {
+        font-size: 70px;
+        margin-bottom: 35px;
+    }
+    .theme__imgs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .theme__img {
+        width: 440px;
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .community__section-wrapper {
+        padding: 50px 0 100px;
+    }
+    .ton__decor {
+        width: 124px;
+        top: -35px;
+        left: 0px;
+    }
+    .community__title {
+        font-size: 86px;
+        margin-bottom: 40px;
+    }
+    .community__links {
+        margin-bottom: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .community__link {
+        width: 280px;
+        padding: 20px 30px;
+        font-size: 20px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 30px;
+        }
+    }
+    .community__img {
+        width: 280px;
+        right: -40px;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 540px) {
+    .header__section-wrapper {
+        padding: 6vw 0 24vw;
+    }
+    .header__logo {
+        margin-bottom: 1vw;
+    }
+    .header__title {
+        font-size: 19.5vw;
+        margin-bottom: 2vw;
+    }
+    .header__text {
+        font-size: 4.8vw; 
+        margin-bottom: 0 !important;
+    }
+    .header__img {
+        width: 80vw;
+        margin-top: -4vw;
+        margin-bottom: 4.5vw;
+    }
+    .order__btn {
+        padding: 4.8vw 14.5vw;
+        font-size: 5.8vw;
+        border-radius: 4.8vw;
+    }
+    .order__btn:before {
+        border-radius: 4.8vw;
+    }
+    .info__section-wrapper {
+        padding: 0 0 12vw;
+        width: 100%;
+    }
+    .info__title {
+        font-size: 13vw;
+        margin-bottom: 8vw;
+    }
+    .info__img {
+        width: 100%;
+        margin-bottom: 9vw;
+    }
+    .info__text {
+        font-size: 4.8vw;
+    }
+    .theme__section-wrapper {
+        padding: 12vw 0;
+        width: 100%;
+    }
+    .theme__title {
+        font-size: 12vw;
+        margin-bottom: 8vw;
+    }
+    .theme__imgs {
+        width: 100%;
+        margin-bottom: 9vw;
+    }
+    .theme__img {
+        width: 100%;
+        margin-bottom: 9vw;
+    }
+    .theme__text {
+        font-size: 4.8vw;
+    }
+    .community__section-wrapper {
+        padding: 12vw 0 24vw;
+    }
+    .community__title {
+        font-size: 13vw;
+        margin-bottom: 7.5vw;
+    }
+    .ton__decor {
+        width: 30vw;
+        top: -12vw;
+        left: -8vw;
+    }
+    .community__img {
+        width: 68vw;
+        right: -32vw;
+        bottom: 2vw;
+    }
+    .footer__section-wrapper {
+        padding: 6vw 0;
+    }
+    .footer__info {
+        font-size: 4.8vw;
+    }
+    .community__link {
+        width: 68vw;
+        padding: 4.8vw 7.5vw;
+        font-size: 4.8vw;
+        margin-bottom: 4.8vw;
+    }
+    .community__link img {
+        width: 9.8vw;
+        margin-right: 2vw;
+    }
+    .footer__logo {
+        width: 31.6vw;
+    }
+}

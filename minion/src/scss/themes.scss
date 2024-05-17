@@ -1,0 +1,50 @@
+.theme__section {
+    background: #fafbfb;
+}
+
+.theme__section-wrapper {
+    padding: 75px 0 67px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.theme__title {
+    font-family: "Clash Display", sans-serif;
+    font-weight: 600;
+    font-size: 96px;
+    text-align: center;
+    line-height: normal;
+    color: #353535;
+    margin-bottom: 50px;
+}
+
+.theme__imgs {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.theme__img {
+    width: 33%;
+    height: auto;
+    border: 10px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0 45px 25px -30px rgba(212, 212, 212, 0.25);
+}
+
+.theme__text {
+    width: 100%;
+    max-width: 805px;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #353535;
+
+    span {
+        font-weight: 700;
+    }
+}
