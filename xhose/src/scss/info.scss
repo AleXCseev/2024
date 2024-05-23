@@ -1,0 +1,96 @@
+.info__section-wrapper {
+    padding: 140px 0 126px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .order__btn {
+        max-width: 325px;
+    }
+}
+
+.info__section-title {
+    font-family: "TT Travels Next Trial Variable", sans-serif;
+    font-weight: 900;
+    font-size: 64px;
+    color: #333;
+    margin-bottom: 60px;
+    text-align: center;
+
+    span {
+        color: #fc5a31;
+    }
+}
+
+.info__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 30px;
+}
+
+.info__item {
+    width: 480px;
+    height: auto;
+    padding: 25px 60px 29px;
+    border-radius: 40px;
+    background: #eee;
+}
+
+.info__item-top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info__icon {
+    width: 120px;
+    height: auto;
+    margin-right: 25px;
+    flex-shrink: 0;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 100%;
+    }
+}
+
+.info__icon-number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "TT Travels Next Trial Variable", sans-serif;
+    font-weight: 900;
+    font-size: 32px;
+    text-align: center;
+    color: #fc5a31;
+}
+
+.info__item-title {
+    font-family: "TT Travels Next Trial Variable", sans-serif;
+    font-weight: 704;
+    font-size: 32px;
+    color: #333;
+}
+
+.info__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.78;
+    color: #333;
+
+    span {
+        font-weight: 700;
+    }
+}
+

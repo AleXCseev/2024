@@ -1,0 +1,243 @@
+.advantage__section-wrapper {
+    padding-bottom: 100px;
+}
+
+.advantage__info {
+    margin-bottom: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advantage__info-left {
+    width: 930px;
+    height: auto;
+    padding: 65px 40px 65px 60px;
+    border-radius: 40px;
+    background: #eee;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.advantage__info-block {
+    width: 285px;
+    height: auto;
+    position: relative;
+    flex-shrink: 0;
+    margin-right: 60px;
+}
+
+.advantage__info-img {
+    width: 190px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.advantage__info-circle {
+    width: 190px;
+    height: 190px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+
+    &:before {
+        content: "";
+        width: 50%;
+        height: 100%;
+        background-color: #fc5a31;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.advantage__info-arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.advantage__left-text {
+    font-family: "TT Travels Next Trial Variable", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    color: #333;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.advantage__info-right {
+    border-radius: 40px;
+    background: #fc5a31;
+    width: 520px;
+    padding: 56px 60px 56px 38px;
+    font-family: "TT Travels Next Trial Variable", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #fff;
+    position: relative;
+
+    span {
+        font-weight: 700;
+    }
+
+    img {
+        display: inline-block;
+        width: 130px;
+        height: auto;
+        margin-bottom: -10px;
+    }
+
+    &:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background-image: url(../img/header-arrow.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transform: rotate(90deg);
+        bottom: 68px;
+        right: 60px;
+    }
+}
+
+.advantage__section-title {
+    font-family: "TT Travels Next Trial Variable", sans-serif;
+    font-weight: 900;
+    font-size: 64px;
+    color: #333;
+    padding-left: 60px;
+    margin-bottom: 40px;
+
+    span {
+        color: #fc5a31;
+    }
+}
+
+.advantages {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.advantage__column {
+    width: 982px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.advantage__column-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 600px;
+    margin-bottom: 15px;
+}
+
+.advantage {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background: #eee;
+    position: relative;
+    padding: 60px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.advantage__title {
+    font-family: "TT Travels Next Trial Variable", sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.advantage__img {
+    position: absolute;
+}
+
+.advantage__1 {
+    margin-right: 12px;
+
+    .advantage__img {
+        width: 470px;
+        height: auto;
+        left: 15px;
+        bottom: -124px;
+    }
+}
+
+.advantage__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.78;
+    color: #333;
+    position: relative;
+    z-index: 1;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.advantage__2 {
+    .advantage__img {
+        width: 355px;
+        height: auto;
+        right: -68px;
+        bottom: -11px;
+        transform: rotate(-47deg);
+    }
+}
+
+.advantage__3 {
+    height: auto;
+    padding-bottom: 44px;
+    .advantage__title {
+        width: 100%;
+        max-width: 530px;
+    }
+    .advantage__img {
+        width: 469px;
+        height: auto;
+        top: -49px;
+        right: -179px;
+    }
+}
+
+.advantage__4 {
+    margin-left: 13px;
+    height: auto;
+    padding-bottom: 35px;
+
+    .advantage__text {
+        margin-bottom: 19px;
+    }
+    .advantage__img {
+        width: 363px;
+        height: auto;
+        position: relative;
+    }
+}
