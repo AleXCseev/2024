@@ -2663,3 +2663,216 @@ body {
 .footer__line-item a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 1640px) {
+  .container {
+    width: 1360px;
+  }
+  .header__info {
+    margin-right: 40px;
+  }
+  .header__prod {
+    width: 390px;
+  }
+  .header__title {
+    font-size: 56px;
+    max-width: 940px;
+  }
+}
+@media (max-width: 1480px) {
+  .container {
+    width: 1200px;
+  }
+  .header__top {
+    margin-bottom: 120px;
+  }
+  .header__info {
+    width: 640px;
+    padding: 40px 30px 24px 33px;
+  }
+  .header__info-item {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    -webkit-flex-shrink: 0;
+            flex-shrink: 0;
+  }
+  .header__info-icon, .header__info-icon img {
+    width: 100%;
+    height: auto;
+  }
+  .header__info-title {
+    font-size: 24px;
+  }
+  .header__info-text {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+  .header__info-logo {
+    width: 100px;
+    margin-right: 20px;
+  }
+  .header__title {
+    font-size: 48px;
+    max-width: 770px;
+  }
+  .header__prod {
+    width: 310px;
+  }
+}
+@media (max-width: 1280px) {
+  .container {
+    width: 1000px;
+  }
+  .header__info {
+    width: 500px;
+    padding: 30px 40px 24px 30px;
+  }
+  .header__info-item {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+  }
+  .header__info-title {
+    font-size: 18px;
+  }
+  .header__info-item:last-of-type {
+    margin-right: 16px;
+  }
+  .header__info-title:before {
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    right: 0px;
+  }
+  .header__info-top {
+    margin-bottom: 10px;
+  }
+  .header__info-logo {
+    width: 80px;
+    margin-right: 15px;
+  }
+  .header__info-text {
+    font-size: 16px;
+  }
+  .nav__link {
+    margin-right: 60px;
+  }
+  .header__title {
+    font-size: 42px;
+    max-width: 680px;
+  }
+  .video__btn {
+    width: 360px;
+    height: 117px;
+  }
+  .header__prod {
+    width: 240px;
+    top: 45%;
+  }
+  .header__block {
+    width: 300px;
+    height: auto;
+  }
+}
+@media (max-width: 1080px) {
+  .container {
+    width: 700px;
+  }
+  .header__section-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+  .nav {
+    display: none;
+  }
+  .header__cart {
+    display: none;
+  }
+  .header__top {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+            order: 1;
+  }
+  .header__title {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+            order: 2;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 214px;
+  }
+  .video__btn {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    display: block;
+    -webkit-box-ordinal-group: 5;
+    -webkit-order: 4;
+            order: 4;
+  }
+  .header__content {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+            order: 3;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+  .header__info {
+    display: none;
+  }
+  .header__section-wrapper:before {
+    width: calc(100% + 40px);
+  }
+  .header__block {
+    width: 325px;
+    height: auto;
+  }
+  .header__section-wrapper:after {
+    width: calc(100% + 40px);
+    height: 48%;
+    bottom: 0;
+    top: auto;
+    right: -20px;
+    border-radius: 0 0 40px 40px;
+  }
+  .header__prod {
+    width: 340px;
+    top: 60%;
+    right: -20px;
+  }
+  .price {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+  .header__price-text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+  }
+  .new__price {
+    margin-left: 0;
+  }
+}
