@@ -1,0 +1,112 @@
+.review__section {
+    border-radius: 40px 40px 0 0;
+    background: #eee;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.review__section-wrapper {
+    padding: 125px 0 77px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review__section-title {
+    font-family: "TT Travels Next Trial Variable", sans-serif;
+    font-weight: 900;
+    font-size: 64px;
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+
+    span {
+        color: #fc5a31;
+    }
+}
+
+.review__slider {
+    width: 100%;
+    height: auto;
+
+    .owl-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+
+        button {
+            width: 18px;
+            height: 18px;
+            border-radius: 100%;
+            background-color: #d9d9d9 !important;
+            margin-right: 15px;
+            transition: 0.3s ease;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.active {
+                background-color: #fc5a31 !important;
+            }
+        }
+    }
+}
+
+.review__slide {
+    border-radius: 40px;
+    // box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.05);
+    background: #fff;
+    padding: 35px 35px 30px;
+}
+
+.review__top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.review__photo {
+    width: 85px !important;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 100%;
+    margin-right: 35px;
+}
+
+.review__name {
+    font-weight: 700;
+    font-size: 20px;
+    color: #333;
+}
+
+.review__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.78;
+    color: #333;
+}
+
+.review__decor {
+    position: absolute;
+    height: auto;
+    pointer-events: none;
+}
+
+.review__decor-1 {
+    width: 412px;
+    transform: scaleX(-1);
+    bottom: -30px;
+    left: -358px;
+    z-index: 2;
+}
+
+.review__decor-2 {
+    width: 500px;
+    bottom: -30px;
+    right: -465px;
+}

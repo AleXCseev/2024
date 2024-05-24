@@ -7,13 +7,17 @@
     height: 680px;
     margin: auto;
     position: relative;
+    z-index: 5;
+    margin-bottom: -5px;
 
     &:before {
         content: "";
         width: 100%;
-        height: 1360px;
-        border-radius: 100%;
-        border: 4px solid #D9D9D9;
+        height: 100%;
+        background-image: url(../img/elipse.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         position: absolute;
         top: 0;
         left: 0;
@@ -52,21 +56,96 @@
 }
 
 .galary__item-1 {
+    top: 252px;
+    left: 0;
+
+    .galary__text {
+        right: -20px;
+        bottom: 0;
+    }
 }
+
 .galary__item-2 {
+    top: 77px;
+    left: 125px;
+
+    .galary__text {
+        right: -60px;
+        bottom: -26px;
+    }
 }
+
 .galary__item-3 {
+    top: -60px;
+    left: 335px;
+
+    .galary__text {
+        left: 50%;
+        bottom: -31px;
+        transform: translateX(-50%);
+    }
 }
+
 .galary__item-4 {
-    
+    top: -115px;
+    left: 593px;
+
+    .galary__text {
+        left: 50%;
+        bottom: -31px;
+        transform: translateX(-50%);
+    }
 }
+
 .galary__item-5 {
+    top: -60px;
+    right: 335px;
+
+    .galary__text {
+        left: 50%;
+        bottom: -57px;
+        transform: translateX(-50%);
+    }
 }
+
 .galary__item-6 {
+    top: 77px;
+    right: 125px;
+
+    .galary__text {
+        left: -111px;
+        bottom: -26px;
+    }
 }
+
 .galary__item-7 {
+    top: 252px;
+    right: 0;
+
+    .galary__text {
+        left: -78px;
+        bottom: 0;
+    }
 }
+
 .galary__decor {
+    width: 724px;
+    height: auto;
+    position: absolute;
+    top: 45%;
+    left: 48%;
+    transform: translate(-50%, -50%) rotate(-40deg);
+    opacity: 0.7;
+    z-index: -1;
 }
+
 .galary__prod {
+    position: absolute;
+    width: 799px;
+    height: auto;
+    bottom: -20px;
+    left: 55%;
+    transform: translateX(-50%);
 }
+
+

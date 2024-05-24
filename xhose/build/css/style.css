@@ -826,8 +826,8 @@ body {
   position: absolute;
   top: 0;
   right: -70px;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.1);
   z-index: -1;
   border-radius: 0 40px 40px 0;
@@ -2175,13 +2175,17 @@ body {
   height: 680px;
   margin: auto;
   position: relative;
+  z-index: 5;
+  margin-bottom: -5px;
 }
 .galary__block:before {
   content: "";
   width: 100%;
-  height: 1360px;
-  border-radius: 100%;
-  border: 4px solid #D9D9D9;
+  height: 100%;
+  background-image: url(../img/elipse.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -2212,4 +2216,450 @@ body {
   color: #333;
   width: auto;
   position: absolute;
+}
+
+.galary__item-1 {
+  top: 252px;
+  left: 0;
+}
+.galary__item-1 .galary__text {
+  right: -20px;
+  bottom: 0;
+}
+
+.galary__item-2 {
+  top: 77px;
+  left: 125px;
+}
+.galary__item-2 .galary__text {
+  right: -60px;
+  bottom: -26px;
+}
+
+.galary__item-3 {
+  top: -60px;
+  left: 335px;
+}
+.galary__item-3 .galary__text {
+  left: 50%;
+  bottom: -31px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.galary__item-4 {
+  top: -115px;
+  left: 593px;
+}
+.galary__item-4 .galary__text {
+  left: 50%;
+  bottom: -31px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.galary__item-5 {
+  top: -60px;
+  right: 335px;
+}
+.galary__item-5 .galary__text {
+  left: 50%;
+  bottom: -57px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.galary__item-6 {
+  top: 77px;
+  right: 125px;
+}
+.galary__item-6 .galary__text {
+  left: -111px;
+  bottom: -26px;
+}
+
+.galary__item-7 {
+  top: 252px;
+  right: 0;
+}
+.galary__item-7 .galary__text {
+  left: -78px;
+  bottom: 0;
+}
+
+.galary__decor {
+  width: 724px;
+  height: auto;
+  position: absolute;
+  top: 45%;
+  left: 48%;
+  -webkit-transform: translate(-50%, -50%) rotate(-40deg);
+      -ms-transform: translate(-50%, -50%) rotate(-40deg);
+       -o-transform: translate(-50%, -50%) rotate(-40deg);
+          transform: translate(-50%, -50%) rotate(-40deg);
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.galary__prod {
+  position: absolute;
+  width: 799px;
+  height: auto;
+  bottom: -20px;
+  left: 55%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.review__section {
+  border-radius: 40px 40px 0 0;
+  background: #eee;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.review__section-wrapper {
+  padding: 125px 0 77px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.review__section-title {
+  font-family: "TT Travels Next Trial Variable", sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  color: #333;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.review__section-title span {
+  color: #fc5a31;
+}
+
+.review__slider {
+  width: 100%;
+  height: auto;
+}
+.review__slider .owl-dots {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-top: 40px;
+}
+.review__slider .owl-dots button {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: #d9d9d9 !important;
+  margin-right: 15px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.review__slider .owl-dots button:last-child {
+  margin-right: 0;
+}
+.review__slider .owl-dots button.active {
+  background-color: #fc5a31 !important;
+}
+
+.review__slide {
+  border-radius: 40px;
+  background: #fff;
+  padding: 35px 35px 30px;
+}
+
+.review__top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.review__photo {
+  width: 85px !important;
+  height: auto;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+  border-radius: 100%;
+  margin-right: 35px;
+}
+
+.review__name {
+  font-weight: 700;
+  font-size: 20px;
+  color: #333;
+}
+
+.review__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.78;
+  color: #333;
+}
+
+.review__decor {
+  position: absolute;
+  height: auto;
+  pointer-events: none;
+}
+
+.review__decor-1 {
+  width: 412px;
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+       -o-transform: scaleX(-1);
+          transform: scaleX(-1);
+  bottom: -30px;
+  left: -358px;
+  z-index: 2;
+}
+
+.review__decor-2 {
+  width: 500px;
+  bottom: -30px;
+  right: -465px;
+}
+
+.footer__section {
+  background-image: url(../img/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.footer__section:before {
+  content: "";
+  width: 934px;
+  height: 100%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.footer__section-wrapper {
+  padding: 64px 0 160px;
+  position: relative;
+  z-index: 1;
+}
+.footer__section-wrapper .video__btn {
+  display: block;
+  position: relative;
+  bottom: auto;
+  right: auto;
+  margin-bottom: 40px;
+}
+
+.footer__logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 95px;
+}
+
+.footer__text {
+  width: 100%;
+  max-width: 460px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 31px;
+}
+.footer__text span {
+  font-weight: 700;
+}
+
+.footer__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+}
+
+.footer__title {
+  width: 100%;
+  max-width: 1015px;
+  font-family: "TT Travels Next Trial Variable", sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  color: #fff;
+}
+
+.footer__item {
+  width: 470px;
+  height: 130px;
+  position: relative;
+  margin-bottom: 23px;
+}
+
+.footer__discont {
+  width: 130px;
+  height: 60px;
+  text-align: center;
+  border-radius: 30px 30px 30px 0px;
+  background: #333;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+       -o-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-family: "TT Travels Next Trial Variable", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  color: #fff;
+  position: absolute;
+  top: 35px;
+  left: -34px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.footer__item-text {
+  width: calc(100% - 60px);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url(../img/footer-icon-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  z-index: 1;
+  padding: 17px 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.78;
+  color: #333;
+  pointer-events: none;
+}
+.footer__item-text span {
+  font-weight: 700;
+}
+.footer__item-text:before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 30px 0 0 0;
+}
+
+.footer__order {
+  width: 260px;
+  height: 65px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-radius: 0px 30px 30px 0;
+  background: #fc5a31;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-left: 80px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.footer__order:hover {
+  -webkit-transform: translateX(20px);
+      -ms-transform: translateX(20px);
+       -o-transform: translateX(20px);
+          transform: translateX(20px);
+}
+.footer__order img {
+  width: 26px;
+  height: auto;
+}
+
+.footer__prod {
+  position: absolute;
+  bottom: 0;
+  right: -280px;
+  width: 630px;
+  height: auto;
+}
+
+.footer__line {
+  background: #fc5a31;
+}
+
+.footer__line-wrapper {
+  padding: 21px 0;
+}
+
+.footer__line-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.footer__line-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  color: #fff;
+}
+.footer__line-item a:hover {
+  text-decoration: underline;
 }
