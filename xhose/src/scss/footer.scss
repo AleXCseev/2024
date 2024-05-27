@@ -114,6 +114,10 @@
         font-weight: 700;
     }
 
+    .br {
+        display: none;
+    }
+
     &:before {
         content: "";
         width: 50%;

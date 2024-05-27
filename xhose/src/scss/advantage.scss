@@ -89,7 +89,7 @@
     padding: 56px 60px 56px 38px;
     font-family: "TT Travels Next Trial Variable", sans-serif;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 30px;
     color: #fff;
     position: relative;
 
@@ -102,6 +102,7 @@
         width: 130px;
         height: auto;
         margin-bottom: -10px;
+        border-radius: 25px;
     }
 
     &:after {
@@ -170,7 +171,7 @@
 .advantage__title {
     font-family: "TT Travels Next Trial Variable", sans-serif;
     font-weight: 900;
-    font-size: 36px;
+    font-size: 30px;
     color: #333;
     margin-bottom: 20px;
 }
@@ -186,7 +187,7 @@
         width: 470px;
         height: auto;
         left: 15px;
-        bottom: -124px;
+        bottom: -170px;
     }
 }
 
