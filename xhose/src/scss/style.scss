@@ -572,14 +572,82 @@
     }
     .card__item {
         width: 100%;
-        max-width: 500px;
-        height: 800px;
+        max-width: 100%;
+        height: 900px;
         padding: 40px;
         margin-bottom: 30px;
 
         &:last-child {
             margin-bottom: 0;
         }
+    }
+    .card__item-title {
+        font-size: 48px;
+    }
+    .card__item-text {
+        font-size: 22px;
+    }    
+    .card__item-array {
+        top: 40px;
+        right: 40px;
+    }
+    .card {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .card__right {
+        width: 100%;
+        padding: 40px;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card__title {
+        text-align: center;
+        font-size: 48px;
+    }
+    .card__info-block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card__info-column:first-child {
+        margin-right: 0;
+    }
+    .card__list-item {
+        font-size: 18px;
+        text-align: center;
+    }
+    .card__list {
+        align-items: center;
+    }
+    .card__list {
+        list-style-position: inside;
+    }
+    .card__price .price{
+        justify-content: center;
+    }
+    .card__price .price__text {
+        text-align: center;
+    }
+    .card__form {
+        margin: auto;
+    }
+    .card__left:before {
+        border-radius: 50% 50% 0 0;
+    }
+    .card__left {
+        width: 100%;
+        min-height: 600px;
+        justify-content: flex-start;
+    }
+    .card__prod {
+        width: 70%;
+    }
+    .card__prod-decor {
+        width: 65%;
+        bottom: 80px;
+        right: 0;
     }
 }
 
@@ -730,6 +798,20 @@
     }
     .video__btn-icon:before {
         left: -67%;
+    }
+    .card__section {
+        border-radius: 10vw;
+    }
+    .card__section-wrapper {
+        padding: 19vw 0 15vw;
+    }
+    .card__section-title {
+        font-size: 9.8vw;
+        margin-bottom: 7vw;
+    }
+    .card__section-text {
+        font-size: 4.5vw;
+        margin-bottom: 9.8vw;
     }
 }
 

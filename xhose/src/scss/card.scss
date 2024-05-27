@@ -24,11 +24,15 @@
 }
 
 .card__section-text {
-    font-weight: 700;
+    font-weight: 400;
     font-size: 18px;
     line-height: 1.78;
     color: #333;
     margin-bottom: 40px;
+
+    span {
+        font-weight: 700;
+    }
 }
 
 .card__items {
