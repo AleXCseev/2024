@@ -35,19 +35,19 @@ var landingFunctions = {
 			dotsEach: true,
 			nav: false,
 			loop: true,
-			autoHeight: false,
+			autoHeight: true,
 			responsive:{
 				0:{
 					items: 1,
-					autoHeight: true,
+					// autoHeight: true,
 				},
 				1081: {
 					items: 2,
-					autoHeight: true,
+					// autoHeight: true,
 				},
 				1281:{
 					items: 3,
-					autoHeight: false,
+					// autoHeight: false,
 				}
 			}
 		});
