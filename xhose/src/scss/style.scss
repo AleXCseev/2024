@@ -66,6 +66,14 @@
     .delivery__title {
         font-size: 58px;
     }
+    .footer__title {
+        max-width: 860px;
+    }
+    .footer__prod {
+        bottom: 70px;
+        right: -160px;
+        width: 530px;
+    }
 }
 
 @media (max-width: 1480px) {
@@ -263,6 +271,16 @@
     }
     .review__section-title {
         font-size: 58px;
+    }
+    .footer__title {
+        max-width: 710px;
+        font-size: 58px;
+    }
+    .footer__item {
+        margin-bottom: 0;
+    }
+    .footer__section:before {
+        width: 700px;
     }
 }
 
@@ -507,6 +525,21 @@
     }
     .review__section-title {
         font-size: 48px;
+    }
+    .footer__title {
+        max-width: 520px;
+        font-size: 45px;
+    }
+    .footer__item {
+        margin-bottom: -15px;
+    }
+    .footer__section:before {
+        width: 52%;
+    }
+    .footer__prod {
+        bottom: 0px;
+        right: -160px;
+        width: 500px;
     }
 }
 
@@ -970,6 +1003,48 @@
     }
     .review__decor-1 {
         z-index: 1;
+    }
+    .footer__text {
+        display: none;
+    }
+    .footer__section-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__logo {
+        order: 1;
+        margin-bottom: 30px;
+    }
+    .footer__block {
+        flex-direction: column;
+        align-items: center;
+        order: 2;
+    }
+    .footer__section-wrapper .video__btn {
+        order: 3;
+    }
+    .footer__title {
+        max-width: 100%;
+        font-size: 48px;
+        text-align: center;
+        margin-bottom: 300px;
+    }
+    .footer__item {
+        margin-bottom: 30px;
+    }
+    .footer__section:before {
+        display: none;
+    }
+    .footer__prod {
+        top: 60%;
+        bottom: auto;
+        right: -160px;
+        width: 360px;
+        transform: translateY(-50%);
+    }
+    .footer__section-wrapper {
+        padding: 35px 61px;
     }
 }
 
