@@ -36,21 +36,33 @@ var landingFunctions = {
 			nav: false,
 			loop: true,
 			autoHeight: false,
-			// responsive:{
-			// 	0:{
-			// 		items: 1,
-			// 		autoHeight: true,
-			// 	},
-			// 	1081: {
-			// 		items: 2,
-			// 		autoHeight: false,
-			// 	},
-			// 	1281:{
-			// 		items: 3,
-			// 		autoHeight: false,
-			// 	}
-			// }
+			responsive:{
+				0:{
+					items: 1,
+					autoHeight: true,
+				},
+				1081: {
+					items: 2,
+					autoHeight: true,
+				},
+				1281:{
+					items: 3,
+					autoHeight: false,
+				}
+			}
 		});
+
+		if($(window).width() <= 1080) {
+			$('.galary__items').addClass("owl-carousel").owlCarousel({
+				items: 3,
+				margin: 70,
+				dots: true,
+				dotsEach: true,
+				nav: false,
+				loop: true,
+				autoHeight: false,
+			});
+		}
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
