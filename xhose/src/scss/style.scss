@@ -433,7 +433,7 @@
     }
     .card__prod-decor {
         width: 400px;
-        bottom: 130px;
+        bottom: 85px;
         right: -80px;
     }
     .card__right {
@@ -1054,19 +1054,23 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 840px) {
     .footer__prod {
         top: 57%;
-        bottom: auto;
+        right: -70px;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer__prod {
         right: -60px;
-        pointer-events: none;
     }
 }
 
 @media (max-width: 700px) {
     .container {
         width: 100%;
-        padding: 0 15px;
+        padding: 0 3vw;
     }
     .header__section-wrapper:before {
         width: 100%;
@@ -1091,13 +1095,13 @@
         padding: 6vw 0 14vw;
     }
     .header__section-wrapper {
-        padding: 10.8vw 4.8vw 6.5vw;
+        padding: 10.8vw 2.8vw 6.5vw;
     }
     .header__top {
         margin-bottom: 6.5vw;
     }
     .header__title {
-        font-size: 9.9vw;
+        font-size: 7.8vw;
         margin-bottom: 52vw;
         word-wrap: break-word;
         position: relative;
@@ -1123,18 +1127,18 @@
         margin-bottom: 6.8vw;
     }
     .header__section-wrapper:after {
-        height: 40%;
+        height: 45%;
     }
     .header__prod {
         width: 66vw;
-        top: 59%;
+        top: 53%;
         right: 0;
     }
     .advantage__info-left {
         padding: 11vw 4.8vw 8.5vw;
     }
     .advantage__left-text {
-        font-size: 8vw;
+        font-size: 7vw;
     }
     .advantage__info-img {
         width: 45vw;
@@ -1151,7 +1155,7 @@
         margin-bottom: 7vw;
     }
     .advantage__info-right {
-        font-size: 8vw;
+        font-size: 7vw;
         width: 100%;
         padding: 6vw 4.8vw;
     }
@@ -1161,8 +1165,10 @@
         margin-left: 2vw;
     }
     .advantage__info-right:after {
-        bottom: 9vw;
-        right: 7vw;
+        bottom: 8.5vw;
+        right: 3vw;
+        width: 5vw;
+        height: 5vw;
     }
     .advantage__info {
         margin-bottom: 22vw;
@@ -1176,7 +1182,7 @@
         padding: 7vw 4.8vw 0;
     }
     .advantage__title {
-        font-size: 8.8vw;
+        font-size: 6.8vw;
         margin-bottom: 2vw;
         word-wrap: break-word;
     }
