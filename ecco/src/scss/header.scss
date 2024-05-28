@@ -1,0 +1,142 @@
+.header__section-wrapper {
+    position: relative;
+    // z-index: 1;
+
+    &:before {
+        content: "";
+        width: 700px;
+        height: 500px;
+        border-radius: 100%;
+        background-color: #decdfa;
+        filter: blur(50px);
+        position: absolute;
+        top: -336px;
+        right: -609px;
+        transform: rotate(30deg);
+    }
+}
+
+.header__decor {
+    position: absolute;
+    z-index: -1;
+}
+
+.header__decor-1 {
+    bottom: -400px;
+    left: -80px;
+    filter: blur(100px);
+    opacity: 0.8;
+}
+
+.header__decor-2 {
+    filter: blur(100px);
+    top: -500px;
+    fill: #8d8de5;
+    left: -930px;
+    transform: rotate(-230deg);
+}
+
+.header__content {
+    width: 555px;
+    height: auto;
+    padding: 50px 0 250px;
+    position: relative;
+    z-index: 1;
+}
+
+.header__logo {
+    width: auto;
+    height: 50px;
+    margin-bottom: 67px;
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.3;
+    color: #1c1c5f;
+    margin-bottom: 66px;
+
+    span {
+        color: #6c20f6;
+    }
+}
+
+.header__boot {
+    position: absolute;
+    width: 821px;
+    height: auto;
+    top: 190px;
+    right: -720px;
+    z-index: 1;
+}
+
+.header__img {
+    position: absolute;
+    top: 0;
+    right: -585px;
+    width: 484px;
+    height: auto;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+.header__btn-wrapper {
+    width: 100%;
+    max-width: 360px;
+}
+
+.order__btn {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #ff3d1b 20.19%, #fd6e33 79.04%);
+    position: relative;
+
+    span {
+        position: relative;
+        z-index: 2;
+    }
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 30px;
+        z-index: 1;
+        transition: 0.5s ease;
+        opacity: 0;
+        background: linear-gradient(-45deg, #ff3d1b 20.19%, #fd6e33 79.04%);
+    }
+
+    &:hover {
+        &:before {
+            opacity: 1;
+        }
+    }
+}
+
+.header__date {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #222;
+    text-align: center;
+    margin-top: 5px;
+
+    span {
+        font-weight: 700;
+        color: #6c20f6;
+    }
+}
