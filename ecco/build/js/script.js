@@ -37,15 +37,15 @@ var landingFunctions = {
 		// 	loop: true,
 		// });
 
-		// $('.review__slider').owlCarousel({
-		// 	items: 1,
-		// 	margin: 40,
-		// 	dots: true,
-		// 	nav: true,
-		// 	loop: true,
-		// 	stagePadding: 20,
-		// 	autoHeight: true,
-		// });
+		$('.review__slider').owlCarousel({
+			items: 3,
+			margin: 30,
+			dots: true,
+			nav: true,
+			loop: true,
+			stagePadding: 15,
+			autoHeight: true,
+		});
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
