@@ -10,7 +10,7 @@ var landingFunctions = {
 	initLibraris: function() {
 		
 		$('[href*="#"]').on('click', function (e) {
-			var fixedOffset = 50;
+			var fixedOffset = 0;
 			// var cardHeight = $("#order").outerHeight(false)
 			// var windowHeight = $(window).height()
 
@@ -41,10 +41,19 @@ var landingFunctions = {
 			items: 3,
 			margin: 30,
 			dots: true,
+			dotsEach: true,
 			nav: true,
 			loop: true,
 			stagePadding: 15,
 			autoHeight: true,
+		});
+
+		$.raty.path = $("body").data("path") +  '/img/raty';
+
+		$('.modal__raiting').raty({
+			half: true,
+			space: false,
+			number: 5,
 		});
 
 		$('[data-fancybox]').fancybox({

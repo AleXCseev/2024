@@ -6,6 +6,15 @@
     padding: 88px 0 95px;
 }
 
+.review__decor {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(100px);
+    z-index: -1;
+}
+
 .review__section-title {
     font-weight: 700;
     font-size: 40px;
@@ -21,6 +30,58 @@
 
     .owl-stage-outer {
         padding: 20px 0;
+    }
+
+    .owl-nav {
+        width: 360px;
+        height: auto;
+        margin: auto;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #746293 !important;
+            border-radius: 16px;
+            background-image: url(../img/arrow.png) !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+
+            span {
+                display: none;
+            }
+        }
+
+        .owl-next {
+            transform: rotate(180deg);
+        }
+    }
+
+    .owl-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -30px;
+
+        button {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: #746293 !important;
+            margin-right: 10px;
+            border: 1px solid #746293 !important;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.active {
+                background-color: #fff !important;
+            }
+        }
     }
 }
 
@@ -81,8 +142,32 @@
 }
 
 .add__review {
+    align-self: flex-end;
+    font-weight: 400;
+    font-size: 16px;
+    color: #555;
+    margin-top: -15px;
+    margin-bottom: 67px;
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
 }
 
-.header__btn-wrapper {
+.review__boot {
+    position: absolute;
+    height: auto;
+    width: 252px;
+    pointer-events: none;
+}
+
+.review__boot-1 {
+    top: 100px;
+    left: -280px;
+}
+
+.review__boot-2 {
+    top: 100px;
+    right: -280px;
+    transform: scaleX(-1);
 }
 
