@@ -800,14 +800,14 @@ body {
 .header__decor-1 {
   bottom: -400px;
   left: -80px;
-  -webkit-filter: blur(100px);
-          filter: blur(100px);
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
   opacity: 0.8;
 }
 
 .header__decor-2 {
-  -webkit-filter: blur(100px);
-          filter: blur(100px);
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
   top: -500px;
   fill: #8d8de5;
   left: -930px;
@@ -1092,9 +1092,9 @@ body {
 
 .info__decor {
   position: absolute;
-  -webkit-filter: blur(100px);
-          filter: blur(100px);
-  opacity: 0.8;
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
+  opacity: 0.6;
   top: -70px;
   left: -400px;
   z-index: -1;
@@ -1171,6 +1171,9 @@ body {
   color: #1c1c5f;
   margin-left: auto;
 }
+.info__text span {
+  font-weight: 700;
+}
 
 .info__boot {
   position: absolute;
@@ -1228,9 +1231,9 @@ body {
   z-index: -1;
   top: -585px;
   right: -400px;
-  opacity: 0.5;
-  -webkit-filter: blur(100px);
-          filter: blur(100px);
+  opacity: 0.4;
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
 }
 
 .bar__top {
@@ -1712,9 +1715,9 @@ body {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
           justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+          align-items: stretch;
   margin-bottom: 100px;
   position: relative;
   z-index: 1;
@@ -1725,7 +1728,7 @@ body {
 
 .card__left {
   width: 663px;
-  height: 100%;
+  height: auto;
   background: -webkit-linear-gradient(315deg, #8c85e4 20%, #dae4ff 100%);
   background: linear-gradient(135deg, #8c85e4 20%, #dae4ff 100%);
   display: -webkit-box;
@@ -1735,6 +1738,9 @@ body {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
   -webkit-flex-shrink: 0;
           flex-shrink: 0;
   -webkit-box-align: start;
@@ -2007,10 +2013,11 @@ body {
 }
 
 .card__decor-1 {
-  -webkit-filter: blur(100px);
-          filter: blur(100px);
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
   top: -400px;
   left: -450px;
+  opacity: 0.8;
 }
 
 .card__wrapper-1:before {
@@ -2031,26 +2038,27 @@ body {
 }
 
 .card__decor-2 {
-  -webkit-filter: blur(100px);
-          filter: blur(100px);
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
   top: -255px;
   right: -380px;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .card__decor-3 {
-  -webkit-filter: blur(100px);
-          filter: blur(100px);
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
   top: -425px;
   left: -400px;
+  opacity: 0.8;
 }
 
 .card__decor-4 {
-  -webkit-filter: blur(100px);
-          filter: blur(100px);
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
   top: -560px;
   right: -380px;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .review__section-wrapper {
@@ -2076,9 +2084,10 @@ body {
       -ms-transform: translate(-50%, -50%);
        -o-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-filter: blur(100px);
-          filter: blur(100px);
+  -webkit-filter: blur(60px);
+          filter: blur(60px);
   z-index: -1;
+  opacity: 0.8;
 }
 
 .review__section-title {
@@ -2754,13 +2763,18 @@ body {
     width: 100%;
     padding: 0 3.6vw;
   }
+  .header__decor-1 {
+    -webkit-filter: blur(30px);
+            filter: blur(30px);
+  }
   .header__decor-2 {
-    width: 95vw;
+    width: 125vw;
     height: auto;
-    top: -9vw;
-    left: -30vw;
-    -webkit-filter: blur(50px);
-            filter: blur(50px);
+    top: -30vw;
+    left: -48vw;
+    -webkit-filter: blur(30px);
+            filter: blur(30px);
+    opacity: 0.6;
   }
   .header__content {
     padding: 12vw 0 19vw;
@@ -2782,6 +2796,8 @@ body {
     height: 88vw;
     top: 70vw;
     left: 55%;
+    -webkit-filter: blur(30px);
+            filter: blur(30px);
   }
   .header__img {
     border-radius: 12vw;
@@ -2910,10 +2926,11 @@ body {
         -ms-transform: translateX(-50%) rotate(-30deg);
          -o-transform: translateX(-50%) rotate(-30deg);
             transform: translateX(-50%) rotate(-30deg);
+    opacity: 0.8;
   }
   .info__decor {
-    -webkit-filter: blur(50px);
-            filter: blur(50px);
+    -webkit-filter: blur(30px);
+            filter: blur(30px);
     top: auto;
     bottom: -40%;
     left: -45vw;
@@ -3053,8 +3070,8 @@ body {
         -ms-transform: rotate(30deg);
          -o-transform: rotate(30deg);
             transform: rotate(30deg);
-    -webkit-filter: blur(50px);
-            filter: blur(50px);
+    -webkit-filter: blur(30px);
+            filter: blur(30px);
   }
   .card__decor-2 {
     display: none;

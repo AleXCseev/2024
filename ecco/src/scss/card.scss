@@ -45,7 +45,7 @@
     overflow: hidden;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     margin-bottom: 100px;
     position: relative;
     z-index: 1;
@@ -57,10 +57,11 @@
 
 .card__left {
     width: 663px;
-    height: 100%;
+    height: auto;
     background: linear-gradient(135deg, #8c85e4 20%, #dae4ff 100%);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex-shrink: 0;
     align-items: flex-start;
     padding: 50px 50px 64px;
@@ -292,9 +293,10 @@
 }
 
 .card__decor-1 {
-    filter: blur(100px);
+    filter: blur(60px);
     top: -400px;
     left: -450px;
+    opacity: 0.8;
 }
 
 .card__wrapper-1 {
@@ -313,21 +315,22 @@
 }
 
 .card__decor-2 {
-    filter: blur(100px);
+    filter: blur(60px);
     top: -255px;
     right: -380px;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 .card__decor-3 {
-    filter: blur(100px);
+    filter: blur(60px);
     top: -425px;
     left: -400px;
+    opacity: 0.8;
 }
 
 .card__decor-4 {
-    filter: blur(100px);
+    filter: blur(60px);
     top: -560px;
     right: -380px;
-    opacity: 0.5;
+    opacity: 0.4;
 }

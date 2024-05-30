@@ -5,8 +5,8 @@
 
 .info__decor {
     position: absolute;
-    filter: blur(100px);
-    opacity: 0.8;
+    filter: blur(60px);
+    opacity: 0.6;
     top: -70px;
     left: -400px;
     z-index: -1;
@@ -64,6 +64,10 @@
     line-height: 1.3;
     color: #1c1c5f;
     margin-left: auto;
+
+    span {
+        font-weight: 700;
+    }
 }
 
 .info__boot {

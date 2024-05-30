@@ -394,12 +394,16 @@
         width: 100%;
         padding: 0 3.6vw;
     }
+    .header__decor-1 {
+        filter: blur(30px);
+    }
     .header__decor-2 {
-        width: 95vw;
+        width: 125vw;
         height: auto;
-        top: -9vw;
-        left: -30vw;
-        filter: blur(50px);
+        top: -30vw;
+        left: -48vw;
+        filter: blur(30px);
+        opacity: 0.6;
     }
     .header__content {
         padding: 12vw 0 19vw;
@@ -421,6 +425,7 @@
         height: 88vw;
         top: 70vw;
         left: 55%;
+        filter: blur(30px);
     }
     .header__img {
         border-radius: 12vw;
@@ -537,10 +542,11 @@
             left: 50%;
             top: 35%;
             transform: translateX(-50%) rotate(-30deg);
+            opacity: 0.8;
         }
     }
     .info__decor {
-        filter: blur(50px);
+        filter: blur(30px);
         top: auto;
         bottom: -40%;
         left: -45vw;
@@ -670,7 +676,7 @@
             border-radius: 100%;
             background-color: #decdfa;
             transform: rotate(30deg);
-            filter: blur(50px);
+            filter: blur(30px);
         }
     }
     .card__decor-2 {
