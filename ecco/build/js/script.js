@@ -1,13 +1,26 @@
 var landingFunctions = {
 	init: function() {
 		this.initLibraris()
+		this.getPrice();
 		this.bar()
 		this.time()
 		this.video()
 		this.modal()
 	}, 
 
+	getPrice: function() {
+		$('.new__price').each(function () {
+			var p = parseInt($(this).text());
+	        var currency = $(this).text().replace(/[0-9]/g, '');
+			p = p * 100 / 30;
+			p2 = Math.ceil(p);
+			$(this).closest('.price').find('.old__price').text(p2 + ' ' + currency);
+		});
+	},
+
 	initLibraris: function() {
+
+
 		
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = 0;
@@ -21,22 +34,6 @@ var landingFunctions = {
 			e.preventDefault();
 		})
 
-		// $('.galary__slider').owlCarousel({
-		// 	items: 1,
-		// 	margin: 20,
-		// 	dots: true,
-		// 	nav: true,
-		// 	loop: true,
-		// });
-
-		// $('.card__slider').owlCarousel({
-		// 	items: 1,
-		// 	margin: 20,
-		// 	dots: true,
-		// 	nav: true,
-		// 	loop: true,
-		// });
-
 		$('.review__slider').owlCarousel({
 			items: 3,
 			margin: 30,
@@ -46,6 +43,17 @@ var landingFunctions = {
 			loop: true,
 			stagePadding: 15,
 			autoHeight: true,
+			responsive:{
+				0:{
+					items:1,
+				},
+				1081:{
+					items:2,
+				},
+				1281:{
+					items:3,
+				}
+			}
 		});
 
 		$.raty.path = $("body").data("path") +  '/img/raty';
@@ -54,6 +62,18 @@ var landingFunctions = {
 			half: true,
 			space: false,
 			number: 5,
+		});
+
+		AOS.init({
+			disable : function() {
+				if( $(window).width() <= 1080) {
+					return true;
+				}
+				return false
+			},
+			once: true,
+			duration: 1000,
+			offset : 0,
 		});
 
 		$('[data-fancybox]').fancybox({

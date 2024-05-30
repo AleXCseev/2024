@@ -839,6 +839,7 @@ body {
   margin-bottom: 66px;
 }
 .header__title span {
+  display: inline-block;
   color: #6c20f6;
 }
 
@@ -1175,11 +1176,7 @@ body {
   position: absolute;
   width: 682px;
   height: auto;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-       -o-transform: translateX(-50%);
-          transform: translateX(-50%);
+  left: calc(50% - 341px);
   top: 300px;
   z-index: 2;
 }
@@ -1253,6 +1250,7 @@ body {
   color: #1c1c5f;
 }
 .bar__title span {
+  display: inline-block;
   color: #6c20f6;
 }
 
@@ -1690,6 +1688,9 @@ body {
 }
 .card__section-title span {
   color: #5b2eac;
+}
+.card__section-title b {
+  display: inline-block;
 }
 
 .card__wrapper {
@@ -2354,6 +2355,7 @@ body {
   .info__boot {
     width: 600px;
     top: 260px;
+    left: calc(50% - 300px);
   }
   .info__item-text {
     font-size: 22px;
@@ -2391,10 +2393,13 @@ body {
     font-size: 40px;
     margin-bottom: 60px;
   }
+  .review__section .container {
+    width: 800px;
+  }
 }
 @media (max-width: 1080px) {
   .container {
-    width: 700px;
+    width: 700px !important;
   }
   .header__content {
     width: 100%;
@@ -2632,10 +2637,41 @@ body {
     -webkit-justify-content: center;
             justify-content: center;
   }
+  .review__boot {
+    position: static;
+    display: inline-block;
+  }
+  .review__boot-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+            align-items: flex-start;
+    margin-top: 150px;
+  }
+  .review__boot-2 {
+    margin-top: -150px;
+  }
+  .review__section-title {
+    margin-bottom: 20px;
+  }
+  .review__section-wrapper {
+    padding: 39px 0 45px;
+  }
+  .add__review {
+    -webkit-align-self: center;
+            align-self: center;
+    margin-top: 18px;
+    margin-bottom: 28px;
+  }
 }
 @media (max-width: 700px) {
   .container {
-    width: 100%;
+    width: 100% !important;
     padding: 0 15px;
   }
   .bar {
@@ -2708,6 +2744,9 @@ body {
   }
   .bar__title {
     font-size: 36px;
+  }
+  .review__slider {
+    width: 100vw;
   }
 }
 @media (max-width: 540px) {
@@ -2923,6 +2962,14 @@ body {
     font-size: 10vw;
     margin-bottom: 1vw;
   }
+  .card__rating-text {
+    font-size: 6vw;
+    margin-right: 2vw;
+  }
+  .card__rating img {
+    width: 4.5vw;
+    margin-right: 3px;
+  }
   .card__1 .card__boot {
     width: 115%;
     margin: -17vw 0 -15vw;
@@ -3034,5 +3081,83 @@ body {
         -ms-transform: translate(-50%, -50%);
          -o-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
+  }
+  .review__section-wrapper {
+    padding: 9.8vw 0 11vw;
+  }
+  .review__section-title {
+    font-size: 9vw;
+  }
+  .review__section-title {
+    margin-bottom: 5vw;
+  }
+  .review {
+    padding: 8vw 7.5vw 10vw;
+  }
+  .review__text {
+    font-size: 4.5vw;
+    margin-bottom: 5vw;
+  }
+  .review__name {
+    font-weight: 500;
+    font-size: 4.8vw;
+    line-height: 1;
+    color: #1c1c5f;
+  }
+  .review__slider .owl-nav {
+    width: calc(100% - 30px);
+    margin-top: 0;
+  }
+  .review__boot {
+    width: 44vw;
+  }
+  .review__boot-block {
+    margin-top: 30vw;
+    margin-bottom: 4vw;
+  }
+  .review__boot-2 {
+    margin-top: -30vw;
+    margin-left: -5vw;
+  }
+  .add__review {
+    margin-bottom: 7vw;
+  }
+  .review__decor {
+    -webkit-transform: translate(-50%, -50%) rotate(-108deg);
+        -ms-transform: translate(-50%, -50%) rotate(-108deg);
+         -o-transform: translate(-50%, -50%) rotate(-108deg);
+            transform: translate(-50%, -50%) rotate(-108deg);
+    width: 340vw;
+    height: auto;
+    top: 55%;
+  }
+  .footer__line-wrapper {
+    padding: 4.5vw 0;
+  }
+  .footer__line-item {
+    font-size: 3.5vw;
+  }
+  .fancybox-content {
+    padding: 44px 20px;
+  }
+  .review__section .card__rating-text {
+    font-size: 5.8vw;
+    margin-right: 2vw;
+  }
+  .review__block .card__rating img {
+    width: 4.5vw !important;
+  }
+  .review__block {
+    margin-bottom: 2vw;
+  }
+  .review__info {
+    font-size: 4.5vw;
+  }
+  .review__info img {
+    width: 4.5vw !important;
+    margin-right: 2vw;
+  }
+  .review {
+    border-radius: 12vw;
   }
 }

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="libs/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/animations.css">
     <link rel="stylesheet" href="libs/jquery.raty.css">
+    <link rel="stylesheet" href="libs/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <title>ECCO</title>
 </head>
@@ -32,9 +33,9 @@
                     Разыгрываем скидку 
                     на кожаную обувь !
                     Выигрывайте персональную <br>
-                    <span>скидку до 70%</span>
+                    <span>скидку до <span class="pulse">70%</span></span>
                 </h1>
-                <img src="img/header-boot.png" alt="" class="header__boot">
+                <img src="img/header-boot.png" alt="" class="header__boot" data-aos="fade-left">
                 <img src="img/header-img.jpg" alt="" class="header__img">
                 <div class="header__btn-wrapper">
                     <a href="#order" class="order__btn">
@@ -73,11 +74,11 @@
                     <img src="img/play.png" alt="" class="video__play">
                 </div>
                 <p class="video__logo">FLOWT</p>
-                <img src="img/video-boot.png" alt="" class="video__boot">
+                <img src="img/video-boot.png" alt="" class="video__boot" data-aos="fade-right">
                 <div class="video__items">
-                    <img src="img/video-img-1.jpg" alt="" class="video__item video__item-1">
-                    <img src="img/video-img-2.jpg" alt="" class="video__item video__item-2">
-                    <img src="img/video-img-3.jpg" alt="" class="video__item video__item-3">
+                    <img src="img/video-img-1.jpg" alt="" class="video__item video__item-1" data-aos="fade-left">
+                    <img src="img/video-img-2.jpg" alt="" class="video__item video__item-2" data-aos="fade-left" data-aos-delay="200">
+                    <img src="img/video-img-3.jpg" alt="" class="video__item video__item-3" data-aos="fade-left" data-aos-delay="400">
                 </div>
             </div>
         </div>
@@ -109,7 +110,7 @@
             <p class="info__text">
                 Lorem ipsum dolor sit amet consectetur. Amet ut tellus quam sapien auctor eget nec at amet. Scelerisque tellus aliquet urna sapien imperdiet sit commodo.
             </p>
-            <img src="img/info-boot.png" alt="" class="info__boot">
+            <img src="img/info-boot.png" alt="" class="info__boot" data-aos="zoom-in">
             <img src="img/info-img-1.jpg" alt="" class="info__img info__img-1">
             <img src="img/info-img-2.jpg" alt="" class="info__img info__img-2">
         </div>
@@ -127,7 +128,7 @@
             <div class="bar__top">
                 <h2 class="bar__title">
                     Розігруємо знижку на взуття <br>
-                    Вигравай персональну <span>знижку до 70%</span>
+                    Вигравай персональну <span>знижку до <span class="pulse">70%</span></span>
                 </h2>
             </div>
             <div class="bar__block">
@@ -220,7 +221,7 @@
         <div class="card__section-wrapper">
             <h2 class="card__section-title">
                 <span>Поздравляем!</span> <br>
-                Ваша персональная скидка составила 70%
+                Ваша персональная скидка составила <b class="pulse">70%</b>
             </h2>
             <div class="card__wrapper card__wrapper-1">
                 <svg class="card__decor card__decor-1" width="870" height="1451" viewBox="0 0 870 1451" fill="#8D8DE5" xmlns="http://www.w3.org/2000/svg">
@@ -303,16 +304,12 @@
                                 <label for="size">
                                     <img src="img/tringle.png" alt="">
                                 </label>
-                                <select id="size" name="size" class="card__select card__input" size="1">
-                                    <option value="39" hidden="">Розмір</option>
-                                    <option value="39">39 (25,5см)</option>
-                                    <option value="40">40 (26см)</option>
-                                    <option value="41">41 (26,5см)</option>
-                                    <option value="42">42 (27см)</option>
-                                    <option value="43">43 (27,5см)</option>
-                                    <option value="44">44 (28см)</option>
-                                    <option value="45">45 (28,5см)</option>
-                                    <option value="46">46 (29см)</option>
+                                <select name="" id="" class="card__input">
+                                    <option value="36">36 (23 cм)</option>
+                                    <option value="37">37 (23,5 cм)</option>
+                                    <option value="38">38 (24 cм)</option>
+                                    <option value="39">39 (25 cм)</option>
+                                    <option value="40">40 (26 cм)</option>
                                 </select>
                             </div>
                             <button type="submit" class="order__btn card__submit">
@@ -406,16 +403,12 @@
                                 <label for="size">
                                     <img src="img/tringle.png" alt="">
                                 </label>
-                                <select id="size" name="size" class="card__select card__input" size="1">
-                                    <option value="39" hidden="">Розмір</option>
-                                    <option value="39">39 (25,5см)</option>
-                                    <option value="40">40 (26см)</option>
-                                    <option value="41">41 (26,5см)</option>
-                                    <option value="42">42 (27см)</option>
-                                    <option value="43">43 (27,5см)</option>
-                                    <option value="44">44 (28см)</option>
-                                    <option value="45">45 (28,5см)</option>
-                                    <option value="46">46 (29см)</option>
+                                <select name="" id="" class="card__input">
+                                    <option value="36">36 (23 cм)</option>
+                                    <option value="37">37 (23,5 cм)</option>
+                                    <option value="38">38 (24 cм)</option>
+                                    <option value="39">39 (25 cм)</option>
+                                    <option value="40">40 (26 cм)</option>
                                 </select>
                             </div>
                             <button type="submit" class="order__btn card__submit">
@@ -509,16 +502,12 @@
                                 <label for="size">
                                     <img src="img/tringle.png" alt="">
                                 </label>
-                                <select id="size" name="size" class="card__select card__input" size="1">
-                                    <option value="39" hidden="">Розмір</option>
-                                    <option value="39">39 (25,5см)</option>
-                                    <option value="40">40 (26см)</option>
-                                    <option value="41">41 (26,5см)</option>
-                                    <option value="42">42 (27см)</option>
-                                    <option value="43">43 (27,5см)</option>
-                                    <option value="44">44 (28см)</option>
-                                    <option value="45">45 (28,5см)</option>
-                                    <option value="46">46 (29см)</option>
+                                <select name="" id="" class="card__input">
+                                    <option value="36">36 (23 cм)</option>
+                                    <option value="37">37 (23,5 cм)</option>
+                                    <option value="38">38 (24 cм)</option>
+                                    <option value="39">39 (25 cм)</option>
+                                    <option value="40">40 (26 cм)</option>
                                 </select>
                             </div>
                             <button type="submit" class="order__btn card__submit">
@@ -612,16 +601,12 @@
                                 <label for="size">
                                     <img src="img/tringle.png" alt="">
                                 </label>
-                                <select id="size" name="size" class="card__select card__input" size="1">
-                                    <option value="39" hidden="">Розмір</option>
-                                    <option value="39">39 (25,5см)</option>
-                                    <option value="40">40 (26см)</option>
-                                    <option value="41">41 (26,5см)</option>
-                                    <option value="42">42 (27см)</option>
-                                    <option value="43">43 (27,5см)</option>
-                                    <option value="44">44 (28см)</option>
-                                    <option value="45">45 (28,5см)</option>
-                                    <option value="46">46 (29см)</option>
+                                <select name="" id="" class="card__input">
+                                    <option value="36">36 (23 cм)</option>
+                                    <option value="37">37 (23,5 cм)</option>
+                                    <option value="38">38 (24 cм)</option>
+                                    <option value="39">39 (25 cм)</option>
+                                    <option value="40">40 (26 cм)</option>
                                 </select>
                             </div>
                             <button type="submit" class="order__btn card__submit">
@@ -817,8 +802,10 @@
                 </div>
             </div>
             <button class="add__review">Оставить отзыв</button>
-            <img src="img/review-boot.png" alt="" class="review__boot review__boot-1">
-            <img src="img/review-boot.png" alt="" class="review__boot review__boot-2">
+            <div class="review__boot-block">
+                <img src="img/review-boot.png" alt="" class="review__boot review__boot-1">
+                <img src="img/review-boot.png" alt="" class="review__boot review__boot-2">
+            </div>
             <div class="header__btn-wrapper">
                 <a href="#order" class="order__btn">
                     <span>
@@ -911,6 +898,7 @@
     <script src="libs/jquery.fancybox.min.js"></script>
     <script src="libs/owl.carousel.min.js"></script>
     <script src="libs/jquery.raty.js"></script>
+    <script src="libs/aos.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

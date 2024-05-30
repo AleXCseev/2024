@@ -70,8 +70,8 @@
     position: absolute;
     width: 682px;
     height: auto;
-    left: 50%;
-    transform: translateX(-50%);
+    left: calc(50% - 341px);
+    // transform: translateX(-50%);
     top: 300px;
     z-index: 2;
 }
