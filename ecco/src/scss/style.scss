@@ -29,10 +29,15 @@
         right: -500px;
         width: 430px;
     }
-    .header__boot {
-        width: 740px;
-        top: 190px;
-        right: -610px;
+    .header__boot-1 {
+        width: 410px;
+        top: 390px;
+        right: -270px;
+    }
+    .header__boot-2 {
+        width: 460px;
+        top: 100px;
+        right: -450px;
     }
     .video__left {
         width: 420px;
@@ -55,7 +60,7 @@
         right: -150px;
     }
     .video__boot {
-        width: 580px;
+        width: 500px;
         bottom: -20px;
         left: -515px;
     }
@@ -98,7 +103,7 @@
         width: 560px;
         height: auto;
     }
-    .card__1 .card__boot {
+    .card__2 .card__boot {
         width: 120%;
         margin: -100px 0 -100px -35px;
     }
@@ -112,6 +117,9 @@
     .card__section-title {
         font-size: 40px;
         margin-bottom: 60px;
+    }
+    .card__wrapper-select .card__input-wrapper {
+        width: 155px;
     }
     .review__section .container {
         width: 800px;
@@ -137,13 +145,27 @@
         text-align: center;
         margin-bottom: 0;
     }
+    .header__boot-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .header__boot {
         position: static;
-        width: 100%;
-        top: 0;
+        
+        top: auto;
         right: auto;
-        margin-top: -60px;
-        margin-bottom: -20px;
+    }
+    .header__boot-1 {
+        transform: rotate(-15deg);
+        width: 45%;
+        margin-top: -80px;
+        margin-left: -30px;
+    }
+    .header__boot-2 {
+        width: 55%;
+        transform: rotate(25deg);
+        position: relative;
     }
     .header__img {
         width: 100%;
@@ -207,8 +229,8 @@
         bottom: auto;
         left: auto;
         width: 100%;
-        max-width: 580px;
-        margin-top: -60px;
+        max-width: 500px;
+        margin-top: -40px;
         z-index: 1;
     }
     .video__items {
@@ -284,12 +306,18 @@
     .card__rating {
         width: auto;
     }
-    .card__1 .card__boot {
+    .card__boot {
+        margin: -80px 0 -10px 10px;
+    }
+    .card__2 .card__boot {
         width: 115%;
         margin: -120px 0 -120px;
     }
     .card__price .price {
         justify-content: center;
+    }
+    .card__wrapper-select .card__input-wrapper {
+        width: 48%;
     }
     .review__boot {
         position: static;
@@ -415,10 +443,16 @@
     .header__title {
         font-size: 8.2vw;
     }
-    .header__boot {
-        width: 100vw;
-        margin-top: -9vw;
-        margin-bottom: -4vw;
+    .header__boot-wrapper {
+        margin-top: 3vw;
+    }
+    .header__boot-1 {
+        width: 55%;
+        margin-top: -12vw;
+        margin-left: -10vw;
+    }
+    .header__boot-2 {
+        width: 60%;
     }
     .header__section-wrapper:before {
         width: 124vw;
@@ -478,7 +512,7 @@
         font-size: 24vw;
     }
     .video__boot {
-        margin-top: -12vw;
+        margin-top: -8vw;
     }
     .video__item-1 {
         display: none;
@@ -603,7 +637,7 @@
         width: 4.5vw;
         margin-right: 3px;
     }
-    .card__1 .card__boot {
+    .card__2 .card__boot {
         width: 115%;
         margin: -17vw 0 -15vw;
     }
@@ -637,7 +671,8 @@
         margin-bottom: 12vw;
     }
     .card__boot {
-        margin: 3vw 0 5vw;
+        width: 112%;
+        margin: -4vw 0 0 4vw;
     }
     .card__delivery {
         flex-direction: column;
@@ -697,6 +732,13 @@
         left: 30%;
         right: auto;
         transform: translate(-50%, -50%);
+    }
+    .card__wrapper-select {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card__wrapper-select .card__input-wrapper {
+        width: 100%;
     }
     .review__section-wrapper {
         padding: 9.8vw 0 11vw;

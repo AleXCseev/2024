@@ -20,7 +20,22 @@ var landingFunctions = {
 
 	initLibraris: function() {
 
+		$('.select select').customSelect({
+			// includeValue: true,
+			transition: 200,
+			placeholder: '<span class="select__placeholder">Color</span>',
+			hideCallback: function () {
+				const color = $(this).find(".custom-select__option--value");
 
+				if(color.hasClass("option__black")) {
+					$(this).closest(".card").find(".card__boot, .card__photos").hide().removeClass("active")
+					$(this).closest(".card").find(".card__boot-black, .card__photos-black").fadeIn(300).addClass("active")
+				} else {
+					$(this).closest(".card").find(".card__boot, .card__photos").hide().removeClass("active")
+					$(this).closest(".card").find(".card__boot-red, .card__photos-red").fadeIn(300).addClass("active")
+				}
+			}
+		});
 		
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = 0;
@@ -64,17 +79,17 @@ var landingFunctions = {
 			number: 5,
 		});
 
-		AOS.init({
-			disable : function() {
-				if( $(window).width() <= 1080) {
-					return true;
-				}
-				return false
-			},
-			once: true,
-			duration: 1000,
-			offset : 0,
-		});
+		// AOS.init({
+		// 	disable : function() {
+		// 		if( $(window).width() <= 1080) {
+		// 			return true;
+		// 		}
+		// 		return false
+		// 	},
+		// 	once: true,
+		// 	duration: 1000,
+		// 	offset : 0,
+		// });
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
@@ -164,7 +179,7 @@ var landingFunctions = {
 		}
 
 		// $(".date__1").text(getDate(-5));
-    	$(".date").text(getDate(2));
+    	$(".date").text(getDate(10));
 	},
 
 	video: function() {

@@ -113,14 +113,32 @@
 }
 
 .card__boot {
-    width: 105%;
-    margin: -10px 0 0px -10px;
+    width: 110%;
+    margin: -80px 0 -10px -10px;
 }
 
-.card__1 .card__boot {
+.card__2 .card__boot {
     width: auto;
     height: auto;
     margin: -110px 0 -120px -35px;
+}
+
+.card__1 {
+    .card__boot {
+        display: none;
+
+        &.active {
+            display: block !important;
+        }
+    }
+
+    .card__photos {
+        display: none;
+
+        &.active {
+            display: flex !important;
+        }
+    }
 }
 
 .card__photos {
@@ -235,10 +253,10 @@
     border: 1px solid #b2b3f1;
     border-radius: 20px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1;
     color: #111;
-    padding: 0 20px 0 65px;
+    padding: 0 10px 0 60px;
 }
 
 .card__select {
@@ -333,4 +351,135 @@
     top: -560px;
     right: -380px;
     opacity: 0.4;
+}
+
+.card__wrapper-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .card__input-wrapper {
+        width: 175px;
+    }
+}
+
+.select, .custom-select {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+.custom-select__option {
+    width: 100%;
+    height: 50px;
+    // box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    color: #111;
+    padding: 0 20px 0 65px;
+    cursor: pointer;
+    background-color: #DAE4FF;
+    transition: background 0.3s ease;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &:hover {
+        background-color: #e6edff;
+
+        &:before {
+            background-color: #e6edff;
+        }
+    }
+}
+
+.custom-select--active {
+    .custom-select__option--value {
+        border-radius: 20px 20px 0 0;
+        border-bottom: none;
+    }
+    .custom-select__dropdown {
+        border: 1px solid #b2b3f1;
+        border-top: none;
+        border-radius: 0px 0px 20px 20px;
+        overflow: hidden;
+    }
+}
+
+.custom-select__option--value {
+    border-radius: 20px;
+    border: 1px solid #b2b3f1;
+    overflow: hidden;
+
+    &:hover {
+        background-color: #DAE4FF;
+
+        &:before {
+            background-color: #c7d6ff;
+        }
+    }
+}
+
+.select__placeholder {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &:before {
+        content: "";
+        width: 55px;
+        height: 50px;
+        background-color: #c7d6ff;
+        background-image: url('../img/tringle.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        // border-radius: 20px 0 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: -65px;
+        pointer-events: none;
+    }
+}
+
+.option {
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 55px;
+        height: 50px;
+        position: absolute;
+        background-color: #c7d6ff;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        transition: background 0.3s ease;
+    }
+
+    &:after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        border-radius: 100%;
+        transform: translateY(-50%);
+    }
+}
+
+.option__black:after {
+    background-color: #111;
+}
+  
+.option__red:after {
+    background-color: #e10707;
 }

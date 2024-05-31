@@ -65,11 +65,20 @@
 
 .header__boot {
     position: absolute;
-    width: 821px;
     height: auto;
-    top: 190px;
-    right: -720px;
     z-index: 1;
+}
+
+.header__boot-1 {
+    width: 489px;
+    top: 414px;
+    right: -330px;
+}
+
+.header__boot-2 {
+    width: 526px;
+    top: 131px;
+    right: -535px;
 }
 
 .header__img {
