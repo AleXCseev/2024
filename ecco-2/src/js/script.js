@@ -1,11 +1,12 @@
 var landingFunctions = {
 	init: function() {
-		this.initLibraris()
+		this.initLibraris();
 		this.getPrice();
 		this.bar()
 		this.time()
-		this.video()
+		// this.video()
 		this.modal()
+		// this.card()
 	}, 
 
 	getPrice: function() {
@@ -20,22 +21,6 @@ var landingFunctions = {
 
 	initLibraris: function() {
 
-		$('.select select').customSelect({
-			// includeValue: true,
-			transition: 200,
-			placeholder: '<span class="select__placeholder">Color</span>',
-			hideCallback: function () {
-				const color = $(this).find(".custom-select__option--value");
-
-				if(color.hasClass("option__black")) {
-					$(this).closest(".card").find(".card__boot, .card__photos").hide().removeClass("active")
-					$(this).closest(".card").find(".card__boot-black, .card__photos-black").fadeIn(300).addClass("active")
-				} else {
-					$(this).closest(".card").find(".card__boot, .card__photos").hide().removeClass("active")
-					$(this).closest(".card").find(".card__boot-red, .card__photos-red").fadeIn(300).addClass("active")
-				}
-			}
-		});
 		
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = 0;
@@ -274,6 +259,38 @@ var landingFunctions = {
 		modal()
 	},
 
+	card: function() {
+		const getPrice = this.getPrice
+		let id, price, currency
+
+		$('.select select').customSelect({
+			// includeValue: true,
+			transition: 200,
+			placeholder: '<span class="select__placeholder">Color</span>',
+			hideCallback: function () {
+				const color = $(this).find(".custom-select__option--value");
+				if(color.hasClass("option__black")) {
+					id = $(".select").data("blackId");
+					price = $(".select").data("blackPrice");
+					currency = $(".select").data("blackCurrency");
+				
+					$(this).closest(".card").find(".card__boot, .card__photos").hide().removeClass("active")
+					$(this).closest(".card").find(".card__boot-black, .card__photos-black").fadeIn(300).addClass("active")
+				} else {
+					id = $(".select").data("redId");
+					price = $(".select").data("redPrice");
+					currency = $(".select").data("redCurrency");
+
+					$(this).closest(".card").find(".card__boot, .card__photos").hide().removeClass("active")
+					$(this).closest(".card").find(".card__boot-red, .card__photos-red").fadeIn(300).addClass("active")
+				}
+
+				$(this).closest(".card").find(".new__price").text(price + " " + currency);
+				$(this).closest(".card").find('input[name=products]').val(id)
+				getPrice()
+			}
+		});
+	},
 	
 }
 

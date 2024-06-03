@@ -820,7 +820,7 @@ body {
 .header__content {
   width: 555px;
   height: auto;
-  padding: 50px 0 250px;
+  padding: 50px 0 300px;
   position: relative;
   z-index: 1;
 }
@@ -1819,25 +1819,10 @@ body {
   margin: -80px 0 -10px -10px;
 }
 
-.card__2 .card__boot {
+.card__3 .card__boot {
   width: auto;
   height: auto;
   margin: -110px 0 -120px -35px;
-}
-
-.card__1 .card__boot {
-  display: none;
-}
-.card__1 .card__boot.active {
-  display: block !important;
-}
-.card__1 .card__photos {
-  display: none;
-}
-.card__1 .card__photos.active {
-  display: -webkit-box !important;
-  display: -webkit-flex !important;
-  display: flex !important;
 }
 
 .card__photos {
@@ -2477,7 +2462,7 @@ body {
   }
   .header__content {
     width: 500px;
-    padding: 50px 0 200px;
+    padding: 50px 0 250px;
   }
   .header__logo {
     height: 50px;
@@ -2567,7 +2552,7 @@ body {
     width: 560px;
     height: auto;
   }
-  .card__2 .card__boot {
+  .card__3 .card__boot {
     width: 120%;
     margin: -100px 0 -100px -35px;
   }
@@ -2848,7 +2833,7 @@ body {
   .card__boot {
     margin: -80px 0 -10px 10px;
   }
-  .card__2 .card__boot {
+  .card__3 .card__boot {
     width: 115%;
     margin: -120px 0 -120px;
   }
@@ -3207,7 +3192,7 @@ body {
     width: 4.5vw;
     margin-right: 3px;
   }
-  .card__2 .card__boot {
+  .card__3 .card__boot {
     width: 115%;
     margin: -17vw 0 -15vw;
   }

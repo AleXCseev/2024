@@ -117,29 +117,29 @@
     margin: -80px 0 -10px -10px;
 }
 
-.card__2 .card__boot {
+.card__3 .card__boot {
     width: auto;
     height: auto;
     margin: -110px 0 -120px -35px;
 }
 
-.card__1 {
-    .card__boot {
-        display: none;
+// .card__1 {
+//     .card__boot {
+//         display: none;
 
-        &.active {
-            display: block !important;
-        }
-    }
+//         &.active {
+//             display: block !important;
+//         }
+//     }
 
-    .card__photos {
-        display: none;
+//     .card__photos {
+//         display: none;
 
-        &.active {
-            display: flex !important;
-        }
-    }
-}
+//         &.active {
+//             display: flex !important;
+//         }
+//     }
+// }
 
 .card__photos {
     display: flex;
