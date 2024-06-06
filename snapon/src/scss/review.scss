@@ -1,0 +1,138 @@
+.review__section-wrapper {
+    padding: 41px 0 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review__section-title {
+    font-weight: 700;
+    font-size: 29px;
+    text-align: center;
+    color: #00206a;
+    margin-bottom: 42px;
+}
+
+.review__slider {
+}
+
+.review {
+    border-radius: 30px;
+    background: #fff;
+    padding: 30px 30px 24px;
+}
+
+.review__top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.review__photo {
+    width: 70px !important;
+    height: auto;
+    border-radius: 100%;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.review__top-block {
+}
+
+.review__name {
+    font-weight: 500;
+    font-size: 20px;
+    color: #00206a;
+    margin-bottom: 4px;
+}
+
+.review__info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    color: #28d22f;
+
+    img {
+        width: 20px !important;
+        height: auto;
+        margin-right: 10px;
+    }
+}
+
+.review__quote {
+    width: 50px !important;
+    height: auto;
+    margin-left: auto;
+}
+
+.review__text {
+    font-size: 20px;
+    color: #222;
+}
+
+.owl-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+
+    button {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border: 4px solid #00206a !important;
+        background-color: transparent !important;
+        background-image: url(../img/arrow.png) !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        transition: 0.3s ease;
+
+        span {
+            display: none;
+        }
+
+        &:hover {
+            background-color: #fff !important;
+        }
+    }
+
+    .owl-next {
+        transform: rotate(180deg);
+    }
+}
+
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    margin-bottom: 16px;
+
+    button {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: #00206a !important;
+        border: 2px solid #00206a !important;
+        margin-right: 10px;
+        transition: 0.3s ease;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.active {
+            background-color: #fff !important;
+        }
+    }
+}
+
+.add__review {
+    font-size: 16px;    
+    text-align: center;
+    color: #444;
+    background-color: transparent;
+    cursor: pointer;
+}
