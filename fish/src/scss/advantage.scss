@@ -1,0 +1,113 @@
+.advantage__section {
+    background: linear-gradient(90deg, #f9fff0 0%, #c1fff0 100%);
+}
+
+.advantage__section-wrapper {
+    padding: 40px 0 20px;
+}
+
+.advantage__section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.3;
+    text-align: center;
+    color: #003e53;
+    margin-bottom: 39px;
+}
+
+.advantage__block {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(135deg, #29ae7c 0%, #15889b 100%);
+    border: 1px solid #87e7da;
+    border-radius: 20px;
+    padding: 20px 20px 24px;
+    margin-bottom: 30px;
+}
+
+.advantage__block-img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 21px;
+}
+
+.advantage__block-title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.3;
+    text-align: center;
+    color: #ffe500;
+    margin-bottom: 5px;
+}
+
+.advantage__block-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    color: #fff;
+}
+
+
+.advantage-2__section {
+    background-image: url(../img/advantage-2-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.advantage-2__section-wrapper {
+    padding: 43px 0 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantage-2__section-title {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.advantage-2__prod {
+    width: 109%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.advantage-2__item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.advantage-2__item-img {
+    width: 64px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.advantage-2__item-text {
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+.advantage-2__item-1 {
+    margin-bottom: 38px;
+}
+
+.advantage-2__item-3 {
+    margin-bottom: 40px;
+}

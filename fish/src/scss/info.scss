@@ -1,0 +1,34 @@
+.info__section {
+    background-image: url(../img/info-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.info__section-wrapper {
+    padding-top: 43px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info__section-title {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    color: #003e53;
+    margin-bottom: 41px;
+}
+
+.info__icon {
+    margin-bottom: 14px;
+}
+
+.info__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    color: #000;
+    margin-bottom: 44px;
+}
