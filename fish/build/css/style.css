@@ -867,6 +867,7 @@ body {
   text-align: center;
   color: #444;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .card__section {
@@ -1099,6 +1100,10 @@ body {
 }
 .footer__line-info a:hover {
   text-decoration: underline;
+}
+
+.fancybox-content {
+  padding: 44px 20px;
 }
 
 [id^=modal] {

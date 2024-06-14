@@ -9,13 +9,13 @@ var landingFunctions = {
 
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = 0;
-			// var cardHeight = $("#card").outerHeight(false)
-			// var windowHeight = $(window).height()
+			var cardHeight = $("#card").outerHeight(false)
+			var windowHeight = $(window).height()
 
 			$('html, body')
 				.stop()
-				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
-				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
 			e.preventDefault();
 		});
 
@@ -176,10 +176,7 @@ var landingFunctions = {
 			return dayNum + "." + monthNum + "." + String(now.getFullYear()).substr(String(now.getFullYear()).length - 2);
 		}
 
-		$(".review__date-1").text(getDate(0))
-		$(".review__date-2").text(getDate(-1))
-		$(".review__date-3").text(getDate(-1))
-		$(".review__date-4").text(getDate(-2))
+		$(".date").text(getDate(7))
 	},
 
 	modal: function() {
