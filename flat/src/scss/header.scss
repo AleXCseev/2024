@@ -1,0 +1,267 @@
+.header__section {
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header__section-wrapper {
+    padding: 45px 0 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+
+.header__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header__logo {
+    width: 165px;
+    height: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #444;
+    margin-right: 100px;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 0;
+        height: 2px;
+        border-radius: 2px;
+        background-color: #444;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.5s ease;
+    }
+
+    &:hover {
+        &:before {
+            width: 100%;
+        }
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.order__nav {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 30px;
+
+    img {
+        width: 16px;
+        height: auto;
+        margin-left: 13px;
+    }
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 96px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #e00225;
+    line-height: normal;
+    margin-bottom: 20px;
+
+    span {
+        -webkit-text-stroke: 2px #444;
+        color: transparent;
+    }
+}
+
+.header__decor-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.header__decor {
+    position: absolute;
+}
+
+.header__decor-1 {
+    width: 239px;
+    height: auto;
+    bottom: 338px;
+    left: 16px;
+}
+
+.header__decor-2 {
+    bottom: 89px;
+    left: 0;
+
+    &:before {
+        content: "";
+        width: 33px;
+        height: 37px;
+        position: absolute;
+        top: -22px;
+        left: -25px;
+        background-image: url(../img/header-decor-2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.header__decor-img {
+    width: 180px;
+    height: auto;
+    border-radius: 90px;
+}
+
+.header__arrow {
+    width: 126px;
+    height: auto;
+    position: absolute;
+    bottom: 401px;
+    left: 225px;
+}
+
+.header__prod {
+    width: 865px;
+    height: auto;
+    position: absolute;
+    bottom: 30px;
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+.header__block {
+    align-self: flex-end;
+    width: 400px;
+    height: auto;
+    margin-bottom: 210px;
+}
+
+.header__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #444;
+    margin-bottom: 30px;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.order__btn {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    border: 1px solid #444;
+    border-radius: 25px;
+    background: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #444;
+    padding: 12px 35px;
+    position: relative;
+    z-index: 1;
+    transform-style: preserve-3d;
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border: 1px solid #444;
+        border-radius: 25px;
+        background: #fcc855;
+        position: absolute;
+        top: 2px;
+        left: 1px;
+        transform: translateZ(-1px);
+        z-index: -1;
+        transition: 0.3s ease;
+    }
+
+    &:hover {
+        &:before {
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+    }
+}
+
+.header__review {
+    width: auto;
+    position: relative;
+}
+
+.header__review-star {
+    position: absolute;
+    width: 80px;
+    height: auto;
+    top: -40px;
+    left: -35px;
+}
+
+.header__review-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.header__review-img {
+    width: 50px;
+    height: auto;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    margin-right: -20px;
+    position: relative;
+    z-index: 1;
+}
+
+.header__review-number {
+    position: relative;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #444;
+    flex-shrink: 0;
+}
+
+.header__review-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #444;
+    margin-left: 20px;
+
+    span {
+        font-weight: 700;
+    }
+}
