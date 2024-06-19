@@ -67,6 +67,15 @@ var landingFunctions = {
 			owl.trigger('prev.owl.carousel');
 		})
 
+		$('.advantage__galary').owlCarousel({
+			items: 1,
+			margin: 0,
+			dots: false,
+			dotsEach: true,
+			nav: true,
+			loop: true,
+		});
+
 		// $('.review__slider').owlCarousel({
 		// 	items: 3,
 		// 	margin: 30,
