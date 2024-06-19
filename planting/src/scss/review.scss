@@ -1,0 +1,88 @@
+.review__section {
+    width: 100%;
+    background-image: url(../img/card-block-bg.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: contain;
+}
+
+.review__section-wrapper {
+    padding: 35px 0 84px;
+}
+
+.review__section-title {
+    font-weight: 700;
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 29px;
+    text-align: center;
+}
+
+.review__slider {
+
+    .owl-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 16px;
+
+        button {
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background-color: #78cc0c !important;
+            margin-right: 6px;
+            transition: 0.3s ease;
+
+            &.active {
+                background-color: #59940f !important;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.review {
+    border-radius: 50px;
+    background: #fff;
+    padding: 27px 32px 26px;
+}
+
+.review__name {
+    font-weight: 700;
+    font-size: 20px;
+    color: #78cc0c;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.review__age {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+    img {
+        width: 16px !important;
+        height: auto;
+    }
+}
+
+.review__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+}
