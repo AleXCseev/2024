@@ -1567,6 +1567,33 @@ body {
   padding: 50px 0;
 }
 
+.footer__line {
+  width: 100%;
+  background: #f58702;
+}
+
+.footer__line-wrapper {
+  padding: 20px 0;
+}
+
+.footer__line-info {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+          flex-direction: column;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 14px;
+}
+.footer__line-info a:hover {
+  text-decoration: underline;
+}
+
 [id^=modal] {
   display: none;
   max-width: 600px !important;
