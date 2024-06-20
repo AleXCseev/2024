@@ -1,0 +1,133 @@
+.info__section {
+    background-image: url(../img/info-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.info__section-wrapper {
+    padding: 38px 0 50px;
+}
+
+.info__title {
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fadd3a;
+    margin-bottom: 9px;
+}
+
+.info__subtitle {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+}
+
+.info__prod-block {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.info__prod-item {
+    position: absolute;
+    border-bottom: 2px solid #d9d9d9;
+    padding-bottom: 15px;
+
+    p {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+.info__prod-item-1 {
+    width: 400px;
+    top: -49px;
+    right: 0;
+}
+
+.info__prod-item-2 {
+    width: 112px;
+    transform: rotate(-90deg);
+    top: 47px;
+    left: -40px;
+}
+
+.info__prod {
+    width: 435px;
+    height: auto;
+    margin-left: auto;
+    margin-right: -20px;
+}
+
+.info__prod-text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+    margin-top: -30px;
+}
+
+.info__block {
+    width: 388px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: rgba(29, 5, 72, 0.8);
+    border-radius: 20px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info__block-img {
+    margin-bottom: -10px;
+    height: auto;
+}
+
+.info__block-text {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    line-height: 1;
+}
+
+.info__block-items {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.header__price {
+}
+.price {
+}
+.price__item {
+}
+.price__old {
+}
+.price__text {
+}
+.old__price {
+}
+.price__new {
+}
+.new__price {
+}
+.order__btn {
+}
+.header__quantity {
+}
+.quantity {
+}

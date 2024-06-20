@@ -1,0 +1,136 @@
+.review__section {
+    background: linear-gradient(135deg, #fce342 0%, #00e0ff 100%);
+}
+
+.review__section-wrapper {
+    padding: 39px 0 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review__section-title {
+    font-weight: 700;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #350c84;
+    margin-bottom: 40px;
+}
+
+.review__slider {
+    width: 100%;
+    height: auto;
+
+    .owl-dots {
+        margin-bottom: 17px;
+    }
+
+    .owl-dots button {
+        border-color: #1d0548 !important;
+
+        &.active {
+            background-color: #1d0548 !important;
+        }
+    }
+
+    .owl-nav button {
+        border-color: #1d0548 !important;
+        background-image: url(../img/arrow-blue.png) !important;
+    }
+}
+
+.review {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.review__top {
+    background: #1d0548;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review__top-block {
+}
+
+.review__name {
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.review__rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    span {
+        font-weight: 600;
+        font-size: 24px;
+        text-align: center;
+        color: #fff;
+        line-height: 1;
+        margin-right: 10px;
+    }
+
+    .rating {
+        img {
+            width: 18px !important;
+            height: auto;
+        }
+    }
+}
+
+
+
+.review__quote {
+    width: 49px !important;
+    height: auto;
+}
+
+.review__img {
+    width: calc(100% - 60px) !important;
+    height: auto;
+    margin: 30px auto 11px;
+    border-radius: 30px;
+}
+
+.review__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #11002f;
+    padding: 0 30px;
+    margin-bottom: 11px;
+}
+
+.review__info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #1d0548;
+    padding: 0 30px;
+    padding-bottom: 30px;
+
+    img {
+        width: 20px !important;
+        height: auto;
+        margin-right: 10px;
+    }
+}
+
+.add__review {
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #444;
+    cursor: pointer;
+}

@@ -1,0 +1,233 @@
+.card__section {
+    background-image: url(../img/card-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card__section-wrapper {
+    padding: 44px 0 50px;
+
+    .header__price {
+        margin-top: 20px;
+    } 
+}
+
+.card__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fadd3a;
+    margin-bottom: 11px;
+}
+
+.card__rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+
+    span {
+        font-weight: 500;
+        font-size: 24px;
+        text-align: center;
+        color: #fff;
+        margin-right: 10px;
+    }
+}
+
+.rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+        width: 18px;
+        height: auto;
+        margin-right: 3px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.card__slider {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+
+    .owl-stage-outer {
+        overflow: visible;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border: 3px solid #2befe5;
+        border-radius: 30px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+    }
+}
+
+.owl-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+    button {
+        width: 50px;
+        height: 50px;
+        border: 2px solid #2befe5 !important;
+        border-radius: 15px;
+        background-image: url(../img/arrow.png) !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+
+        &.owl-next {
+            transform: rotate(180deg);
+        }
+
+        span {
+            display: none;
+        }
+    }
+}
+
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+
+    button {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        border: 2px solid #2befe5 !important;
+        background-color: #2befe5 !important;
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.active {
+            background-color: transparent !important;
+        }
+    }
+}
+
+.card__item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 20px 9px 25px;
+    position: relative;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+
+    &:before {
+        content: "";
+        width: 5px;
+        height: 100%;
+        background: #2befe5;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.card__item-right {
+    text-align: right;
+}
+
+.card__form {
+    width: 100%;
+    height: auto;
+}
+
+.card__input-wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    position: relative;
+
+    label {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #2befe5;
+        background-color: rgba(29, 5, 72, 0.9);
+        border-right: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        border-radius: 20px 0 0 20px;
+    }
+}
+
+.card__input {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #2befe5;
+    border-radius: 20px;
+    padding: 0 20px 0 80px;
+    transition: 0.3s ease;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    color: #fff;
+    background-color: transparent;
+
+    &:focus {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+
+.card__submit {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.delivery {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px 20px 15px;
+    border-radius: 30px;
+}
+
+.delivery__icon {
+    width: 139px;
+    height: auto;
+    border: 1px solid rgba(95, 72, 100, 0.5);
+    border-radius: 10px;
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.delivery__text {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
