@@ -432,6 +432,10 @@ body {
 .order__btn span {
   position: relative;
   z-index: 2;
+  display: inline-block;
+  -webkit-animation-duration: 4s;
+     -moz-animation-duration: 4s;
+          animation-duration: 4s;
 }
 .order__btn:before {
   content: "";
@@ -499,6 +503,10 @@ body {
   padding: 10px;
   border-radius: 6px;
   background: #fc5051;
+}
+
+.quantity {
+  margin-left: 5px;
 }
 
 .advantage__section {
@@ -1243,6 +1251,10 @@ body {
 }
 .footer__line-wrapper a:hover {
   text-decoration: underline;
+}
+
+.fancybox-content {
+  padding: 44px 20px;
 }
 
 .footer__modal {

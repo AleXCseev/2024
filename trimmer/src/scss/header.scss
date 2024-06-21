@@ -200,6 +200,8 @@
     span {
         position: relative;
         z-index: 2;
+        display: inline-block;
+        animation-duration: 4s;
     }
 
     &:before {
@@ -247,4 +249,5 @@
 }
 
 .quantity {
+    margin-left: 5px;
 }
