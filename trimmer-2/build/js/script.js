@@ -20,64 +20,10 @@ var landingFunctions = {
 			e.preventDefault();
 		});
 
-		// setTimeout(function() {
-		// 	$(".header__prod").removeClass("header__prod-anim")
-		// }, 100);
-
-		// anime.timeline({loop: true})
-		// 	.add({
-		// 		targets: '.header__title .word',
-		// 		scale: [3,1],
-		// 		opacity: [0,1],
-		// 		easing: "easeOutCirc",
-		// 		duration: 800,
-		// 		delay: (el, i) => 800 * i
-		// 	}).add({
-		// 		targets: '.header__title',
-		// 		opacity: 0,
-		// 		duration: 1000,
-		// 		easing: "easeOutExpo",
-		// 		delay: 1000
-		// 	});
-
-		// $(window).scroll(function() {
-		// 	$('.header__prod').each(function(){
-		// 		var imagePos = $(this).offset().top;
-		
-		// 		var topOfWindow = $(window).scrollTop();
-		// 		if (imagePos < topOfWindow+400) {
-		// 			$(this).removeClass("header__animation");
-		// 		}
-		// 	});
-		// });
-
-		// $(".card__slider").owlCarousel({
-		// 	loop: true,
-		// 	margin: 20,
-		// 	nav: true,
-		// 	items: 1,
-		// 	dots: true,
-		// 	dotsEach: true,
-		// })
-
-	
-		// $(".review__slider").owlCarousel({
-		// 	loop: true,
-		// 	margin: 20,
-		// 	nav: true,
-		// 	items: 1,
-		// 	dots: true,
-		// 	dotsEach: true,
-		// 	autoHeight: true,
-		// })
-
-		// $.raty.path = $("body").data("path") +  '/img/raty';
-
-		// $('.modal__raiting').raty({
-		// 	half: true,
-		// 	space: false,
-		// 	number: 5,
-		// });
+		$(".show__review").click(function () {
+			$(this).hide()
+			$(".review__hide").fadeIn(300);
+		})
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
@@ -143,14 +89,16 @@ var landingFunctions = {
 			}
 			monthNum += now.getMonth() + 1;
 			
-			// return dayNum + "." + monthNum + "." + now.getFullYear();
-			return dayNum + "." + monthNum + "." + String(now.getFullYear()).substr(String(now.getFullYear()).length - 2);
+			return dayNum + "." + monthNum + "." + now.getFullYear();
+			// return dayNum + "." + monthNum + "." + String(now.getFullYear()).substr(String(now.getFullYear()).length - 2);
 		}
 
+		$(".date").text(getDate(7))
 		$(".review__date-1").text(getDate(0))
 		$(".review__date-2").text(getDate(-1))
 		$(".review__date-3").text(getDate(-1))
 		$(".review__date-4").text(getDate(-2))
+		$(".review__date-5").text(getDate(-2))
 	},
 
 	modal: function() {
