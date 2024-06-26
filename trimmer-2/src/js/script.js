@@ -2,8 +2,8 @@ var landingFunctions = {
 	init: function() {
 		this.initLibraris()
 		this.time()
-		this.modal()
-		this.quantity()
+		// this.modal()
+		// this.quantity()
 	}, 
 
 	initLibraris: function() {
@@ -93,12 +93,12 @@ var landingFunctions = {
 			// return dayNum + "." + monthNum + "." + String(now.getFullYear()).substr(String(now.getFullYear()).length - 2);
 		}
 
-		$(".date").text(getDate(7))
-		$(".review__date-1").text(getDate(0))
+		$(".date").text(getDate(1))
+		$(".review__date-1").text(getDate(-1))
 		$(".review__date-2").text(getDate(-1))
-		$(".review__date-3").text(getDate(-1))
+		$(".review__date-3").text(getDate(-2))
 		$(".review__date-4").text(getDate(-2))
-		$(".review__date-5").text(getDate(-2))
+		$(".review__date-5").text(getDate(-3))
 	},
 
 	modal: function() {
