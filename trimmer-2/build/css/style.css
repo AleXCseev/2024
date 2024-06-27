@@ -1451,6 +1451,9 @@ body {
   margin-bottom: 0;
   color: #fff;
 }
+.footer__section .header__date {
+  margin-top: 20px;
+}
 
 .footer__modal {
   width: 100%;
