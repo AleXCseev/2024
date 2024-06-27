@@ -3,6 +3,30 @@
     position: relative;
 }
 
+.card__decor-1 {
+    top: 113px;
+    right: 320px;
+}
+
+.card__decor-2 {
+    left: 279px;
+    top: 160px;
+
+    .star {
+        animation-delay: 3s;
+    }
+
+    .star-1 {
+        right: auto;
+        left: 0;
+    }
+
+    .star-2 {
+        left: auto;
+        right: 0;
+    }
+}
+
 .card__section-title {
     font-weight: 700;
     font-size: 64px;
@@ -39,7 +63,28 @@
     }
 }
 
-.card__wrapper-1 {
+.card__line {
+    position: absolute;
+    height: auto;
+    animation-duration: 6s;
+}
+
+.card__line-1 {
+    width: 403px;
+    top: -333px;
+    left: -104px;
+}
+
+.card__line-2 {
+    width: 179px;
+    right: -209px;
+    top: 201px;
+}
+
+.card__line-3 {
+    width: 436px;
+    top: -246px;
+    left: -240px;
 }
 
 .card {

@@ -178,44 +178,6 @@
     border-radius: 50px;
     box-shadow: 3px 3px 0 0 #444;
 
-    .owl-nav {
-        width: 130px;
-        height: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: absolute;
-        bottom: 37px;
-        left: 50%;
-        transform: translateX(-50%);
-
-        button {
-            width: 50px;
-            height: 50px;
-            border-radius: 100%;
-            border: 2px solid #E00225 !important;
-            background-color: #fff !important;
-            background-image: url(../img/info-arrow.png) !important;
-            background-repeat: no-repeat !important;
-            background-position: center !important;
-            opacity: 0.5;
-
-            span {
-                display: none;
-            }
-
-            &:hover {
-                background-color: rgba(255, 255, 255, 0.5) !important;
-                background-image: url(../img/arrow-red.png) !important;
-                opacity: 1;
-            }
-
-            &.owl-next {
-                transform: rotate(180deg);
-            }
-        }
-    }
-
     .owl-stage-outer {
         border-radius: 50px;
     }
@@ -224,6 +186,44 @@
         width: 100%;
         height: auto;
         border-radius: 50px;
+    }
+}
+
+.owl-nav {
+    width: 130px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 37px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    button {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border: 2px solid #E00225 !important;
+        background-color: #fff !important;
+        background-image: url(../img/info-arrow.png) !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        opacity: 0.5;
+
+        span {
+            display: none;
+        }
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.5) !important;
+            background-image: url(../img/arrow-red.png) !important;
+            opacity: 1;
+        }
+
+        &.owl-next {
+            transform: rotate(180deg);
+        }
     }
 }
 

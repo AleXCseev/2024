@@ -1,0 +1,93 @@
+.review__section {
+    background-image: url(../img/review-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.review__section-wrapper {
+    padding: 60px 0 44px;
+    position: relative;
+}
+
+.review__decor {
+    top: 59px;
+    left: 249px;
+}
+
+.review__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.5;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.review__slider {
+    width: calc(100% + 4px);
+    margin-left: -3px;
+
+    .owl-stage-outer {
+        padding-bottom: 40px;
+    }
+
+    .owl-nav {
+        position: static;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin: auto;
+
+        button {
+            background-color: transparent !important;
+        }
+    }
+}
+
+.review {
+    border: 1px solid #444;
+    border-radius: 50px;
+    background: #fff;
+    padding: 30px 30px 50px;
+    box-shadow: 2px 2px #444;
+}
+
+.review__top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.review__photo {
+    width: 65px !important;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 100%;
+    margin-right: 21px;
+}
+
+.review__block {
+}
+
+.review__name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #444;
+}
+
+.review__city {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #444;
+}
+
+.review__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #444;
+}
