@@ -7,6 +7,11 @@
     flex-direction: column;
     align-items: flex-start;
     position: relative;
+
+    .order__nav {
+        position: relative;
+        z-index: 2;
+    }
 }
 
 .galary__line {
