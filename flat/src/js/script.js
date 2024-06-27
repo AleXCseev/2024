@@ -51,9 +51,9 @@ var landingFunctions = {
 			dotsEach: true,
 			nav: true,
 			loop: true,
-			autoplay: true,
-			autoplayTimeout: 3000,
-			autoplayHoverPause: true,
+			// autoplay: true,
+			// autoplayTimeout: 3000,
+			// autoplayHoverPause: true,
 			// autoHeight: true,
 			// responsive:{
 			// 	0:{
@@ -69,11 +69,11 @@ var landingFunctions = {
 		});
 
 		$('.info__next-btn').click(function() {
-			owl.trigger('next.owl.carousel');
+			owl.trigger('prev.owl.carousel');
 		})
 
 		$('.info__prev-btn').click(function() {
-			owl.trigger('prev.owl.carousel');
+			owl.trigger('next.owl.carousel');
 		})
 
 		$('.advantage__galary').owlCarousel({
