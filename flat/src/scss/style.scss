@@ -134,6 +134,9 @@
         top: -190px;
         left: -150px;
     }
+    .sprey__title {
+        font-size: 38px;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -302,6 +305,32 @@
         width: 340px;
         top: -170px;
         left: -50px;
+    }
+    .sprey__block {
+        padding: 30px 180px;
+    }
+    .sprey__img-1 {
+        width: 210px;
+        top: -33px;
+        left: 0px;
+    }
+    .sprey__img-2 {
+        width: 210px;
+        top: -33px;
+        right: -30px;
+    }
+    .sprey__title {
+        font-size: 34px;
+    }
+    .sprey__text-bold {
+        font-size: 16px;
+    }
+    .sprey__text {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .sprey__section-wrapper {
+        padding: 50px 0;
     }
 }
 
@@ -607,6 +636,31 @@
     }
     .card__line {
         display: none;
+    }
+    .sprey__block {
+        padding: 50px;
+    }
+    .sprey__img {
+        position: static;
+        top: auto;
+        left: auto;
+        right: auto;
+    }
+    .sprey__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: -40px;
+    }
+    .sprey__img-1 {
+        position: relative;
+        z-index: 1;
+        width: 280px;
+    }
+    .sprey__img-2 {
+        width: 230px;
+        margin-left: -80px;
+        margin-top: 0px;
     }
 }
 
@@ -953,5 +1007,41 @@
     }
     .card__input {
         font-size: 4.5vw;
+    }
+    .sprey__section-wrapper {
+        padding: 12vw 0 14vw;
+    }
+    .sprey__block {
+        padding: 10vw 6vw 0;
+    }
+    .sprey__title {
+        font-size: 8.8vw;
+        margin-bottom: 2vw;
+    }
+    .sprey__text-bold {
+        font-size: 4.5vw;
+        margin-bottom: 2vw;
+    }
+    .sprey__text {
+        font-size: 4.5vw;
+        margin-bottom: 4vw;
+    }
+    .sprey__price .sprey__old-price {
+        font-size: 4.5vw;
+        margin-bottom: 2vw;
+    }
+    .sprey__price .new__price {
+        font-size: 11.5vw;
+    }
+    .sprey__wrapper {
+        margin-top: -7vw;
+    }
+    .sprey__img-1 {
+        width: 45vw;
+        transform: rotate(-10deg);
+    }
+    .sprey__img-2 {
+        width: 35vw;
+        margin-left: -10vw;
     }
 }
