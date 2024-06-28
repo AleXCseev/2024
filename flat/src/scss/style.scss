@@ -101,6 +101,39 @@
         top: 200px;
         right: -55px;
     }
+    .video__title {
+        font-size: 50px;
+    }
+    .card__decor-1 {
+        top: 113px;
+        right: 270px;
+    }
+    .card__decor-2 {
+        left: 250px;
+        top: 160px;
+    }
+    .card__line-1 {
+        width: 340px;
+        top: -210px;
+        left: -50px;
+    }
+    .card__left {
+        width: 650px;
+    }
+    .card__right {
+        width: 510px;
+    }
+    .card__photos a {
+        width: 155px;
+    }
+    .card__boot {
+        width: 110%;
+    }
+    .card__line-3 {
+        width: 360px;
+        top: -190px;
+        left: -150px;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -234,6 +267,41 @@
         width: 90px;
         top: 170px;
         right: -40px;
+    }
+    .video {
+        width: 380px;
+        height: 220px;
+    }
+    .video__block {
+        padding: 50px 60px 50px 50px;
+    }
+    .video__title {
+        font-size: 42px;
+    }
+    .card__left {
+        width: 550px;
+    }
+    .card__right {
+        width: 420px;
+    }
+    .card__photos a {
+        width: 130px;
+    }
+    .card__decor-1 {
+        top: 113px;
+        right: 170px;
+    }
+    .card__decor-2 {
+        left: 160px;
+        top: 160px;
+    }
+    .card__section-wrapper {
+        padding: 100px 0;
+    }
+    .card__line-1 {
+        width: 340px;
+        top: -170px;
+        left: -50px;
     }
 }
 
@@ -471,6 +539,75 @@
         left: -15px;
         top: 80px;
     }
+    .video__block {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .video__block {
+        padding: 50px;
+    }
+    .video__wrapper {
+        margin-left: 0;
+    }
+    .video__title {
+        font-size: 48px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .video__text-bold {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .video__text {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .video {
+        width: 100%;
+        height: 340px;
+    }
+    .card__section-wrapper {
+        padding: 80px 0;
+    }
+    .card__decor-1 {
+        top: 85px;
+        right: 20px;
+    }
+    .card__decor-2 {
+        left: 20px;
+        top: 160px;
+    }
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card__left {
+        width: 100%;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+    }
+    .card .info__discount {
+        top: auto;
+        right: auto;
+        align-self: flex-end;
+        position: relative;
+        margin-bottom: -60px;
+    }
+    .card__photos a {
+        width: 160px;
+    }
+    .card__right {
+        width: 100%;
+    }
+    .card__boot {
+        width: 100%;
+        margin-bottom: 30px !important;
+        position: relative;
+        z-index: 3;
+    }
+    .card__line {
+        display: none;
+    }
 }
 
 @media (max-width: 700px) {
@@ -480,6 +617,21 @@
     }
     .header__prod {
         width: 100%;
+    }
+    .video {
+        width: 100%;
+        height: 45vw;
+    }
+    .card__photos a {
+        width: 23.5%;
+    }
+    .card__decor-1 {
+        top: 85px;
+        right: -20px;
+    }
+    .card__decor-2 {
+        left: -20px;
+        top: 160px;
     }
 }
 
@@ -646,5 +798,160 @@
     .star__decor {
         width: 20vw;
         height: 20vw;
+    }
+    .advantage__decor-2 {
+        width: 22vw;
+        height: 17vw;
+        top: 38vw;
+        left: -8vw;
+
+        .star-1 {
+            width: 12vw;
+            height: 12vw;
+        }
+
+        .star {
+            width: 11vw;
+            height: 11vw;
+        }
+    }
+    .advantage__decor-line {
+        width: 46vw;
+        top: 50vw;
+        right: -7vw;
+        animation: none;
+        transform: rotate(-50deg);
+    }
+    .advantage__item-title {
+        font-size: 5.8vw;
+        margin-bottom: 2vw;
+    }
+    .advantage__item-text {
+        font-size: 4.5vw;
+    }
+    .advantage__item {
+        margin-bottom: 8.5vw;
+    }
+    .advantage__boot-wrapper {
+        margin-top: 8.5vw;
+        margin-bottom: 10vw;
+    }
+    .advantage__boot {
+        margin-bottom: 5vw;
+    }
+    .order__nav img {
+        width: 4.2vw;
+        margin-left: 3vw;
+    }
+    .advantage__section-wrapper {
+        padding-bottom: 36vw;
+    }
+    .advantage__galary .owl-nav {
+        bottom: -19vw;
+    }
+    .video__section-wrapper {
+        padding: 15vw 0 12vw;
+    }
+    .video__block {
+        padding: 7vw 4.8vw 8.8vw;
+    }
+    .video__title {
+        font-size: 12vw;
+        margin-bottom: 2vw;
+    }
+    .video__text-bold {
+        font-size: 4.5vw;
+        padding: 0 4vw;
+    }
+    .video__text {
+        font-size: 4.5vw;
+        margin-bottom: 7vw;
+    }
+    .video {
+        width: 100%;
+        height: 58vw;
+    }
+    .fancybox-slide {
+        padding: 15px;
+    }
+    .card__section-wrapper {
+        padding: 22vw 0;
+    }
+    .card__section-title {
+        font-size: 12vw;
+        margin-bottom: 2vw;
+    }
+    .card__section-text {
+        font-size: 5.8vw;
+        margin-bottom: 3.5vw;
+
+        br {
+            display: none;
+        }
+    }
+    .card__decor-1 {
+        top: 21vw;
+        right: -11.5vw;
+    }
+    .card__decor-2 {
+        left: -12vw;
+        top: 21vw;
+    }
+    .card .info__discount {
+        margin-right: -7vw;
+        width: 29vw;
+        height: 29vw;
+        font-size: 5.8vw;
+        margin-bottom: -15vw;
+    }
+    .card__photos a {
+        width: 24.3%;
+    }
+    .card__photos a img {
+        border-radius: 4.8vw;
+        box-shadow: 1px 1px #444;
+    }
+    .card__boot {
+        margin-bottom: 7vw !important;
+    }
+    .card__left {
+        margin-bottom: 7vw;
+    }
+    .card__right {
+        border-radius: 12vw;
+        padding: 10vw 4.8vw 11vw;
+        box-shadow: 2px 2px #444;
+    }
+    .card__name {
+        font-size: 12vw;
+        margin-bottom: 8vw;
+    }
+    .card__info {
+        margin-bottom: 2vw;
+    }
+    .card__info span {
+        font-size: 4.5vw;
+    }
+    .card__info .new__price {
+        font-size: 5.8vw;
+        margin-right: 2vw;
+    }
+    .card__info .old__price {
+        font-size: 4.5vw;
+    }
+    .card__wrapper {
+        margin-bottom: 18vw;
+    }
+    .card__2 .info__discount {
+        margin-bottom: -8vw;
+    }
+    .card__3 .info__discount {
+        margin-bottom: -12vw;
+    }
+    .card__4 .info__discount {
+        margin-bottom: -11vw;
+    }
+    .card__input {
+        font-size: 4.5vw;
     }
 }
