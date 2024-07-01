@@ -41,7 +41,7 @@
     }
     .info__line {
         width: 330px;
-        top: 328px;
+        top: 390px;
         left: -60px;
     }
     .info__item-title {
@@ -63,13 +63,16 @@
     .advantage__items {
         width: 320px;
     }
+    .advantage__item {
+        margin-bottom: 25px;
+    }
     .advantage__item-1 {
         left: -400px;
         width: 330px;
     }
     .advantage__galary {
         width: 460px;
-        height: 670px;
+        height: auto;
     }
     .advantage__item-text {
         font-size: 16px;
@@ -179,11 +182,11 @@
     }
     .star__decor-2 {
         left: 700px;
-        top: 125px;
+        top: 190px;
     }
     .info__line {
         width: 330px;
-        top: 260px;
+        top: 340px;
         left: -60px;
     }
     .info__item-text {
@@ -249,10 +252,10 @@
         left: 320px;
     }
     .advantage__item {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .advantage__item-text {
-        font-size: 15px;
+        font-size: 14px;
     }
     .advantage__arrow-1 {
         width: 80px;
@@ -396,6 +399,10 @@
     .header__title {
         font-size: 62px;
         margin-bottom: 50px;
+
+        br {
+            display: none;
+        }
     }
     .header__decor-wrapper {
         position: relative;
@@ -480,12 +487,12 @@
     .star__decor-1 {
         top: 90px;
         left: auto;
-        right: 50px;
+        right: -30px;
     }
     .star__decor-2 {
         width: 96px;
         height: 65px;
-        left: 0;
+        left: -30px;
         top: 110px;
 
         .star {
@@ -949,8 +956,12 @@
         padding: 20vw 0 15vw;
     }
     .info__title {
-        font-size: 12vw;
+        font-size: 11vw;
         margin-bottom: 9vw;
+
+        br {
+            display: none;
+        }
     }
     .star__decor-1 {
         top: 21vw;
@@ -979,7 +990,7 @@
     }
     .info__line {
         width: 40vw;
-        top: 70vw;
+        top: 80vw;
         left: -9vw;
     }
     .info__item-1 {
@@ -1039,7 +1050,7 @@
     .advantage__decor-2 {
         width: 22vw;
         height: 17vw;
-        top: 38vw;
+        top: 20vw;
         left: -8vw;
 
         .star-1 {
@@ -1054,7 +1065,7 @@
     }
     .advantage__decor-line {
         width: 46vw;
-        top: 50vw;
+        top: 18vw;
         right: -7vw;
         animation: none;
         transform: rotate(-50deg);
@@ -1098,7 +1109,7 @@
     }
     .video__text-bold {
         font-size: 4.5vw;
-        padding: 0 4vw;
+        padding: 0;
     }
     .video__text {
         font-size: 4.5vw;
@@ -1160,7 +1171,7 @@
         box-shadow: 2px 2px #444;
     }
     .card__name {
-        font-size: 12vw;
+        font-size: 10vw;
         margin-bottom: 8vw;
     }
     .card__info {
