@@ -182,7 +182,7 @@
     }
     .star__decor-2 {
         left: 700px;
-        top: 190px;
+        top: 150px;
     }
     .info__line {
         width: 330px;
@@ -1178,7 +1178,7 @@
         margin-bottom: 2vw;
     }
     .card__info span {
-        font-size: 4.5vw;
+        font-size: 4vw;
     }
     .card__info .new__price {
         font-size: 5.8vw;
@@ -1351,5 +1351,8 @@
     .header__logo {
         width: 39.8vw;
         height: auto;
+    }
+    .card__select select {
+        text-indent: 36% hanging;
     }
 }
