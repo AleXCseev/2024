@@ -246,10 +246,11 @@
     height: auto;
     position: absolute;
     right: 0;
-    top: -131px;
+    top: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 5;
 }
 
 .info__nav {

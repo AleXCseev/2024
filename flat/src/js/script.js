@@ -48,10 +48,11 @@ var landingFunctions = {
 			dotsEach: true,
 			nav: true,
 			loop: true,
-			// autoplay: true,
-			// autoplayTimeout: 3000,
-			// autoplayHoverPause: true,
-			// autoHeight: true,
+			autoplay: true,
+			mouseDrag: false,
+			touchDrag: false,
+			autoplayTimeout: 3000,
+			autoplayHoverPause: true,
 		});
 
 		$('.info__next-btn').click(function() {
@@ -60,6 +61,11 @@ var landingFunctions = {
 
 		$('.info__prev-btn').click(function() {
 			owl.trigger('next.owl.carousel');
+		})
+
+		$('.info__slide').click(function() {
+			const position = $(this).data("slide") - 1
+			owl.trigger("to.owl.carousel", [position, 300])
 		})
 
 		$('.advantage__galary').owlCarousel({

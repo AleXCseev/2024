@@ -188,7 +188,7 @@
 
 .card__name {
     font-weight: 700;
-    font-size: 48px;
+    font-size: 40px;
     text-align: center;
     color: #fff;
     line-height: normal;
@@ -288,6 +288,15 @@
         right: 0;
         box-sizing: border-box;
         pointer-events: none;
+    }
+
+    select {
+        text-align: -moz-center;
+        text-align: -webkit-center;
+        -moz-text-align-last: center;
+        text-align-last: center;
+        -webkit-text-align-last: center;
+        text-indent: 42% hanging;
     }
 }
 
