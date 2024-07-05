@@ -1,0 +1,123 @@
+.review__section {
+    background: linear-gradient(135deg, #e76658 0%, #494e96 100%);
+}
+
+.review__section-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 40px 0 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review__title {
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 42px;
+}
+
+.review__slider {
+    width: 100%;
+    height: auto;
+
+    .owl-dots {
+        margin-bottom: 17px;
+    }
+}
+
+.review {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.review__img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 21px;
+}
+
+.review__wrapper {
+    padding: 0 30px 28px;
+}
+
+.review__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #222;
+    margin-bottom: 21px;
+}
+
+.review__bottom {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review__bottom-block {
+}
+
+.review__bottom-name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1;
+    color: #02172b;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.review__rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+
+    img {
+        width: 18px !important;
+        height: auto;
+        margin-right: 3px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.review__info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #01315c;
+
+    img {
+        width: 20px !important;
+        height: auto;
+        margin-right: 10px;
+    }
+}
+
+.review__quote {
+    width: 49px !important;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.add__review {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #e9e9e9;
+    background-color: transparent;
+    cursor: pointer;
+}
