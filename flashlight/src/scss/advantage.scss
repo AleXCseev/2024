@@ -1,0 +1,123 @@
+.advantage__section {
+    background-image: url(../img/advantage-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.advantage__section-wrapper {
+    padding: 38px 0 30px;
+
+    .header__block:before {
+        display: none;
+    }
+}
+
+.advantage__section-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    text-align: center;
+    color: #faff00;
+    margin-bottom: 39px;
+}
+
+.advantage__item {
+    width: 400px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    padding: 19px 0 23px;
+    background: linear-gradient(180deg, #efcd33 0%, #ffeba2 100%);
+}
+
+.advantage__item-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    text-align: center;
+    color: #0f1829;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.advantage__item-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 23px;
+}
+
+.advantage__item-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.3;
+    text-align: center;
+    color: #111;  
+}
+
+
+.advantage-2__section {
+    background-image: url(../img/advantage-2-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .header__block:before {
+        display: none;
+    }
+}
+
+.advantage-2__section-wrapper {
+    padding: 38px 0 30px;
+}
+
+.advantage-2__section-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    text-align: center;
+    color: #faff00;
+}
+
+.advantage-2__section-text {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 41px;
+}
+
+.advantage-2__item {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    margin-bottom: 50px;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+}
+
+.advantage-2__item-text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.3;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: 23px;
+    left: 0;
+    padding: 0 20px;
+}
+
