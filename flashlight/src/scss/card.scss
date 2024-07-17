@@ -47,34 +47,111 @@
     }
 }
 
-.header__block {
+.owl-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+
+    button {
+        width: 50px;
+        height: 50px;
+        background-image: url(../img/arrow.png) !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        border: 2px solid #fff !important;
+        border-radius: 15px;
+        background-color: #0f1829 !important;
+
+        span {
+            display: none;
+        }
+
+        &.owl-next {
+            transform: rotate(180deg);
+        }
+    }
 }
-.header__price {
+
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    margin-bottom: 26px;
+
+    button {
+        border-radius: 100%;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        margin-right: 10px;
+        border: 1px solid #fff !important;
+        background-color: #0f1829 !important;
+        transition: 0.3s ease;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.active {
+            border: 2px solid #0f1829 !important;
+            background-color: #fff !important;
+        }
+    }
 }
-.price {
-}
-.price__item {
-}
-.price__item-1 {
-}
-.price__item-text {
-}
-.old__price {
-}
-.price__item-2 {
-}
-.new__price {
-}
+
 .card__form {
+    width: 100%;
+    height: auto;
 }
+
 .input__wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 10px;
+
+    label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        pointer-events: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px 0 0 10px;
+        background: #ffb800;
+        border: 1px solid #3ad0ff;
+        border-right: none;
+    }
 }
+
 .card__input {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #3ad0ff;
+    border-radius: 10px;
+    padding: 0 20px 0 80px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    color: #fff;
+    transition: 0.3s ease;
+    background-color: transparent;
+
+    &:focus {
+        background: rgba(0, 0, 0, 0.3);
+    }
 }
-.order__btn {
-}
+
 .card__submit {
+    margin-top: 10px;
 }
+
 .header__quantity {
 }
 .quantity {

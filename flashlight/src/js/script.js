@@ -30,16 +30,23 @@ var landingFunctions = {
 			autoHeight: true,
 		})
 
-		// $(".review__slider").owlCarousel({
-		// 	loop: true,
-		// 	margin: 10,
-		// 	nav: true,
-		// 	items: 1,
-		// 	dots: true,
-		// 	dotsEach: true,
-		// 	autoHeight: true,
-		// })
+		const owl = $(".review__slider").owlCarousel({
+			loop: true,
+			margin: 10,
+			nav: false,
+			items: 1,
+			dots: true,
+			dotsEach: true,
+			autoHeight: true,
+		})
 
+		$('.review__btn-prev').click(function() {
+			owl.trigger('prev.owl.carousel');
+		})
+
+		$('.review__btn-next').click(function() {
+			owl.trigger('next.owl.carousel');
+		})
 
 		$.raty.path = $("body").data("path") +  '/img/raty';
 

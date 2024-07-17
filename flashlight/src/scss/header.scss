@@ -30,7 +30,7 @@
 
 .header__title {
     font-weight: 700;
-    font-size: 60px;
+    font-size: 58px;
     text-transform: uppercase;
     text-align: center;
     color: #faff00;
@@ -87,7 +87,7 @@
 }
 
 .header__prod {
-    margin: 24px 0;
+    margin: 24px 0 0;
 }
 
 .header__block {
@@ -102,7 +102,7 @@
     &:before {
         content: "";
         border-radius: 100%;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.3);
         filter: blur(20px);
         width: 480px;
         height: 160px;
@@ -140,10 +140,14 @@
 
 .price__item-text {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     color: #fff;
     margin-bottom: 24px;
+
+    span {
+        display: inline-block;
+    }
 }
 
 .old__price {
