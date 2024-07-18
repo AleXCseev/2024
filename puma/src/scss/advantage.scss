@@ -1,0 +1,102 @@
+.advantage__section-wrapper {
+    padding: 120px 0;
+    position: relative;
+}
+
+.advantage__decor {
+    width: 595px;
+    height: 608px;
+    border-radius: 100%;
+    background: rgba(255, 191, 44, 0.4);
+    filter: blur(200px);
+    top: -172px;
+    left: -381px;
+}
+
+.advantage__section-title {
+    font-family: "TT Travels Next Trial", sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    color: #fff;
+}
+
+.advantage__boot {
+    position: absolute;
+    bottom: -140px;
+    left: -220px;
+    width: 922px;
+    height: auto;
+}
+
+.advantage__items {
+    width: 1080px;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-top: -210px;
+    position: relative;
+    z-index: 2;
+}
+
+.advantage__item {
+    width: 360px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    backdrop-filter: blur(50px);
+    padding: 30px;
+    background: linear-gradient(223deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 49.39%, rgba(0, 0, 0, 0.25) 100%);
+}
+
+.advantage__number {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: rgba(217, 217, 217, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "TT Travels Next Trial", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+}
+
+.advantage__title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.advantage__text {
+    font-weight: 400;
+    font-size: 18px;
+    // text-align: justify;
+    color: #fff;
+}
+
+.advantage__item-1 {
+    margin-left: 10px;
+}
+
+.advantage__item-2, .advantage__item-4 {
+    backdrop-filter: none;
+    background: transparent;
+}
+
+.advantage__item-3 {
+}
+
+.advantage__item-4 {
+}
+
+.advantage__item-5 {
+}

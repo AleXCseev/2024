@@ -1,0 +1,64 @@
+.galary__section-wrapper {
+    padding-bottom: 120px;
+    position: relative;
+}
+
+.galary__decor {
+    width: 595px;
+    height: 608px;
+    background: rgba(255, 191, 44, 0.4);
+    filter: blur(200px);
+    top: -89px;
+    right: -45px;
+}
+
+.galary__section-title {
+    font-family: "TT Travels Next Trial", sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.galary__slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 2000px;
+    transform-style: preserve-3d;
+}
+
+.galary__slide {
+    width: 300px;
+    height: auto;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 40px;
+    }
+}
+
+.galary__slide-1 {
+    width: 280px;
+    transform: rotateY(30deg);
+}
+
+.galary__slide-2 {
+    transform: rotateY(40deg);
+}
+
+.galary__slide-3 {
+    position: relative;
+    top: 50px;    
+}
+
+.galary__slide-4 {
+    transform: rotateY(-40deg);
+}
+
+.galary__slide-5 {
+    width: 291px;
+    transform: rotateY(-30deg);
+}

@@ -1,0 +1,156 @@
+.info__section-wrapper {
+    padding-bottom: 165px;
+    position: relative;
+}
+
+.info__decor {
+    width: 627px;
+    height: 512px;
+    border-radius: 100%;
+    background: rgba(255, 191, 44, 0.4);
+    filter: blur(300px);
+    bottom: 167px;
+    left: -216px;
+}
+
+.info__block {
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(50px);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 40px;
+    padding: 60px 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 120px;
+}
+
+.info__block-item {
+    width: 230px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.info__item-number {
+    font-family: "TT Travels Next Trial", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    color: #ffbf2c;
+    margin-bottom: 10px;
+}
+
+.info__item-text {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.info__item-img {
+    width: 100%;
+    max-width: 210px;
+    height: auto;
+    margin-top: 12px;
+}
+
+.info__block-item-1 {
+    .info__item-number::after {
+        content: "k";
+    }
+}
+
+.info__block-item-2 {
+    .info__item-number::after {
+        content: "%";
+    }
+}
+
+.info__block-item-3 {
+}
+
+.info__block-item-4 {
+    .info__item-number::after {
+        content: "%";
+    }
+}
+
+.info__content {
+    width: 570px;
+    height: auto;
+    position: relative;
+    margin-left: auto;
+
+    .order__btn {
+        margin-top: 40px;
+    }
+}
+
+.info__title {
+    font-family: "TT Travels Next Trial", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #fff;
+    line-height: normal;
+    margin-bottom: 25px;
+}
+
+.info__text-bold {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.info__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.info__left {
+    width: 705px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    left: -790px;
+}
+
+.info__left-item {
+    width: 340px;
+    height: 220px;
+    background: #1b1b1b;
+    border-radius: 40px;
+    position: relative;
+
+    img {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        left: 0;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+}
+
+.info__left-item-1, .info__left-item-2 {
+    margin-bottom: 138px;
+}
+
+
