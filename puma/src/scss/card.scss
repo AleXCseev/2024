@@ -74,6 +74,10 @@
     padding: 35px 30px 31px;
 }
 
+.card__block-1 {
+    margin-bottom: 20px;
+}
+
 .card__block-2 {
     padding: 30px 30px 18px;
 }
@@ -160,10 +164,6 @@
 
 .card__select {
     position: relative;
-
-    select {
-        box-sizing: border-box;
-    }
 
     &:before {
         content: "";

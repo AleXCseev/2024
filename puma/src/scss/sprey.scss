@@ -1,0 +1,91 @@
+.sprey__section-wrapper {
+    padding-bottom: 169px;
+    position: relative;
+}
+
+.sprey__decor {
+    width: 595px;
+    height: 608px;
+    border-radius: 100%;
+    background: rgba(255, 191, 44, 0.4);
+    filter: blur(300px);
+    top: -42px;
+    right: -40px;
+}
+
+.sprey__content {
+    width: 700px;
+    height: auto;
+    padding-top: 50px;
+    position: relative;
+}
+
+.sprey__title {
+    font-family: "TT Travels Next Trial", sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: normal;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.sprey__text {
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.sprey__price {
+    margin-bottom: 20px;
+
+    .price {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+
+    .price__old-text {
+        font-weight: 400;
+        font-size: 18px;
+        color: #fff;
+    }
+
+    .old__price {
+        margin-right: 17px;
+    }
+
+    .new__price {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.8;
+        letter-spacing: 0.1em;
+        color: #ffbf2c;
+    }
+}
+
+
+.sprey__block {
+    width: 606px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: -750px;
+}
+
+.sprey__img {
+    width: 100%;
+    height: auto;
+}
+
+.sprey__prod {
+    width: 361px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: -110px;
+    transform: translateY(-50%);
+}
+
+.order__btn {
+}
