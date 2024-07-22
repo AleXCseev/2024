@@ -79,12 +79,21 @@
 }
 
 .sprey__prod {
-    width: 361px;
     height: auto;
     position: absolute;
     top: 50%;
-    left: -110px;
     transform: translateY(-50%);
+}
+
+.sprey__prod-1 {
+    width: 233px;
+    left: -110px;
+    z-index: 1;
+}
+
+.sprey__prod-2 {
+    width: 362px;
+    left: -16px;
 }
 
 .order__btn {

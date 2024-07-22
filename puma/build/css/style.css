@@ -1,0 +1,2729 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Travels Next Trial";
+  src: url("../fonts/TT-Travels-Next-Trial-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Travels Next Trial";
+  src: url("../fonts/TT-Travels-Next-Trial-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, select, textarea, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, div {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-value {
+  background: none;
+  color: #003159;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+input::-webkit-input-placeholder {
+  opacity: 1;
+  color: inherit;
+}
+
+input::-moz-placeholder {
+  opacity: 1;
+  color: inherit;
+}
+
+input:-ms-input-placeholder {
+  opacity: 1;
+  color: inherit;
+}
+
+input::-ms-input-placeholder {
+  opacity: 1;
+  color: inherit;
+}
+
+input::placeholder {
+  opacity: 1;
+  color: inherit;
+}
+
+input:-ms-input-placeholder {
+  color: #003159 !important;
+}
+
+textarea {
+  overflow: auto;
+}
+
+input,
+button,
+textarea,
+select,
+a,
+option {
+  font: inherit;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+}
+
+img {
+  display: block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+*:focus-visible {
+  outline: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  width: 100%;
+}
+
+label.error {
+  display: none !important;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #fff;
+  background: #212121;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+}
+
+.site__wrapper {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  overflow: hidden;
+  margin: auto;
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container {
+  width: 1360px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+}
+
+.footer__modal {
+  width: 100%;
+  max-width: 900px;
+  display: none;
+  color: #222;
+}
+.footer__modal h2 {
+  font-size: 30px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.footer__modal h6 {
+  font-size: 24px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.footer__modal p {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 540px) {
+  .footer__modal h2 {
+    font-size: 6vw;
+  }
+  .footer__modal h6 {
+    font-size: 5vw;
+  }
+  .footer__modal p {
+    font-size: 4vw;
+  }
+}
+.modal__review {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.modal__review input:-ms-input-placeholder {
+  color: #444 !important;
+}
+
+.modal__review.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10000;
+}
+
+.modal__review-wrapper {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding: 50px;
+  background: #E5F2FA;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+.modal__review form {
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.modal__review form.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.name__input {
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  height: 50px;
+  border: 1px solid #888888;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 50px;
+  color: #444444;
+  padding: 0 20px;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.name__input::-webkit-input-placeholder {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 50px;
+  color: #444;
+}
+
+.name__input::-moz-placeholder {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 50px;
+  color: #444;
+}
+
+.name__input:-ms-input-placeholder {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 50px;
+  color: #444;
+}
+
+.name__input::-ms-input-placeholder {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 50px;
+  color: #444;
+}
+
+.name__input::placeholder {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 50px;
+  color: #444;
+}
+
+.input__file {
+  display: none;
+}
+
+.file {
+  width: auto;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-align-self: flex-start;
+          align-self: flex-start;
+  margin: 20px 0;
+}
+
+.file span {
+  font-size: 16px;
+  line-height: 1.3;
+  color: #222;
+}
+
+.file div {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: transparent;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+  margin-right: 15px;
+  border: 1px solid #888888;
+  position: relative;
+  overflow: hidden;
+}
+
+.file div img {
+  display: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.file div:before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  background: #5B67C8;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.file div:after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  background: #5B67C8;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+      -ms-transform: translate(-50%, -50%) rotate(90deg);
+       -o-transform: translate(-50%, -50%) rotate(90deg);
+          transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.modal__star-raiting {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.3;
+  color: #222222;
+  position: relative;
+  z-index: 10000;
+  margin: 10px 0;
+}
+
+.modal__raiting {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  min-width: 98px;
+  height: 18px;
+  font-size: 0px;
+  margin-left: 23px;
+}
+.modal__raiting img {
+  pointer-events: auto;
+}
+
+.modal__raiting img {
+  width: 18px;
+  height: 18px;
+}
+
+.modal__area {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  height: 98px;
+  max-height: 118px;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid #888888;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #444444;
+  padding: 13px 20px;
+  background-color: transparent;
+}
+
+.modal__area::-webkit-input-placeholder {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  color: #444444;
+}
+
+.modal__area::-moz-placeholder {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  color: #444444;
+}
+
+.modal__area:-ms-input-placeholder {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  color: #444444;
+}
+
+.modal__area::-ms-input-placeholder {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  color: #444444;
+}
+
+.modal__area::placeholder {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  color: #444444;
+}
+
+.send {
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+  background: #5B67C8;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.3;
+  text-align: center;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.send:hover {
+  background: #4353cf;
+}
+
+.send__img img {
+  margin: auto;
+}
+
+.send__window {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.send__window.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.send__massage {
+  width: 60%;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #222222;
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+.modal__close img {
+  width: 18px;
+}
+
+@media (max-width: 540px) {
+  .modal__review-wrapper {
+    max-width: calc(100% - 30px);
+    padding: 50px 30px;
+  }
+}
+.size-table-wrapper {
+  position: relative;
+  width: 100%;
+  background-color: #1a2e80;
+  padding: 25px;
+  max-width: 690px;
+  margin: 0 auto;
+  color: #fff;
+  display: none;
+}
+
+.size-table-wrapper h3 {
+  text-align: center;
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+
+.size-table-wrapper table {
+  margin-bottom: 30px;
+}
+
+.size-table-wrapper table:last-child {
+  margin-bottom: 0;
+}
+
+.size-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+}
+
+.size-table tbody tr:nth-of-type(even) td {
+  background-color: #162a7c;
+}
+
+.size-table tbody td:first-child {
+  width: 25.5%;
+  padding-left: 0;
+  /*border-right: 1px solid #fff;*/
+  text-align: left;
+}
+
+.size-table thead th:nth-child(2) {
+  border-left: 1px solid #fff;
+}
+
+.size-table tbody td {
+  width: 15%;
+  padding: 8px 8px 8px;
+}
+
+.size-table thead th {
+  padding: 8px 10px;
+  border-bottom: 1px solid #fff;
+  /*color: #000;*/
+}
+
+.modal__result {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+}
+
+.modal__block {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 80px 30px 30px;
+}
+
+.modal__result-title {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.3;
+  text-align: center;
+  color: #333;
+}
+
+.modal__result-text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.discount__modal {
+  position: absolute;
+  top: -65px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.header__section-wrapper {
+  padding: 25px 0 160px;
+  position: relative;
+}
+
+.decor {
+  position: absolute;
+  z-index: -1;
+}
+
+.header__decor-1 {
+  width: 603px;
+  height: 616px;
+  background: rgba(118, 18, 8, 0.4);
+  -webkit-filter: blur(300px);
+          filter: blur(300px);
+  border-radius: 100%;
+  top: 36px;
+  left: -177px;
+}
+
+.header__decor-2 {
+  width: 595px;
+  height: 607px;
+  background: rgba(255, 191, 44, 0.4);
+  -webkit-filter: blur(300px);
+          filter: blur(300px);
+  border-radius: 100%;
+  bottom: 48px;
+  right: 2px;
+}
+
+.header__nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-bottom: 95px;
+}
+
+.header__logo {
+  width: 124px;
+  height: auto;
+}
+
+.nav {
+  width: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.nav__link {
+  font-weight: 500;
+  font-size: 18px;
+  color: #fff;
+  margin-right: 74px;
+  line-height: normal;
+  cursor: pointer;
+  position: relative;
+}
+.nav__link:last-child {
+  margin-right: 0;
+}
+.nav__link:before {
+  content: "";
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  -webkit-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+  transition: 0.6s ease;
+  background-color: #fff;
+}
+.nav__link:hover:before {
+  width: 100%;
+}
+
+.header__content {
+  width: 753px;
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.header__title {
+  font-weight: 704;
+  font-size: 58px;
+  color: #fff;
+  font-family: "TT Travels Next Trial", sans-serif;
+  line-height: normal;
+  margin-bottom: 37px;
+}
+
+.header__block {
+  position: absolute;
+  top: -87px;
+  right: -736px;
+  width: 950px;
+  height: auto;
+  z-index: -1;
+}
+
+.header__img {
+  width: 100%;
+  height: auto;
+}
+
+.header__prod {
+  position: absolute;
+  bottom: 154px;
+  right: 27px;
+}
+
+.header__text {
+  width: 100%;
+  max-width: 638px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 81px;
+}
+.header__text span {
+  font-weight: 700;
+}
+
+.header__btn-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.order__btn {
+  display: inline-block;
+  font-family: "TT Travels Next Trial", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  padding: 25px 95px;
+  border-radius: 40px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1);
+  background: -webkit-linear-gradient(left, #ffbf2c 0%, #761208 100%);
+  background: linear-gradient(90deg, #ffbf2c 0%, #761208 100%);
+  position: relative;
+}
+.order__btn span {
+  position: relative;
+  z-index: 2;
+}
+.order__btn:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  background: -webkit-linear-gradient(right, #ffbf2c 0%, #761208 100%);
+  background: linear-gradient(-90deg, #ffbf2c 0%, #761208 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.order__btn:hover:before {
+  opacity: 1;
+}
+
+.btn__info {
+  font-family: "TT Travels Next Trial", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-left: 46px;
+}
+.btn__info img {
+  width: 45px;
+  height: auto;
+  margin-left: 20px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.btn__info:hover img {
+  -webkit-transform: translateX(10px);
+      -ms-transform: translateX(10px);
+       -o-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.info__section-wrapper {
+  padding-bottom: 165px;
+  position: relative;
+}
+
+.info__decor {
+  width: 627px;
+  height: 512px;
+  border-radius: 100%;
+  background: rgba(255, 191, 44, 0.4);
+  -webkit-filter: blur(300px);
+          filter: blur(300px);
+  bottom: 167px;
+  left: -216px;
+}
+
+.info__block {
+  width: 100%;
+  height: auto;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 40px;
+  padding: 60px 85px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+  margin-bottom: 120px;
+}
+
+.info__block-item {
+  width: 230px;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.info__item-number {
+  font-family: "TT Travels Next Trial", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  color: #ffbf2c;
+  margin-bottom: 10px;
+}
+
+.info__item-text {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+.info__item-text span {
+  font-weight: 700;
+}
+
+.info__item-img {
+  width: 100%;
+  max-width: 210px;
+  height: auto;
+  margin-top: 12px;
+}
+
+.info__block-item-1 .info__item-number::after {
+  content: "k";
+}
+
+.info__block-item-2 .info__item-number::after {
+  content: "%";
+}
+
+.info__block-item-4 .info__item-number::after {
+  content: "%";
+}
+
+.info__content {
+  width: 570px;
+  height: auto;
+  position: relative;
+  margin-left: auto;
+}
+.info__content .order__btn {
+  margin-top: 10px;
+}
+
+.info__title {
+  font-family: "TT Travels Next Trial", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  color: #fff;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.info__text-bold {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.info__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.info__left {
+  width: 705px;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  position: absolute;
+  bottom: 0;
+  left: -790px;
+}
+
+.info__left-item {
+  width: 340px;
+  height: 220px;
+  background: #1b1b1b;
+  border-radius: 40px;
+  position: relative;
+}
+.info__left-item img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.info__left-item-1, .info__left-item-2 {
+  margin-bottom: 138px;
+}
+
+.advantage__section-wrapper {
+  padding: 120px 0;
+  position: relative;
+}
+
+.advantage__decor {
+  width: 595px;
+  height: 608px;
+  border-radius: 100%;
+  background: rgba(255, 191, 44, 0.4);
+  -webkit-filter: blur(200px);
+          filter: blur(200px);
+  top: -172px;
+  left: -381px;
+}
+
+.advantage__section-title {
+  font-family: "TT Travels Next Trial", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: #fff;
+}
+
+.advantage__boot {
+  position: absolute;
+  bottom: -140px;
+  left: -220px;
+  width: 922px;
+  height: auto;
+}
+
+.advantage__items {
+  width: 1080px;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-left: auto;
+  margin-top: -210px;
+  position: relative;
+  z-index: 2;
+}
+
+.advantage__item {
+  width: 360px;
+  height: 330px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  padding: 30px;
+  background: -webkit-linear-gradient(227deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 49.39%, rgba(0, 0, 0, 0.25) 100%);
+  background: linear-gradient(223deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 49.39%, rgba(0, 0, 0, 0.25) 100%);
+}
+
+.advantage__number {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background: rgba(217, 217, 217, 0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-family: "TT Travels Next Trial", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+}
+
+.advantage__title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.advantage__text {
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+}
+
+.advantage__item-1 {
+  margin-left: 10px;
+}
+
+.advantage__item-2, .advantage__item-4 {
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+  background: transparent;
+}
+
+.video__section-wrapper {
+  padding-bottom: 119px;
+  position: relative;
+}
+
+.video__decor {
+  width: 630px;
+  height: 640px;
+  background: rgba(255, 191, 44, 0.4);
+  -webkit-filter: blur(300px);
+          filter: blur(300px);
+  top: -242px;
+  right: -90px;
+}
+
+.video {
+  width: 100%;
+  height: 700px;
+  background-image: url(../img/video-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-radius: 40px;
+  position: relative;
+  z-index: 1;
+}
+.video:hover .video__btn {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.video__btn {
+  width: 180px;
+  height: 180px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  margin-bottom: 25px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.video__btn img {
+  margin-left: 20px;
+}
+
+.video__text {
+  width: 100%;
+  max-width: 315px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+}
+.video__text span {
+  font-weight: 700;
+}
+
+.card__section-wrapper {
+  position: relative;
+  padding-bottom: 120px;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+          align-items: stretch;
+}
+
+.card__left {
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+  width: 845px;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+}
+
+.card__prod {
+  width: 814px;
+  margin-bottom: 86px;
+}
+
+.card__photos {
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  padding: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  background: -webkit-linear-gradient(227deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 49.39%, rgba(0, 0, 0, 0.25) 100%);
+  background: linear-gradient(223deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 49.39%, rgba(0, 0, 0, 0.25) 100%);
+}
+.card__photos a {
+  width: 19%;
+  height: auto;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.card__photos a:hover img {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+       -o-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.card__photos img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.card__right {
+  width: 500px;
+}
+
+.card__block {
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background: -webkit-linear-gradient(227deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 49.39%, rgba(0, 0, 0, 0.25) 100%);
+  background: linear-gradient(223deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 49.39%, rgba(0, 0, 0, 0.25) 100%);
+  padding: 35px 30px 31px;
+}
+
+.card__block-1 {
+  margin-bottom: 20px;
+}
+
+.card__block-2 {
+  padding: 30px 30px 18px;
+}
+
+.card__title {
+  font-family: "TT Travels Next Trial", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: normal;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.card__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 3px;
+}
+.card__info span {
+  width: auto;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+}
+
+.card__info-price {
+  margin-top: 10px;
+}
+
+.divider {
+  border-bottom: 1px dotted #fff;
+  margin: 0 2px 7px;
+}
+
+.price {
+  width: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+          align-items: baseline;
+}
+
+.old__price {
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: line-through;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.new__price {
+  font-family: "TT Travels Next Trial", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: normal;
+  color: #ffbf2c;
+}
+
+.card__form {
+  width: 100%;
+  height: auto;
+}
+
+.input__wrapper {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.card__input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #9b9b9b;
+  border-radius: 40px;
+  background: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #1e1e1e;
+}
+
+.card__select {
+  position: relative;
+}
+.card__select:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: 100%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: 100%;
+  background-color: #fff;
+  border: 1px solid #9b9b9b;
+  background-image: url(../img/tringle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+}
+
+.card__submit {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  font-size: 24px;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.sprey__section-wrapper {
+  padding-bottom: 169px;
+  position: relative;
+}
+
+.sprey__decor {
+  width: 595px;
+  height: 608px;
+  border-radius: 100%;
+  background: rgba(255, 191, 44, 0.4);
+  -webkit-filter: blur(300px);
+          filter: blur(300px);
+  top: -42px;
+  right: -40px;
+}
+
+.sprey__content {
+  width: 700px;
+  height: auto;
+  padding-top: 50px;
+  position: relative;
+}
+
+.sprey__title {
+  font-family: "TT Travels Next Trial", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: normal;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.sprey__text {
+  font-weight: 400;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.sprey__price {
+  margin-bottom: 20px;
+}
+.sprey__price .price {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+          align-items: baseline;
+}
+.sprey__price .price__old-text {
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+}
+.sprey__price .old__price {
+  margin-right: 17px;
+}
+.sprey__price .new__price {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.8;
+  letter-spacing: 0.1em;
+  color: #ffbf2c;
+}
+
+.sprey__block {
+  width: 606px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: -750px;
+}
+
+.sprey__img {
+  width: 100%;
+  height: auto;
+}
+
+.sprey__prod {
+  height: auto;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.sprey__prod-1 {
+  width: 233px;
+  left: -110px;
+  z-index: 1;
+}
+
+.sprey__prod-2 {
+  width: 362px;
+  left: -16px;
+}
+
+.galary__section-wrapper {
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.galary__decor {
+  width: 595px;
+  height: 608px;
+  background: rgba(255, 191, 44, 0.4);
+  -webkit-filter: blur(200px);
+          filter: blur(200px);
+  top: -89px;
+  right: -45px;
+}
+
+.galary__section-title {
+  font-family: "TT Travels Next Trial", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.galary__slider {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-perspective: 2000px;
+          perspective: 2000px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.galary__slide {
+  width: 300px;
+  height: auto;
+}
+.galary__slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+}
+
+.galary__slide-1 {
+  width: 280px;
+  -webkit-transform: rotateY(30deg);
+          transform: rotateY(30deg);
+}
+
+.galary__slide-2 {
+  -webkit-transform: rotateY(40deg);
+          transform: rotateY(40deg);
+}
+
+.galary__slide-3 {
+  position: relative;
+  top: 50px;
+}
+
+.galary__slide-4 {
+  -webkit-transform: rotateY(-40deg);
+          transform: rotateY(-40deg);
+}
+
+.galary__slide-5 {
+  width: 291px;
+  -webkit-transform: rotateY(-30deg);
+          transform: rotateY(-30deg);
+}
+
+.review__section-wrapper {
+  padding-bottom: 120px;
+  position: relative;
+}
+
+.review__decor {
+  width: 603px;
+  height: 616px;
+  border-radius: 100%;
+  background: rgba(255, 191, 44, 0.4);
+  -webkit-filter: blur(300px);
+          filter: blur(300px);
+  top: 271px;
+  left: -403px;
+}
+
+.review__section-title {
+  font-family: "TT Travels Next Trial", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.review__slider {
+  width: 100%;
+  height: auto;
+}
+.review__slider .owl-stage-outer {
+  padding-top: 60px;
+}
+
+.review {
+  border-radius: 40px;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  background: rgba(255, 255, 255, 0.05);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.review__photo {
+  width: 120px !important;
+  height: auto;
+  border-radius: 100%;
+  margin-bottom: 25px;
+  margin-top: -60px;
+}
+
+.review__name {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 5px;
+  padding: 0 25px;
+}
+
+.review__text {
+  padding: 0 25px;
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+
+.review__img {
+  border-radius: 40px;
+  width: 100%;
+  height: auto;
+}
+
+.owl-dots {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  position: relative;
+  margin-top: 50px;
+}
+.owl-dots:before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  position: absolute;
+  top: 1px;
+  left: 0;
+}
+.owl-dots button {
+  width: 100%;
+  height: 5px;
+  border-radius: 3px;
+  background: transparent !important;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.owl-dots button.active {
+  background: #ffbf2c !important;
+}
+
+.footer__section-wrapper {
+  padding-bottom: 180px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.footer__section-wrapper .header__btn-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.footer__section-wrapper .btn__info {
+  margin-left: 0;
+  margin-top: 30px;
+}
+
+.footer__decor-1 {
+  width: 595px;
+  height: 608px;
+  background: rgba(255, 191, 44, 0.2);
+  -webkit-filter: blur(300px);
+          filter: blur(300px);
+  top: -52px;
+  left: -139px;
+  border-radius: 100%;
+}
+
+.footer__decor-2 {
+  width: 1013px;
+  height: 486px;
+  border-radius: 100%;
+  background: rgba(167, 14, 1, 0.3);
+  -webkit-filter: blur(300px);
+          filter: blur(300px);
+  left: -104px;
+  bottom: -165px;
+  -webkit-transform: rotate(146deg);
+      -ms-transform: rotate(146deg);
+       -o-transform: rotate(146deg);
+          transform: rotate(146deg);
+}
+
+.footer__decor-3 {
+  width: 627px;
+  height: 512px;
+  border-radius: 100%;
+  background: rgba(255, 191, 44, 0.2);
+  -webkit-filter: blur(300px);
+          filter: blur(300px);
+  top: -94px;
+  right: 100px;
+}
+
+.footer__logo {
+  width: 124px;
+  height: auto;
+  margin-bottom: 304px;
+}
+
+.footer__title {
+  font-family: "TT Travels Next Trial", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+  margin-bottom: 61px;
+  width: 100%;
+  max-width: 898px;
+}
+
+.footer__block {
+  width: 1023px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.footer__img {
+  width: 100%;
+  height: auto;
+}
+
+.footer__boot {
+  position: absolute;
+  height: auto;
+}
+
+.footer__boot-1 {
+  width: 601px;
+  top: 204px;
+  left: -188px;
+}
+
+.footer__boot-2 {
+  width: 663px;
+  top: 57px;
+  right: -256px;
+}
+
+@media (max-width: 1480px) {
+  .container {
+    width: 1200px;
+  }
+  .header__title {
+    font-size: 54px;
+  }
+  .header__text {
+    max-width: 570px;
+  }
+  .header__content {
+    width: 680px;
+  }
+  .header__block {
+    right: -680px;
+    width: 880px;
+  }
+  .header__prod {
+    width: 90%;
+    height: auto;
+  }
+  .order__btn {
+    padding: 25px 80px;
+  }
+  .btn__info {
+    font-size: 22px;
+    margin-left: 40px;
+  }
+  .info__left {
+    width: 600px;
+    left: -650px;
+  }
+  .info__left-item {
+    width: 290px;
+    height: 190px;
+  }
+  .info__text-bold {
+    font-size: 22px;
+  }
+  .info__text {
+    font-size: 16px;
+  }
+  .info__left-item-1, .info__left-item-2 {
+    margin-bottom: 120px;
+  }
+  .advantage__section-title {
+    font-size: 52px;
+  }
+  .advantage__item {
+    width: 350px;
+    height: 320px;
+  }
+  .advantage__items {
+    width: 1050px;
+  }
+  .advantage__boot {
+    bottom: -115px;
+    left: -220px;
+    width: 850px;
+  }
+  .card__left {
+    width: 680px;
+  }
+  .card__prod {
+    width: 100%;
+    margin-bottom: 86px;
+  }
+  .sprey__block {
+    right: -700px;
+  }
+}
+@media (max-width: 1280px) {
+  .container {
+    width: 1000px;
+  }
+  .header__nav {
+    margin-bottom: 60px;
+  }
+  .header__content {
+    width: 600px;
+  }
+  .header__title {
+    font-size: 50px;
+  }
+  .header__text {
+    max-width: 500px;
+    font-size: 16px;
+  }
+  .order__btn {
+    font-size: 22px;
+    padding: 20px 60px;
+  }
+  .btn__info {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+  .btn__info img {
+    width: 35px;
+  }
+  .header__block {
+    right: -540px;
+    width: 750px;
+    top: -20px;
+  }
+  .info__block {
+    padding: 40px 60px;
+  }
+  .info__block-item {
+    width: 210px;
+  }
+  .info__content {
+    width: 460px;
+  }
+  .info__title {
+    font-size: 30px;
+  }
+  .info__text-bold {
+    font-size: 20px;
+  }
+  .info__left {
+    width: 520px;
+    left: -560px;
+  }
+  .info__left-item {
+    width: 250px;
+    height: 160px;
+  }
+  .video {
+    height: 600px;
+  }
+  .advantage__items {
+    width: 900px;
+    margin-top: -170px;
+  }
+  .advantage__item {
+    width: 300px;
+    height: 280px;
+    padding: 20px;
+  }
+  .advantage__title {
+    font-size: 22px;
+  }
+  .advantage__text {
+    font-size: 16px;
+  }
+  .advantage__section-title {
+    font-size: 42px;
+  }
+  .advantage__section-wrapper {
+    padding: 80px 0 120px;
+  }
+  .advantage__boot {
+    bottom: -90px;
+    left: -190px;
+    width: 740px;
+  }
+  .card__left {
+    width: 550px;
+  }
+  .card__right {
+    width: 430px;
+  }
+  .sprey__content {
+    width: 600px;
+  }
+  .sprey__title {
+    font-size: 54px;
+  }
+  .sprey__text {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1080px) {
+  .container {
+    width: 700px;
+  }
+  .header__section-wrapper {
+    padding: 40px 0 120px;
+  }
+  .nav {
+    display: none;
+  }
+  .header__nav {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    margin-bottom: 35px;
+  }
+  .header__content {
+    width: 100%;
+  }
+  .header__title {
+    text-align: center;
+  }
+  .header__text {
+    max-width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+  .header__btn-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+  .order__btn {
+    font-size: 24px;
+    padding: 25px 80px;
+  }
+  .btn__info {
+    margin-left: 0;
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  .btn__info img {
+    width: 40px;
+    height: auto;
+  }
+  .header__block {
+    width: 100%;
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-bottom: 20px;
+  }
+  .header__prod {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 98%;
+  }
+  .header__text {
+    margin-bottom: 30px;
+  }
+  .header__decor-1 {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: -100px;
+  }
+  .header__decor-2 {
+    bottom: -800px;
+    right: auto;
+    left: -100px;
+  }
+  .info__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+  .info__block-item {
+    width: 230px;
+    margin-bottom: 30px;
+  }
+  .info__block-item:last-child {
+    margin-bottom: 0;
+  }
+  .info__block {
+    padding: 50px 60px;
+  }
+  .info__content {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+  .info__left {
+    width: 100%;
+    height: auto;
+    left: auto;
+    bottom: auto;
+    position: static;
+    margin-top: 80px;
+    margin-bottom: 45px;
+  }
+  .info__title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .info__text-bold {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .info__text {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .info__left-item {
+    width: 47%;
+    height: 215px;
+  }
+  .info__left-item-1, .info__left-item-2 {
+    margin-bottom: 140px;
+  }
+  .info__decor {
+    bottom: 380px;
+    left: -216px;
+  }
+  .video {
+    height: 400px;
+  }
+  .video__btn {
+    width: 120px;
+    height: 120px;
+  }
+  .video__btn img {
+    margin-left: 10px;
+    width: 40px;
+  }
+  .info__section-wrapper {
+    padding-bottom: 120px;
+  }
+  .video__decor {
+    top: -242px;
+    right: -250px;
+  }
+  .advantage__boot {
+    display: none;
+  }
+  .advantage__section-title {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .advantage__items {
+    margin-top: 0;
+    width: 100%;
+  }
+  .advantage__item-1 {
+    margin-left: 0;
+  }
+  .advantage__decor {
+    display: none;
+  }
+  .galary__slide {
+    -webkit-transform: none;
+        -ms-transform: none;
+         -o-transform: none;
+            transform: none;
+    width: 100%;
+    height: auto;
+    top: auto;
+  }
+  .galary__slider .center {
+    padding-top: 27px;
+  }
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+  .card__left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .card__right {
+    width: 100%;
+  }
+  .card__prod {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .galary__decor {
+    top: auto;
+    right: auto;
+    bottom: -800px;
+    left: -200px;
+  }
+  .sprey__content {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    padding-top: 0;
+  }
+  .sprey__block {
+    width: 100%;
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+  .sprey__title {
+    text-align: center;
+  }
+  .sprey__text {
+    text-align: center;
+  }
+  .sprey__price .price {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+  }
+  .sprey__block {
+    margin-bottom: 20px;
+  }
+  .sprey__prod-1 {
+    -webkit-transform: translateY(-50%) rotate(-12deg);
+        -ms-transform: translateY(-50%) rotate(-12deg);
+         -o-transform: translateY(-50%) rotate(-12deg);
+            transform: translateY(-50%) rotate(-12deg);
+    left: 115px;
+    top: 55%;
+  }
+  .sprey__prod-2 {
+    -webkit-transform: translateY(-50%) rotate(14deg);
+        -ms-transform: translateY(-50%) rotate(14deg);
+         -o-transform: translateY(-50%) rotate(14deg);
+            transform: translateY(-50%) rotate(14deg);
+    left: auto;
+    right: 0;
+    top: 60%;
+  }
+  .sprey__decor {
+    background: rgba(255, 191, 44, 0.6);
+    top: -165px;
+    right: -100px;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .advantage__item {
+    width: 100%;
+    padding: 30px;
+  }
+  .galary__section-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+}
+@media (max-width: 540px) {
+  .header__section-wrapper {
+    padding: 7vw 0 26vw;
+  }
+  .header__nav {
+    margin-bottom: 8.5vw;
+  }
+  .header__logo {
+    width: 19vw;
+  }
+  .header__title {
+    font-size: 7.5vw;
+    margin-bottom: 8.5vw;
+  }
+  .header__block {
+    margin-bottom: 4.8vw;
+  }
+  .header__text {
+    font-size: 4.5vw;
+    margin-bottom: 7vw;
+  }
+  .order__btn {
+    font-size: 5.6vw;
+    padding: 6vw 22vw;
+  }
+  .btn__info {
+    font-size: 5.6vw;
+    margin-top: 5.5vw;
+  }
+  .btn__info img {
+    width: 10vw;
+    height: auto;
+    margin-left: 4.8vw;
+  }
+  .header__decor-1 {
+    width: 100vw;
+    height: 228vw;
+    left: -15px;
+    -webkit-filter: blur(200px);
+            filter: blur(200px);
+  }
+  .header__decor-2 {
+    width: 151vw;
+    height: 124vw;
+    bottom: -170vw;
+    right: auto;
+    left: -70vw;
+    background: rgba(255, 191, 44, 0.6);
+  }
+  .info__section-wrapper {
+    padding-bottom: 28vw;
+  }
+  .info__block {
+    padding: 12vw 5vw;
+    margin-bottom: 28vw;
+  }
+  .info__block-item {
+    width: 56vw;
+    margin-bottom: 7vw;
+  }
+  .info__item-number {
+    font-size: 11.8vw;
+    margin-bottom: 2vw;
+  }
+  .info__item-text {
+    font-size: 4.5vw;
+  }
+  .info__title {
+    font-size: 7.5vw;
+    margin-bottom: 4.8vw;
+  }
+  .info__text-bold {
+    font-size: 5.5vw;
+    margin-bottom: 1vw;
+  }
+  .info__text {
+    font-size: 4.5vw;
+    margin-bottom: 4.8vw;
+  }
+  .info__left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+    margin-top: 20vw;
+    margin-bottom: 11vw;
+  }
+  .info__left-item {
+    width: 89%;
+    height: 54vw;
+    margin-bottom: 28vw !important;
+  }
+  .info__left-item:last-child {
+    margin-bottom: 0 !important;
+  }
+  .info__left-item-1, .info__left-item-2 {
+    margin-bottom: 0;
+  }
+  .info__content .order__btn {
+    padding: 6vw 24vw;
+    margin-top: 0;
+  }
+  .info__decor {
+    bottom: 150vw;
+    left: -75vw;
+    width: 144vw;
+    height: 147vw;
+    background: rgba(255, 191, 44, 0.5);
+  }
+  .video {
+    height: 91vw;
+  }
+  .video__btn {
+    width: 43vw;
+    height: 43vw;
+    margin-bottom: 6vw;
+  }
+  .video__btn img {
+    margin-left: 4.8vw;
+    width: 14vw;
+  }
+  .video__text {
+    font-size: 4.2vw;
+  }
+  .video__section-wrapper {
+    padding-bottom: 28vw;
+  }
+  .video__decor {
+    top: -50vw;
+    right: -150vw;
+    width: 143vw;
+    height: 147vw;
+  }
+  .advantage__section-title {
+    font-size: 8vw;
+    text-align: center;
+    margin-bottom: 8vw;
+  }
+  .advantage__item {
+    padding: 7vw;
+    height: 80vw;
+  }
+  .advantage__number {
+    width: 14.5vw;
+    height: 14.5vw;
+    font-size: 9.8vw;
+  }
+  .advantage__title {
+    font-size: 5.8vw;
+    margin-bottom: 2vw;
+  }
+  .advantage__text {
+    font-size: 4.5vw;
+  }
+  .advantage__section-wrapper {
+    padding: 0 0 28vw;
+  }
+  .owl-dots {
+    margin-top: 12vw;
+  }
+  .galary__section-title {
+    font-size: 7.5vw;
+    margin-bottom: 10vw;
+  }
+  .galary__slider {
+    width: 225vw;
+    height: auto;
+  }
+  .galary__slider .owl-dots {
+    width: calc(100vw - 30px);
+    margin: auto;
+    margin-top: 12vw;
+  }
+  .galary__section-wrapper {
+    padding-bottom: 28vw;
+  }
+  .card__prod {
+    margin-bottom: 4.8vw;
+  }
+  .card__photos {
+    padding: 1vw;
+    border-radius: 4.8vw;
+  }
+  .card__photos a {
+    width: 19.4%;
+    border-radius: 4.8vw;
+  }
+  .card__left {
+    margin-bottom: 4.8vw;
+  }
+  .card__block {
+    border-radius: 4.8vw;
+    background: rgb(28, 28, 28);
+  }
+  .card__block-1 {
+    margin-bottom: 4.8vw;
+    padding: 6vw 3.5vw;
+  }
+  .card__title {
+    font-size: 6vw;
+    margin-bottom: 6vw;
+  }
+  .card__info {
+    font-size: 4.5vw;
+  }
+  .card__info .old__price {
+    font-size: 4.5vw;
+    margin-right: 2vw;
+  }
+  .card__info .new__price {
+    font-size: 6vw;
+  }
+  .card__block-2 {
+    padding: 4.8vw 3.5vw;
+  }
+  .card__submit {
+    font-size: 5.6vw;
+    padding: 3.5vw 22vw;
+  }
+  .card__section-wrapper {
+    padding-bottom: 28vw;
+  }
+  .galary__decor {
+    width: 144vw;
+    height: 147vw;
+    bottom: -200vw;
+    left: -100vw;
+    background: rgba(255, 191, 44, 0.6);
+  }
+}
