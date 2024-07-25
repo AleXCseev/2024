@@ -3,7 +3,7 @@ var landingFunctions = {
 		this.initLibraris();
 		// this.getPrice();
 		// this.time()
-		this.modal()
+		// this.modal()
 	}, 
 
 	getPrice: function() {
@@ -60,43 +60,6 @@ var landingFunctions = {
 			}
 		});
 
-		// let owl = $('.info__slider').owlCarousel({
-		// 	items: 5,
-		// 	margin: 0,
-		// 	center: true,
-		// 	dots: false,
-		// 	dotsEach: true,
-		// 	nav: true,
-		// 	loop: true,
-		// 	autoplay: true,
-		// 	mouseDrag: false,
-		// 	touchDrag: false,
-		// 	autoplayTimeout: 3000,
-		// 	autoplayHoverPause: true,
-		// });
-
-		// $('.info__next-btn').click(function() {
-		// 	owl.trigger('prev.owl.carousel');
-		// })
-
-		// $('.info__prev-btn').click(function() {
-		// 	owl.trigger('next.owl.carousel');
-		// })
-
-		// $('.info__slide').click(function() {
-		// 	const position = $(this).data("slide") - 1
-		// 	owl.trigger("to.owl.carousel", [position, 300])
-		// })
-
-		// $('.advantage__galary').owlCarousel({
-		// 	items: 1,
-		// 	margin: 0,
-		// 	dots: false,
-		// 	dotsEach: true,
-		// 	nav: true,
-		// 	loop: true,
-		// });
-
 		$('.review__slider').owlCarousel({
 			items: 3,
 			margin: 20,
@@ -105,9 +68,15 @@ var landingFunctions = {
 			nav: false,
 			loop: true,
 			autoHeight: true,
+			autoplay: true,
+			autoplayTimeout: 3000,
+			autoplayHoverPause: true,
 			responsive:{
 				0:{
-					items:1,
+					items: 1,
+				},
+				700:{
+					items:2,
 				},
 				1081:{
 					items:3,
@@ -124,6 +93,9 @@ var landingFunctions = {
 				stagePadding: 7,
 				nav: false,
 				loop: true,
+				autoplay: true,
+				autoplayTimeout: 3000,
+				autoplayHoverPause: true,
 				responsive:{
 					0:{
 						items:1,
@@ -141,6 +113,9 @@ var landingFunctions = {
 				dotsEach: true,
 				nav: false,
 				loop: true,
+				autoplay: true,
+				autoplayTimeout: 3000,
+				autoplayHoverPause: true,
 				// responsive:{
 				// 	0:{
 				// 		items:1,
@@ -152,33 +127,17 @@ var landingFunctions = {
 			});
 		}
 
-		// $(window).on("resize", function() {
-		// 	if($(window).width() <= 1080) {
-		// 		$('.galary').addClass('owl-carousel').owlCarousel({
-		// 			items: 2,
-		// 			margin: 45,
-		// 			dots: false,
-		// 			dotsEach: true,
-		// 			nav: true,
-		// 			loop: true,
-		// 		});
-		// 	} else {
-		// 		$('.galary.owl-carousel').owlCarousel('destroy');
-		// 		$('.galary').removeClass('owl-carousel');
-		// 	}
-		// });
-
-		// AOS.init({
-		// 	disable : function() {
-		// 		if( $(window).width() <= 1080) {
-		// 			return true;
-		// 		}
-		// 		return false
-		// 	},
-		// 	once: true,
-		// 	duration: 1000,
-		// 	offset : 0,
-		// });
+		AOS.init({
+			disable : function() {
+				if( $(window).width() <= 1080) {
+					return true;
+				}
+				return false
+			},
+			once: true,
+			duration: 1000,
+			offset : 0,
+		});
 
 		$('[data-fancybox]').fancybox({
 			loop: true,

@@ -165,6 +165,15 @@
 .card__select {
     position: relative;
 
+    select {
+        text-align: -moz-center;
+        text-align: -webkit-center;
+        -moz-text-align-last: center;
+        text-align-last: center;
+        -webkit-text-align-last: center;
+        text-indent: 42% hanging;
+    }
+
     &:before {
         content: "";
         width: 50px;
