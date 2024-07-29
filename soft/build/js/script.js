@@ -20,25 +20,26 @@ var landingFunctions = {
 			e.preventDefault();
 		})
 
-		// $('.galary__slider').owlCarousel({
-		// 	items: 3,
-		// 	margin: 31,
-		// 	dots: false,
-		// 	nav: true,
-		// 	loop: true,
-		// 	stagePadding: 20,
-		// 	responsive:{
-		// 		0:{
-		// 			items: 1,
-		// 			dots: true,
-		// 		},
-		// 		1081:{
-		// 			items: 3,
-		// 			dots: false,
-		// 		}
-		// 	}
-		// });
 
+		if($(window).width() <= 1080) {
+			$('.galary').addClass('owl-carousel').owlCarousel({
+				items: 2,
+				margin: 20,
+				dots: true,
+				dotsEach: true,
+				nav: true,
+				loop: true,
+				stagePadding: 0,
+				responsive:{
+					0:{
+						items: 1,
+					},
+					701:{
+						items: 2,
+					}
+				}
+			});
+		}
 
 		$('.review__slider').owlCarousel({
 			items: 1,
@@ -48,6 +49,14 @@ var landingFunctions = {
 			nav: true,
 			loop: true,
 			autoHeight: true,
+			responsive:{
+				0:{
+					dots: true,
+				},
+				1080:{
+					dots: false,
+				}
+			}
 		});
 
 
