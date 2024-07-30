@@ -21,7 +21,7 @@
 
 .info__title {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 36px;
     text-transform: uppercase;
     color: #efab2d;
     width: 100%;
@@ -63,7 +63,7 @@
 
 .info__item-title {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 20px;
     text-transform: uppercase;
     color: #791707;
     margin-bottom: 8px;
@@ -71,8 +71,12 @@
 
 .info__item-text {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     color: #111;
+
+    span {
+        font-weight: 700;
+    }
 }
 
 .info__item-1 {

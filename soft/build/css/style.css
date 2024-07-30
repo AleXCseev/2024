@@ -809,7 +809,7 @@ body {
 
 .header__title {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 36px;
   text-transform: uppercase;
   color: #9c0940;
   margin-bottom: 39px;
@@ -1064,7 +1064,7 @@ body {
 
 .info__title {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 36px;
   text-transform: uppercase;
   color: #efab2d;
   width: 100%;
@@ -1117,7 +1117,7 @@ body {
 
 .info__item-title {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
   color: #791707;
   margin-bottom: 8px;
@@ -1125,8 +1125,11 @@ body {
 
 .info__item-text {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   color: #111;
+}
+.info__item-text span {
+  font-weight: 700;
 }
 
 .info__item-1 {
@@ -1186,7 +1189,7 @@ body {
 
 .advantage__title {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 36px;
   text-transform: uppercase;
   text-align: center;
   color: #a8240f;
@@ -1844,7 +1847,6 @@ body {
   color: #fff;
   margin-bottom: 8px;
   width: 100%;
-  max-width: 458px;
 }
 
 .review__rating {
@@ -2087,7 +2089,7 @@ body {
     width: 500px;
   }
   .header__title {
-    font-size: 38px;
+    font-size: 34px;
   }
   .header__block {
     width: 700px;
@@ -2192,7 +2194,7 @@ body {
     width: 450px;
   }
   .header__title {
-    font-size: 34px;
+    font-size: 30px;
     margin-bottom: 20px;
   }
   .header__boot {
@@ -2234,6 +2236,12 @@ body {
   .info__item-icon {
     width: 80px;
     margin-right: 20px;
+  }
+  .info__item-title {
+    font-size: 18px;
+  }
+  .info__item-text {
+    font-size: 16px;
   }
   .advantage__name img {
     height: 80px;
@@ -2404,6 +2412,12 @@ body {
   }
   .info__item {
     width: 100%;
+  }
+  .info__item-title {
+    font-size: 22px;
+  }
+  .info__item-text {
+    font-size: 20px;
   }
   .info__item-icon {
     width: 100px;
@@ -2874,12 +2888,12 @@ body {
     margin-bottom: 7.5vw;
   }
   .header__subtitle {
-    font-size: 5.8vw;
+    font-size: 5vw;
     padding-left: 2vw;
     margin-bottom: 3vw;
   }
   .header__title {
-    font-size: 8.8vw;
+    font-size: 7vw;
     margin-bottom: 4.8vw;
   }
   .header__boot {
@@ -3009,7 +3023,7 @@ body {
     padding: 9.5vw 0 0px;
   }
   .advantage__title {
-    font-size: 8.8vw;
+    font-size: 8vw;
   }
   .advantage__name img {
     height: 9vw;
