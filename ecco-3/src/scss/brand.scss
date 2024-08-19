@@ -1,0 +1,137 @@
+.brand__section-wrapper {
+    padding-bottom: 120px;
+}
+
+.brand__block {
+    width: 100%;
+    height: auto;
+    border-radius: 28px;
+    background: #fff;
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    position: relative;
+}
+
+.brand__decor {
+    position: absolute;
+    height: auto;
+}
+
+.brand__decor-1 {
+    width: 106px;
+    transform: rotate(119deg);
+    bottom: 40px;
+    left: -86px;
+    z-index: -1;
+}
+
+.brand__decor-2 {
+    width: 107px;
+    transform: rotate(135deg);
+    bottom: -78px;
+    left: 0px;
+}
+
+.brand__decor-3 {
+    width: 91px;
+    transform: rotate(70deg);
+    bottom: -51px;
+    left: 121px;
+}
+
+.brand__left {
+    width: 515px;
+    flex-shrink: 0;
+}
+
+.brand__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 33px;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.brand__img {
+    width: 100%;
+    height: auto;
+}
+
+.brand__right {
+    width: 578px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.brand__text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.brand__right-block {
+}
+
+.brand__items {
+    width: 470px;
+    height: auto;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.brand__item {
+    width: 210px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.brand__item-number {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 9px;
+    opacity: 0;
+}
+
+.brand__item-text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+}
+
+.brand__item-1, .brand__item-2, .brand__item-4 {
+    .brand__item-number::after {
+        content: "%";
+    }
+}
+
+.brand__item-3 {
+    .brand__item-number::after {
+        content: "+";
+    }
+}
+
+.order__btn {
+}
