@@ -1,7 +1,7 @@
 var landingFunctions = {
 	init: function() {
 		this.initLibraris()
-		// this.card()
+		this.card()
 		// this.time()
 		// this.video()
 		this.modal()
@@ -12,7 +12,7 @@ var landingFunctions = {
 		
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = 0;
-			var cardHeight = $(".card").outerHeight(false)
+			var cardHeight = $("#order").outerHeight(false)
 			var windowHeight = $(window).height()
 
 			$('html, body')
@@ -22,35 +22,44 @@ var landingFunctions = {
 			e.preventDefault();
 		})
 
-		// $('.galary__slider').owlCarousel({
-		// 	items: 3,
-		// 	margin: 31,
-		// 	dots: false,
-		// 	nav: true,
-		// 	loop: true,
-		// 	stagePadding: 20,
-		// 	responsive:{
-		// 		0:{
-		// 			items: 1,
-		// 			dots: true,
-		// 		},
-		// 		1081:{
-		// 			items: 3,
-		// 			dots: false,
-		// 		}
-		// 	}
-		// });
+		var show = true;
+		var countbox = ".advantage__section";
+		$(window).on("scroll load resize", function () {
+			if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+			var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+			var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
+			var w_height = $(window).height(); // Высота окна браузера
+			var d_height = $(document).height(); // Высота всего документа
+			var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+			if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+				$('.advantage__text-number span').css('opacity', '1');
+				$('.advantage__text-number span').spincrement({
+					thousandSeparator: "",
+					duration: 2000
+				});
+				 
+				show = false;
+			}
+		});
+
+		$('.card__slider').owlCarousel({
+			items: 1,
+			margin: 40,
+			dots: true,
+			nav: true,
+			loop: true,
+		});
 
 
-		// $('.review__slider').owlCarousel({
-		// 	items: 1,
-		// 	margin: 40,
-		// 	dots: true,
-		// 	dotsEach: true,
-		// 	nav: true,
-		// 	loop: true,
-		// 	autoHeight: true,
-		// });
+		$('.review__slider').owlCarousel({
+			items: 1,
+			margin: 40,
+			dots: false,
+			dotsEach: true,
+			nav: true,
+			loop: true,
+			autoHeight: true,
+		});
 
 
 		$.raty.path = $("body").data("path") +  '/img/raty';
@@ -115,7 +124,15 @@ var landingFunctions = {
 	},
 
 	card: function() {
-		
+		$(".card__color-btn").click(function() {
+			$(".card__color-btn").removeClass("active")
+			$(this).addClass("active")
+
+			const color = $(this).data("color")
+
+			$(".card__slider").removeClass("active")
+			$(".card__slider." + color).addClass("active")
+		})
 	},
 
 	video: function() {
