@@ -59,6 +59,14 @@ var landingFunctions = {
 			nav: true,
 			loop: true,
 			autoHeight: true,
+			responsive:{
+				0:{
+					dots: true,
+				},
+				1081:{
+					dots: false,
+				}
+			}
 		});
 
 

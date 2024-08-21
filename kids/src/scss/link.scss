@@ -4,21 +4,21 @@
 .link__content {
     position: relative;
     padding-bottom: 95px;
-    width: 555px;
+    width: 660px;
     height: auto;
     z-index: 1;
 }
 
 .link__section-title {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 34px;
     text-transform: uppercase;
     color: #ff5c00;
-    margin-bottom: 31px;
+    margin-bottom: 20px;
 }
 
 .link__item {
-    margin-bottom: 37px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -43,7 +43,7 @@
 }
 
 .link__item-text {
-    font-size: 20px;
+    font-size: 18px;
     color: #222;
 }
 
