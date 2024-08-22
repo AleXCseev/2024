@@ -46,29 +46,29 @@ var landingFunctions = {
 			// }
 		});
 
-		// $(".reviews").owlCarousel({
-		// 	loop: true,
-		// 	nav: false,
-		// 	dots: true,
-		// 	dotsEach: true,
-		// 	items: 2,
-		// 	margin: 230,
-		// 	autoHeight: true,
-		// 	responsive:{
-		// 		0: {
-		// 			items: 1,
-		// 			margin: 50,
-		// 		},
-		// 		1080:{
-		// 			items: 2,
-		// 			margin: 50,
-		// 		},
-		// 		1280: {
-		// 			items: 2,
-		// 			margin: 230,
-		// 		},
-		// 	}
-		// });
+		$(".review__slider").owlCarousel({
+			loop: true,
+			nav: true,
+			dots: false,
+			dotsEach: true,
+			items: 3,
+			margin: 20,
+			autoHeight: true,
+			// responsive:{
+			// 	0: {
+			// 		items: 1,
+			// 		margin: 50,
+			// 	},
+			// 	1080:{
+			// 		items: 2,
+			// 		margin: 50,
+			// 	},
+			// 	1280: {
+			// 		items: 2,
+			// 		margin: 230,
+			// 	},
+			// }
+		});
 
 		$(".advantage__item-open").click(function() {
 			$(".advantage__item-text").hide()

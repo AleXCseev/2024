@@ -36,7 +36,7 @@
     border-radius: 30px;
     transition: 0.3s ease;
 
-    &:hover {
+    &.active {
         background: linear-gradient(90deg, #c7fb65 0%, #96e70f 100%);
 
         .info__block-text {

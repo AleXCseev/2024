@@ -1,0 +1,163 @@
+.sprey__section-wrapper {
+    position: relative;
+    padding: 186px 0 166px;
+}
+
+.sprey__decor {
+    position: absolute;
+    height: auto;
+}
+
+.sprey__decor-1 {
+    width: 179px;
+    top: 159px;
+    left: -300px;
+    transform: rotate(77deg);
+}
+
+.sprey__decor-2 {
+    width: 172px;
+    top: 268px;
+    left: -129px;
+    transform: rotate(120deg);
+}
+
+.sprey__decor-3 {
+    width: 131px;
+    top: 103px;
+    left: 311px;
+    transform: rotate(75deg);
+}
+
+.sprey__decor-4 {
+    width: 179px;
+    top: 346px;
+    left: 177px;
+    transform: rotate(77deg);
+}
+
+.sprey__decor-5 {
+    width: 171px;
+    top: 352px;
+    left: 800px;
+    transform: rotate(120deg);
+}
+
+.sprey__decor-6 {
+    width: 90px;
+    top: 125px;
+    right: 214px;
+    transform: rotate(115deg);
+}
+
+.sprey__decor-7 {
+    width: 131px;
+    top: 413px;
+    right: -43px;
+    transform: rotate(-255deg);
+}
+
+.sprey__decor-8 {
+    width: 114px;
+    top: 258px;
+    right: -147px;
+    transform: rotate(67deg);
+}
+
+.sprey__decor-9 {
+    width: 90px;
+    top: 326px;
+    right: -250px;
+    transform: rotate(115deg);
+}
+
+.sprey__block {
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+    background: #fff;
+    padding: 24px 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.sprey__img {
+    position: absolute;
+    top: 32%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 318px;
+    height: auto;
+}
+
+.sprey__title {
+    width: 100%;
+    max-width: 460px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+    text-align: center;
+    color: #000;
+    line-height: normal;
+
+    span {
+        font-family: "Meddon", sans-serif;
+        font-weight: 400;
+        line-height: 1;
+    }
+}
+
+.sprey__wrapper {
+    width: 315px;
+    height: auto;
+}
+
+.sprey__info {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 10px;
+    line-height: normal;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.sprey__price {
+    .price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .old__price {
+        text-decoration: line-through;
+        font-weight: 300;
+        margin-left: 0;
+        line-height: normal;
+    }
+
+    .new__price {
+        font-weight: 600;
+        font-size: 48px;
+        text-align: center;
+        color: #e89839;
+        line-height: normal;
+    }
+}
+
+.price__text {
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+
+

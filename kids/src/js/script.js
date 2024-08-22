@@ -42,6 +42,16 @@ var landingFunctions = {
 			}
 		});
 
+		$(".info__block-item").hover(
+			function() {
+				$(".info__block-item").removeClass("active")
+				$(this).addClass("active")
+			},
+			function() {
+				
+			}
+		)
+
 		$('.card__slider').owlCarousel({
 			items: 1,
 			margin: 40,
@@ -78,21 +88,21 @@ var landingFunctions = {
 			number: 5,
 		});
 	
-		AOS.init({
-			disable : function() {
-				if( $(window).width() <= 1080) {
-					return true;
-				}
-				return false
-			},
-			once: true,
-			duration: 1000,
-			offset : 0,
-		});
+		// AOS.init({
+		// 	disable : function() {
+		// 		if( $(window).width() <= 1080) {
+		// 			return true;
+		// 		}
+		// 		return false
+		// 	},
+		// 	once: true,
+		// 	duration: 1000,
+		// 	offset : 0,
+		// });
 	
-		$(window).resize(function() {
-			AOS.refresh();
-		})
+		// $(window).resize(function() {
+		// 	AOS.refresh();
+		// })
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
@@ -275,8 +285,6 @@ var landingFunctions = {
 			}, 5000);
 		}
 	},
-
-	
 }
 
 $(document).ready(function() {
