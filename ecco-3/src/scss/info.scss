@@ -50,6 +50,10 @@
     letter-spacing: 0.5em;
     text-transform: uppercase;
     color: #000;
+
+    br {
+        display: none;
+    }
 }
 
 .info__block-title {

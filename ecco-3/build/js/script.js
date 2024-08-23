@@ -29,21 +29,33 @@ var landingFunctions = {
 			dotsEach: true,
 			items: 3,
 			margin: 80,
-			// autoHeight: true,
-			// responsive:{
-			// 	0: {
-			// 		items: 1,
-			// 		margin: 50,
-			// 	},
-			// 	1080:{
-			// 		items: 2,
-			// 		margin: 50,
-			// 	},
-			// 	1280: {
-			// 		items: 2,
-			// 		margin: 230,
-			// 	},
-			// }
+			responsive:{
+				0: {
+					items: 1,
+					center: false,
+					margin: 20,
+				},
+				540: {
+					items: 2,
+					center: false,
+					margin: 20,
+				},
+				1080: {
+					items: 3,
+					center: true,
+					margin: 50,
+				},
+				1280: {
+					items: 3,
+					center: true,
+					margin: 60,
+				},
+				1480: {
+					items: 3,
+					center: true,
+					margin: 80,
+				},
+			}
 		});
 
 		$(".review__slider").owlCarousel({
@@ -252,12 +264,11 @@ var landingFunctions = {
 
 		if(localStorage.getItem("rotate")) {
 			$(".bar__section-wrapper").hide()
-			$(".card__section-wrapper").show()
+			$(".card__section").show()
+			$(".sprey__section").show()
 			$(".review__section").show()
 			$(".footer__section").show()
 		}
-
-		// $(".card__section-wrapper").show()
 
 		$(".order__btn-start").click(function() {
 			if ( active ) {
@@ -288,9 +299,10 @@ var landingFunctions = {
 		function openClose() {
 			setTimeout(function() {
 				$(".bar__section-wrapper").hide(0)
+				$(".sprey__section").fadeIn(1000)
 				$(".review__section").fadeIn(1000)
 				$(".footer__section").fadeIn(1000)
-				$(".card__section-wrapper").fadeIn(1000)
+				$(".card__section").fadeIn(1000)
 
 				// $([document.documentElement, document.body]).animate(
 				// 	{
@@ -303,57 +315,6 @@ var landingFunctions = {
 		}
 	},
 
-	card: function() {
-		function cardImg(selector) {
-			function toggleDataSrcAtribute(string) {
-				$(selector + " .card__photo-img").each(function() {
-					$(this).parent().attr("href",  $(this).attr("data-" + string))
-					$(this)
-						.hide()
-						.attr("src",  $(this).attr("data-" + string))
-						.fadeIn(1000)
-				})
-			}
-	
-			$(selector + " .card__color-btn").click(function () {
-
-				$(selector + " .card__color-btn").removeClass("active")
-				$(this).addClass("active")
-
-				var color = $(this).data("color")
-				toggleDataSrcAtribute(color)
-	
-				$(selector + " .card__color-btn").removeClass("active")
-				$(this).addClass("active")
-	
-				var price = $(this).data("price")
-				var currency = $(this).data("currency");
-				$(selector + " .new__price").text(price + " " + currency)
-
-				var pricePlusSale = Math.floor(price * 100 / 30); 
-				$(selector + " .old__price").text(pricePlusSale + " " + currency)
-	
-				var id = $(this).data("id")
-	
-				if ( id !== undefined ) {
-					$(this).closest(".product-card").find('input[name=products]').val(id);
-				}
-			})
-		}
-		
-		cardImg(".card__1")
-		cardImg(".card__2")
-
-		function cardSize(selector) {
-			$(selector + " .card__size-btn").click(function() {
-				$(selector + " .card__size-btn").removeClass("active")
-				$(this).addClass("active")
-			})
-		}
-
-		cardSize(".card__1")
-		cardSize(".card__2")
-	},
 }
 
 $(document).ready(function() {
