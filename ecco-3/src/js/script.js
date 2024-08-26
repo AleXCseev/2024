@@ -66,36 +66,50 @@ var landingFunctions = {
 			items: 3,
 			margin: 20,
 			autoHeight: true,
-			// responsive:{
-			// 	0: {
-			// 		items: 1,
-			// 		margin: 50,
-			// 	},
-			// 	1080:{
-			// 		items: 2,
-			// 		margin: 50,
-			// 	},
-			// 	1280: {
-			// 		items: 2,
-			// 		margin: 230,
-			// 	},
-			// }
+			responsive:{
+				0: {
+					items: 1,
+					// margin: 50,
+				},
+				1080:{
+					items: 2,
+					// margin: 50,
+				},
+				1280: {
+					items: 3,
+					// margin: 230,
+				},
+			}
 		});
 
-		$(".advantage__item-open").click(function() {
+		if($(window).width() <= 700) {
+			$(".card__photos").addClass("owl-carousel").owlCarousel({
+				loop: true,
+				nav: false,
+				dots: true,
+				dotsEach: true,
+				items: 3,
+				margin: 5,
+			});
+		}
+
+		$(".advantage__item").click(function(e) {
+			var target = $(e.target)
+			if(target.hasClass("advantage__item-close")) {
+				$(".advantage__item-text").hide()
+				$(".advantage__item-close").hide()
+				$(".advantage__item-open").show()
+				return false
+			}
 			$(".advantage__item-text").hide()
 			$(".advantage__item-close").hide()
 			$(".advantage__item-open").show()
-			$(this).hide()
-			$(this).closest(".advantage__item").find(".advantage__item-close").fadeIn(300)
-			$(this).closest(".advantage__item").find(".advantage__item-text").fadeIn(300)
+			$(this).find(".advantage__item-open").hide()
+			$(this).find(".advantage__item-close").fadeIn(300)
+			$(this).find(".advantage__item-text").fadeIn(300)
 		})
 
-		$(".advantage__item-close").click(function() {
-			$(".advantage__item-text").hide()
-			$(".advantage__item-close").hide()
-			$(".advantage__item-open").show()
-		})
+		$(".advantage__item-1").click()
 
 		var show = true;
 		var countbox = ".brand__section";
