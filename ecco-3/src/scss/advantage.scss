@@ -29,6 +29,7 @@
     .left {
         padding-left: 112px;
         font-family: "Inter", sans-serif;
+        display: block;
     }
 
     .font {
@@ -80,6 +81,10 @@
     color: #000;
     padding-bottom: 25px;
     display: none;
+
+    span {
+        font-weight: 600;
+    }
 }
 
 .advantage__item-open {

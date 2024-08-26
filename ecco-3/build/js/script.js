@@ -66,21 +66,32 @@ var landingFunctions = {
 			items: 3,
 			margin: 20,
 			autoHeight: true,
-			// responsive:{
-			// 	0: {
-			// 		items: 1,
-			// 		margin: 50,
-			// 	},
-			// 	1080:{
-			// 		items: 2,
-			// 		margin: 50,
-			// 	},
-			// 	1280: {
-			// 		items: 2,
-			// 		margin: 230,
-			// 	},
-			// }
+			responsive:{
+				0: {
+					items: 1,
+					// margin: 50,
+				},
+				1080:{
+					items: 2,
+					// margin: 50,
+				},
+				1280: {
+					items: 3,
+					// margin: 230,
+				},
+			}
 		});
+
+		if($(window).width() <= 700) {
+			$(".card__photos").addClass("owl-carousel").owlCarousel({
+				loop: true,
+				nav: false,
+				dots: true,
+				dotsEach: true,
+				items: 3,
+				margin: 5,
+			});
+		}
 
 		$(".advantage__item-open").click(function() {
 			$(".advantage__item-text").hide()
