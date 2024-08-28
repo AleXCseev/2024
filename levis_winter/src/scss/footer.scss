@@ -1,0 +1,30 @@
+.footer__line {
+    background-color: rgba(34, 34, 34, 0.1);
+
+    .container {
+        width: 100%;
+        max-width: 1300px;
+    }
+}
+
+.footer__line-wrapper {
+    padding: 15px 0;
+}
+
+.footer__line-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__line-item {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #444;
+
+    a:hover {
+        text-decoration: underline;
+    }
+}

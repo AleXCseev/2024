@@ -1,11 +1,12 @@
 var landingFunctions = {
 	init: function() {
-		this.initLibraris()
-		// this.getPrice();
-		this.bar()
-		this.time()
+		this.initLibraris();
+		this.getPrice();
+		this.bar();
+		this.time();
+		this.card();
 		// this.video()
-		this.modal()
+		this.modal();
 	}, 
 
 	getPrice: function() {
@@ -19,23 +20,6 @@ var landingFunctions = {
 	},
 
 	initLibraris: function() {
-
-		// $('.select select').customSelect({
-		// 	// includeValue: true,
-		// 	transition: 200,
-		// 	placeholder: '<span class="select__placeholder">Color</span>',
-		// 	hideCallback: function () {
-		// 		const color = $(this).find(".custom-select__option--value");
-
-		// 		if(color.hasClass("option__black")) {
-		// 			$(this).closest(".card").find(".card__boot, .card__photos").hide().removeClass("active")
-		// 			$(this).closest(".card").find(".card__boot-black, .card__photos-black").fadeIn(300).addClass("active")
-		// 		} else {
-		// 			$(this).closest(".card").find(".card__boot, .card__photos").hide().removeClass("active")
-		// 			$(this).closest(".card").find(".card__boot-red, .card__photos-red").fadeIn(300).addClass("active")
-		// 		}
-		// 	}
-		// });
 		
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = 0;
@@ -56,7 +40,6 @@ var landingFunctions = {
 			dotsEach: true,
 			nav: true,
 			loop: true,
-			stagePadding: 15,
 			autoHeight: true,
 			responsive:{
 				0:{
@@ -70,6 +53,25 @@ var landingFunctions = {
 				}
 			}
 		});
+
+		if($(window).width() <= 1080) {
+			$('.galary').addClass('owl-carousel').owlCarousel({
+				items: 2,
+				margin: 30,
+				dots: true,
+				dotsEach: true,
+				nav: true,
+				loop: true,
+				responsive:{
+					0:{
+						items:1,
+					},
+					700:{
+						items:2,
+					},
+				}
+			});
+		}
 
 		$.raty.path = $("body").data("path") +  '/img/raty';
 
@@ -109,7 +111,7 @@ var landingFunctions = {
 			start.find(".win, .win__big").fadeIn(100)
 			$(".bar__light").addClass("active")
 			$('[href*="#"]').attr("href", "#card");
-			$(".card__section, .review__section").fadeIn(1000)
+			$(".site__block-bg").fadeIn(1000)
 		}
 
 		if(localStorage.getItem("rotate")) {
@@ -180,6 +182,73 @@ var landingFunctions = {
 
 		// $(".date__1").text(getDate(-5));
     	$(".date").text(getDate(10));
+	},
+
+	card: function() {
+		function cardSlider (selector) {
+			var owl = $(selector + " .card__main-foto").owlCarousel({
+				items: 1,
+				margin: 100,
+				dots: false,
+				nav: false,
+				loop: true,
+				mouseDrag: false,
+				touchDrag: false,
+				animateOut: 'fadeOut',
+			});
+	
+			$(selector + " .card__foto").each(function() {
+				$(this).click(function() {
+					$(this).closest(".card").find(".card__foto").removeClass("active")
+					var position = $(this).data("slide") - 1
+					owl.trigger("to.owl.carousel", [position, 300])
+					$(`[data-slide='${Number(position) + 1}']`).addClass("active")
+				})
+			})
+
+			$(".card__nav-prev").click(function() {
+				var position = $(this).closest(".card__other-foto").find(".card__foto.active").data("slide")
+				$(this).closest(".card__other-foto").find(".card__foto.active").removeClass("active")
+				if (Number(position) - 1 !== 0) {
+					$(this).closest(".card__other-foto").find(`[data-slide='${Number(position) - 1 }']`).addClass("active")
+				} else {
+					$(this).closest(".card__other-foto").find("[data-slide='6']").addClass("active")
+				}
+				owl.trigger('prev.owl.carousel');
+			})
+
+			$(".card__nav-next").click(function() {
+				var position = $(this).closest(".card__other-foto").find(".card__foto.active").data("slide")
+				$(this).closest(".card__other-foto").find(".card__foto.active").removeClass("active")
+				if (Number(position) + 1 > 6) {
+					$(this).closest(".card__other-foto").find(`[data-slide='1']`).addClass("active")
+				} else {
+					$(this).closest(".card__other-foto").find(`[data-slide='${Number(position) + 1 }']`).addClass("active")
+				}
+				owl.trigger('next.owl.carousel');
+			})
+		}
+	
+		cardSlider(".card__1")
+
+		const getPrice = this.getPrice
+
+		$(".card__input-color").on("change", function() {
+			const color = $(this).val()
+			$(this).closest(".card").find(".card__galary").removeClass("active")
+			$(this).closest(".card").find(".card__galary." + color).addClass("active")
+
+			const currentBoot = $(this).closest(".card").find(".card__galary." + color)
+
+			const id = currentBoot.data("id")
+			const price = currentBoot.data("price")
+			const currency = currentBoot.data("currency")
+			const title = currentBoot.data("title")
+
+			$(this).closest(".card").find(".new__price").text(price + " " + currency)
+			getPrice()
+			$(this).closest(".card").find(".card__title span").text(title)
+		})
 	},
 
 	video: function() {
@@ -273,8 +342,6 @@ var landingFunctions = {
 	
 		modal()
 	},
-
-	
 }
 
 $(document).ready(function() {

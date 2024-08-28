@@ -3,7 +3,7 @@
 }
 
 .video__section-wrapper {
-    padding: 172px 0 279px;
+    padding: 100px 0 200px;
 }
 
 .video__content {
@@ -14,20 +14,24 @@
 
 .video__title {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 32px;
     text-transform: uppercase;
     color: #fff;
     margin-bottom: 36px;
+
+    span {
+        color: #C41230;
+    }
 }
 
 .video__text {
-    width: 215px;
+    width: 360px;
     height: auto;
     padding-left: 13px;
     margin-bottom: 42px;
     position: relative;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 22px;
     color: #fff;
 
     &:before {
@@ -67,7 +71,7 @@
     width: 750px;
     height: auto;
     position: absolute;
-    top: -72px;
+    top: 0px;
     right: -780px;
     display: flex;
     justify-content: space-between;
@@ -112,7 +116,7 @@
     width: 534px;
     height: auto;
     position: absolute;
-    bottom: -280px;
+    bottom: -220px;
     left: -335px;
 }
 
@@ -120,7 +124,7 @@
     width: 675px;
     height: auto;
     position: absolute;
-    top: -122px;
+    top: -60px;
     right: -1160px;
 }
 
