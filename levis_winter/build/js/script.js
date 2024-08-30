@@ -81,17 +81,17 @@ var landingFunctions = {
 			number: 5,
 		});
 
-		// AOS.init({
-		// 	disable : function() {
-		// 		if( $(window).width() <= 1080) {
-		// 			return true;
-		// 		}
-		// 		return false
-		// 	},
-		// 	once: true,
-		// 	duration: 1000,
-		// 	offset : 0,
-		// });
+		AOS.init({
+			disable : function() {
+				if( $(window).width() <= 1080) {
+					return true;
+				}
+				return false
+			},
+			once: true,
+			duration: 1000,
+			offset : 0,
+		});
 
 		$('[data-fancybox]').fancybox({
 			loop: true,

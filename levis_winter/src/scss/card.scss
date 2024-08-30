@@ -284,6 +284,11 @@
     transition: 0.3s ease;
     border: 1px solid #6DC0FF;
     border-radius: 20px;
+    box-shadow: none;
+
+    &:focus {
+        background: rgba(255, 255, 255, 0.5);
+    }
 }
 
 .input__wrappers {
