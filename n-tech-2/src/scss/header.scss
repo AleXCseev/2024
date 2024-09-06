@@ -1,0 +1,211 @@
+.header__section-wrapper {
+    position: relative;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    position: relative;
+    margin-bottom: 40px;
+
+    &:before {
+        content: "";
+        width: calc(100% + 260px);
+        height: 2px;
+        border-radius: 2px;
+        background: #808080;
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.header__logo {
+    font-weight: 700;
+    font-size: 40px;
+    color: #2e2a2a;
+    line-height: normal;
+}
+
+.nav {
+    width: 495px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__item {
+    font-weight: 400;
+    font-size: 18px;
+    color: #2e2a2a;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background-color: #2e2a2a;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.5s ease;
+    }
+
+    &:hover {
+        &:before {
+            width: 100%;
+        }
+    }
+}
+
+.nav__order {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: center;
+    color: #2e2a2a;
+    border: 1px solid #808080;
+    border-radius: 25px;
+    width: 200px;
+    height: auto;
+    padding: 13px;
+    transition: 0.3s ease;
+
+    &:hover {
+        color: #fff;
+        background-color: #808080;
+    }
+}
+
+.header__content {
+    width: 1193px;
+    height: auto;
+    padding: 0 80px 653px;
+    // background: #f3f0eb;
+    // border-radius: 25px;
+    position: relative;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: -80px;
+}
+
+.header__title {
+    font-family: "PP Neue Machina", sans-serif;
+    font-weight: 800;
+    font-size: 90px;
+    text-transform: uppercase;
+    text-align: right;
+    color: #2e2a2a;
+    line-height: 1;
+}
+
+.header__title-1 {
+    text-align: left;
+    margin-left: -332px;
+}
+
+.header__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.header__text {
+    flex-shrink: 0;
+    width: 420px;
+    height: auto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #2e2a2a;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.header__decor {
+    width: 1920px;
+    height: auto;
+    position: absolute;
+    top: 254px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header__decor-mobile {
+    display: none;
+}
+
+.header__btns {
+    flex-shrink: 0;
+    width: 550px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header__video-btn {
+    width: 260px;
+    height: auto;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33333;
+    letter-spacing: 0.28em;
+    text-align: center;
+    color: #ab1c1c;
+    border: 1px solid #ab1c1c;
+    border-radius: 35px;
+    padding: 23px;
+    transition: 0.3s ease;
+    flex-shrink: 0;
+
+    &:hover {
+        color: #fff;
+        background-color: #ab1c1c;
+    }
+}
+
+.order__wrapper {
+    width: 260px;
+    height: auto;
+}
+
+.order__btn {
+    width: 260px;
+    height: auto;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.28em;
+    text-align: center;
+    color: #fff;
+    border-radius: 35px;
+    background: #ab1c1c;
+    padding: 23px;
+    display: inline-block;
+    transition: 0.3s ease;
+
+    &:hover {
+        background-color: #2e2a2a;
+        color: #fff;
+    }
+}
+
+.header__discount {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.28em;
+    text-align: center;
+    color: #000;
+    margin-top: 10px;
+
+    span {
+        font-weight: 600;
+        color: #ab1c1c;
+    }
+}

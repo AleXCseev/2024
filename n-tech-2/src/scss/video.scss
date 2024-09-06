@@ -1,0 +1,47 @@
+.video__section {
+    background-image: url(../img/video-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.video__section-wrapper {
+    padding: 265px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.video__boot {
+    position: absolute;
+}
+
+.video__play {
+    width: 135px;
+    height: auto;
+    transition: 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.video__boot-2 {
+    width: 704px;
+    height: auto;
+    right: -50px;
+    top: 0;
+}
+
+.video__boot-1 {
+    width: 559px;
+    height: auto;
+    top: -26px;
+    left: 0;
+}

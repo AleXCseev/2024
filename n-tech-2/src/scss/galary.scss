@@ -1,0 +1,120 @@
+.galary__section-wrapper {
+    padding-top: 130px;
+}
+
+.galary__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #808080;
+    margin-bottom: 29px;
+}
+
+.galary__title {
+    width: 785px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    font-family: "PP Neue Machina", sans-serif;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #2e2a2a;
+}
+
+.galary__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2e2a2a;
+
+    span {
+        font-weight: 600; 
+    }
+}
+
+.galary__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #808080;
+
+    .order__btn {
+        width: 163px;
+        padding: 10px;
+    }
+}
+
+.galary__item {
+    width: calc(50% - 30px);
+    height: auto;
+    padding-bottom: 63px;
+}
+
+
+.galary__slider {
+    margin-bottom: 27px;
+    position: relative;
+
+    .owl-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 25px;
+        left: 0;
+
+        button {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: #D9D9D9 !important;
+            margin-right: 5px;
+            transition: 0.3s ease;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.active {
+                background-color: #AB1C1C !important;
+            }
+        }
+    }
+}
+
+.galary__item-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.galary__item-name {
+    font-family: "PP Neue Machina", sans-serif;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.46;
+    text-transform: uppercase;
+    color: #2e2a2a;
+    flex-shrink: 0;
+    width: auto;
+}
+
+.galary__item-1 {
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 2px;
+        height: calc(100% - 29px);
+        background: #808080;
+        position: absolute;
+        top: 0;
+        right: -31px;
+    }
+}
+
+.galary__item-2 {
+}
+

@@ -1,0 +1,52 @@
+.footer__section-wrapper {
+    padding-bottom: 86px;
+
+    .header__btns {
+        width: 550px;
+    } 
+}
+
+.footer__content {
+    width: 1060px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.footer__title {
+    font-family: "PP Neue Machina", sans-serif;
+    font-weight: 800;
+    font-size: 110px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #2e2a2a;
+    background: -webkit-linear-gradient(0deg, #2e2a2a 715px, #fff 326px, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.footer__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2e2a2a;
+    width: 100%;
+    max-width: 580px;
+    margin-bottom: 20px;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.footer__decor {
+    width: 770px;
+    height: auto;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    right: -425px;
+    z-index: -1;
+}
+

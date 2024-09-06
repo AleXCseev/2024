@@ -1,0 +1,200 @@
+.bar__section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .tag {
+        align-self: flex-start;
+    }
+
+    .galary__top {
+        padding-bottom: 0;
+        margin-bottom: 40px;
+        border-bottom: none;
+    }
+}
+
+.start {
+    width: 350px;
+    height: auto;
+    border-radius: 40px;
+    background: #ab1c1c;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+    padding: 28px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover {
+        background-color: #2e2a2a;
+    }
+}
+
+.bar__wrapper {
+    width: 1095px;
+    height: 546px;
+    // height: 1095px;
+    overflow: hidden;
+    padding: 10px 10px 0;
+    position: relative;
+}
+
+.bar__tringle {
+    position: absolute;
+    top: 11px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.bar {
+    width: 1075px;
+    height: 1075px;
+    border-radius: 100%;
+    border: 10px solid #fff;
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.1);
+    background-image: url(../img/bar.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: 3s ease;
+
+    &.active {
+        transform: rotate(1025deg);
+    }
+}
+
+.bar__item {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 1.5;
+    color: #fff;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &:nth-of-type(even) {
+        color: #2e2a2a;
+    }
+}
+
+.bar__item-1 {
+    transform: translate(-270%, -150%) rotate(15deg);
+}
+
+.bar__item-2 {
+    transform: translate(-210%, -340%) rotate(45deg);
+}
+
+.bar__item-3 {
+    transform: translate(-115%, -450%) rotate(75deg);
+}
+
+.bar__item-4 {
+    transform: translate(15%, -450%) rotate(105deg);
+}
+
+.bar__item-5 {
+    transform: translate(120%, -340%) rotate(135deg);
+}
+
+.bar__item-6 {
+    transform: translate(170%, -150%) rotate(150deg);
+}
+
+.bar__item-7 {
+    transform: translate(160%, 50%) rotate(-165deg);
+}
+
+.bar__item-8 {
+    transform: translate(105%, 230%) rotate(-135deg);
+}
+
+.bar__item-9 {
+    transform: translate(12%, 345%) rotate(-105deg);
+}
+
+.bar__item-10 {
+    transform: translate(-112%, 345%) rotate(-75deg);
+}
+
+.bar__item-11 {
+    transform: translate(-210%, 230%) rotate(-45deg);
+}
+
+.bar__item-12 {
+    transform: translate(-275%, 55%) rotate(-30deg);
+}
+
+.bar__result {
+    display: none;
+    background-image: url(../img/bar-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bar__result-wrapper {
+    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar__result-title {
+    font-family: "PP Neue Machina", sans-serif;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 26px;
+    text-align: center;
+}
+
+.bar__result-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    max-width: 650px;
+    margin-bottom: 55px;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+
+.bar__result-btn {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+
+    img {
+        transform: rotate(90deg);
+        margin-top: 50px;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        border: 1px solid #fff;
+    }
+}

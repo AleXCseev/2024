@@ -1,0 +1,135 @@
+.about__section-wrapper {
+    padding: 130px 0 156px;
+}
+
+.about__content {
+    width: 1015px;
+    height: auto;
+    position: relative;
+}
+
+.about__decor {
+    width: 460px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: -490px;
+}
+
+
+.tag {
+    width: 150px;
+    height: auto;
+    border: 1px solid #808080;
+    border-radius: 25px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #2e2a2a;
+    padding: 14px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about__title {
+    font-family: "PP Neue Machina", sans-serif;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #2e2a2a;
+    width: 100%;
+    max-width: 785px;
+    margin-bottom: 12px;
+}
+
+.about__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2e2a2a;
+    max-width: 785px;
+    margin-bottom: 40px;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.about__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about__item {
+    padding: 30px 30px 125px;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: calc(100% - 10px);
+        height: 2px;
+        background: #808080;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &:after {
+        content: "";
+        width: 2px;
+        height: calc(100% - 10px);
+        position: absolute;
+        background: #808080;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.about__number {
+    font-family: "PP Neue Machina", sans-serif;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 1.5;
+    color: #2e2a2a;
+    margin-bottom: 15px;
+    opacity: 0;
+
+    &:after {
+        content: "%";
+    }
+}
+
+.about__item-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2e2a2a;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.about__item-1 {
+
+}
+
+.about__item-2 {
+    &:before {
+        width: calc(100% - 20px);
+        left: 10px;
+    }
+}
+
+.about__item-3 {
+    &:before {
+        width: calc(100% - 10px);
+        right: 0px;
+        left: auto;
+    }
+
+    &:after {
+        display: none;
+    }
+}
