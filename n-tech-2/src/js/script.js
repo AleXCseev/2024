@@ -64,8 +64,11 @@ var landingFunctions = {
 		});
 
 
-		setInterval(changeAnimationInfoEffect, 5000)
-
+		if($(window).width() >= 1080) {
+			$(".info__item-1").addClass("active")
+			setInterval(changeAnimationInfoEffect, 5000)
+		}
+		
 		let count = 1;
 
 		function changeAnimationInfoEffect() {
