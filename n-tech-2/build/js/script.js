@@ -20,15 +20,22 @@ var landingFunctions = {
 	initLibraris: function() {
 		
 		$('[href*="#"]').on('click', function (e) {
-			var fixedOffset = 0;
-			// var cardHeight = $("#order").outerHeight(false)
-			// var windowHeight = $(window).height()
-
-			$('html, body')
-			.stop()
-			// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
-			.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
 			e.preventDefault();
+			var fixedOffset = 0;
+			var cardHeight = $("#card-1").outerHeight(false)
+			var windowHeight = $(window).height()
+
+			if($(window).width() > 700) {
+				$('html, body')
+				.stop()
+				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+			} else {
+				$('html, body')
+				.stop()
+				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+			}
 		})
 
 		$('.review__slider').owlCarousel({
@@ -39,18 +46,26 @@ var landingFunctions = {
 			nav: true,
 			loop: true,
 			autoHeight: false,
-			// responsive:{
-			// 	0:{
-			// 		items:1,
-			// 	},
-			// 	1081:{
-			// 		items:2,
-			// 	},
-			// 	1281:{
-			// 		items:3,
-			// 	}
-			// }
+			responsive:{
+				0:{
+					items: 1,
+					autoHeight: true,
+				},
+				540: {
+					items: 2,
+					autoHeight: false,
+				},
+				1081:{
+					items: 2,
+					autoHeight: false,
+				},
+				1280: {
+					items: 4,
+					autoHeight: false,
+				}
+			}
 		});
+
 
 
 		$('.galary__slider').owlCarousel({
@@ -68,6 +83,19 @@ var landingFunctions = {
 			$(".info__item-1").addClass("active")
 			setInterval(changeAnimationInfoEffect, 5000)
 		}
+
+		if($(window).width() <= 1080) {
+			$('.card__photos').addClass("owl-carousel").owlCarousel({
+				items: 3,
+				margin: 10,
+				dots: true,
+				dotsEach: true,
+				nav: false,
+				loop: true,
+				autoHeight: false,
+			});
+		}
+		
 		
 		let count = 1;
 
@@ -128,7 +156,7 @@ var landingFunctions = {
 
 		function barActive() {
 			$(".bar__section-wrapper").hide()
-			$('[href*="#bar"]').attr("href", "#card");
+			$('[href*="#bar"]').attr("href", "#card-1");
 			$('.order__btn-1').attr("href", "#card-1");
 			$('.order__btn-2').attr("href", "#card-2");
 			$(".site__block-bg").fadeIn(1000)
