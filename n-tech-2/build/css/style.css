@@ -1754,7 +1754,7 @@ body {
 }
 .card__section-wrapper .galary__top {
   margin-bottom: 75px;
-  padding-bottom: 75px;
+  padding-bottom: 50px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1767,7 +1767,7 @@ body {
   width: 100%;
   -webkit-flex-shrink: 0;
           flex-shrink: 0;
-  margin-bottom: 20px;
+  margin-right: 0;
 }
 .card__section-wrapper .galary__text {
   width: 100%;
@@ -1900,7 +1900,7 @@ body {
 .card__title {
   font-family: "PP Neue Machina", sans-serif;
   font-weight: 800;
-  font-size: 56px;
+  font-size: 52px;
   line-height: 1.2;
   color: #2e2a2a;
   margin-bottom: 5px;
@@ -2454,7 +2454,7 @@ body {
     height: 116px;
   }
   .card__title {
-    font-size: 48px;
+    font-size: 44px;
   }
   .card__info {
     font-size: 17px;
@@ -2823,7 +2823,7 @@ body {
   }
   .card__section-wrapper .galary__title {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   .card__section-wrapper .galary__text {
     width: 100%;
@@ -3273,11 +3273,11 @@ body {
   }
   .card__section-wrapper .galary__title {
     width: 100%;
-    margin-bottom: 7vw;
+    margin-bottom: 0vw;
   }
   .card__section-wrapper .galary__top {
     margin-bottom: 18vw;
-    padding-bottom: 12vw;
+    padding-bottom: 10vw;
   }
   .card__galary {
     overflow: visible;
@@ -3303,7 +3303,7 @@ body {
     margin-bottom: 3vw;
   }
   .card__info {
-    font-size: 3.6vw;
+    font-size: 3.5vw;
     margin-bottom: 2vw;
   }
   .new__price {
@@ -3428,7 +3428,7 @@ body {
     background: none;
     background-clip: initial;
     -webkit-text-fill-color: initial;
-    font-size: 14.5vw;
+    font-size: 12vw;
   }
   .footer__text {
     font-size: 4.5vw;

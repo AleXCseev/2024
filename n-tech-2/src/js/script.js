@@ -76,12 +76,19 @@ var landingFunctions = {
 			nav: false,
 			loop: true,
 			autoHeight: false,
+			autoplay: true,
+			autoplayTimeout: 3000,
+			autoplayHoverPause: true,
 		});
 
 
 		if($(window).width() >= 1080) {
-			$(".info__item-1").addClass("active")
-			setInterval(changeAnimationInfoEffect, 5000)
+		// 	$(".info__item-1").addClass("active")
+		// 	setInterval(changeAnimationInfoEffect, 5000)
+			$(".info__item").click(function() {
+				$(".info__item").removeClass("active");
+				$(this).addClass("active");
+			})
 		}
 
 		if($(window).width() <= 1080) {
@@ -97,17 +104,18 @@ var landingFunctions = {
 		}
 		
 		
-		let count = 1;
+		
+		// let count = 1;
 
-		function changeAnimationInfoEffect() {
-			$(".info__item").removeClass("active");
-			$(".info__item-" + count).addClass("active")
-			if(count > 3) {
-				count = 1
-			} else {
-				count++
-			}
-		}
+		// function changeAnimationInfoEffect() {
+		// 	$(".info__item").removeClass("active");
+		// 	$(".info__item-" + count).addClass("active")
+		// 	if(count > 3) {
+		// 		count = 1
+		// 	} else {
+		// 		count++
+		// 	}
+		// }
 
 		var show = true;
 		var countbox = ".about__section";
@@ -129,17 +137,17 @@ var landingFunctions = {
 			}
 		});
 
-		AOS.init({
-			disable : function() {
-				if( $(window).width() <= 1080) {
-					return true;
-				}
-				return false
-			},
-			once: true,
-			duration: 1000,
-			offset : 0,
-		});
+		// AOS.init({
+		// 	disable : function() {
+		// 		if( $(window).width() <= 1080) {
+		// 			return true;
+		// 		}
+		// 		return false
+		// 	},
+		// 	once: true,
+		// 	duration: 1000,
+		// 	offset : 0,
+		// });
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
@@ -177,7 +185,7 @@ var landingFunctions = {
 
 			$([document.documentElement, document.body]).animate({
 				scrollTop: $(".bar").offset().top
-			}, 1200);
+			}, 600);
 
 			if(localStorage.getItem("rotate")) {
 				return false;
@@ -193,7 +201,7 @@ var landingFunctions = {
 			setTimeout(function() {
 				$([document.documentElement, document.body]).animate({
 					scrollTop: $(".bar__result").offset().top
-				}, 1200);
+				}, 600);
 			}, 5000)
 
 			status = true;
