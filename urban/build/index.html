@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="libs/owl.carousel.min.css">
 	<link rel="stylesheet" href="libs/aos.css">
     <link rel="stylesheet" href="libs/animations.css">
+    <link rel="stylesheet" href="libs/jquery.raty.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Ecco</title>
 </head>
@@ -82,7 +83,7 @@
             </h2>
             <div class="info__item info__item-1">
                 <div class="info__boot-wrapper">
-                    <!-- <img src="img/info-boot-1.png" alt="" class="info__boot info__boot-1"> -->
+                    <img src="img/info-boot-1.png" alt="" class="info__boot info__boot-1">
                 </div>
                 <p class="info__number">
                     01
@@ -98,7 +99,7 @@
             </div>
             <div class="info__item info__item-2">
                 <div class="info__boot-wrapper">
-                    <!-- <img src="img/info-boot-2.png" alt="" class="info__boot info__boot-1"> -->
+                    <img src="img/info-boot-2.png" alt="" class="info__boot info__boot-2">
                 </div>
                 <p class="info__number">
                     02
@@ -114,7 +115,7 @@
             </div>
             <div class="info__item info__item-3">
                 <div class="info__boot-wrapper">
-                    <!-- <img src="img/info-boot-3.png" alt="" class="info__boot info__boot-1"> -->
+                    <img src="img/info-boot-3.png" alt="" class="info__boot info__boot-3">
                 </div>
                 <p class="info__number">
                     03
@@ -131,79 +132,592 @@
         </div>
     </div>
 </section>
-         
-        
-        
-         
-        
-    <!-- <div class="footer__line">
-        <div class="container">
-            <div class="footer__line-wrapper">
-                <ul class="footer__line-list">
-                    <li class="footer__line-item">
-                        <a data-fancybox data-src="#modal-privacy" href="javascript:;">Политика конфиденциальности</a>
+        <section class="galary__saction">
+    <div class="container">
+        <div class="galary__section-wrapper">
+            <div class="galary__left">
+                <img src="img/logo-yellow.png" alt="" class="galary__logo">
+                <p class="galary__text">
+                    Lorem ipsum dolor sit amet consectetur. Et massa tristique felis sit tincidunt neque. Massa consectetur eu nunc enim vulputate nec luctus facilisis.
+                </p>
+                <ul class="galary__list">
+                    <li class="galary__list-item">
+                        <img src="img/ok.png" alt="">
+                        <span>Lorem ipsum dolor sit amet consectetur.</span>
                     </li>
-                    <li class="footer__line-item">
-                        Все права защищены. Copyright <script>document.write(new Date().getFullYear())</script>
+                    <li class="galary__list-item">
+                        <img src="img/ok.png" alt="">
+                        <span>Lorem ipsum dolor sit amet consectetur.</span>
                     </li>
-                    <li class="footer__line-item">
-                        ТОВ "SaleShop" г.Харьков, ул. Шевченка, 32, ЕГРПОУ 39129343
+                    <li class="galary__list-item">
+                        <img src="img/ok.png" alt="">
+                        <span>Lorem ipsum dolor sit amet consectetur.</span>
                     </li>
                 </ul>
+                <a data-fancybox href="https://youtu.be/zzzffLkzNKY?si=h6b_zOZ3oBJ8wv9O" class="galary__video">
+                    <img src="img/play.png" alt="" class="video__play">
+                </a>
+            </div>
+            <div class="galary owl-carousel">
+                <a href="img/galary/1.jpg" data-fancybox="gallery" class="galary__item">
+                    <img src="img/galary/1.jpg" alt="" />
+                </a>
+                <a href="img/galary/2.jpg" data-fancybox="gallery" class="galary__item">
+                    <img src="img/galary/2.jpg" alt="" />
+                </a>
+                <a href="img/galary/3.jpg" data-fancybox="gallery" class="galary__item">
+                    <img src="img/galary/3.jpg" alt="" />
+                </a>
+                <a href="img/galary/4.jpg" data-fancybox="gallery" class="galary__item">
+                    <img src="img/galary/4.jpg" alt="" />
+                </a>
             </div>
         </div>
-    </div> -->
+    </div>
+</section> 
+        <section class="bar__section" id="bar">
+    <div class="container">
+        <div class="bar__section-wrapper">
+            <img src="img/header-boot.png" alt="" class="bar__boot">
+            <h2 class="bar__title">
+                Неймовірний розпродаж!
+            </h2>
+            <h3 class="bar__subtitle">
+                Шкіряне взуття зі знижкою до 70%
+            </h3>
+            <div class="bar">
+                <div class="bar__wrapper">
+                    <div class="bar__column bar__column__1">
+                        <div class="bar__item bar__item-top-opacity">
+                            <span>30%</span>
+                        </div>
+                        <div class="bar__item bar__item-top">
+                            <span>50%</span>
+                        </div>
+                        <div class="bar__item bar__item-active bar__item-center">
+                            <span class="bar__item-logos">
+                                70%
+                            </span>
+                        </div>
+                        <div class="bar__item bar__item-bottom">
+                            <span>30%</span>
+                        </div>
+                        <div class="bar__item bar__item-bottom-opacity">
+                            <span>50%</span>
+                        </div>
+                    </div>
+                    <div class="bar__column bar__column__2">
+                        <div class="bar__item bar__item-top-opacity">
+                            <span>50%</span>
+                        </div>
+                        <div class="bar__item bar__item-active bar__item-top">
+                            <span class="bar__item-logos">
+                                70%
+                            </span>
+                        </div>
+                        <div class="bar__item bar__item-center">
+                            <span>30%</span>
+                        </div>
+                        <div class="bar__item bar__item-bottom">
+                            <span>50%</span>
+                        </div>
+                        <div class="bar__item bar__item-bottom-opacity">
+                            <span>30%</span>
+                        </div>
+                    </div>
+                    <div class="bar__column bar__column__3">
+                        <div class="bar__item bar__item-top-opacity">
+                            <span>50%</span>
+                        </div>
+                        <div class="bar__item bar__item-top">
+                            <span>30%</span>
+                        </div>
+                        <div class="bar__item bar__item-center">
+                            <span>50%</span>
+                        </div>
+                        <div class="bar__item bar__item-active bar__item-bottom">
+                            <span class="bar__item-logos">
+                                70%
+                            </span>
+                        </div>
+                        <div class="bar__item bar__item-bottom-opacity">
+                            <span>30%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider__horizontal"></div>
+            </div>
+            <div class="order__btn-wrapper">
+                <button type="button" class="order__btn order__btn-start">
+                    <span class="stop">Зупинити</span>
+                    <span class="start">выиграть скидку !</span>
+                </button>
+                <p class="header__date">
+                    Акция продлится до <span class="date">05.09.24</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section> 
+        <section class="card__section">
+    <div class="container">
+        <div class="card__section-wrapper">
+            <h2 class="card__section-title">
+                Вітаємо!
+            </h2>
+            <h3 class="card__section-subtitle">
+                Ваша персональна знижка склала 70%
+            </h3>
+            <div class="card card__1" id="card">
+                <div class="card__left">
+                    <img src="img/logo-white.png" alt="" class="card__logo">
+                    <img src="img/card-main-1.png" alt="" class="card__boot-main">
+                    <div class="card__photos">
+                        <a href="img/card/1/1.jpg" data-fancybox="card-1" class="card__photo">
+                            <img src="img/card/1/1.jpg" alt="" />
+                        </a>
+                        <a href="img/card/1/2.jpg" data-fancybox="card-1" class="card__photo">
+                            <img src="img/card/1/2.jpg" alt="" />
+                        </a>
+                        <a href="img/card/1/3.jpg" data-fancybox="card-1" class="card__photo">
+                            <img src="img/card/1/3.jpg" alt="" />
+                        </a>
+                        <a href="img/card/1/4.jpg" data-fancybox="card-1" class="card__photo">
+                            <img src="img/card/1/4.jpg" alt="" />
+                        </a>
+                        <a href="img/card/1/5.jpg" data-fancybox="card-1" class="card__photo">
+                            <img src="img/card/1/5.jpg" alt="" />
+                        </a>
+                        <a href="img/card/1/6.jpg" data-fancybox="card-1" class="card__photo">
+                            <img src="img/card/1/6.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="card__content">
+                    <h3 class="card__title">
+                        URBAN BLACK ENERGY
+                    </h3>
+                    <div class="card__rating">
+                        <span>5.0</span>
+                        <div class="rating">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card__price">
+                        <div class="price">
+                            <span class="old__price">
+                                4321 грн
+                            </span>
+                            <span class="new__price">
+                                1234 грн
+                            </span>
+                        </div>
+                    </div>
+                    <p class="card__discount">
+                        При купівлі другого товару знижка <span>300 грн</span>
+                    </p>
+                    <p class="card__info">
+                        Верх: Натуральная кожа <br>
+                        Подкладка: Натуральные кожа и мех <br>
+                        Подошва: Термополиуретан <br>
+                        Сезон: Зима <br>
+                        Страна: Словакия <br>
+                        Стиль: Повседневный (casual)
+                    </p>
+                    <form class="card__form">
+                        <div class="input__wrapper">
+                            <label for="name">
+                                <img src="img/name.png" alt="">
+                            </label>
+                            <input id="name" type="text" placeholder="Имя" required class="input">
+                        </div>
+                        <div class="input__wrapper">
+                            <label for="phone">
+                                <img src="img/phone.png" alt="">
+                            </label>
+                            <input id="phone" type="tel" placeholder="Телефон" required class="input">
+                        </div>
+                        <div class="input__wrapper input__select">
+                            <select name="" id="" class="input">
+                                <option value="40">40 (26,5 cм)</option>
+                                <option value="41">41 (27 cм)</option>
+                                <option value="42">42 (27,5 cм)</option>
+                                <option value="43">43 (28 cм)</option>
+                                <option value="44">44 (28,5 cм)</option>
+                                <option value="45">45 (29,5 cм)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="order__btn car__submit">
+                            <span>
+                                купить и быть в тепле
+                            </span>
+                        </button>
+                        <p class="header__date">
+                            Акция продлится до <span class="date">05.09.24</span>
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <div class="card card__2">
+                <div class="card__left">
+                    <img src="img/logo-white.png" alt="" class="card__logo">
+                    <img src="img/card-main-2.png" alt="" class="card__boot-main">
+                    <div class="card__photos">
+                        <a href="img/card/2/1.jpg" data-fancybox="card-2" class="card__photo">
+                            <img src="img/card/2/1.jpg" alt="" />
+                        </a>
+                        <a href="img/card/2/2.jpg" data-fancybox="card-2" class="card__photo">
+                            <img src="img/card/2/2.jpg" alt="" />
+                        </a>
+                        <a href="img/card/2/3.jpg" data-fancybox="card-2" class="card__photo">
+                            <img src="img/card/2/3.jpg" alt="" />
+                        </a>
+                        <a href="img/card/2/4.jpg" data-fancybox="card-2" class="card__photo">
+                            <img src="img/card/2/4.jpg" alt="" />
+                        </a>
+                        <a href="img/card/2/5.jpg" data-fancybox="card-2" class="card__photo">
+                            <img src="img/card/2/5.jpg" alt="" />
+                        </a>
+                        <a href="img/card/2/6.jpg" data-fancybox="card-2" class="card__photo">
+                            <img src="img/card/2/6.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="card__content">
+                    <h3 class="card__title">
+                        MEN'S SNEAKERS
+                    </h3>
+                    <div class="card__rating">
+                        <span>4.5</span>
+                        <div class="rating">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star-half.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card__price">
+                        <div class="price">
+                            <span class="old__price">
+                                4321 грн
+                            </span>
+                            <span class="new__price">
+                                1234 грн
+                            </span>
+                        </div>
+                    </div>
+                    <p class="card__discount">
+                        При купівлі другого товару знижка <span>300 грн</span>
+                    </p>
+                    <p class="card__info">
+                        Верх: Натуральная кожа <br>
+                        Подкладка: Натуральные кожа и мех <br>
+                        Подошва: Термополиуретан <br>
+                        Сезон: Зима <br>
+                        Страна: Словакия <br>
+                        Стиль: Повседневный (casual)
+                    </p>
+                    <form class="card__form">
+                        <div class="input__wrapper">
+                            <label for="name">
+                                <img src="img/name.png" alt="">
+                            </label>
+                            <input id="name" type="text" placeholder="Имя" required class="input">
+                        </div>
+                        <div class="input__wrapper">
+                            <label for="phone">
+                                <img src="img/phone.png" alt="">
+                            </label>
+                            <input id="phone" type="tel" placeholder="Телефон" required class="input">
+                        </div>
+                        <div class="input__wrapper input__select">
+                            <select name="" id="" class="input">
+                                <option value="40">40 (26,5 cм)</option>
+                                <option value="41">41 (27 cм)</option>
+                                <option value="42">42 (27,5 cм)</option>
+                                <option value="43">43 (28 cм)</option>
+                                <option value="44">44 (28,5 cм)</option>
+                                <option value="45">45 (29,5 cм)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="order__btn car__submit">
+                            <span>
+                                купить и быть в тепле
+                            </span>
+                        </button>
+                        <p class="header__date">
+                            Акция продлится до <span class="date">05.09.24</span>
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <div class="card card__sprey">
+                <div class="card__left">
+                    <img src="img/logo-white.png" alt="" class="card__logo">
+                    <img src="img/sprey.png" alt="" class="card__sprey-img">
+                </div>
+                <div class="card__content">
+                    <h3 class="card__title">
+                        Универсальный спрей
+                    </h3>
+                    <div class="card__rating">
+                        <span>4.9</span>
+                        <div class="rating">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                            <img src="img/star.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card__price">
+                        <div class="price">
+                            <span class="old__price">
+                                4321 грн
+                            </span>
+                            <span class="new__price">
+                                1234 грн
+                            </span>
+                        </div>
+                    </div>
+                    <p class="card__discount">
+                        При купівлі другого товару знижка <span>300 грн</span>
+                    </p>
+                    <p class="card__info">
+                        Универсальный защитный спрей, который помогает сохранить обувь и аксессуары, сухими и без пятен. Подходит для обуви из гладкой кожи, замши, нубука и ткани, прошел тестовые испытания на коже и отделочных материалах. Объём: 100 мл; цвет нейтральный.
+                    </p>
+                    <form class="card__form">
+                        <div class="input__wrapper">
+                            <label for="name">
+                                <img src="img/name.png" alt="">
+                            </label>
+                            <input id="name" type="text" placeholder="Имя" required class="input">
+                        </div>
+                        <div class="input__wrapper">
+                            <label for="phone">
+                                <img src="img/phone.png" alt="">
+                            </label>
+                            <input id="phone" type="tel" placeholder="Телефон" required class="input">
+                        </div>
+                        <button type="submit" class="order__btn car__submit">
+                            <span>
+                                купить и быть в тепле
+                            </span>
+                        </button>
+                        <p class="header__date">
+                            Акция продлится до <span class="date">05.09.24</span>
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <div class="delivery">
+                <div class="delivery__icon">
+                    <img src="img/delivery-icon.png" alt="">
+                </div>
+                <p class="delivery__text">
+                    Доставка "Новой Почтой" <br>
+                    в течении 1 - 3х дней. <br>
+                    Оплата после осмотра товара.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="review__section">
+    <div class="container">
+        <div class="review__section-wrapper">
+            <h2 class="review__section-title">
+                отзывы наших покупателей
+            </h2>
+            <div class="review__slider owl-carousel">
+                <div class="review">
+                    <p class="review__text">
+                        Lorem ipsum dolor sit amet consectetur. Aliquam congue condimentum amet purus nisi. Imperdiet sed sapien in non parturient egestas. Nec amet cras purus justo eget pellentesque pharetra.
+                    </p>
+                    <div class="review__bottom">
+                        <div class="review__bottom-wrapper">
+                            <p class="review__name">
+                                Александер
+                            </p>
+                            <p class="review__info">
+                                <img src="img/cart.png" alt="">
+                                <span>Отзыв от покупателя</span>
+                            </p>
+                        </div>
+                        <div class="card__rating">
+                            <span>5.0</span>
+                            <div class="rating">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review">
+                    <p class="review__text">
+                        Lorem ipsum dolor sit amet consectetur. Aliquam congue condimentum amet purus nisi. Imperdiet sed sapien in non parturient egestas. Nec amet cras purus justo eget pellentesque pharetra.
+                    </p>
+                    <div class="review__bottom">
+                        <div class="review__bottom-wrapper">
+                            <p class="review__name">
+                                Александер
+                            </p>
+                            <p class="review__info">
+                                <img src="img/cart.png" alt="">
+                                <span>Отзыв от покупателя</span>
+                            </p>
+                        </div>
+                        <div class="card__rating">
+                            <span>4.5</span>
+                            <div class="rating">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star-half.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review">
+                    <p class="review__text">
+                        Lorem ipsum dolor sit amet consectetur. Aliquam congue condimentum amet purus nisi. Imperdiet sed sapien in non parturient egestas. Nec amet cras purus justo eget pellentesque pharetra.
+                    </p>
+                    <div class="review__bottom">
+                        <div class="review__bottom-wrapper">
+                            <p class="review__name">
+                                Александер
+                            </p>
+                            <p class="review__info">
+                                <img src="img/cart.png" alt="">
+                                <span>Отзыв от покупателя</span>
+                            </p>
+                        </div>
+                        <div class="card__rating">
+                            <span>5.0</span>
+                            <div class="rating">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review">
+                    <p class="review__text">
+                        Lorem ipsum dolor sit amet consectetur. Aliquam congue condimentum amet purus nisi. Imperdiet sed sapien in non parturient egestas. Nec amet cras purus justo eget pellentesque pharetra.
+                    </p>
+                    <div class="review__bottom">
+                        <div class="review__bottom-wrapper">
+                            <p class="review__name">
+                                Александер
+                            </p>
+                            <p class="review__info">
+                                <img src="img/cart.png" alt="">
+                                <span>Отзыв от покупателя</span>
+                            </p>
+                        </div>
+                        <div class="card__rating">
+                            <span>4.5</span>
+                            <div class="rating">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star.png" alt="">
+                                <img src="img/star-half.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="add__review">
+                Оставить отзыв
+            </button>
+            <div class="order__btn-wrapper">
+                <a href="#card" class="order__btn">
+                    <span>
+                        купить и быть в тепле
+                    </span>
+                </a>
+                <p class="header__date">
+                    Акция продлится до <span class="date">05.09.24</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section> 
+        <div class="footer__line">
+    <div class="container">
+        <div class="footer__line-wrapper">
+            <ul class="footer__line-list">
+                <li class="footer__line-item">LLC "MONSTR-MEDIA" ІПН 7701071884</li>
+                <li class="footer__line-item">ЄДРПОУ 39149245</li>
+                <li class="footer__line-item">Tel.: +380951976859</li>
+                <li class="footer__line-item">mail: halo@matahari.com</li>
+                <li class="footer__line-item"><a data-fancybox data-src="#modal-privacy" href="javascript:;">Політика конфіденційності</a></li>
+                <li class="footer__line-item"><a data-fancybox data-src="#modal-delivery" href="javascript:;">Оплата і доставка</a></li>
+                <li class="footer__line-item"><a data-fancybox data-src="#modal-refusal" href="javascript:;">Відмова від відповідальності</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
  
     </div>
     <div class="footer__modal" id="modal-privacy">
-    <h2>Kebijakan pribadi</h2>
-    <p>Toko online kami menghormati hak-hak pelanggan. Kerahasiaan yang ketat diamati saat melakukan pemesanan. Informasi disimpan dengan aman dan dilindungi dari transmisi.</p>
-    <p>Menempatkan pesanan di Situs merupakan persetujuan atas pemrosesan data Pelanggan semata-mata untuk tujuan menyediakan Layanan.</p>
-    <p>Data pribadi mencakup informasi pribadi tentang Klien: alamat rumah; nama depan, patronimik; informasi kelahiran; properti, status perkawinan; Kontak pribadi (telepon, email) dan informasi lain yang tercantum dalam Undang-Undang "Tentang Data Pribadi".</p>
-    <p>Klien memiliki hak untuk menolak pemrosesan data pribadi. Dalam hal ini, kami menjamin penghapusan semua data pribadi dari Situs dalam waktu tiga hari selama jam kerja. Pelanggan dapat mengeluarkan penolakan tersebut melalui email sederhana ke alamat yang ditentukan di halaman Situs kami. </p>
+  <h6>Політика конфіденційності</h6>
+  <p>Наш інтернет-магазин шанобливо ставиться до прав клієнта. Дотримується сувора конфіденційність при оформленні замовлення. Дані надійно зберігаються та захищені від передачі даних.</p>
+  <p>Згода на обробку даних клієнта виключно з метою надання послуг – розміщення замовлення на сайті.</p>
+  <p>До персональних даних належить особиста інформація про клієнта: домашню адресу; ім'я прізвище по батькові; відомості про народження; майновий, сімейний стан; особисті контакти (телефон, електронна пошта) та інші відомості, перелічені у Законі "Про персональні дані".</p>
+  <p>Клієнт має право відмовитися від обробки персональних даних. Нами у разі гарантується видалення з сайту всіх персональних даних у триденний термін у робочий час. Подібну відмову клієнт може оформити простим електронним листом на адресу, вказану на сторінці нашого сайту.</p>
 </div>
 
-<!-- <div class="footer__modal" id="modal-delivery">
+<div class="footer__modal" id="modal-delivery">
     <h6>Доставка і оплата</h6>
     <p>Доставка по Україні здійснюється за допомогою компанії «Нова Пошта» протягом 2-х днів з моменту замовлення. Вартість та деталі такої доставки різняться залежно від регіону вашого проживання та розміру посилки.</p>
     <p>Продавець не бере на себе жодних зобов'язань щодо відшкодування будь-яких збитків Клієнта, пов'язаних з несвоєчасною доставкою замовлення, а також звільняється від будь-яких можливих штрафних санкцій.</p>
     <p>Клієнт, який отримав товар, повинен перевірити його щодо якості та кількості.</p>
-</div> -->
+</div>
 
 <div class="footer__modal" id="modal-refusal">
-    <h2>Syarat dan Ketentuan</h2>
-    <p>Halaman ini menguraikan syarat dan ketentuan MTP. Syarat dan ketentuan berikut ("Syarat dan Ketentuan" acara ") mengatur penggunaan Anda atas situs web ini. Dengan mengakses, melihat, atau menggunakan konten dan fungsi di atas. Layanan, Anda menunjukkan bahwa Anda memahami syarat dan ketentuan ini dan menerima.</p>
-    <p>Semua materi yang terkandung dalam layanan ini dilindungi undang-undang. Seluruh hak cipta. Menghapus atau mengubah informasi Pelaporan hak cipta atas materi apa pun dilarang. Setiap penggunaan komersial dari materi ini tunduk pada larangan berikut tanpa persetujuan tertulis sebelumnya dari MTP.</p>
-    <p>MTP berhak untuk mengubah, memperbarui, atau terus mengembangkan Platform dan Layanannya serta pembaruan publik terhadap teknologi dan dari waktu ke waktu.</p>
-    <p>Dengan menyerahkan data pribadi Anda ke MTP, Anda setuju bahwa informasi pribadi Anda dibagikan dengan broker lain dan/atau afiliasi yang dikelola pihak ketiga.</p>
-    <p>Layanan ini dirancang untuk memberikan informasi umum tentang broker serta produk dan layanan mereka. Informasi layanan tidak dimaksudkan sebagai penawaran untuk menjual atau melemahkan produk atau layanan tertentu</p>
-    <p>Penggunaan layanan ini sepenuhnya menjadi risiko Anda sendiri. MTP tidak bertanggung jawab atas konsekuensi mengandalkan informasi apa pun yang dikirimkan ke Layanan atau risiko cedera akibat hal tersebut di atas sepenuhnya menjadi tanggung jawab Anda. Materi ini disediakan "sebagaimana adanya" tanpa pemberitahuan apapun baik tersurat maupun tersirat. MTP tidak akan bertanggung jawab atas kerugian langsung, khususnya kecoa sebagai akibat atau hukuman, namun tidak terbatas pada, kehilangan penjualan atau keuntungan yang mungkin hilang karena akses, penggunaan atau ketidakmampuan untuk menggunakan materi ini.</p>
-    <p>Penggunaan Internet sepenuhnya merupakan risiko Anda sendiri dan tunduk pada semua undang-undang dan peraturan negara bagian, nasional dan internasional yang berlaku. MTP tidak akan bertanggung jawab atas segala kerusakan yang disebabkan oleh alasan yang tidak berada di bawah kendali langsung mereka, termasuk, namun tidak terbatas pada, kegagalan saluran komunikasi rongga peralatan mekanis atau elektronik, masalah sambungan telepon atau lainnya, virus komputer, sekolah DhéD. rambut putih. Cuaca operator kesalahan, mengukir cuaca. Cakram</p>
+    <h6>ВІДМОВА ВІД ВІДПОВІДАЛЬНОСТІ</h6>
+    <p>Інтернет-магазин залишає за собою право в будь-який час без повідомлення Клієнта вносити зміни щодо товарів, матеріалів і послуг, що надаються на сайті.</p>
+    <p>Інтернет-магазин не несе відповідальності за будь-які збитки (включаючи моральну шкоду, шкоду від втрати прибутку (упущена вигода), даних або від переривання ділової активності), що виник внаслідок використання або неможливості використання даного сайту.</p>
 </div>
+
 
 <div class="modal__review">
     <div class="modal__review-wrapper">
         <form class="active">
-            <input type="text" class="name__input" placeholder="Nama" required>
-            <!-- <input type="file" name="file" id="file" class="input__file"> -->
-            <!-- <label for="file" class="file">
+            <input type="text" class="name__input" placeholder="Ім'я" required>
+            <!-- <input type="file" name="file" id="file" class="input__file">
+            <label for="file" class="file">
                 <div>
                     <img src="" alt="">
                 </div>
-                <span>Menambahkan foto</span> 
+                <span>Додати фото</span> 
             </label> -->
-            <!-- <div class="modal__star-raiting">
-                Peringkat: <div class="modal__raiting"></div>
-            </div> -->
-            <textarea cols="30" rows="10" class="modal__area" placeholder="Umpan balik Anda..."></textarea>
-            <button type="submit" class="send">Kirim</button>
+            <div class="modal__star-raiting">
+                Рейтинг: <div class="modal__raiting"></div>
+            </div>
+            <textarea cols="30" rows="10" class="modal__area" placeholder="Ваш відгук..."></textarea>
+            <button type="submit" class="send">Надіслати</button>
         </form>
         <div class="send__window">
             <div class="send__img">
                 <img src="./img/mailing.png" alt="" class="modal__send-img">
             </div>
-            <div class="send__massage">Terima kasih atas tanggapan Anda,
-                itu akan ditampilkan di situs setelah verifikasi oleh moderator</div>
+            <div class="send__massage">Дякуємо за ваш відгук, він буде відображений на сайті після перевірки модераторами</div>
         </div>
         <a class="modal__close"><img src="./img/close.png" alt=""></a>
     </div>
@@ -214,6 +728,7 @@
     <script src="libs/jquery.min.js"></script>
 	<script src="libs/aos.js"></script>
     <script src="libs/jquery.fancybox.min.js"></script>
+    <script src="libs/jquery.raty.js"></script>
     <script src="libs/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
 </body>

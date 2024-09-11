@@ -1,0 +1,342 @@
+.card__section, .review__section {
+    display: none;
+}
+
+.card__section-wrapper {
+    padding: 0 0 137px;
+}
+
+.card__section-title {
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fbb500;
+    margin-bottom: 4px;
+}
+
+.card__section-subtitle {
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #00c2ff;
+    margin-bottom: 89px;
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 100px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+    background: #2a2c52;
+    overflow: hidden;
+}
+
+.card__1 {
+}
+
+.card__2 {
+    .card__boot-main {
+        margin-left: -30px;
+        margin-top: -40px;
+        margin-bottom: -70px;
+    }
+}
+
+.card__left {
+    width: 632px;
+    height: auto;
+    flex-shrink: 0;
+    padding: 50px 0 20px 50px;
+    position: relative;
+    z-index: 1;
+
+    &:before {
+        content: "";
+        width: 1181px;
+        height: 782px;
+        background-image: url(../img/card-decor.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: contain;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+.card__logo {
+    width: auto;
+    height: 50px;
+}
+
+.card__boot-main {
+    margin-left: -35px;
+    margin-top: -30px;
+    margin-bottom: -30px;
+}
+
+.card__photos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 262px;
+    height: auto;
+}
+
+.card__photo {
+    display: block;
+    width: 74px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+    &:hover {
+        img {
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+    }
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: auto;
+        transition: 0.3s ease;
+    }
+}
+
+.card__content {
+    width: 460px;
+    height: auto;
+    padding: 42px 30px 48px 0;
+}
+
+.card__title {
+    font-weight: 700;
+    font-size: 30px;      
+    text-transform: uppercase;
+    color: #fbb500;
+    margin-bottom: 7px;
+}
+
+.card__rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+
+    span {
+        margin-right: 10px;
+    }
+}
+
+.rating {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+        width: 18px;
+        height: auto;
+        margin-right: 3px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.card__price {
+    margin-bottom: 11px;
+}
+
+.price {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.old__price {
+    padding: 0 10px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1;
+    color: #fff;
+    position: relative;
+    margin-right: 20px;
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 3px;
+        background: #f00;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+}
+
+.new__price {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1;
+    color: #00c2ff;
+}
+
+.card__discount {
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 17px;
+
+    span {
+        color: #00c2ff;
+    }
+}
+
+.card__info {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 22px;
+}
+
+.card__form {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+}
+
+.input__wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    position: relative;
+
+    label {
+        width: 55px;
+        height: 50px;
+        border-radius: 30px 0 0 30px;
+        background: #202244;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #00C2FF;
+        border-right: none;
+    }
+}
+
+.input {
+    width: 100%;
+    height: 50px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    color: #fff;
+    padding: 0 10px 0 65px;
+    border: 1px solid #00C2FF;
+    border-radius: 30px;
+    transition: 0.3s ease;
+
+    &:focus {
+        background: #242648;
+    }
+}
+
+.input__select {
+    &:before {
+        content: "";
+        width: 55px;
+        height: 50px;
+        border-radius: 30px 0 0 30px;
+        background-color: #202244;
+        background-image: url(../img/tringle.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #00C2FF;
+        border-right: none;
+        box-sizing: border-box;
+    }
+}
+
+.car__submit {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.header__date {
+}
+.date {
+}
+
+.card__sprey {
+    margin-bottom: 50px;
+
+    .card__info {
+        width: 100%;
+        max-width: 360px;
+    }
+}
+
+.card__sprey-img {
+    margin-top: 75px;
+    margin-left: 50px;
+}
+
+.delivery {
+    width: 100%;
+    max-width: 522px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+    background: #2a2c52;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 25px 20px 25px 50px;
+}
+
+.delivery__icon {
+    width: 139px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff;
+    margin-right: 30px;
+    flex-shrink: 0;
+}
+
+.delivery__text {
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+

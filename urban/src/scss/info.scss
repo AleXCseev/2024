@@ -3,7 +3,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+
+    &:before {
+        content: "";
+        width: 1190px;
+        height: 704px;
+        background-image: url(../img/info-decor-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        left: -393px;
+        z-index: -1;
+    }
 }
 
 .info__section-title {
@@ -26,14 +39,20 @@
     justify-content: flex-start;
     align-items: flex-start;
     z-index: 2;
+    flex-shrink: 0;
 }
 
 .info__boot-wrapper {
     position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .info__boot {
     position: absolute;
+    width: 640px;
+    height: auto;
 }
 
 .info__number {
@@ -46,9 +65,13 @@
     margin-right: 20px;
     flex-shrink: 0;
     width: auto;
+    position: relative;
+    z-index: 2;
 }
 
 .info__wrapper {
+    position: relative;
+    z-index: 2;
 }
 
 .info__title {
@@ -67,32 +90,68 @@
 
 .info__item-1 {
     align-self: flex-end;
+    margin-bottom: 325px;
+    z-index: 3;
 
     .info__boot-wrapper {
-        width: 1190px;
-        height: 704px;
-        background-image: url(../img/info-decor-1.jpg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        position: absolute;
-        top: -390px;
-        left: -995px;
-        z-index: -1;
+       width: 0;
+       height: auto;
+       position: static;
     }
 }
 
 .info__item-2 {
+    align-self: flex-start;
+    margin-bottom: 325px;
+
+    &:before {
+        content: "";
+        width: 1238px;
+        height: 321px;
+        position: absolute;
+        top: -75px;
+        right: -341px;
+        background: #2a2c52;
+        z-index: 1;
+    }
+
+    .info__boot-wrapper {
+        width: 1090px;
+        height: 621px;
+        background-image: url(../img/info-decor-2.jpg);
+        top: -275px;
+        right: -1023px;
+        border-radius: 50px 0 0 50px;
+    }
 }
 
 .info__item-3 {
+    z-index: 4;
+    align-self: flex-end;
+
+    .info__boot-wrapper {
+        width: 490px;
+        height: 657px;
+        background-image: url(../img/info-decor-3.jpg);
+        border-radius: 0 50px 50px 0;
+        top: -343px;
+        left: -1015px;
+    }
 }
 
 .info__boot-1 {
+    top: -110px;
+    left: -610px;
+    z-index: 2;
 }
 
 .info__boot-2 {
+    top: 120px;
+    left: 90px;
+    z-index: 2;
 }
 
 .info__boot-3 {
+    top: 240px;
+    right: -510px;
 }
