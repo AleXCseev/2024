@@ -1,0 +1,123 @@
+.video__section {
+   background-image: url(../img/video-bg.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.video__section-wrapper {
+    padding: 172px 0 279px;
+}
+
+.video__content {
+    width: 360px;
+    height: auto;
+    position: relative;
+}
+
+.video__title {
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #a11714;
+    margin-bottom: 36px;
+}
+
+.video__text {
+    width: 100%;
+    max-width: 230px;
+    height: auto;
+    padding-left: 13px;
+    margin-bottom: 42px;
+    position: relative;
+    font-weight: 500;
+    font-size: 22px;
+    color: #a11714;
+
+    &:before {
+        content: "";
+        width: 3px;
+        height: 100%;
+        border-radius: 3px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #d31402;
+    }
+}
+
+.video__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-weight: 400;
+    font-size: 20px;
+    color: #630003;
+    margin-bottom: 38px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    img {
+        width: 30px;
+        height: auto;
+        margin-right: 20px;
+        margin-top: 6px;
+    }
+}
+
+.video__block {
+    width: 750px;
+    height: auto;
+    position: absolute;
+    top: -72px;
+    right: -780px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+.video {
+    width: 360px;
+    height: 641px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
+
+    img {
+        transition: 0.3s ease;
+        width: 85px;
+        height: auto;
+    }
+}
+
+.video__1 {
+    background-image: url(../img/video-bg-1.jpg);
+}
+
+.video__2 {
+    background-image: url(../img/video-bg-2.jpg);
+    margin-top: 100px;
+}
+
+.video__boot {
+    width: 364px;
+    height: auto;
+    position: absolute;
+    bottom: -189px;
+    left: -342px;
+}
+
+
