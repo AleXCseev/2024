@@ -3555,6 +3555,12 @@ body {
     margin-top: 4vw;
     width: 33vw;
   }
+  .input__wrapper label {
+    width: 45px;
+  }
+  .card__input {
+    padding: 0 5px 0 52px;
+  }
   .delivery {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
