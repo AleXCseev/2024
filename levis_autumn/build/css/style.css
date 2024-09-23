@@ -820,7 +820,7 @@ body {
 
 .header__title {
   font-weight: 700;
-  font-size: 48px;
+  font-size: 40px;
   text-transform: uppercase;
   color: #a11714;
   margin-bottom: 28px;
@@ -832,9 +832,9 @@ body {
 
 .header__text {
   width: 100%;
-  max-width: 445px;
+  max-width: 520px;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   color: #630003;
   margin-bottom: 43px;
   text-align: center;
@@ -995,7 +995,7 @@ body {
 
 .video__title {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 28px;
   text-transform: uppercase;
   color: #a11714;
   margin-bottom: 36px;
@@ -1003,7 +1003,7 @@ body {
 
 .video__text {
   width: 100%;
-  max-width: 230px;
+  max-width: 250px;
   height: auto;
   padding-left: 13px;
   margin-bottom: 42px;
@@ -1203,10 +1203,6 @@ body {
   bottom: 20px;
 }
 
-.info__item-3 .info__item-title {
-  margin-bottom: 55px;
-}
-
 .info__icon {
   width: 80px;
   height: 80px;
@@ -1284,9 +1280,9 @@ body {
 
 .galary__text {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   color: #630003;
-  margin-bottom: 38px;
+  margin-bottom: 10px;
 }
 .galary__text:last-child {
   margin-bottom: 0;
@@ -1312,7 +1308,7 @@ body {
           align-items: flex-start;
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin-top: -245px;
+  margin-top: -300px;
   margin-bottom: -50px;
 }
 
@@ -2130,6 +2126,10 @@ body {
   margin-right: 10px;
 }
 
+.sprey .card__price-info {
+  font-size: 18px;
+}
+
 .card__info {
   font-weight: 400;
   font-size: 20px;
@@ -2577,9 +2577,6 @@ body {
   .info__item-img {
     margin-bottom: 15px;
   }
-  .galary {
-    margin-top: -204px;
-  }
   .galary__item {
     width: 320px;
     margin-bottom: 20px;
@@ -3011,10 +3008,8 @@ body {
     bottom: 40px;
     left: -240px;
   }
-  .review__decor {
-    width: 500px;
-    bottom: 50px;
-    right: -330px;
+  .review__section-wrapper:before {
+    bottom: -165px;
   }
   .add__review {
     -webkit-align-self: center;
@@ -3059,6 +3054,18 @@ body {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
             justify-content: flex-start;
+  }
+  .fancybox-content iframe {
+    height: 80vh !important;
+  }
+  .fancybox-iframe {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 }
 @media (max-width: 700px) {
@@ -3283,7 +3290,7 @@ body {
     margin-bottom: 4.5vw;
   }
   .video__text {
-    width: 44vw;
+    width: 56vw;
     padding-left: 3vw;
     margin-bottom: 11vw;
     font-size: 5vw;
@@ -3357,7 +3364,7 @@ body {
   }
   .galary__liaf-1 {
     width: 34vw;
-    top: 45vw;
+    top: 66vw;
     right: -12vw;
     z-index: -1;
   }
@@ -3425,7 +3432,7 @@ body {
          -o-transform: none;
             transform: none;
     margin: 0;
-    margin-top: -36vw;
+    margin-top: -46vw;
   }
   .start__btn {
     top: 48%;
@@ -3436,10 +3443,11 @@ body {
   .bar__top {
     border: 2px solid rgba(0, 0, 255, 0.1);
     border-radius: 12vw;
-    padding: 4.6vw 4.8vw 42vw;
+    padding: 4.6vw 4.8vw 50vw;
   }
   .bar__bottom {
     width: calc(100vw + 2px);
+    margin-top: -60vw;
   }
   .bar__bottom-text {
     font-size: 4.8vw;
@@ -3517,8 +3525,11 @@ body {
     margin-bottom: 4.8vw;
     border-radius: 4.8vw;
   }
+  .sprey .card__price-info {
+    font-size: 4vw;
+  }
   .card__info {
-    font-size: 4.8vw;
+    font-size: 4.5vw;
     margin-bottom: 3vw;
   }
   .card__input {
@@ -3607,6 +3618,20 @@ body {
     padding: 3vw 0;
   }
   .fancybox-content {
-    min-height: 150vw !important;
+    padding: 44px 15px;
+  }
+  .fancybox-slide {
+    padding: 44px 15px;
+  }
+  .review__section-wrapper:before {
+    width: 100vw;
+    height: 264vw;
+    bottom: -30vw;
+    background-image: url(../img/review-bg-mobile.png);
+  }
+}
+@media (max-width: 360px) {
+  .bar__bottom {
+    margin-top: -55vw;
   }
 }

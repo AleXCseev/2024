@@ -93,9 +93,6 @@
     .info__item-img {
         margin-bottom: 15px;
     }
-    .galary {
-        margin-top: -204px;
-    }
     .galary__item {
         width: 320px;
         margin-bottom: 20px;
@@ -466,10 +463,8 @@
         bottom: 40px;
         left: -240px;
     }
-    .review__decor {
-        width: 500px;
-        bottom: 50px;
-        right: -330px;
+    .review__section-wrapper:before {
+        bottom: -165px;
     }
     .add__review {
         align-self: center;
@@ -500,6 +495,17 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+    }
+    .fancybox-content {
+        iframe {
+            height: 80vh !important;
+        }
+    }
+    .fancybox-iframe {
+        left: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 
@@ -704,7 +710,7 @@
         margin-bottom: 4.5vw;
     }
     .video__text {
-        width: 44vw;
+        width: 56vw;
         padding-left: 3vw;
         margin-bottom: 11vw;
         font-size: 5vw;
@@ -781,7 +787,7 @@
     }
     .galary__liaf-1 {
         width: 34vw;
-        top: 45vw;
+        top: 66vw;
         right: -12vw;
         z-index: -1;
     }
@@ -840,7 +846,7 @@
         left: auto;
         transform: none;
         margin: 0;
-        margin-top: -36vw;
+        margin-top: -46vw;
     }
     .start__btn {
         top: 48%;
@@ -851,10 +857,11 @@
     .bar__top {
         border: 2px solid rgba(0, 0, 255, 0.1);
         border-radius: 12vw;
-        padding: 4.6vw 4.8vw 42vw;
+        padding: 4.6vw 4.8vw 50vw;
     }
     .bar__bottom {
         width: calc(100vw + 2px);
+        margin-top: -60vw;
     }
     .bar__bottom-text {
         font-size: 4.8vw;
@@ -932,8 +939,11 @@
         margin-bottom: 4.8vw;
         border-radius: 4.8vw;
     }
+    .sprey .card__price-info {
+        font-size: 4vw;
+    }
     .card__info {
-        font-size: 4.8vw;
+        font-size: 4.5vw;
         margin-bottom: 3vw;
     }
     .card__input {
@@ -1020,6 +1030,21 @@
     //     display: none;
     // }
     .fancybox-content {
-        min-height: 150vw !important;
+        padding: 44px 15px;
+    }
+    .fancybox-slide {
+        padding: 44px 15px;
+    }
+    .review__section-wrapper:before {
+        width: 100vw;
+        height: 264vw;
+        bottom: -30vw;
+        background-image: url(../img/review-bg-mobile.png);
+    }
+}
+
+@media (max-width: 360px) {
+    .bar__bottom {
+        margin-top: -55vw;
     }
 }
