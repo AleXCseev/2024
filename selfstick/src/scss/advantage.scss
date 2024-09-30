@@ -1,4 +1,5 @@
 .advantage__section {
+    background: #F0F0F0;
 }
 
 .advantage__section-wrapper {
@@ -42,8 +43,12 @@
 .advantage__item-text {
     font-weight: 400;
     font-size: 20px;
-    text-align: center;
+    // text-align: center;
     color: #111;
+
+    span {
+        font-weight: 700;
+    }
 }
 
 .advantage__img {

@@ -10,7 +10,7 @@
     text-transform: uppercase;
     text-align: center;
     color: #fff;
-    padding: 13px 20px;
+    padding: 13px 75px;
     background: #000;
 }
 
@@ -41,7 +41,7 @@
 
 .new__price {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 26px;
     color: #111;
     margin-right: 15px;
     flex-shrink: 0;
@@ -49,7 +49,7 @@
 
 .old__price {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     color: #777;
     position: relative;
     padding: 0 5px;
@@ -70,7 +70,7 @@
 .header__discount {
     width: auto;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
     color: #e82619;
 }
 
@@ -89,7 +89,7 @@
     margin-right: 8px;
 
     img {
-        width: 18px;
+        width: 18px !important;
         height: auto;
         margin-right: 3px;
 
@@ -101,7 +101,7 @@
 
 .rating__number {
     font-weight: 500;
-    font-size: 28px;
+    font-size: 24px;
     color: #111;
     padding-right: 10px;
     line-height: 1;
@@ -113,6 +113,7 @@
     font-weight: 500;
     font-size: 20px;
     color: #111;
+    width: auto;
 }
 
 .order__btn {

@@ -3,13 +3,13 @@ var landingFunctions = {
 		this.initLibraris()
 		this.time()
 		this.modal()
-		this.quantity()
+		// this.quantity()
 	}, 
 
 	initLibraris: function() {
 
 		$('[href*="#"]').on('click', function (e) {
-			var fixedOffset = 60;
+			var fixedOffset = 0;
 			var cardHeight = $("#order").outerHeight(false)
 			var windowHeight = $(window).height()
 
@@ -143,8 +143,8 @@ var landingFunctions = {
 			}
 			monthNum += now.getMonth() + 1;
 			
-			// return dayNum + "." + monthNum + "." + now.getFullYear();
-			return dayNum + "." + monthNum + "." + String(now.getFullYear()).substr(String(now.getFullYear()).length - 2);
+			return dayNum + "." + monthNum + "." + now.getFullYear();
+			// return dayNum + "." + monthNum + "." + String(now.getFullYear()).substr(String(now.getFullYear()).length - 2);
 		}
 
 		$(".review__date-1").text(getDate(0))

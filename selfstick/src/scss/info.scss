@@ -1,0 +1,62 @@
+.info__section {
+    position: relative;
+    background-color: #fff;
+}
+
+.info__bg {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.info__section-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 20px 0 50px;
+    position: relative;
+}
+
+.info__img {
+    width: 143px;
+    height: auto;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: 28px;
+    margin-bottom: 303px;
+}
+
+.info__text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+    color: #fb3d01;
+    position: absolute;
+    width: auto;
+    max-width: 250px;
+}
+
+.info__text-1 {
+    top: 216px;
+    left: 30px;
+}
+
+.info__text-2 {
+    top: 300px;
+    left: 30px;
+}
+
+.info__text-3 {
+    top: 370px;
+    left: 140px;
+}
+
+.info__text-4 {
+    top: 220px;
+    right: 0;
+}
+
+.order__btn {
+}

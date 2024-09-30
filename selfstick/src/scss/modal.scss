@@ -126,8 +126,8 @@
   
   .file div {
 	width: 50px;
-	height: 80px;
-	border-radius: 3px;
+	height: 50px;
+	border-radius: 100%;
 	background-color: transparent;
 	flex-shrink: 0;
 	margin-right: 15px;
@@ -139,8 +139,8 @@
   .file div img {
 	display: none;
 	width: 48px;
-	height: 78px;
-	border-radius: 3px;
+	height: 48px;
+	border-radius: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
