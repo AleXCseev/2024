@@ -546,22 +546,22 @@ body {
 }
 
 .info__text-1 {
-  top: 216px;
-  left: 30px;
+  top: 220px;
+  left: 40px;
 }
 
 .info__text-2 {
-  top: 300px;
-  left: 30px;
+  top: 310px;
+  left: 120px;
 }
 
 .info__text-3 {
-  top: 370px;
-  left: 140px;
+  top: 375px;
+  left: 190px;
 }
 
 .info__text-4 {
-  top: 220px;
+  top: 250px;
   right: 0;
 }
 
@@ -962,6 +962,7 @@ body {
   text-align: center;
   color: #555;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .footer__bg-wrapper {
@@ -1031,25 +1032,45 @@ body {
   text-decoration: underline;
 }
 
-.footer__modal {
-  width: 100%;
-  max-width: 900px;
+.fancybox-content {
+  padding: 44px 20px;
+}
+
+.footer-info {
+  margin: 15px 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  list-style-type: none;
+  color: #000;
+  text-align: center;
+}
+
+.footer-info a {
+  color: #000;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+[id^=modal] {
   display: none;
-  color: #222;
+  max-width: 600px !important;
+  margin: auto;
 }
-.footer__modal h2 {
-  font-size: 30px;
-  line-height: 1.4;
+
+[id^=modal] p {
+  margin-bottom: 10px;
+}
+
+[id^=modal] h2 {
+  font-size: 26px;
   margin-bottom: 20px;
 }
-.footer__modal h6 {
-  font-size: 24px;
-  line-height: 1.4;
-  margin-bottom: 20px;
-}
-.footer__modal p {
-  font-size: 18px;
-  line-height: 1.4;
+
+[id^=modal] h6 {
+  font-size: 26px;
   margin-bottom: 20px;
 }
 

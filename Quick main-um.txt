@@ -4,12 +4,12 @@ var landing = {
 		this.formSubmit();
 	}, 
 	getPrice: function() {
-		$('.new-price').each(function () {
+		$('.new__price').each(function () {
 			var p = parseInt($(this).text());
 	                var currency = $(this).text().replace(/[0-9]/g, '');
 			p = p * 100 / 40;
 			p2 = Math.ceil(p);
-			$(this).closest('.price').find('.old-price').text(p2 + ' ' + currency);
+			$(this).closest('.price').find('.old__price').text(p2 + ' ' + currency);
 		});
 
 	},
