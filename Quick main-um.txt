@@ -66,6 +66,7 @@ function priceWithDiscount (targetPrice, discount) {
 $(".new__price").each(function() {
 	var price = $(this).text().trim()
 	$(this).closest(".price").find(".old__price").text(priceWithDiscount(price, 50))
+	$(this).text(priceWithDiscount(price, 0))
 })
 
 

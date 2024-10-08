@@ -1,0 +1,17 @@
+@import "fonts";
+@import "main";
+@import "modal";
+@import "header";
+@import "info";
+@import "advantage";
+@import "video";
+@import "card";
+@import "galary";
+@import "review";
+@import "footer";
+
+@media (max-width: 1920px) {
+    .header {
+        background-size: 1920px auto;
+    }
+}
