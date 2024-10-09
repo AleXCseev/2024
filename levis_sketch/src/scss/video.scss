@@ -52,11 +52,14 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
-    // text-align: justify;
     color: #2c1d18;
     width: 345px;
     height: auto;
     margin-bottom: 30px;
+
+    span {
+        font-weight: 600;
+    }
 }
 
 .video__decor {

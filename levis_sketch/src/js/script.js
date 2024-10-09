@@ -1,7 +1,7 @@
 var landingFunctions = {
 	init: function() {
 		this.initLibraris();
-		// this.getPrice();
+		this.getPrice();
 		// this.time()
 		this.modal()
 	}, 
@@ -10,9 +10,11 @@ var landingFunctions = {
 		$('.new__price').each(function () {
 			var p = parseInt($(this).text());
 	        var currency = $(this).text().replace(/[0-9]/g, '');
-			p = p * 100 / 30;
-			p2 = Math.ceil(p);
-			$(this).closest('.price').find('.old__price').text(p2 + ' ' + currency);
+			var oldPrice = Math.ceil(p * 100 / 50);
+			$(this).closest('.price').find('.old__price').text(oldPrice + ' ' + currency);
+			var result = oldPrice - p
+			console.log(result)
+			$(this).closest('.card').find('.card__result').text(result + ' ' + currency)
 		});
 	},
 
@@ -55,29 +57,31 @@ var landingFunctions = {
 		$('.review__slider').owlCarousel({
 			items: 2,
 			margin: 20,
-			dots: false,
+			dots: true,
 			dotsEach: true,
-			nav: true,
+			nav: false,
 			loop: true,
-			stagePadding: 2,
 			autoHeight: true,
+			autoplay: true,
+			autoplayTimeout: 5000,
+			autoplayHoverPause: true,
 			responsive:{
 				0:{
 					items:1,
 				},
-				1081:{
-					items:3,
+				541:{
+					items:2,
 				}
 			}
 		});
 
-		if($(window).width() <= 1080) {
-			$('.galary').addClass('owl-carousel').owlCarousel({
-				items: 2,
-				margin: 45,
-				dots: false,
+		if($(window).width() <= 700) {
+			$('.card__photos').addClass('owl-carousel').owlCarousel({
+				items: 4,
+				margin: 10,
+				dots: true,
 				dotsEach: true,
-				nav: true,
+				nav: false,
 				loop: true,
 			});
 		}
