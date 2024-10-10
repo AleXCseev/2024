@@ -86,6 +86,22 @@
     .review__block {
         width: 560px;
     }
+    .review__title {
+        font-size: 56px;
+    }
+    .footer__block {
+        right: -625px;
+    }
+    .footer__boot-1 {
+        width: 470px;
+        top: 233px;
+        left: -370px;
+    }
+    .footer__boot-2 {
+        width: 400px;
+        top: 30px;
+        left: -310px;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -93,7 +109,7 @@
         width: 1000px;
     }
     .header__top {
-        margin-bottom: 300px;
+        margin-bottom: 340px;
     }
     .header {
         background-size: 1500px auto;
@@ -194,6 +210,30 @@
     }
     .review__title {
         font-size: 52px;
+    }
+    .footer__content {
+        width: 480px;
+    }
+    .footer__title {
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+    .footer__block {
+        width: 350px;
+        right: -525px;
+    }
+    .footer__boot-1 {
+        width: 360px;
+        top: 250px;
+        left: -242px;
+    }
+    .footer__boot-2 {
+        width: 340px;
+        top: 80px;
+        left: -215px;
+    }
+    .footer__decor-text {
+        width: 530px;
     }
 }
 
@@ -479,6 +519,53 @@
     .review__title {
         text-align: center;
     }
+    .footer__content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__block {
+        position: relative;
+        width: 400px;
+        right: auto;
+        top: auto;
+        align-self: flex-end;
+        margin-bottom: 40px;
+    }
+    .footer__img {
+        border-radius: 20px;
+    }
+    .footer__boot-1 {
+        width: 460px;
+        top: 280px;
+        left: -350px;
+    }
+    .footer__boot-2 {
+        width: 425px;
+        top: 40px;
+        left: -310px;
+    }
+    .footer__decor-text {
+        width: 600px;
+    }
+    .footer__title {
+        text-align: center;
+    }
+    .footer__text {
+        text-align: center;
+        max-width: 100%;
+
+        br {
+            display: none;
+        }
+    }
+    .footer__disconut {
+        text-align: center;
+    }
+    .footer__wrapper {
+        padding-bottom: 95px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -521,6 +608,31 @@
         width: 157px;
         height: 100px;
     }
+    .footer__block {
+        margin-right: -6vw;
+    }
+    .footer__decor-text {
+        width: 644px;
+        left: 87%;
+    }
+    .footer__block {
+        width: 55vw;
+    }
+    .footer__decor-text {
+        width: 84vw;
+        left: 90%;
+        opacity: 0.1;
+    }
+    .footer__boot-1 {
+        width: 77vw;
+        top: 32vw;
+        left: -53vw;
+    }
+    .footer__boot-2 {
+        width: 72vw;
+        top: -3vw;
+        left: -54vw;
+    }
 }
 
 @media (max-width: 540px) {
@@ -544,18 +656,21 @@
         height: 61.4vw;
         padding: 15vw 4vw 0;
     }
+    .header__item-2 {
+        width: 100%;
+    }
     .header__item-arrow {
         width: 13.3vw;
         height: 13.3vw;
-        top: 4vw;
+        top: 3vw;
         right: 4vw;
     }
     .header__item-title {
-        font-size: 7.8vw;
+        font-size: 6vw;
         margin-bottom: 1vw;
     }
     .header__item-text {
-        font-size: 4.5vw;
+        font-size: 4.2vw;
         margin-bottom: 4.5vw;
     } 
     .header .order__btn {
@@ -695,7 +810,7 @@
         margin-bottom: 2vw;
     }
     .card__info {
-        font-size: 4.2vw;
+        font-size: 4vw;
         margin-bottom: 0.7vw;
     }
     .card__info-price {
@@ -710,6 +825,9 @@
         .new__price {
             font-size: 6vw;
         }
+    }
+    .input__wrapper select {
+        text-indent: 32% hanging;
     }
     .card__submit {
         margin-top: 5px;
@@ -810,5 +928,46 @@
     }
     .review__text {
         font-size: 4.5vw;
+    }
+    .footer__block {
+        margin-right: -11vw;
+        margin-bottom: 9.8vw;
+    }
+    .footer__decor-text {
+        left: 82%;
+    }
+    .footer__boot-1 {
+        width: 81vw;
+        top: 29vw;
+        left: -58vw;
+    }
+    .footer__boot-2 {
+        width: 75vw;
+        top: -4vw;
+        left: -60vw;
+    }
+    .footer__logo {
+        width: 26.6vw;
+        margin-bottom: 7vw;
+    }
+    .footer__title {
+        font-size: 11.8vw;
+        margin-bottom: 7.5vw;
+    }
+    .footer__text {
+        font-size: 4.5vw;
+        margin-bottom: 7vw;
+    }
+    .footer__disconut {
+        font-size: 4.5vw;
+        margin-top: 8vw;
+    }
+    .order__btn {
+        font-size: 7.5vw;
+        border-radius: 12vw;
+        padding: 4vw;
+    }
+    .footer__wrapper {
+        padding-bottom: 23vw;
     }
 }

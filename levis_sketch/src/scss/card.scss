@@ -170,6 +170,15 @@
     width: 100%;
     height: auto;
     margin-bottom: 5px;
+
+    select {
+        text-align: -moz-center;
+        text-align: -webkit-center;
+        -moz-text-align-last: center;
+        text-align-last: center;
+        -webkit-text-align-last: center;
+        text-indent: 42% hanging;
+    }
 }
 
 .card__input {

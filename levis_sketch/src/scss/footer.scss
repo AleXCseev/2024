@@ -1,7 +1,7 @@
 .footer__wrapper {
     width: 100%;
     height: auto;
-    padding-bottom: 85px;
+    padding-bottom: 180px;
 }
 
 .footer__content {
@@ -70,13 +70,14 @@
     width: 479px;
     top: 233px;
     left: -400px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .footer__boot-2 {
     width: 419px;
     top: 30px;
     left: -350px;
+    z-index: 1;
 }
 
 .footer__img {
