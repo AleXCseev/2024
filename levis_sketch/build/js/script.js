@@ -10,7 +10,7 @@ var landingFunctions = {
 		$('.new__price').each(function () {
 			var p = parseInt($(this).text());
 	        var currency = $(this).text().replace(/[0-9]/g, '');
-			var oldPrice = Math.ceil(p * 100 / 50);
+			var oldPrice = Math.ceil(p * 100 / 40);
 			$(this).closest('.price').find('.old__price').text(oldPrice + ' ' + currency);
 			var result = oldPrice - p
 			console.log(result)
