@@ -1,11 +1,18 @@
 var landingFunctions = {
 	init: function() {
-		this.initLibraris();
+		// this.initLibraris();
 		// this.time()
 		this.modal()
 	}, 
 
 	initLibraris: function() {
+
+		// if($(window).width <= 540) {
+		// 	setTimeout(function() {
+		// 		$(".video__mobile").play()
+		// 	}, 500)
+		// }
+
 		// AOS.init({
 		// 	disable : 'mobile',
 		// 	once: true,
@@ -84,10 +91,7 @@ var landingFunctions = {
 		}
 
 		$(".add__action").click(function() {
-			$(".modal__container").addClass("active")
-
 			if(!localStorage.getItem("time")) {
-				// const time = new Date().getTime()
 				const time = new Date().getTime() + (24 * 3600000); 
 				localStorage.setItem("time", time)
 	
@@ -99,6 +103,10 @@ var landingFunctions = {
 					$(".modal__info").html(getRemainingTime(+localStorage.getItem("time")))
 				}, 500);
 			}
+
+			setTimeout(function() {
+				$(".modal__container").addClass("active")
+			}, 500)
 		})
 
 		function close() {

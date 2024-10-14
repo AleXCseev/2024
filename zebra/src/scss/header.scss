@@ -91,7 +91,25 @@
 .main__logo {
     width: 172px;
     height: auto;
+    margin: auto;
     margin-bottom: 44px;
+}
+
+.decor__hand {
+    position: absolute;
+    height: auto;
+}
+
+.decor__hand-1 {
+    width: 391px;
+    top: -142px;
+    left: 54px;
+}
+
+.decor__hand-2 {
+    width: 430px;
+    bottom: -190px;
+    right: -40px;
 }
 
 .main__title {
@@ -103,6 +121,8 @@
     text-align: center;
     color: #fff;
     margin-bottom: 40vh;
+    position: relative;
+    z-index: 1;
 }
 
 .add__action {
@@ -120,10 +140,11 @@
     padding: 26px;
     cursor: pointer;
     position: relative;
+    z-index: 1;
 
     span {
         position: relative;
-        z-index: 2;
+        z-index: 3;
     }
 
     &:before {
@@ -134,7 +155,7 @@
         top: 0;
         left: 0;
         opacity: 0;
-        z-index: 1;
+        z-index: 2;
         border-radius: 50px;
         background: linear-gradient(-26deg, rgba(75, 41, 191, 0.7) 0%, rgba(117, 12, 147, 0.7) 70%);
         transition: 0.5s ease;
