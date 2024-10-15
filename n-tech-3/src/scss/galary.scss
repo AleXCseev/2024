@@ -6,6 +6,16 @@
     position: relative;
 }
 
+.galary__star {
+    width: 240px;
+    height: auto;
+    position: absolute;
+    top: -181px;
+    left: -300px;
+    animation: rotate 30s infinite linear;
+    animation-direction: reverse;
+}
+
 .galary__circle {
     width: 600px;
     height: auto;

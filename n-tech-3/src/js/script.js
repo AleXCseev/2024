@@ -1,7 +1,7 @@
 var landingFunctions = {
 	init: function() {
 		this.initLibraris()
-		// this.card()
+		this.card()
 		this.time()
 		this.modal()
 	}, 
@@ -19,27 +19,6 @@ var landingFunctions = {
 			// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
 			e.preventDefault();
 		})
-
-
-		if($(window).width() <= 1080) {
-			$('.galary').addClass('owl-carousel').owlCarousel({
-				items: 2,
-				margin: 20,
-				dots: true,
-				dotsEach: true,
-				nav: true,
-				loop: true,
-				stagePadding: 0,
-				responsive:{
-					0:{
-						items: 1,
-					},
-					701:{
-						items: 2,
-					}
-				}
-			});
-		}
 
 		$('.review__slider').owlCarousel({
 			items: 1,
@@ -94,18 +73,53 @@ var landingFunctions = {
 	},
 
 	card: function() {
-		$(".card__1 .color").change(function() {
-			const currentColor = $(this).val()
-			const currentId = $(this).data(currentColor + '-id');
-			const currentPrice = $(this).data('price-' + currentColor);
-			const currency = $(this).data('currency');
-			
-			$(this).closest(".card").find(".card__boot, .card__photos, .size").removeClass("active").hide()
-			$(this).closest(".card").find("." + currentColor).show().addClass("active");
+		function cardSlider (selector) {
+			var owl = $(selector + " .card__main-foto").owlCarousel({
+				items: 1,
+				margin: 100,
+				dots: false,
+				nav: false,
+				loop: true,
+				mouseDrag: false,
+				touchDrag: false,
+				animateOut: 'fadeOut',
+			});
+	
+			$(selector + " .card__foto").each(function() {
+				$(this).click(function() {
+					$(this).closest(".card").find(".card__foto").removeClass("active")
+					var position = $(this).data("slide") - 1
+					owl.trigger("to.owl.carousel", [position, 300])
+					$(this).closest(".card").find(`[data-slide='${Number(position) + 1}']`).addClass("active")
+				})
+			})
 
-			$(this).closest(".card").find(".new__price").text(currentPrice + " " + currency)
-			$(this).closest(".card").find(".old__price").text((+currentPrice * 2) + " " + currency)
-		})
+			$(selector + " .card__nav-prev").click(function() {
+				var position = $(this).closest(".card__other-foto").find(".card__foto.active").data("slide")
+				$(this).closest(".card__other-foto").find(".card__foto.active").removeClass("active")
+				if (Number(position) - 1 !== 0) {
+					$(this).closest(".card__other-foto").find(`[data-slide='${Number(position) - 1 }']`).addClass("active")
+				} else {
+					$(this).closest(".card__other-foto").find("[data-slide='6']").addClass("active")
+				}
+				owl.trigger('prev.owl.carousel');
+			})
+
+			$(selector + " .card__nav-next").click(function() {
+				var position = $(this).closest(".card__other-foto").find(".card__foto.active").data("slide")
+				$(this).closest(".card__other-foto").find(".card__foto.active").removeClass("active")
+				if (Number(position) + 1 > 6) {
+					$(this).closest(".card__other-foto").find(`[data-slide='1']`).addClass("active")
+				} else {
+					$(this).closest(".card__other-foto").find(`[data-slide='${Number(position) + 1 }']`).addClass("active")
+				}
+				owl.trigger('next.owl.carousel');
+			})
+		}
+	
+		cardSlider(".card__1")
+		cardSlider(".card__2")
+		cardSlider(".card__3")
 	},
 
 	time: function() {

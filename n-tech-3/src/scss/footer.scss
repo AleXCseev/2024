@@ -1,0 +1,37 @@
+.footer__section-wrapper {
+    .header__decor-circle {
+        bottom: -80px;
+    }
+}
+
+.footer__line {
+    background-color: rgba(21, 95, 199, 0.1);
+
+    .container {
+        width: 100%;
+        max-width: 1380px;
+    }
+}
+
+.footer__line-wrapper {
+    padding: 15px 0;
+}
+
+.footer__line-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__line-item {
+    font-size: 14px;
+    text-align: center;
+    color: #777;
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+

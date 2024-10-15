@@ -1,0 +1,102 @@
+.advantage__section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 138px;
+    position: relative;
+}
+
+.advantage__star {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    right: -270px;
+    top: -90px;
+    animation: rotate 30s infinite linear;
+}
+
+.advantage__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: -90px;
+    position: relative;
+    z-index: 1;
+}
+
+.advantage__title {
+    width: 555px;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #f1c022 0%, #fdf799 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: -50px;
+}
+
+.advantage__items {
+    width: 520px;
+    height: auto;
+    padding: 50px 40px 48px;
+    background-image: url(../img/bg-decor-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 65, 219, 0.8);
+    }
+}
+
+.advantage__item {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.advantage__item-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.advantage__item-text {
+    font-size: 20px;
+    color: #fff;
+}
+
+.advantage__img {
+    width: 1470px;
+    height: auto;
+}
+
+.advantage__circle {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    bottom: 389px;
+    left: -290px;
+}

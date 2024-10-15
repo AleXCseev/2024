@@ -1,0 +1,381 @@
+.card__section-wrapper {
+    position: relative;
+    padding-bottom: 238px;
+}
+
+.card__section-title {
+    width: 100%;
+    max-width: 555px;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(90deg, #f1c022 0%, #fdf799 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: auto;
+    margin-bottom: 11px;
+}
+
+.card__section-text {
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 91px;
+
+    span {
+        color: #f1c022;
+    }
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-image: url(../img/bg-decor-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 100px;
+    z-index: 1;
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 65, 219, 0.8);
+    }
+}
+
+.card__1 {
+}
+
+.card__wrapper {
+    position: relative;
+    z-index: 1;
+    padding: 46px 70px 47px 0;
+}
+
+.card__content {
+    width: 423px;
+    height: auto;
+    margin-left: auto;
+}
+
+.card__logo {
+    width: auto;
+    height: 40px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.card__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.card__title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.card__rating {
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+
+    span {
+        display: inline-block;
+        margin-right: 5px;
+    }
+}
+
+.rating {
+    display: flex;
+    width: auto;
+    justify-content: flex-start;
+    align-items: center;
+
+    img {
+        width: 18px;
+        height: auto;
+        margin-right: 3px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.card__price {
+    margin-bottom: 19px;
+
+    .price {
+        justify-content: flex-start;
+    }
+
+    .old__price {
+        font-size: 20px;
+    }
+
+    .new__price {
+        font-size: 30px;
+        color: #ffc700;
+    }
+}
+
+.card__galary {
+    width: 597px;
+    height: auto;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    flex-shrink: 0;
+}
+
+.card__main-foto {
+    width: 100%;
+    height: auto;
+    margin-bottom: 33px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.card__main-slide {
+}
+
+.card__other-foto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.card__nav-btn {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #002770;
+    background: #16418f;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        background: #002770;
+    }
+}
+
+.card__nav-next {
+    transform: rotate(180deg);
+}
+
+.card__foto {
+    width: 61px;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+    background: #002770;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: auto;
+        transition: 0.3s ease;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+    }
+
+    &.active {
+        img {
+            transform: translateY(-5px);
+        }
+    }
+}
+
+
+
+.card__info {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 22px;
+}
+
+.card__form {
+    width: 100%;
+    max-width: 360px;
+
+    .header__date {
+        span {
+            color: #f80;
+        }
+    } 
+}
+
+.input__wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 10px;
+
+    label, div {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #16418f;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid #002770;
+        border-right: none;
+    }
+}
+
+.input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #002770;
+    padding: 0 20px 0 65px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    color: #fff;
+    transition: 0.3s ease;
+
+    &:focus {
+        background: rgba(22, 65, 143, 0.5);
+    }
+}
+
+.card__submit {
+    cursor: pointer;
+    background: #ff5c00;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+}
+
+.sprey {
+    .card__wrapper {
+        padding: 46px 60px 47px 0;
+    }
+    .card__title {
+        font-size: 28px;
+        margin-right: 5px;
+    }
+    .card__content {
+        width: 433px;
+    }
+    .card__galary {
+        padding: 30px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.sprey__img {
+    width: 342px;
+    height: auto;
+}
+
+.card__delivery {
+    width: 100%;
+    max-width: 522px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 30px 25px 50px;
+    background-image: url(../img/bg-decor-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 65, 219, 0.8);
+    }
+}
+
+.delivery__icon {
+    width: 139px;
+    height: auto;
+    padding: 10px;
+    flex-shrink: 0;
+    margin-right: 30px;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.delivery__text {
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.card__decor {
+    position: absolute;
+    height: auto;
+    animation: rotate 30s infinite linear;
+}
+
+.card__box {
+    width: 533px;
+    top: 650px;
+    right: -318px;
+}
+
+.card__star-1 {
+    width: 280px;
+    top: 1600px;
+    left: -260px;
+    animation-direction: reverse;
+}
+
+.card__star-2 {
+    width: 240px;
+    bottom: 740px;
+    right: -280px;
+}
