@@ -29,7 +29,7 @@
 .advantage__title {
     width: 555px;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 34px;
     text-transform: uppercase;
     background: linear-gradient(90deg, #f1c022 0%, #fdf799 100%);
     background-clip: text;
@@ -84,7 +84,7 @@
 }
 
 .advantage__item-text {
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
 }
 
@@ -99,4 +99,8 @@
     height: auto;
     bottom: 389px;
     left: -290px;
+}
+
+.advanatge__circle-mobile {
+    display: none;
 }
