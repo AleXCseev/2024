@@ -144,6 +144,12 @@ img {
   outline: none;
 }
 
+*:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 p, h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
@@ -855,7 +861,7 @@ body {
 .order__btn {
   width: 100%;
   height: auto;
-  display: inline-block;
+  display: block;
   border: 2px solid #fff;
   font-weight: 500;
   font-size: 20px;
@@ -868,6 +874,8 @@ body {
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
   position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 .order__btn span {
   position: relative;
@@ -893,8 +901,8 @@ body {
   color: #111;
 }
 .order__btn:hover:before {
-  width: 100%;
-  height: 100%;
+  width: 101%;
+  height: 101%;
 }
 
 .header__date {
@@ -1721,7 +1729,7 @@ body {
   background: #ff5c00;
   color: #fff;
   border: none;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .sprey .card__wrapper {
@@ -2008,6 +2016,7 @@ body {
   background-image: url(../img/arrow.png) !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
+  background-size: 6px auto !important;
 }
 .owl-nav button span {
   display: none;
@@ -2171,6 +2180,13 @@ body {
   }
   .card__title {
     font-size: 26px;
+  }
+  .sprey .card__content {
+    width: 370px;
+  }
+  .review__decor {
+    width: 200px;
+    right: -170px;
   }
 }
 @media (max-width: 1080px) {
@@ -2422,6 +2438,96 @@ body {
   }
   .card__section-wrapper {
     padding-bottom: 100px;
+  }
+  .review__content {
+    width: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+  }
+  .review__section-wrapper {
+    position: relative;
+    padding: 0px 0 198px;
+  }
+  .review__img {
+    width: 100%;
+    height: auto;
+    position: static;
+    top: auto;
+    left: auto;
+    margin-bottom: 39px;
+  }
+  .review__decor {
+    display: none;
+  }
+  .review__section-title {
+    text-align: center;
+  }
+  .review__section-title br {
+    display: none;
+  }
+  .review__section-text {
+    text-align: center;
+  }
+  .review__section-info {
+    text-align: center;
+  }
+  .add__review {
+    margin-right: 0;
+    -webkit-align-self: center;
+            align-self: center;
+  }
+  .owl-nav {
+    width: 100%;
+    position: static;
+    bottom: auto;
+    right: auto;
+    margin-top: 20px;
+  }
+  .owl-nav button {
+    width: 50px;
+    height: 50px;
+    background-size: 10px auto !important;
+  }
+  .owl-dots {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    margin-top: -30px;
+    margin-bottom: 18px;
+  }
+  .owl-dots button {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    background-color: #fff !important;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  .owl-dots button:last-child {
+    margin-right: 0;
+  }
+  .owl-dots button.active {
+    background-color: #ffc700 !important;
+  }
+  .review__slider {
+    margin-bottom: 0;
+  }
+  .footer__section .header__img {
+    width: 100%;
+  }
+  .footer__line-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media (max-width: 700px) {
@@ -2726,5 +2832,55 @@ body {
   }
   .card__decor {
     display: none;
+  }
+  .review__img {
+    margin-bottom: 9vw;
+  }
+  .review__section-title {
+    font-size: 8.8vw;
+    margin-bottom: 3vw;
+  }
+  .review__section-text {
+    font-size: 5.8vw;
+    margin-bottom: 2vw;
+  }
+  .review__content .card__rating {
+    margin-bottom: 2vw;
+  }
+  .review__section-info {
+    font-size: 4.8vw;
+    margin-bottom: 10.5vw;
+  }
+  .review {
+    padding: 7vw 4.8vw;
+  }
+  .review__top {
+    margin-bottom: 4.8vw;
+  }
+  .review__name {
+    font-size: 4.8vw;
+  }
+  .review__text {
+    font-size: 4.8vw;
+    margin-bottom: 3vw;
+  }
+  .review__info img {
+    width: 4.3vw !important;
+    margin-right: 2vw;
+  }
+  .review__info {
+    font-size: 4.3vw;
+  }
+  .review__section-wrapper {
+    padding: 0px 0 48vw;
+  }
+  .footer__section .header__block {
+    margin-bottom: 5.8vw;
+  }
+  .footer__section .header__content {
+    padding: 0vw 0 11vw;
+  }
+  .fancybox-content {
+    padding: 44px 15px 20px;
   }
 }
