@@ -2041,6 +2041,9 @@ body {
 .footer__section-wrapper .header__decor-circle {
   bottom: -80px;
 }
+.footer__section-wrapper .header__img {
+  right: -780px;
+}
 
 .footer__line {
   background-color: rgba(21, 95, 199, 0.1);
@@ -2110,6 +2113,9 @@ body {
     width: 400px;
     bottom: 350px;
     left: -210px;
+  }
+  .footer__section-wrapper .header__img {
+    right: -700px;
   }
 }
 @media (max-width: 1280px) {
@@ -2187,6 +2193,9 @@ body {
   .review__decor {
     width: 200px;
     right: -170px;
+  }
+  .footer__section-wrapper .header__img {
+    right: -585px;
   }
 }
 @media (max-width: 1080px) {

@@ -44,6 +44,9 @@
         bottom: 350px;
         left: -210px;
     }
+    .footer__section-wrapper .header__img {
+        right: -700px;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -121,6 +124,9 @@
     .review__decor {
         width: 200px;
         right: -170px;
+    }
+    .footer__section-wrapper .header__img {
+        right: -585px;
     }
 }
 
