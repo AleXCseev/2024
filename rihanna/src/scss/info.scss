@@ -1,0 +1,125 @@
+.info__section-wrapper {
+    padding-bottom: 150px;
+}
+
+.info__section-title {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1.25;
+    color: #2f4157;
+    margin-bottom: 40px;
+}
+
+.info__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+
+    &:first-of-type {
+        margin-bottom: 20px;
+    }
+}
+
+.info__item {
+    width: 325px;
+    height: 325px;
+    background-image: url(../img/info-item-bg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    position: relative;
+    border-radius: 30px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 70px 43px 0;
+
+    &:before {
+        content: "";
+        width: 76px;
+        height: 76px;
+        border-radius: 100%;
+        background-image: url(../img/info-arrow.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid #2f4157;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        box-sizing: border-box;
+    }
+}
+
+
+.info__item-text {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    line-height: normal;
+}
+
+.info__item-bold {
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    color: #fff;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.info__item-1 {
+    .info__item-text {
+        margin-bottom: 22px;
+    }
+    .info__item-bold {
+        margin-bottom: 0;
+    }
+}
+
+.info__item-2 {
+}
+
+.info__item-block {
+    width: 325px;
+    background: #c1d6ec;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 21px;
+    flex-shrink: 0;
+
+    .info__item-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.5;
+        color: #2f4157;
+
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+.info__item-3 {
+}
+
+.info__img {
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.info__img-1 {
+    background-image: url(../img/info-img-1.jpg);
+}
+
+.info__img-2 {
+    background-image: url(../img/info-img-2.jpg);
+}
