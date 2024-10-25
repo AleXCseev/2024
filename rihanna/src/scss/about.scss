@@ -65,12 +65,6 @@
     }
 }
 
-
-.header__circle-img {
-}
-.header__arrow {
-}
-
 .about__item {
     width: 325px;
     height: 475px;
@@ -85,12 +79,21 @@
     font-size: 18px;
     line-height: 1.5;
     color: #fff;
-    margin-bottom: 2px;
+}
+
+.about__item-text-1 {
+    order: 1;
+}
+
+.about__item-text-2 {
+    order: 2;
 }
 
 .about__item-boot {
     width: 236px;
     height: auto;
+    margin-top: 2px;
+    order: 3;
 }
 
 .about__item-1 {

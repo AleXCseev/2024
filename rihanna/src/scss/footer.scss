@@ -1,0 +1,142 @@
+.footer__section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 42px;
+}
+
+.footer__block {
+    width: 1015px;
+    height: auto;
+    position: relative;
+    flex-shrink: 0;
+
+    .header__circle {
+        width: 282px;
+        height: 282px;
+        left: auto;
+        right: -141px;
+        bottom: 107px;
+    } 
+}
+
+.footer__logo {
+    width: 95px;
+    height: auto;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+}
+
+.footer__img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.footer__title {
+    width: auto;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1.25;
+    color: #2f4157;
+    padding-top: 10px;
+    padding-right: 20px;
+    border-radius: 0 30px 0 0;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer__right {
+    width: 325px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer__item {
+    width: 100%;
+    height: 271px;
+    background-image: url(../img/footer-item-bg.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    border-radius: 30px;
+    position: relative;
+    padding: 100px 25px 0;
+    margin-bottom: 65px;
+
+    &:before {
+        content: "";
+        width: 67px;
+        height: 67px;
+        border-radius: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid #2a5f95;
+        background-image: url(../img/footer-arrow.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.footer__item-text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2f4157;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.footer__info {
+    width: 275px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 9px;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.27;
+    text-align: right;
+    color: #2f4157;
+}
+
+.footer__order {
+    display: inline-block;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+    padding: 16px;
+    border-radius: 30px;
+    background: #cd1c21;
+    transition: 0.3s ease;
+
+    &:hover {
+        background: #2a5f95;
+    }
+}
+
+.footer__date {
+    width: 100%;
+    max-width: 320px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #2f4157;
+    text-align: center;
+    margin-top: 16px;
+
+    span {
+        font-weight: 700;
+    }
+}

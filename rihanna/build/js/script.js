@@ -1,7 +1,7 @@
 var landingFunctions = {
 	init: function() {
 		this.initLibraris()
-		this.card()
+		// this.card()
 		this.time()
 		// this.modal()
 	}, 
@@ -10,14 +10,22 @@ var landingFunctions = {
 		
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = 0;
-			// var cardHeight = $(".card").outerHeight(false)
-			// var windowHeight = $(window).height()
+			var cardHeight = $(".card").outerHeight(false)
+			var windowHeight = $(window).height()
 
-			$('html, body')
-			.stop()
-			// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
-			.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
-			e.preventDefault();
+			if($(window).width() < 1080) {
+				$('html, body')
+					.stop()
+					.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+					// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+					e.preventDefault();
+			} else {
+				$('html, body')
+					.stop()
+					// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+					.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+					e.preventDefault();
+			}
 		})
 
 		function showBtn() {
@@ -26,17 +34,19 @@ var landingFunctions = {
 			$(window).scroll(function() {
 				var scroll = $(window).scrollTop() + $(window).height();
 				var offset = $element.offset().top + $element.height();
-				// var bodyOffset = $("body").offset().top + $("body").height();
+				var bodyOffset = $("body").offset().top + $("body").height();
 
-				if ((scroll > offset + 400 || scroll < offset - $element.height() - 200)) {
-					if(scroll - 400 > ($(".header__section").offset().top + $(".header__section").height())) {
-						$(".fixed").show(100);
+				console.log(scroll - 1000, bodyOffset)
+				if ((scroll > offset + 400 || scroll < offset - $element.height() - 200) && scroll > 1200) {
+					if(scroll + 800 > bodyOffset) {
+						$(".fixed").hide(100);
 					} else {
-						$(".fixed").hide(100)
+						$(".fixed").show(100)
 					}
 				} else {
 					$(".fixed").hide(100)
 				}
+
 			});
 		}
 
@@ -44,15 +54,15 @@ var landingFunctions = {
 
 		$('.galary__slider').owlCarousel({
 			items: 1,
-			margin: 0,
+			margin: 20,
 			dots: true,
 			dotsEach: true,
 			nav: false,
 			loop: true,
 			autoHeight: false,
-			autoplay: true,
-			autoplayTimeout: 3000,
-			autoplayHoverPause: true,
+			// autoplay: true,
+			// autoplayTimeout: 3000,
+			// autoplayHoverPause: true,
 		});
 
 		$('.review__slider').owlCarousel({
@@ -63,14 +73,17 @@ var landingFunctions = {
 			nav: false,
 			loop: true,
 			autoHeight: true,
-			// responsive:{
-			// 	0:{
-			// 		dots: true,
-			// 	},
-			// 	1080:{
-			// 		dots: false,
-			// 	}
-			// }
+			responsive:{
+				0: {
+					items: 2,
+				},
+				1080: {
+					items: 3,
+				},
+				1280: {
+					items: 4,
+				}
+			}
 		});
 	
 		AOS.init({
@@ -141,7 +154,7 @@ var landingFunctions = {
 			}, 1000);
 		}
 	
-		timer()
+		// timer()
 
 		function getDate(plusDays) {
 			var now = new Date;
