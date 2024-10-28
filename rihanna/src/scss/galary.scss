@@ -136,8 +136,10 @@
         &:before {
             bottom: 0;
             left: 0;
-            background-image: url(../img/galary-dark-arrow.png);
+            background-image: url(../img/info-arrow.png);
             border: 1px solid #2a5f95;
+            // border: 1px solid #2f4157;
+            // transform: scaleX(-1);
         }
     }
 
@@ -167,8 +169,10 @@
         &:before {
             top: 0;
             right: 0;
-            background-image: url(../img/galary-lite-arrow.png);
+            // background-image: url(../img/galary-lite-arrow.png);
             border: 1px solid #c1d6ec;
+            background-image: url(../img/info-arrow-lite.png);
+            // border: 1px solid #2f4157;
         }
     }
 

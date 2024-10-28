@@ -15,8 +15,9 @@
         width: 282px;
         height: 282px;
         left: auto;
-        right: -141px;
-        bottom: 107px;
+        right: -106px;
+        bottom: 153px;
+        border-radius: 50% 0 0 50%;
     } 
 }
 
@@ -37,7 +38,7 @@
 .footer__title {
     width: auto;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 72px;
     line-height: 1.25;
     color: #2f4157;
     padding-top: 10px;
@@ -55,6 +56,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    position: relative;
+    z-index: 2;
 }
 
 .footer__item {

@@ -40,7 +40,7 @@
 
 .header__title {
     font-weight: 700;
-    font-size: 80px;
+    font-size: 70px;
     color: #2f4157;
 }
 
@@ -49,7 +49,7 @@
     height: auto;
     margin-left: auto;
     position: relative;
-    margin-top: -240px;
+    margin-top: -220px;
 }
 
 .header__img {
@@ -220,12 +220,15 @@
     background-repeat: no-repeat;
     background-position: right center;
     border-radius: 30px;
-    padding: 14px 64px 25px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 64px 14px 30px;
 }
 
 .fixed__text {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 19px;
     line-height: 1.5;
     color: #fff;
 

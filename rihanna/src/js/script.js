@@ -14,6 +14,7 @@ var landingFunctions = {
 			var windowHeight = $(window).height()
 
 			if($(window).width() < 1080) {
+				fixedOffset = 20
 				$('html, body')
 					.stop()
 					.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
@@ -28,6 +29,14 @@ var landingFunctions = {
 			}
 		})
 
+		$('.new__price').each(function () {
+			var p = parseInt($(this).text());
+	        var currency = $(this).text().replace(/[0-9]/g, '');
+			var oldPrice = Math.ceil(p * 100 / 40);
+			$(this).closest('.price').find('.old__price').text(oldPrice + ' ' + currency);
+			$(this).closest(".card").find(".result").text(oldPrice - p + " " + currency)
+		});
+
 		function showBtn() {
 			var $element = $('.card__section');
 
@@ -36,7 +45,6 @@ var landingFunctions = {
 				var offset = $element.offset().top + $element.height();
 				var bodyOffset = $("body").offset().top + $("body").height();
 
-				console.log(scroll - 1000, bodyOffset)
 				if ((scroll > offset + 400 || scroll < offset - $element.height() - 200) && scroll > 1200) {
 					if(scroll + 800 > bodyOffset) {
 						$(".fixed").hide(100);
@@ -60,9 +68,9 @@ var landingFunctions = {
 			nav: false,
 			loop: true,
 			autoHeight: false,
-			// autoplay: true,
-			// autoplayTimeout: 3000,
-			// autoplayHoverPause: true,
+			autoplay: true,
+			autoplayTimeout: 3000,
+			autoplayHoverPause: true,
 		});
 
 		$('.review__slider').owlCarousel({
@@ -73,6 +81,9 @@ var landingFunctions = {
 			nav: false,
 			loop: true,
 			autoHeight: true,
+			autoplay: true,
+			autoplayTimeout: 5000,
+			autoplayHoverPause: true,
 			responsive:{
 				0: {
 					items: 2,
@@ -86,21 +97,21 @@ var landingFunctions = {
 			}
 		});
 	
-		AOS.init({
-			disable : function() {
-				if( $(window).width() <= 1080) {
-					return true;
-				}
-				return false
-			},
-			once: true,
-			duration: 1000,
-			offset : 0,
-		});
+		// AOS.init({
+		// 	disable : function() {
+		// 		if( $(window).width() <= 1080) {
+		// 			return true;
+		// 		}
+		// 		return false
+		// 	},
+		// 	once: true,
+		// 	duration: 1000,
+		// 	offset : 0,
+		// });
 	
-		$(window).resize(function() {
-			AOS.refresh();
-		})
+		// $(window).resize(function() {
+		// 	AOS.refresh();
+		// })
 
 		$('[data-fancybox]').fancybox({
 			loop: true,

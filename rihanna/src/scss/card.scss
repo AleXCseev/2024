@@ -252,3 +252,102 @@
         }
     }
 }
+
+select {
+    text-align: -moz-center;
+    text-align: -webkit-center;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    -webkit-text-align-last: center;
+    text-indent: 42% hanging;
+}
+
+.size-table-wrapper {
+    display: none;
+    position: relative;
+    background-color: #d6e8ff;
+    padding: 25px;
+    width: auto;
+    max-width: 690px;
+    margin: 0 auto;
+  }
+  
+  .size-table-wrapper h3 {
+    color: #000;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .size-table {
+    font-size: 15px;
+    color: #000;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .size-table:first-of-type {
+    margin-bottom: 10px;
+  }
+  
+  .size-table thead th {
+    padding: 8px 10px;
+    border-bottom: 1px solid #000;
+    color: #000;
+  }
+  
+  .size-table thead th:nth-child(2) {
+    border-left: 1px solid #000;
+  }
+  
+  .size-table tbody tr {
+    margin-bottom: 6px;
+  }
+  
+  .size-table tbody tr:nth-of-type(even) td {
+    background-color: #c3d8f3;
+  }
+  
+  .size-table tbody td {
+    width: 18.625%;
+    padding: 8px 8px 16px;
+  }
+  
+  .size-table tbody td:first-child {
+    width: 25.5%;
+    padding-left: 0;
+    color: #000;
+    border-right: 1px solid #000;
+    text-align: left;
+  }
+  
+  .size-table .fancybox-button svg path {
+    fill: #111;
+  }
+  
+  .fancybox-button svg path {
+    fill: #111;
+  }
+  
+  @media (max-width: 480px) {
+    .size-table-wrapper {
+        width: 100%;
+        max-width: initial;
+    }
+  }
+  
+  @media (max-width: 413px) {
+    .size-table-wrapper {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+  
+    .size-table tbody td {
+        padding: 10px 5px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .size-table {
+        font-size: 13px;
+    }
+  }
