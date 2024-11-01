@@ -1,0 +1,117 @@
+.about__section-wrapper {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 0;
+}
+
+.about__section-title {
+    font-weight: bold;
+    line-height: 1.6;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.about__items {
+    width: calc(100% + 160px);
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about__item {
+    width: 255px;
+    height: 255px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.about__item-1 {
+    background-image: url(../img/about-img-1.jpg);
+}
+
+.about__item-2 {
+    background-image: url(../img/about-img-2.jpg);
+}
+
+.about__item-3 {
+    background-image: url(../img/about-img-3.jpg);
+}
+
+.about__item-4 {
+    background-image: url(../img/about-img-4.jpg);
+}
+
+.about__item-5 {
+    background-image: url(../img/about-img-5.jpg);
+}
+
+.about__item-6 {
+    background-image: url(../img/about-img-6.jpg);
+}
+
+.about__item-7 {
+    background-image: url(../img/about-img-7.jpg);
+}
+
+.about__item-8 {
+    background-image: url(../img/about-img-8.jpg);
+}
+
+.about__title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: rgb(11, 92, 22);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about__info-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+.about__info-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0 30px;
+}
+
+.about__info-item {
+    width: 438px;
+    height: 337px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.about__info-item-1 {
+    background-image: url(../img/about-info-5.png);
+}
+
+.about__info-item-2 {
+    background-image: url(../img/about-info-6.jpg);
+}
+
+.about__info-item-3 {
+    height: 292px;
+    background-image: url(../img/about-info-7.png);
+}
+
+.about__info-item-4 {
+    height: 292px;
+    background-image: url(../img/about-info-8.png);
+}
+
+

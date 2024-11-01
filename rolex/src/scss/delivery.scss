@@ -1,0 +1,134 @@
+.delivery__section {
+    background-image: url(../img/delivery-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+.delivery__section-wrapper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 100px 20px;
+}
+
+.delivery__logo {
+    width: 187px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.delivery__section-title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    color: rgb(33, 33, 33);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.delivery__table {
+    width: calc(100% + 60px);
+    padding: 20px 40px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgb(36, 36, 36);
+    text-align: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(222, 222, 222);
+    margin-bottom: 20px;
+}
+
+.delivery__item {
+    margin-bottom: 20px;
+}
+
+.delivery__item-text {
+    font-size: 16px;
+    line-height: 1.4;
+    color: rgb(36, 36, 36);
+    text-align: left;
+    position: relative;
+    margin-bottom: 5px;
+
+    &:before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 2px;
+        left: -25px;
+        background-image: url(../img/ok.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+.delivery__item-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+}
+
+.delivery__item-1 {
+    .delivery__item-img {
+        width: 400px;
+        height: 220px;
+        background-position: center 37%;
+        background-image: url(../img/galary-2/2.jpg);
+    }
+}
+
+.delivery__item-2 {
+    .delivery__item-img {
+        width: 450px;
+        height: 254px;
+        // background-position: center 37%;
+        background-image: url(../img/delivery-img-2.jpg);
+    }
+}
+
+.delivery__item-3 {
+    .delivery__item-img {
+        flex-shrink: 0;
+        width: 380px;
+        height: 233px;
+        background-image: url(../img/advantage-img-1.jpg);
+    }
+}
+
+.delivery__img-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+    svg {
+        width: 80px;
+        height: auto;
+    }
+}
+
+.delivery__img-battery {
+    width: 233px;
+    height: auto;
+}
+

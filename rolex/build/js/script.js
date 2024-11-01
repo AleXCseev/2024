@@ -53,6 +53,10 @@ var landingFunctions = {
 			focusOnSelect: true
 		});
 
+		$(".card__prod").click(function() {
+			$(this).toggleClass("active")
+		})
+
 		
 	
 		// AOS.init({

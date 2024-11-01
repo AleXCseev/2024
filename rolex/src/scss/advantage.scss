@@ -423,3 +423,151 @@
         font-weight: bold;
     }
 }
+
+
+.card {
+    width: 427px;
+    height: auto;
+    background-color: rgb(19, 17, 40);
+    border-radius: 3px;
+    padding: 5px;
+    display: none;
+}
+
+.card__wrapper {
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(238, 234, 102);
+    padding: 10px 20px;
+
+    .advantage__timer-text {
+        font-size: 16px;
+    }
+}
+
+.card__form {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.card__input-wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card__input {
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+    padding: 5px 10px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgb(0, 0, 0);
+}
+
+.card__text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.card__prods {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.card__prod {
+    width: 106px;
+    height: auto;
+    background-color: #fff;
+    padding: 7px;
+    transition: 0.3s ease;
+    position: relative;
+    cursor: pointer;
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        transition: 0.3s ease;
+        opacity: 0; 
+    }
+
+    &.active {
+        transform: scale(1.1);
+        &:before {
+            opacity: 1;
+        }
+    } 
+}
+
+.card__prod-img {
+    width: 100%;
+    height: 104px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 7px;
+}
+
+.card__prod-text {
+    color: #000;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.card__prod-1 {
+    .card__prod-img {
+        background-image: url(../img/card/1.jpg);
+    }
+}
+
+.card__prod-2 {
+    .card__prod-img {
+        background-image: url(../img/card/2.jpg);
+    }
+}
+
+.card__prod-3 {
+    .card__prod-img {
+        background-image: url(../img/card/3.jpg);
+    }
+}
+
+.card__submit {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: rgb(6, 3, 34);
+    text-align: center;
+    background-color: rgb(232, 227, 48);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.card__info {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 1.6;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+.card .fancybox-button svg {
+    color: #fff;
+}
