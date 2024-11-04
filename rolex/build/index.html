@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="libs/jquery.fancybox.min.css">
-    <!-- <link rel="stylesheet" href="libs/owl.carousel.min.css"> -->
     <link rel="stylesheet" href="libs/animations.css">
-    <!-- <link rel="stylesheet" href="libs/jquery.raty.css"> -->
-    <!-- <link rel="stylesheet" href="libs/aos.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
     <link rel="stylesheet" href="css/style.css">
@@ -210,6 +207,12 @@
                             <img src="img/galary/6.jpg" alt="" />
                         </div>
                     </div>
+                    <p class="advantage__galary-info">
+                        Phiên bản bộ máy tinh thể thạch anh tiên tiến nhất hiện nay - AUTOQUARTZ
+                    </p>
+                    <p class="advantage__galary-info-2">
+                        (với độ chính xác cao hơn 15 lần máy cơ )
+                    </p>
                 </div>
                 <div class="advantage__galary-right">
                     <div class="advantage__price">
@@ -254,6 +257,16 @@
                             5 khách hàng đã đặt THÀNH CÔNG <br>
                             Còn 5 chiếc giảm giá cuối cùng
                         </p>
+                        <div class="advantage__price advantage__price-mobile">
+                            <div class="price">
+                                <p class="advantage__old-price">
+                                    Giá niêm yết <span class="old__price"> 8.900.000đ </span> 
+                                </p>
+                                <p class="advantage__new-price">
+                                    Giá tri ân <span class="new__price">890.000đ</span>
+                                </p>
+                            </div>
+                        </div>
                         <div class="advantage__timer">
                             <p class="advantage__timer-text">
                                 THỜI GIAN ĐẶT HÀNG KHUYẾN MÃI CHỈ CÒN:
@@ -445,6 +458,14 @@
                     </p>
                 </div>
             </div>
+            <div class="galary__info-wrapper galary__info-mobile">
+                <h3 class="galary__info-title">
+                    ỐNG KÍNH CYCLOPS
+                </h3>
+                <p class="galary__info-text">
+                    Ống kính Cyclops khuếch đại màn hình phụ hiển thị ngày, tăng độ hiển thị ngày nhằm mục đích đọc dễ dàng. Đây là một trong những tính năng đặc biệt nhất của Rolex và là một trong những tính năng dễ nhận biết nhất.
+                </p>
+            </div>
         </div>
     </div>
     <div class="galary__advantage">
@@ -570,9 +591,9 @@
                         <input type="tel" placeholder="Nhập Số điện thoại" required class="review__input">
                     </div>
                     <textarea required placeholder="Để lại lời nhắn cho chúng tôi"></textarea>
-                    <button type="submit" class="review__send">
+                    <a data-fancybox="" data-src="#modal-card" href="javascript:;" type="submit" class="review__send">
                         GỬI BÌNH LUẬN
-                    </button>
+                    </a>
                 </form>
             </div>
             <div class="review__container">
@@ -1057,7 +1078,95 @@
             </div>
         </div>
     </div>
+    <div class="footer__line">
+        <div class="container">
+            <div class="footer__line-wrapper">
+                <div class="footer__line-block">
+                    <img src="img/logo.png" alt="" class="footer__line-logo">
+                    <ul class="footer__line-list line__list-1">
+                        <li class="footer__line-list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1664 1896.08" fill="rgba(255, 255, 255, 1.0)"><path d="M1408 992v480q0 26-19 45t-45 19H960v-384H704v384H320q-26 0-45-19t-19-45V992q0-1 .5-3t.5-3l575-474 575 474q1 2 1 6zm223-69l-62 74q-8 9-21 11h-3q-13 0-21-7L832 424l-692 577q-12 8-24 7-13-2-21-11l-62-74q-8-10-7-23.5T37 878l719-599q32-26 76-26t76 26l244 204V288q0-14 9-23t23-9h192q14 0 23 9t9 23v408l219 182q10 8 11 21.5t-7 23.5z"></path></svg>
+                            <span>43A Nguyễn Công Trứ, F.8, Đà lạt - Lâm Đồng</span>
+                        </li>
+                        <li class="footer__line-list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1408 1896.0833" fill="rgba(255, 255, 255, 1.0)"> <path d="M1408 1240q0 27-10 70.5t-21 68.5q-21 50-122 106-94 51-186 51-27 0-52.5-3.5T959 1520t-47.5-14.5T856 1485t-49-18q-98-35-175-83-128-79-264.5-215.5T152 904q-48-77-83-175-3-9-18-49t-20.5-55.5T16 577 3.5 519.5 0 467q0-92 51-186 56-101 106-122 25-11 68.5-21t70.5-10q14 0 21 3 18 6 53 76 11 19 30 54t35 63.5 31 53.5q3 4 17.5 25t21.5 35.5 7 28.5q0 20-28.5 50t-62 55-62 53-28.5 46q0 9 5 22.5t8.5 20.5 14 24 11.5 19q76 137 174 235t235 174q2 1 19 11.5t24 14 20.5 8.5 22.5 5q18 0 46-28.5t53-62 55-62 50-28.5q14 0 28.5 7t35.5 21.5 25 17.5q25 15 53.5 31t63.5 35 54 30q70 35 76 53 3 7 3 21z"></path> </svg>
+                            <span>Hotline đặt hàng : 0816.217.890</span>
+                        </li>
+                        <li class="footer__line-list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1792 1896.0833" fill="rgba(255, 255, 255, 1.0)"> <path d="M1792 710v794q0 66-47 113t-113 47H160q-66 0-113-47T0 1504V710q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38T639 1015q-91-64-262-182.5T172 690q-62-42-117-115.5T0 438q0-78 41.5-130T160 256h1472q65 0 112.5 47t47.5 113z"></path> </svg>
+                            <span>Email: hotrokhachhang@rolex.com</span>
+                        </li>
+                    </ul>
+                    <ul class="footer__line-list line__list-2">
+                        <li class="footer__line-list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1792 1896.08" fill="rgba(255, 255, 255, 1.0)"><path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z"></path></svg>
+                            <span>Returns & Shipping Policy</span>
+                        </li>
+                        <li class="footer__line-list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1792 1896.08" fill="rgba(255, 255, 255, 1.0)"><path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z"></path></svg>
+                            <span>Terms of Use</span>
+                        </li>
+                        <li class="footer__line-list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1792 1896.08" fill="rgba(255, 255, 255, 1.0)"><path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z"></path></svg>
+                            <span>Privacy Policy</span>
+                        </li>
+                        <li class="footer__line-list-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1792 1896.08" fill="rgba(255, 255, 255, 1.0)"><path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z"></path></svg>
+                            <span>Contact Us</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__line-links">
+                    <a data-fancybox data-src="#modal" href="javascript:;">Chính sách bảo mật</a>
+                    <a data-fancybox data-src="#modal-2" href="javascript:;">Tuyên bố miễn trừ trách nhiệm</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
+
+<div class="fixed__block">
+    <div class="fixed__block-right">
+        <h3 class="fixed__title pulse">GIẢM NGAY 90%</h3>
+        <a class="fixed__btn" data-fancybox="" data-src="#modal-card" href="javascript:;">
+            ĐẶT HÀNG NHẬN ƯU ĐÃI
+        </a>
+    </div>
+    <div class="fixed__timer">
+        <p class="fixed__timer-text">
+            Thời gian ưu đãi còn
+        </p>
+        <div class="advantage__timer-wrapper">
+            <div class="advantage__timer-item">
+                <span class="advantage__timer-number days">
+                    00
+                </span>
+                <span class="advanatge__timer-info">
+                    Ngày
+                </span>
+            </div>
+            <div class="advantage__timer-item">
+                <span class="advantage__timer-number hours">13</span>
+                <span class="advanatge__timer-info">
+                    Giờ  
+                </span>
+            </div>
+            <div class="advantage__timer-item">
+                <span class="advantage__timer-number minutes">52</span>
+                <span class="advanatge__timer-info">
+                    Phút  
+                </span>
+            </div>
+            <div class="advantage__timer-item">
+                <span class="advantage__timer-number seconds">16</span>
+                <span class="advanatge__timer-info">
+                    Giây
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!-- <div class="ladipage-message-box">
     <p>Alert</p>
@@ -1094,26 +1203,31 @@
 
  
     </div>
-    <div class="footer__modal" id="modal-privacy">
-  <h6>Політика конфіденційності</h6>
-  <p>Наш інтернет-магазин шанобливо ставиться до прав клієнта. Дотримується сувора конфіденційність при оформленні замовлення. Дані надійно зберігаються та захищені від передачі даних.</p>
-  <p>Згода на обробку даних клієнта виключно з метою надання послуг – розміщення замовлення на сайті.</p>
-  <p>До персональних даних належить особиста інформація про клієнта: домашню адресу; ім'я прізвище по батькові; відомості про народження; майновий, сімейний стан; особисті контакти (телефон, електронна пошта) та інші відомості, перелічені у Законі "Про персональні дані".</p>
-  <p>Клієнт має право відмовитися від обробки персональних даних. Нами у разі гарантується видалення з сайту всіх персональних даних у триденний термін у робочий час. Подібну відмову клієнт може оформити простим електронним листом на адресу, вказану на сторінці нашого сайту.</p>
-</div>
-
-<div class="footer__modal" id="modal-delivery">
-    <h6>Доставка і оплата</h6>
-    <p>Доставка по Україні здійснюється за допомогою компанії «Нова Пошта» протягом 2-х днів з моменту замовлення. Вартість та деталі такої доставки різняться залежно від регіону вашого проживання та розміру посилки.</p>
-    <p>Продавець не бере на себе жодних зобов'язань щодо відшкодування будь-яких збитків Клієнта, пов'язаних з несвоєчасною доставкою замовлення, а також звільняється від будь-яких можливих штрафних санкцій.</p>
-    <p>Клієнт, який отримав товар, повинен перевірити його щодо якості та кількості.</p>
-</div>
-
-<div class="footer__modal" id="modal-refusal">
-    <h6>ВІДМОВА ВІД ВІДПОВІДАЛЬНОСТІ</h6>
-    <p>Інтернет-магазин залишає за собою право в будь-який час без повідомлення Клієнта вносити зміни щодо товарів, матеріалів і послуг, що надаються на сайті.</p>
-    <p>Інтернет-магазин не несе відповідальності за будь-які збитки (включаючи моральну шкоду, шкоду від втрати прибутку (упущена вигода), даних або від переривання ділової активності), що виник внаслідок використання або неможливості використання даного сайту.</p>
-</div>
+    <div id="modal">
+    <h2>Chính sách bảo mật</h2>
+    <p>Cửa hàng trực tuyến của chúng tôi tôn trọng quyền lợi của khách hàng. Tính bảo mật nghiêm ngặt được tuân thủ khi đặt hàng. Thông tin được lưu trữ an toàn và bảo vệ khỏi truyền tải.</p>
+    <p>Việc đặt hàng trên Trang web cấu thành sự đồng ý với việc xử lý Dữ liệu khách hàng chỉ nhằm mục đích cung cấp dịch vụ.</p>
+    <p>Dữ liệu cá nhân bao gồm thông tin cá nhân về Khách hàng: địa chỉ nhà; Tên, chữ viết tắt; Thông tin khai sinh; tài sản, tình trạng hôn nhân; Danh bạ cá nhân (điện thoại, e-mail) và các thông tin khác được liệt kê trong luật "Về dữ liệu cá nhân".</p>
+    <p>Khách hàng có quyền từ chối việc xử lý dữ liệu cá nhân. Trong trường hợp này, chúng tôi đảm bảo sẽ xóa tất cả dữ liệu cá nhân khỏi trang web trong vòng ba ngày trong giờ làm việc. Khách hàng có thể đưa ra lời từ chối như vậy bằng một e-mail đơn giản đến địa chỉ được chỉ định trên trang trang web của chúng tôi.</p>
+  </div>
+  
+  <div id="modal-2">
+     <h2>Tuyên bố miễn trừ trách nhiệm</h2>
+     <p>Cửa hàng Trực tuyến có quyền thay đổi hàng hóa, vật liệu và dịch vụ được cung cấp trên Trang web bất kỳ lúc nào mà không cần thông báo cho Khách hàng.</p>
+     <p>Cửa hàng Trực tuyến không chịu trách nhiệm về bất kỳ thiệt hại nào (bao gồm thiệt hại phi kinh tế, mất lợi nhuận (lợi nhuận bị mất), dữ liệu hoặc gián đoạn hoạt động kinh doanh) phát sinh từ việc bạn sử dụng hoặc không thể sử dụng trang web này.</p>
+  </div>
+  
+  <div id="modal-3">
+     <h2>नियम और शर्तें</h2>
+     <p>यह पृष्ठ MTP के नियम और शर्तों को रेखांकित करता है। निम्नलिखित नियम और शर्तें ("नियम और शर्तें") घटना ") उपरोक्त सामग्री और कार्यक्षमता का उपयोग, देखने या उपयोग करके इस वेब साइट के आपके उपयोग को नियंत्रित करता है। सेवा, आप इंगित करते हैं कि आप इन नियमों और शर्तों को समझते हैं और स्वीकार करते हैं।
+     </p>
+     <p>इस सेवा में निहित सभी सामग्री कानून द्वारा संरक्षित हैं। सर्वाधिकार सुरक्षित। जानकारी हटाना या बदलना किसी भी सामग्री पर कॉपीराइट रिपोर्टिंग निषिद्ध है। इस सामग्री का कोई भी व्यावसायिक उपयोग इसके अधीन है एमटीपी की पूर्व लिखित सहमति के बिना निषिद्ध।</p>
+     <p>एमटीपी को अपने प्लेटफार्मों और सेवाओं के साथ-साथ सार्वजनिक अपडेट को संशोधित करने, अपडेट करने या लगातार विकसित करने का अधिकार सुरक्षित है प्रौद्योगिकी और समय-समय पर।</p>
+     <p>अपने व्यक्तिगत डेटा को MTP पर छोड़ कर, आप सहमत हैं कि आपकी व्यक्तिगत जानकारी अन्य के साथ साझा की गई है एक ब्रोकर और / या एक तीसरी पार्टी ने संबद्ध को प्रबंधित किया।</p>
+     <p>यह सेवा दलालों और उनके उत्पादों और सेवाओं के बारे में सामान्य जानकारी प्रदान करने के लिए डिज़ाइन की गई है। सेवा सूचना का उद्देश्य किसी विशेष उत्पाद या सेवा को बेचने या विघटित करने का प्रस्ताव नहीं है किस तरह</p>
+     <p>इस सेवा का उपयोग पूरी तरह से आपके जोखिम पर है। एमटीपी निर्भर करने के परिणामों के लिए जिम्मेदार नहीं है  पूर्वगामी के परिणामस्वरूप किसी भी जानकारी को सेवा में भेजा गया या चोट के जोखिम के लिए भेजा गया  आप सभी के हैं। ये सामग्री किसी भी तरह के नोटिस के बिना "के रूप में" प्रदान की जाती हैं चाहे व्यक्त या निहित हो। एमटीपी किसी भी प्रत्यक्ष नुकसान के लिए उत्तरदायी नहीं होगा, विशेष रूप से, तिलचट्टे  एक परिणाम या सज़ा के रूप में, लेकिन सीमित नहीं, बिक्री या लाभ को खो दिया  संभवतः इन सामग्रियों के उपयोग, उपयोग या अक्षमता के कारण खो गया।</p>
+     <p>इंटरनेट का उपयोग पूरी तरह से आपके जोखिम पर है और सभी लागू कानूनों और नियमों के अधीन है प्रांत, राष्ट्रीय और अंतर्राष्ट्रीय। एमटीपी कारणों से होने वाले किसी भी नुकसान के लिए जिम्मेदार नहीं होगा जो वे  नहीं करते हैं <br> प्रत्यक्ष नियंत्रण, सहित, लेकिन सीमित नहीं है, या तो यांत्रिक या इलेक्ट्रॉनिक उपकरण गुहाओं की विफलता  संचार लाइनों, टेलीफोन या अन्य कनेक्शन समस्याओं, कंप्यूटर वायरस, DhéD स्कूल। सफेद बाल। त्रुटि  ऑपरेटर का मौसम, मौसम उत्कीर्ण किया। डिस्क</p>
+  </div>
 
 <div class="footer__modal" id="modal-header">
     <p>Tiết lộ: Chúng tôi là một trang web đánh giá chuyên nghiệp nhận tiền hoa hồng từ các công ty có sản phẩm mà chúng tôi đánh giá. Chúng tôi kiểm tra kỹ lưỡng từng sản phẩm và chỉ chấm điểm cao cho những sản phẩm tốt nhất. Chúng tôi thuộc sở hữu độc lập và các ý kiến được bày tỏ ở đây là thuộc sở hữu của riêng chúng tôi.</p>
@@ -1150,10 +1264,7 @@
 
   
     <script src="libs/jquery.min.js"></script>
-    <!-- <script src="libs/aos.js"></script> -->
     <script src="libs/jquery.fancybox.min.js"></script>
-    <!-- <script src="libs/owl.carousel.min.js"></script> -->
-    <!-- <script src="libs/jquery.raty.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>

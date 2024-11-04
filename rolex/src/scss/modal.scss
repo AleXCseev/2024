@@ -1,36 +1,38 @@
-.footer__modal {
-    width: 100%;
-    max-width: 900px;
-    display: none;
-	color: #222;
-
-    h2 {
-        font-size: 30px;
-        line-height: 1.4;
-        margin-bottom: 20px;
-    }
-    h6 {
-        font-size: 24px;
-        line-height: 1.4;
-        margin-bottom: 20px;
-    }
-    p {
-        font-size: 18px;
-        line-height: 1.4;
-        margin-bottom: 20px;
-    }
+.footer-info{
+	margin: 15px 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.4;
+	list-style-type: none;
+	color: #000;
+	text-align: center;
 }
 
-@media (max-width: 540px) {
-	.footer__modal h2 {
-		font-size: 6vw;
-	}
-	.footer__modal h6 {
-		font-size: 5vw;
-	}
-	.footer__modal p {
-		font-size: 4vw;
-	}
+.footer-info a{
+	color: #000;
+}
+
+.footer-info a:hover{
+	text-decoration: underline;
+}
+
+[id^="modal"]{
+	display: none;
+	max-width: 600px !important;
+	margin: auto;
+}
+[id^="modal"] p{
+	margin-bottom: 10px;
+}
+
+[id^="modal"] h2{
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+[id^="modal"] h6{
+	font-size: 20px;
+	margin-bottom: 10px;
 }
 
 .modal__review {

@@ -10,23 +10,14 @@ var landingFunctions = {
 		
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = 0;
-			var cardHeight = $(".card").outerHeight(false)
-			var windowHeight = $(window).height()
+			// var cardHeight = $(".card").outerHeight(false)
+			// var windowHeight = $(window).height()
 
-			if($(window).width() < 1080) {
-				fixedOffset = 20
-				$('html, body')
-					.stop()
-					.animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
-					// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
-					e.preventDefault();
-			} else {
-				$('html, body')
-					.stop()
-					// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
-					.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
-					e.preventDefault();
-			}
+			$('html, body')
+				.stop()
+				// .animate({ scrollTop: $(this.hash).offset().top + fixedOffset + (cardHeight - windowHeight)}, 1000);
+				.animate({ scrollTop: $(this.hash).offset().top + fixedOffset}, 1000);
+				e.preventDefault();
 		})
 
 		// $('.new__price').each(function () {
@@ -57,6 +48,9 @@ var landingFunctions = {
 			$(this).toggleClass("active")
 		})
 
+		$(".card__prod").on("touchstart", function() {
+			$(this).toggleClass("active")
+		})
 		
 	
 		// AOS.init({
