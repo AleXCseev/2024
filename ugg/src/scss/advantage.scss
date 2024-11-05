@@ -1,0 +1,128 @@
+.advantage__section-wrapper {
+    position: relative;
+    padding-bottom: 130px;
+}
+
+.tag {
+    width: auto;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: right;
+    color: #2f2f2f;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    sup {
+        font-size: 12px;
+    }
+}
+
+.advantage__section-title {
+    font-family: "Vetrino", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    text-transform: uppercase;
+    color: #2f2f2f;
+    margin-bottom: 20px;
+}
+
+.advantage__content {
+    width: 820px;
+    height: auto;
+    margin-left: auto;
+    border-top: 1px solid #2f2f2f;
+    padding: 25px 0 70px;
+    position: relative;
+}
+
+.advantage__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.advantage__nav-item {
+    font-weight: 400;
+    font-size: 18px;
+    color: #2f2f2f;
+    cursor: pointer;
+
+    &.active {
+        font-weight: 700;
+    }
+
+    sub {
+        font-size: 12px;
+    }
+}
+
+.advantage__title {
+    font-family: "Vetrino", sans-serif;
+    font-weight: 400;
+    font-size: 56px;
+    text-transform: uppercase;
+    color: #2f2f2f;
+    margin-bottom: 50px;
+
+    span {
+        display: none;
+    }
+
+    span.active {
+        display: block;
+    }
+}
+
+.advantage__left {
+    width: 460px;
+    height: auto;
+    position: absolute;
+    left: -600px;
+    top: 0;
+    padding-top: 25px;
+    border-top: 1px solid #2f2f2f;
+}
+
+.advantage__left-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.advantage__left-text {
+    font-size: 32px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #2f2f2f;
+}
+
+.advantage__img {
+    width: 100%;
+    height: auto;
+}
+
+.advantage__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    border-top: 1px solid #2f2f2f;
+    border-bottom: 1px solid #2f2f2f;
+}
+
+.advanatge__info {
+    width: 100%;
+    max-width: 580px;
+    font-size: 32px;
+    letter-spacing: 0.15em;
+    color: #972a42;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.order__btn {
+}

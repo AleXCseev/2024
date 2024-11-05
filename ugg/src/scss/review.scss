@@ -1,0 +1,156 @@
+.review__section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sprey__block {
+    width: 820px;
+    height: auto;
+    position: relative;
+    padding: 87px 0;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &:before {
+        content: "";
+        width: calc(100% + 250px);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image: url(../img/info-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+    }
+}
+
+.sprey__wrapper {
+    width: 460px;
+    height: auto;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.sprey__title {
+    font-family: "Vetrino", sans-serif;
+    font-weight: 400;
+    font-size: 56px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.sprey__subtitle {
+    font-size: 32px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 14px;
+}
+
+.sprey__text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 20px;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.sprey__price {
+    .price {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        flex-direction: row;
+    }
+
+    .sprey__price-text {
+        font-size: 18px;
+        color: #fff;
+        width: auto;
+        margin-right: 30px;
+    }
+
+    .old__price {
+        font-size: 18px;
+        text-decoration: line-through;
+        color: #fff;
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .new__price {
+        font-size: 32px;
+        color: #fff;
+    }
+}
+
+
+.sprey__img {
+    width: 286px;
+    height: auto;
+}
+
+.review__block {
+    width: 580px;
+    height: auto;
+    flex-shrink: 0;
+    position: relative;
+    padding-top: 57px;
+}
+
+.review__title {
+    font-family: "Vetrino", sans-serif;
+    font-weight: 400;
+    font-size: 56px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #2f2f2f;
+    margin-bottom: 28px;
+}
+
+.review__slider {
+    border-bottom: 1px solid #2f2f2f;
+    border-top: 1px solid #2f2f2f;
+}
+
+.review {
+    padding: 35px 50px;
+}
+
+.review__name {
+    font-size: 32px;
+    letter-spacing: 0.15em;
+    color: #2f2f2f;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.review__text {
+    font-size: 18px;
+    text-align: center;
+    color: #2f2f2f;
+}
+
+.review__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 50px;
+    padding-top: 30px;
+}
+
+.galary__nav-btn {
+}
+.galary__btn-prev {
+}
+.galary__btn-next {
+}

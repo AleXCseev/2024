@@ -1,0 +1,141 @@
+.info__section {
+    // background-color: rgba(0, 1, 10, 0.8);
+    background-image: url(../img/info-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 70px 0 46px;
+}
+
+
+.info__section-wrapper {
+    position: relative;
+
+    .tag {
+        color: #fff;
+    }
+}
+
+
+.info__section-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+
+.info__section-title {
+    font-family: "Vetrino", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.info__title-decor {
+    width: 562px;
+    height: auto;
+    font-family: "Vetrino", sans-serif;
+    font-weight: 400;
+    font-size: 56px;
+    text-transform: uppercase;
+    color: #972a42;
+    flex-shrink: 0;
+}
+
+.info__block {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.info__block-left {
+    width: 838px;
+    height: auto;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.info__item {
+    width: 266px;
+    height: 266px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.info__item-1 {
+    background-image: url(../img/header-img-5.jpg);
+}
+
+.info__item-2 {
+    background-image: url(../img/info-img-2.jpg);
+}
+
+.info__item-3 {
+}
+
+.info__item-4 {
+}
+
+.info__item-5 {
+}
+
+.info__item-6 {
+    background-image: url(../img/galary/7-1000.jpg);
+    background-position: center bottom;
+}
+
+.info__item-title {
+    font-size: 32px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 69px;
+}
+
+.info__item-text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.info__block-right {
+    width: 562px;
+    height: auto;
+}
+
+.info__img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.info__block-wrapper {
+    width: 100%;
+    height: 266px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    .info__item-title {
+        width: 50%;
+    }
+
+    .info__item-text {
+        width: 50%;
+    }
+
+    .order__btn {
+        // align-self: flex-start;
+        margin-top: auto;
+    }
+}
+

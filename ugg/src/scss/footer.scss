@@ -1,0 +1,93 @@
+.footer__section-wrapper {
+    padding: 130px 0 200px;
+}
+
+.footer__content {
+    width: 580px;
+    height: auto;
+    position: relative;
+
+    .order__btn {
+    } 
+}
+
+.footer__logo {
+    width: 103px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.footer__title {
+    font-family: "Vetrino", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    text-transform: uppercase;
+    color: #2f2f2f;
+    margin-bottom: 50px;
+}
+
+.footer__right {
+    width: 520px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: -840px;
+}
+
+.footer__img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 26px;
+}
+
+.footer__text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2f2f2f;
+    margin-bottom: 19px;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.footer__info {
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 0.15em;
+    color: #2f2f2f;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.footer__img-decor {
+    width: 275px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: -300px;
+}
+
+.footer__line {
+    width: 100%;
+    height: auto;
+    background-image: url(../img/info-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer__line-wrapper {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__line-logo {
+    width: 103px;
+    height: auto;
+}
+

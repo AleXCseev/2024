@@ -1,0 +1,91 @@
+.galary__section-wrapper {
+    position: relative;
+    padding-bottom: 130px;
+}
+
+.galary__section-title {
+    font-family: "Vetrino", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    text-transform: uppercase;
+    color: #2f2f2f;
+    margin-bottom: 50px;
+}
+
+.galary__content {
+    position: relative;
+    width: 460px;
+    height: 690px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.galary__title {
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #2f2f2f;
+    margin-bottom: 30px;
+}
+
+.galary__text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2f2f2f;
+    margin-bottom: 10px;
+
+    span {
+        font-weight: 700;
+        color: #972a42;
+    }
+}
+
+.galary__slider {
+    width: 940px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: -960px;
+}
+
+.galary__slide {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.galary__nav {
+    margin-top: auto;
+    padding-top: 55px;
+    border-top: 1px solid #2f2f2f;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.galary__nav-btn {
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 0;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        svg {
+            fill: #2F2F2F;
+        }
+    }
+}
+
+.galary__btn-prev {
+}
+
+.galary__btn-next {
+    transform: rotate(180deg);
+}
