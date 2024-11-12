@@ -1,0 +1,34 @@
+.info-2__section {
+    background: #faf5ef;
+}
+
+.info-2__section-wrapper {
+    padding: 42px 0;
+}
+
+.info-2__section-title {
+    font-family: "Source Serif Pro", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    color: #1a1f18;
+    margin-bottom: 39px;
+}
+
+.info-2__img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    margin-bottom: 21px;
+}
+
+.info-2__text {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #222;
+    margin-bottom: 23px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

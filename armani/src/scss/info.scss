@@ -1,0 +1,50 @@
+.info__section {
+    background: #1a1f18;
+}
+
+.info__section-wrapper {
+    padding: 40px 0 50px;
+}
+
+.info__section-title {
+    font-family: "Source Serif Pro", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    color: #e29934;
+    margin-bottom: 40px;
+}
+
+.info__item {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    background: #2d342a;
+    padding: 30px 30px 25px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.info__item-img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.info__item-title {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: #ffb856;
+    margin-bottom: 10px;
+}
+
+.info__item-text {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
