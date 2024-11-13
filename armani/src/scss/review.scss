@@ -1,20 +1,20 @@
 .review__section {
-    background: linear-gradient(90deg, #f9fff0 0%, #c1fff0 100%);
+    background-color: #FAF5EF;
 }
 
 .review__section-wrapper {
-    padding: 40px 0 47px;
+    padding: 42px 0 48px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .review__section-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.3;
+    font-family: "Source Serif Pro", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
     text-align: center;
-    color: #003e53;
+    color: #1a1f18;
     margin-bottom: 39px;
 }
 
@@ -22,104 +22,93 @@
     width: 100%;
     height: auto;
 
-    .owl-nav {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 20px;
-
-        button {
-            width: 50px;
-            height: 50px;
-            border-radius: 100%;
-            border: 4px solid #003e53 !important;
-            background-image: url(../img/arrow.png) !important;
-            background-repeat: no-repeat !important;
-            background-position: center !important;
-
-            span {
-                display: none;
-            }
-        }
-
-        .owl-next {
-            transform: rotate(180deg);
-        }
+    .owl-nav button {
+        border: 2px solid #2d342a !important;
+        background-image: url(../img/arrow-dark.png) !important;
     }
 
     .owl-dots {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: -30px;
-        margin-bottom: 18px;
+        margin-bottom: 15px;
+    }
 
-        button {
-            width: 10px;
-            height: 10px;
-            border-radius: 100%;
-            background-color: #003e53 !important;
-            border: 2px solid #003e53 !important;
-            margin-right: 10px;
-
-            &:last-child {
-                margin-right: 0;
-            }
-
-            &.active {
-                background-color: #fff !important;
-            }
-        }
+    .owl-dots button {
+        background-color: #2d342a !important;
+        border: 2px solid #2d342a !important;
     }
 }
 
 .review {
-    background: #9bfff2;
-    border: 1px solid #87e7da;
+    width: 100%;
+    height: auto;
+    background: #2d342a;
     border-radius: 30px;
     overflow: hidden;
 }
 
-.review__top {
-    background: #88f0e3;
+.review__header {
+    width: 100%;
+    height: auto;
+    background: #1a1f18;
     padding: 25px 30px;
-    margin-bottom: 20px;
-}
-
-.review__top-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 4px;
+}
 
-    .card__rating {
-        width: auto;
-    }
-
-    .card__rating-text {
-        color: #111;
-    }
+.review__header-wrapper {
 }
 
 .review__name {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
-    line-height: 1;
-    color: #003e53;
-    width: auto;
+    color: #fff;
 }
 
-
-.review__info {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.3;
-    color: #006a8e;
+.review__rating {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+
+    span {
+        padding-right: 10px;
+    }
+}
+
+.review__quote {
+    width: 49px !important;
+    height: auto;
+}
+
+.review__wrapper {
+    padding: 30px;
+    width: 100%;
+    height: auto;
+}
+
+.review__img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    margin-bottom: 11px;
+}
+
+.review__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 11px;
+}
+
+.review__info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    color: #ffb856;
 
     img {
         width: 20px !important;
@@ -128,27 +117,10 @@
     }
 }
 
-.review__img {
-    width: calc(100% - 40px) !important;
-    height: auto;
-    margin: auto;
-    border: 1px solid #87e7da;
-    border-radius: 20px;
-}
-
-.review__text {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.3;
-    color: #111;
-    padding: 24px 30px;
-}
-
 .add__review {
-    font-weight: 400;
     font-size: 16px;
     text-align: center;
     color: #444;
     cursor: pointer;
-    background-color: transparent;
+    background: transparent;
 }

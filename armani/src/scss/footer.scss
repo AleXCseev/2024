@@ -1,0 +1,28 @@
+.footer__section {
+    .header__prod-block {
+        background-image: url(../img/footer-bg.jpg);
+    }
+}
+
+.footer__line {
+    width: 100%;
+    height: auto;
+    background: #6d6c59;
+}
+
+.footer__line-wrapper {
+    padding: 10px 0;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: #cdcdcd;
+}
+
+.fancybox-content {
+    padding: 44px 20px;
+}
