@@ -1125,6 +1125,13 @@ body {
   font-size: 18px;
   color: #fff;
 }
+.card__info span:first-child {
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+}
+.card__info span:last-child {
+  text-align: right;
+}
 .card__info:last-child {
   margin-bottom: 20px;
 }
@@ -1264,6 +1271,7 @@ body {
 }
 
 [id^=modal] h2 {
+  font-size: 24px;
   margin-bottom: 20px;
 }
 

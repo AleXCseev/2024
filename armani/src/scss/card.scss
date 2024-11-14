@@ -205,6 +205,14 @@
     font-size: 18px;
     color: #fff;
 
+    span:first-child {
+        flex-shrink: 0;
+    }
+
+    span:last-child {
+        text-align: right;
+    }
+
     &:last-child {
         margin-bottom: 20px;
     }

@@ -253,18 +253,18 @@ var landingFunctions = {
 		}
 
 		if(localStorage.getItem("quantity")) {
-			$(".quantity").text(localStorage.getItem("quantity") + " шт.");
+			$(".quantity").text(localStorage.getItem("quantity") + " buah");
 		} else {
 			currentNumber = 25
 			localStorage.setItem("quantity", currentNumber)
-			$(".quantity").text(currentNumber + " шт.");
+			$(".quantity").text(currentNumber + " buah");
 		}
 
 		setInterval(function () {
 			currentNumber = localStorage.getItem("quantity");
 			if (currentNumber >= 3) {
 				currentNumber = currentNumber - getRandomInt(3);
-				$(".quantity").text(currentNumber + " шт.");
+				$(".quantity").text(currentNumber + " buah");
 				localStorage.setItem("quantity", currentNumber)
 			} else {
 				currentNumber = 25;
