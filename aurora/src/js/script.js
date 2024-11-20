@@ -68,14 +68,14 @@ var landingFunctions = {
 		// 	owl.trigger("to.owl.carousel", [position, 300])
 		// })
 
-		// $('.advantage__galary').owlCarousel({
-		// 	items: 1,
-		// 	margin: 0,
-		// 	dots: false,
-		// 	dotsEach: true,
-		// 	nav: true,
-		// 	loop: true,
-		// });
+		$('.gallery__slider').owlCarousel({
+			items: 1,
+			margin: 0,
+			dots: true,
+			dotsEach: true,
+			nav: false,
+			loop: true,
+		});
 
 		// $('.review__slider').owlCarousel({
 		// 	items: 3,

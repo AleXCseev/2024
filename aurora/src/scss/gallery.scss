@@ -1,0 +1,105 @@
+.gallery__section {
+}
+
+.gallery__slider-wrapper {
+    position: relative;
+
+    .container {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        pointer-events: none;
+    }
+}
+
+.gallery__section-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.gallery__logo {
+    width: 132px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.gallery__logo-mobile {
+    display: none;
+}
+
+.gallery__section-title {
+    font-weight: 400;
+    font-family: "Unbounded", sans-serif;
+    font-size: 56px;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 423px;
+}
+
+.gallery__text {
+    font-family: "Unbounded", sans-serif;
+    width: 720px;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 1.5;
+    color: #fff;
+    align-self: flex-start;
+}
+
+.gallery__slider {
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        background-image: url(../img/decor-white.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 600px;
+        height: 59px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    &:after {
+        bottom: 0;
+    }
+}
+
+.owl-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+
+    button {
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: #d9d9d9 !important;
+        margin-right: 10px;
+        transition: 0.3s ease;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.active {
+            width: 36px;
+            background-color: #141924 !important;
+        }
+    }
+}
