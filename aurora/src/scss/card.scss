@@ -1,0 +1,126 @@
+.card__section {
+    position: relative;
+    background-image: url(../img/card-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    &:before, &:after {
+        content: "";
+        width: 600px;
+        height: 59px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &:before {
+        top: -58px;
+        background-image: url(../img/decor-card.png);
+    }
+
+    &:after {
+        bottom: -1px;
+        background-image: url(../img/decor-white.png);
+    }
+}
+
+.card__section-wrapper {
+    padding: 40px 0 124px;
+}
+
+.card__section-title {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 85px;
+}
+
+.card__left {
+    width: 815px;
+    height: auto;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 580px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 50px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: auto;
+        transition: 0.3s ease;
+    }
+}
+
+.card__photos {
+    width: 210px;
+    height: auto;
+}
+
+.card__photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: auto;
+        transition: 0.3s ease;
+    }
+}
+
+.card__content {
+}
+.card__title {
+}
+.card__info {
+}
+.divider {
+}
+.card__info-bold {
+}
+.price {
+}
+.new__price {
+}
+.old__price {
+}
+.card__form {
+}
+.card__input-wrapper {
+}
+.card__input {
+}
+.select {
+}
+.card__submit {
+}
+.card__discount {
+}

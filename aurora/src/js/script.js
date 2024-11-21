@@ -40,6 +40,18 @@ var landingFunctions = {
 			}
 		})
 
+		$(".info__btn").click(function(e) {
+			if($(e.target).hasClass("active")) return
+
+			$(".info__btn").removeClass("active")
+			$(this).addClass("active")
+
+			const item = $(this).data("info")
+
+			$(".info__box-item").hide()
+			$(".info__box-" + item).fadeIn(300)
+		})
+
 		// let owl = $('.info__slider').owlCarousel({
 		// 	items: 5,
 		// 	margin: 0,
