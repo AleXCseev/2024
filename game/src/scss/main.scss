@@ -1,0 +1,148 @@
+.main__page {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.main__page-center {
+	h1 {
+		margin-bottom: 50px;
+	}
+}
+
+.main__title {
+	font-family: "Wormbox", sans-serif;
+	text-align: center;
+	font-size: 116px;
+	line-height: normal;
+	color: #fff;
+}
+
+.main__btns {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
+
+.btn {
+	width: auto;
+	height: 140px;
+	background: linear-gradient(90deg, rgba(164,128,48,1) 0%, rgba(248,228,143,1) 50%, rgba(183,152,70,1) 100%);
+	padding: 2px;
+	border: none;
+	box-shadow: 0px 0px 20px 5px rgba(70, 73, 255, 0.7);
+	transition: 0.2s ease;
+	cursor: pointer;
+
+	&:hover {
+		// animation: btn-hover 2s infinite;
+		// box-shadow: 0px 0px 20px 10px rgba(70, 73, 255, 1);
+		box-shadow: 0px 0px 20px 5px #B79846;
+		transform: scale(1.02);
+	}
+
+	span {
+		font-family: "Tactic Sans Extended", sans-serif;
+		font-weight: 400;
+		font-size: 35px;
+		color: #fff;
+		position: relative;
+		z-index: 2;
+	}
+
+	img {
+		position: relative;
+		z-index: 2;
+	}
+}
+
+@keyframes btn-hover {
+	0%, 100% {
+		box-shadow: 0px 0px 20px 5px rgba(70, 73, 255, 0.7);
+	}
+	50% {
+		box-shadow: 0px 0px 40px 5px rgba(70, 73, 255, 1);
+	}
+}
+
+.btn__wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 35px;
+	border: 4px solid #202030;
+	overflow: hidden;
+	position: relative;
+	padding: 0 10px;
+
+	&:before {
+		content: "";
+		width: 200%;
+		height: 100%;
+		background-color: #383a6c;
+		transform-origin: bottom left;
+		transform: rotate(-18deg);
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		z-index: 1;
+	}
+
+	&:after {
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #202030;
+		background-image: url(../img/btn-bg.png);
+		background-repeat: no-repeat;
+		background-position: right bottom;
+	}
+
+}
+
+.btn__rounded {
+	border-radius: 140px;
+	min-width: 430px;
+
+	.btn__wrapper {
+		border-radius: 140px;
+	}
+}
+
+.btn__rectangle {
+	min-width: 310px;
+	border-radius: 20px;
+
+	span {
+		font-size: 20px;
+	}
+
+	.btn__wrapper {
+		gap: 10px;
+		border-radius: 20px;
+	}
+}
+
+.btn__settings {
+	position: fixed;
+	top: 60px;
+	left: 80px;
+}
+
+.btn__statistic {
+	position: fixed;
+	top: 60px;
+	right: 80px;
+}
+
+

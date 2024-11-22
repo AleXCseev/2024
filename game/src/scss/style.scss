@@ -1,0 +1,147 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	font-size: 15px;
+	font-family: 'Tactic Sans Extended', sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+	color: #fff;
+	background: #000;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../img/main-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        // background-image: url(../img/main-bg-blue.png);
+        // background-repeat: no-repeat;
+        // background-position: center;
+        // background-size: cover;
+        background: linear-gradient(0deg, rgba(54,54,232,0.5) 0%, rgba(255,255,255,0) 50%, rgba(54,54,232,0.5) 100%);
+        z-index: -1;
+    }
+}
+
+.bg__light {
+    position: absolute;
+    border-radius: 100%;
+    z-index: -1;
+    filter: blur(10px);
+    transition: 2s linear;
+    animation: pulse 3s ease infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        // transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        // transform: scale(0.8);
+        opacity: 0.5;
+    }
+}
+
+.bg__light-yellow {
+    width: 200px;
+    height: 200px;
+    background-color: #ffb900;
+    box-shadow: 0px 10px 50px 50px rgba(255,185,0,1);
+    top: 68vh;
+    left: 26vw;
+}
+
+.bg__light-green {
+    width: 300px;
+    height: 300px;
+    background-color: #00e93d;
+    box-shadow: 0px 10px 50px 50px rgba(0,233,61,1);
+    top: 28vh;
+    left: 16vw;
+    animation-delay: 1s;
+}
+
+.bg__light-blue {
+    width: 350px;
+    height: 350px;
+    background-color: #00adf9;
+    box-shadow: 0px 10px 50px 50px rgba(0,173,249,1);
+    bottom: -9vh;
+    right: 19vw;
+    animation-delay: 2s;
+}
+
+.bg__light-red {
+    width: 300px;
+    height: 300px;
+    background-color: #ff1513;
+    box-shadow: 0px 10px 50px 50px rgba(255,21,19,1);
+    top: 34vh;
+    right: 16vw;
+    animation-delay: 3s;
+}
+
+
+@import "fonts";
+@import "main";
+@import "modal";
+
+
+@media (max-width: 1480px) {
+   
+}
