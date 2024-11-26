@@ -1,5 +1,6 @@
 .settings__section {
     .modal__block {
+        height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
@@ -36,6 +37,7 @@
     border-top: none;
     border-bottom: none;
     padding: 0 25px;
+    padding-bottom: 50px;
     width: 34%;
 }
 
@@ -230,8 +232,17 @@
     background: transparent;
     cursor: pointer;
     appearance: none;
+    opacity: 0;
 }
 
+.input__range::-moz-range-thumb {
+    height: 100%;
+    width: 0px;
+    background: transparent;
+    cursor: pointer;
+    appearance: none;
+    opacity: 0;
+}
 
 .range__value {
     width: 40px;
@@ -242,4 +253,8 @@
     font-size: 20px;
     margin-left: 10px;
     flex-shrink: 0;
+}
+
+.settings__save {
+    margin-top: auto;
 }

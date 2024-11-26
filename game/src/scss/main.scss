@@ -6,6 +6,111 @@
 	align-items: center;
 	justify-content: center;
 	position: relative;
+	z-index: 2;
+}
+
+.gram__icons {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.gram__icon {
+	position: absolute;
+	width: 72px;
+	height: auto;
+	animation: gram 4s infinite;
+}
+
+@keyframes gram {
+	0% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+	20% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+	50% {
+		opacity: 1;
+		transform: scale(0.8);
+	}
+	80% {
+		opacity: 1;
+		transform: scale(0.8);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.2);
+	}
+	
+}
+
+.gram__icon-1 {
+	top: 504px;
+    right: 502px;
+}
+
+.gram__icon-2 {
+	top: 424px;
+    right: 358px;
+	animation-delay: 1s;
+}
+
+.gram__icon-3 {
+	top: 585px;
+    right: 358px;
+	animation-delay: 2s;
+}
+
+.gram__icon-4 {
+	bottom: 100px;
+    right: 358px;
+	animation-delay: 3s;
+}
+
+.gram__icon-5 {
+    bottom: 180px;
+    right: 502px;
+	animation-delay: 1s;
+}
+
+.gram__icon-6 {
+    bottom: 100px;
+    right: 646px;
+	animation-delay: 3s;
+}
+
+.gram__icon-7 {
+    top: 344px;
+    left: 476px;
+	animation-delay: 2s;
+}
+
+.gram__icon-8 {
+	top: 504px;
+    left: 476px;
+	animation-delay: 1s;
+}
+
+.gram__icon-9 {
+	top: 424px;
+    left: 330px;
+}
+
+.gram__icon-10 {
+	bottom: 260px;
+    left: 620px;
+	animation-delay: 1s;
+}
+
+.gram__icon-11 {
+	bottom: 178px;
+    left: 474px;
+	animation-delay: 3s;
 }
 
 .main__page-center {
@@ -26,7 +131,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 40px;
+	gap: 30px;
 }
 
 .btn {
@@ -160,6 +265,10 @@
 
 	span {
 		font-size: 20px;
+	}
+
+	&:hover {
+		transform: none;
 	}
 }
 

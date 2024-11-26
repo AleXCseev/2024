@@ -9,6 +9,11 @@
     .modal__block {
         height: 100%;
     }
+
+    .game__info-btn {
+        cursor: auto;
+    }
+
 }
 
 .statistic__player-title {
@@ -59,7 +64,7 @@
     border: 4px solid #F8E48F;
     margin-bottom: 40px;
     background-color: #202030;
-    background-image: url(../img/modal-block-bg.png);
+    background-image: url(../img/court.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -74,7 +79,19 @@
         top: 0;
         left: 0;
         border-radius: 15px;
-        background: linear-gradient(0deg, rgba(45,46,125,0.6) 0%, rgba(255,255,255,0) 100%);
+        background: linear-gradient(0deg, rgba(44,47,130,0.7) 0%, rgba(255,255,255,0) 100%);
+        z-index: 1;
+    }
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 15px;
+        background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(32,32,48,1) 60%);
     }
 }
 
@@ -82,6 +99,15 @@
     text-align: center;
     padding: 10px;
     font-size: 16px;
+    position: relative;
+    z-index: 2;
+}
+
+.statistic__table-overflow {
+    max-height: 280px;
+    overflow: auto;
+    position: relative;
+    z-index: 2;
 }
 
 .statistic__table {
@@ -175,24 +201,36 @@
 }
 
 
-.btn__next {
-    min-width: 212px;
-    height: 63px;
-    border-radius: 63px;
+.btn__next, .btn__prev {
+    min-width: 180px;
+    height: 50px;
+    border-radius: 50px;
 
     img {
-        width: 42px;
+        width: 30px;
         height: auto;
     }
 
     span {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .btn__wrapper {
         gap: 10px;
-        border-radius: 63px;
+        border-radius: 50px;
+    }
+
+    &:hover {
+        // box-shadow: 0px 0px 20px 5px #B79846;
+        transform: none;
     }
 }
+
+.btn__prev {
+    img {
+        transform: rotate(180deg);
+    }
+}
+
 
 

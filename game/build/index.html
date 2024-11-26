@@ -17,6 +17,19 @@
         <div class="bg__light bg__light-blue"></div>
         <div class="bg__light bg__light-red"></div>
         <div class="main__page">
+    <div class="gram__icons">
+        <img src="img/gram-icon.png" alt="" class="gram__icon gram__icon-1">
+        <img src="img/gram-icon.png" alt="" class="gram__icon gram__icon-2">
+        <img src="img/gram-icon.png" alt="" class="gram__icon gram__icon-3">
+        <img src="img/gram-icon.png" alt="" class="gram__icon gram__icon-4">
+        <img src="img/gram-icon.png" alt="" class="gram__icon gram__icon-5">
+        <img src="img/gram-icon.png" alt="" class="gram__icon gram__icon-6">
+        <img src="img/gram-icon.png" alt="" class="gram__icon gram__icon-7">
+        <img src="img/gram-icon.png" alt="" class="gram__icon gram__icon-8">
+        <img src="img/gram-icon.png" alt="" class="gram__icon gram__icon-9">
+        <img src="img/gram-icon.png" alt="" class="gram__icon gram__icon-10">
+        <img src="img/gram-icon.png" alt="" class="gram__icon gram__icon-11">
+    </div>
     <button type="button" class="btn btn__rectangle btn__settings modal-open-triggle" data-modal="settings">
         <div class="btn__wrapper">
             <img src="img/icon-settings.png" alt="">
@@ -33,9 +46,8 @@
         <h1 class="main__title">
             GramZone
         </h1>
-
         <div class="main__btns">
-            <button type="button" class="btn btn__rounded">
+            <button type="button" class="btn btn__rounded modal-open-triggle" data-modal="play">
                 <div class="btn__wrapper">
                     <img src="img/icon-play.png" alt="">
                     <span>ИГРАТЬ</span>
@@ -61,6 +73,7 @@
         GramZone
     </h2>
     <div class="modal__wrapper">
+        <div class="modal__border"></div>
         <div class="modal__wrapper-shadow blue"></div>
         <button type="button" class="btn__back">
             <img src="img/arrow-back.png" alt="">
@@ -321,6 +334,7 @@
         GramZone
     </h2>
     <div class="modal__wrapper">
+        <div class="modal__border"></div>
         <div class="modal__wrapper-shadow blue"></div>
         <button type="button" class="btn__back">
             <img src="img/arrow-back.png" alt="">
@@ -497,6 +511,7 @@
         GramZone
     </h2>
     <div class="modal__wrapper">
+        <div class="modal__border"></div>
         <div class="modal__wrapper-shadow blue"></div>
         <button type="button" class="btn__back">
             <img src="img/arrow-back.png" alt="">
@@ -583,68 +598,108 @@
                     <h5 class="statistic__table-title">
                         Количество Игр
                     </h5>
-                    <table class="statistic__table">
-                        <thead>
-                            <tr>
-                                <th>МЕСТО</th>
-                                <th>ИМЯ</th>
-                                <th>ИГРЫ</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1.</td>
-                                <td>
-                                    <img src="img/table-icon.png" alt="">
-                                    <span>KhasanXXX</span>
-                                </td>
-                                <td>480</td>
-                            </tr>
-                            <tr class="active">
-                                <td>2.</td>
-                                <td>
-                                    <img src="img/table-icon.png" alt="">
-                                    NESHIMIR88
-                                </td>
-                                <td>410</td>
-                            </tr>
-                            <tr>
-                                <td>3.</td>
-                                <td>
-                                    <img src="img/table-icon.png" alt="">
-                                    Xxnetro33
-                                </td>
-                                <td>370</td>
-                            </tr>
-                            <tr>
-                                <td>4.</td>
-                                <td>
-                                    <img src="img/table-icon.png" alt="">
-                                    Alexstarwars
-                                </td>
-                                <td>165</td>
-                            </tr>
-                            <tr>
-                                <td>5.</td>
-                                <td>
-                                    <img src="img/table-icon.png" alt="">
-                                    PahatamUA
-                                </td>
-                                <td>95</td>
-                            </tr>
-                            <tr>
-                                <td>6.</td>
-                                <td>
-                                    <img src="img/table-icon.png" alt="">
-                                    CRAZYFROG
-                                </td>
-                                <td>70</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="statistic__table-overflow">
+                        <table class="statistic__table">
+                            <thead>
+                                <tr>
+                                    <th>МЕСТО</th>
+                                    <th>ИМЯ</th>
+                                    <th>ИГРЫ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1.</td>
+                                    <td>
+                                        <img src="img/table-icon.png" alt="">
+                                        <span>KhasanXXX</span>
+                                    </td>
+                                    <td>480</td>
+                                </tr>
+                                <tr class="active">
+                                    <td>2.</td>
+                                    <td>
+                                        <img src="img/table-icon.png" alt="">
+                                        NESHIMIR88
+                                    </td>
+                                    <td>410</td>
+                                </tr>
+                                <tr>
+                                    <td>3.</td>
+                                    <td>
+                                        <img src="img/table-icon.png" alt="">
+                                        Xxnetro33
+                                    </td>
+                                    <td>370</td>
+                                </tr>
+                                <tr>
+                                    <td>4.</td>
+                                    <td>
+                                        <img src="img/table-icon.png" alt="">
+                                        Alexstarwars
+                                    </td>
+                                    <td>165</td>
+                                </tr>
+                                <tr>
+                                    <td>5.</td>
+                                    <td>
+                                        <img src="img/table-icon.png" alt="">
+                                        PahatamUA
+                                    </td>
+                                    <td>95</td>
+                                </tr>
+                                <tr>
+                                    <td>6.</td>
+                                    <td>
+                                        <img src="img/table-icon.png" alt="">
+                                        CRAZYFROG
+                                    </td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>6.</td>
+                                    <td>
+                                        <img src="img/table-icon.png" alt="">
+                                        CRAZYFROG
+                                    </td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>6.</td>
+                                    <td>
+                                        <img src="img/table-icon.png" alt="">
+                                        CRAZYFROG
+                                    </td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>6.</td>
+                                    <td>
+                                        <img src="img/table-icon.png" alt="">
+                                        CRAZYFROG
+                                    </td>
+                                    <td>70</td>
+                                </tr>
+                                <tr>
+                                    <td>6.</td>
+                                    <td>
+                                        <img src="img/table-icon.png" alt="">
+                                        CRAZYFROG
+                                    </td>
+                                    <td>70</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
                 
                 <div class="statistic__next">
+                    <button style="display: none;" type="button" class="btn btn__prev">
+                        <div class="btn__wrapper">
+                            <img src="img/icon-next.png" alt="">
+                            <span>Предидущий</span>
+                        </div>
+                    </button>
                     <p class="statistic__next-text">
                         Топ таблиц
                     </p>
@@ -664,7 +719,8 @@
         GramZone
     </h2>
     <div class="modal__wrapper">
-        <div class="modal__wrapper-shadow blue"></div>
+        <div class="modal__border"></div>
+        <div class="modal__wrapper-shadow main"></div>
         <button type="button" class="btn__back">
             <img src="img/arrow-back.png" alt="">
             <span>Назад</span>
@@ -752,6 +808,11 @@
                         <span class="check__box"></span>
                     </label>
                 </div>
+                <button type="button" class="btn btn__rounded btn__rounded-small settings__save">
+                    <div class="btn__wrapper">
+                        <span>Сохранить</span>
+                    </div>
+                </button>
             </div>
             <div class="settings__block">
                 <h2 class="settings__block-title">
@@ -788,6 +849,152 @@
                         <input type="checkbox" class="checkbox__input">
                         <span class="check__box"></span>
                     </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="modal__section play__section" id="play">
+    <h2 class="main__title">
+        GramZone
+    </h2>
+    <div class="modal__wrapper">
+        <div class="modal__border"></div>
+        <div class="modal__wrapper-shadow blue"></div>
+        <button type="button" class="btn__back">
+            <img src="img/arrow-back.png" alt="">
+            <span>Назад</span>
+        </button>
+        <h3 class="modal__title">
+            ИГРОВОЙ РЕЖИМ
+        </h3>
+        <hr class="modal__divider">
+        <div class="modal__block">
+            <div class="play__block">
+                <h3 class="play__block-title">
+                    Выбор режима
+                </h3>
+                <div class="play__item">
+                    <div class="play__item-info">
+                        <h4 class="play__item-title">
+                            Бесплатно Для Всех
+                        </h4>
+                        <p class="play__item-text">
+                            Режим 1
+                        </p>
+                    </div>
+                    <button type="button" class="btn btn__rounded btn__rounded-small" data-mode="1">
+                        <div class="btn__wrapper">
+                            <span>FFA</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="play__item">
+                    <div class="play__item-info">
+                        <h4 class="play__item-title">
+                            Первый Условный
+                        </h4>
+                        <p class="play__item-text">
+                            Режим 2
+                        </p>
+                    </div>
+                    <button type="button" class="btn btn__rounded btn__rounded-small" data-mode="2">
+                        <div class="btn__wrapper">
+                            <span>Free2earn</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="play__item">
+                    <div class="play__item-info">
+                        <h4 class="play__item-title">
+                            Первый Платный
+                        </h4>
+                        <p class="play__item-text">
+                            Режим 3
+                        </p>
+                    </div>
+                    <button type="button" class="btn btn__rounded btn__rounded-small" data-mode="3">
+                        <div class="btn__wrapper">
+                            <span>Pay2Play</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="play__item">
+                    <div class="play__item-info">
+                        <h4 class="play__item-title">
+                            Королевская Битва
+                        </h4>
+                        <p class="play__item-text">
+                            Режим 4
+                        </p>
+                    </div>
+                    <button type="button" class="btn btn__rounded btn__rounded-small" data-mode="4">
+                        <div class="btn__wrapper">
+                            <span>BR Pay2Play</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="play__info">
+                <div class="play__info-item play__info-item-1" data-mode="1">
+                    <div class="play__info-wrapper">
+                        <h3 class="play__info-title">
+                            Бесплатно для всех
+                        </h3>
+                        <img src="img/play-mode-1.jpg" alt="" class="play__info-img">
+                        <p class="play__info-text">
+                            Этот режим позволяет всем игоркам соревноватся друг с другом без игровых команд. Это беспатный режим, где игроки могут наслаждатся игрой без каких-либо затрат.
+                        </p>
+                        <div class="play__info-btns">
+                            <button type="button" class="play__info-btn" data-complexity="1">
+                                Лёгкий
+                            </button>
+                            <button type="button" class="play__info-btn" data-complexity="2">
+                                Средний
+                            </button>
+                            <button type="button" class="play__info-btn" data-complexity="3">
+                                Сложный
+                            </button>
+                            <button type="button" class="play__info-btn" data-complexity="4">
+                                Экспертный
+                            </button>
+                        </div>
+                        <button type="button" class="btn btn__rounded btn__rounded-small btn__play">
+                            <div class="btn__wrapper">
+                                <span>НАЧАТЬ ИГРУ</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="play__info-item play__info-item-2 active" data-mode="2">
+                    <div class="play__info-wrapper">
+                        <h3 class="play__info-title">
+                            Первый Условный
+                        </h3>
+                        <img src="img/play-mode-2.jpg" alt="" class="play__info-img">
+                        <p class="play__info-text">
+                            В этом режиме можно играть бесплатно и при этом получать вознаграждения, игроки могут зарабатывать награды или внутриигровую валюту, участвуя и достигая определенных целей в игре
+                        </p>
+                        <div class="play__info-btns">
+                            <button type="button" class="play__info-btn" data-complexity="1">
+                                Лёгкий
+                            </button>
+                            <button type="button" class="play__info-btn" data-complexity="2">
+                                Средний
+                            </button>
+                            <button type="button" class="play__info-btn" data-complexity="3">
+                                Сложный
+                            </button>
+                            <button type="button" class="play__info-btn" data-complexity="4">
+                                Экспертный
+                            </button>
+                        </div>
+                        <button type="button" class="btn btn__rounded btn__rounded-small btn__play">
+                            <div class="btn__wrapper">
+                                <span>НАЧАТЬ ИГРУ</span>
+                            </div>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

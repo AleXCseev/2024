@@ -42,12 +42,19 @@ var landingFunctions = {
 
 		$(".modal-open-triggle").click(function() {
 			$(".modal__wrapper-shadow").hide()
+			$(".main__page").hide();
+			$(".main__page").addClass("hide");
+
 			const id = $(this).data("modal");
 			$(`#${id}`).addClass("active");	
+			$(".modal__wrapper-shadow").removeClass().addClass("modal__wrapper-shadow main")
 			$(".modal__wrapper-shadow").delay(500).fadeIn(1000)
 		})	
 
 		$(".btn__back").click(function() {
+			$(".main__page").show();
+			$(".main__page").removeClass("hide");
+			
 			$(this).closest(".modal__section").removeClass("active");
 		})
 
