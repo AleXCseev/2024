@@ -50,6 +50,16 @@ var landingFunctions = {
 		$(".btn__back").click(function() {
 			$(this).closest(".modal__section").removeClass("active");
 		})
+
+		function range() {
+			const value = $(this).val();
+			$(this).closest(".settings__range").find(".range__track").css("width", value + "%");
+			$(this).closest(".settings__range").find(".range__value").text(value + "%");
+		}
+
+		$(".input__range").on("input", range);
+
+		$(".input__range").each(range)
 	},
 
 	animations: function() {

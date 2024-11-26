@@ -17,13 +17,13 @@
         <div class="bg__light bg__light-blue"></div>
         <div class="bg__light bg__light-red"></div>
         <div class="main__page">
-    <button type="button" class="btn btn__rectangle btn__settings">
+    <button type="button" class="btn btn__rectangle btn__settings modal-open-triggle" data-modal="settings">
         <div class="btn__wrapper">
             <img src="img/icon-settings.png" alt="">
             <span>НАСТРОЙКИ</span>
         </div>
     </button>
-    <button type="button" class="btn btn__rectangle btn__statistic">
+    <button type="button" class="btn btn__rectangle btn__statistic modal-open-triggle" data-modal="statistic">
         <div class="btn__wrapper">
             <img src="img/icon-statistics.png" alt="">
             <span>СТАТИСТИКА</span>
@@ -72,143 +72,141 @@
         <hr class="modal__divider">
         <div class="modal__block">
             <div class="modal__main">
-                <div class="modal__main-wrapper">
-                    <h4 class="modal__main-title">
-                        Выбор аватара
-                    </h4>
-                    <div class="modal__avatar-slider owl-carousel">
-                        <div class="modal__avatar-slide avatar__slide-1" data-color="blue">
-                            <div class="modal__avatar">
-                                <img src="img/avatar-blue.png" alt="">
-                            </div>
-                            <p class="modal__avatar-text">
-                                Расса
-                            </p>
-                            <p class="avatar__name">
-                                Астра Пинк
-                            </p>
-                            <p class="modal__avatar-text">
-                                (Фуксиевая Сирена)
-                            </p>
+                <h4 class="modal__main-title">
+                    Выбор аватара
+                </h4>
+                <div class="modal__avatar-slider owl-carousel">
+                    <div class="modal__avatar-slide avatar__slide-1" data-color="blue">
+                        <div class="modal__avatar">
+                            <img src="img/avatar-blue.png" alt="">
                         </div>
-                        <div class="modal__avatar-slide avatar__slide-2" data-color="green">
-                            <div class="modal__avatar">
-                                <img src="img/avatar-green.png" alt="">
-                            </div>
-                            <p class="modal__avatar-text">
-                                Расса
-                            </p>
-                            <p class="avatar__name">
-                                Астра Пинк
-                            </p>
-                            <p class="modal__avatar-text">
-                                (Фуксиевая Сирена)
-                            </p>
-                        </div>
-                        <div class="modal__avatar-slide avatar__slide-3" data-color="pink">
-                            <div class="modal__avatar">
-                                <img src="img/avatar-pink.png" alt="">
-                            </div>
-                            <p class="modal__avatar-text">
-                                Расса
-                            </p>
-                            <p class="avatar__name">
-                                Астра Пинк
-                            </p>
-                            <p class="modal__avatar-text">
-                                (Фуксиевая Сирена)
-                            </p>
-                        </div>
-                        <div class="modal__avatar-slide avatar__slide-4" data-color="purple">
-                            <div class="modal__avatar">
-                                <img src="img/avatar-purple.png" alt="">
-                            </div>
-                            <p class="modal__avatar-text">
-                                Расса
-                            </p>
-                            <p class="avatar__name">
-                                Астра Пинк
-                            </p>
-                            <p class="modal__avatar-text">
-                                (Фуксиевая Сирена)
-                            </p>
-                        </div>
-                        <div class="modal__avatar-slide avatar__slide-5" data-color="red">
-                            <div class="modal__avatar">
-                                <img src="img/avatar-red.png" alt="">
-                            </div>
-                            <p class="modal__avatar-text">
-                                Расса
-                            </p>
-                            <p class="avatar__name">
-                                Астра Пинк
-                            </p>
-                            <p class="modal__avatar-text">
-                                (Фуксиевая Сирена)
-                            </p>
-                        </div>
-                        <div class="modal__avatar-slide avatar__slide-6" data-color="yellow">
-                            <div class="modal__avatar">
-                                <img src="img/avatar-yellow.png" alt="">
-                            </div>
-                            <p class="modal__avatar-text">
-                                Расса
-                            </p>
-                            <p class="avatar__name">
-                                Астра Пинк
-                            </p>
-                            <p class="modal__avatar-text">
-                                (Фуксиевая Сирена)
-                            </p>
-                        </div>
+                        <p class="modal__avatar-text">
+                            Расса
+                        </p>
+                        <p class="avatar__name">
+                            Астра Пинк
+                        </p>
+                        <p class="modal__avatar-text">
+                            (Фуксиевая Сирена)
+                        </p>
                     </div>
-                    <div class="modal__game-info">
-                        <div class="game__info-item">
-                            <div class="game__info-wrapper">
-                                <label for="name" class="input__label">Имя игрока</label>
-                                <input id="name" disabled type="text" placeholder="Имя игрока" value="NESHIMIR88" class="input">
-                            </div>
-                            <button type="button" class="game__info-btn">
-                                <img src="img/edit-name-icon.png" alt="">
-                            </button>
+                    <div class="modal__avatar-slide avatar__slide-2" data-color="green">
+                        <div class="modal__avatar">
+                            <img src="img/avatar-green.png" alt="">
                         </div>
-                        <div class="game__info-item">
-                            <div class="game__info-wrapper">
-                                <label for="level" class="input__label">Уровень игрока</label>
-                                <input id="level" disabled type="text" placeholder="Уровень игрока" value="375/1030" class="input">
-                            </div>
-                            <button type="button" class="game__info-btn">
-                                <img src="img/edit-level-icon.png" alt="">
-                            </button>
-                        </div>
-                        <div class="game__info-item">
-                            <div class="game__info-wrapper">
-                                <label for="experience" class="input__label">Очки опыта</label>
-                                <input id="experience" disabled type="text" placeholder="Очки опыта" value="100/250xp" class="input">
-                            </div>
-                            <button type="button" class="game__info-btn">
-                                <img src="img/edit-experience-icon.png" alt="">
-                            </button>
-                        </div>
+                        <p class="modal__avatar-text">
+                            Расса
+                        </p>
+                        <p class="avatar__name">
+                            Астра Пинк
+                        </p>
+                        <p class="modal__avatar-text">
+                            (Фуксиевая Сирена)
+                        </p>
                     </div>
-                    <div class="modal__profile-btns">
-                        <button type="button" class="btn btn__modal">
-                            <div class="btn__wrapper">
-                                <span>Изменить Аватар</span>
-                            </div>
-                        </button>
-                        <button type="button" class="btn btn__modal">
-                            <div class="btn__wrapper">
-                                <span>Редактировать Профиль</span>
-                            </div>
-                        </button>
-                        <button type="button" class="btn btn__modal">
-                            <div class="btn__wrapper">
-                                <img src="img/wallet-icon.png" alt="">
-                                <span>Wallet Connect</span>
-                            </div>
+                    <div class="modal__avatar-slide avatar__slide-3" data-color="pink">
+                        <div class="modal__avatar">
+                            <img src="img/avatar-pink.png" alt="">
+                        </div>
+                        <p class="modal__avatar-text">
+                            Расса
+                        </p>
+                        <p class="avatar__name">
+                            Астра Пинк
+                        </p>
+                        <p class="modal__avatar-text">
+                            (Фуксиевая Сирена)
+                        </p>
+                    </div>
+                    <div class="modal__avatar-slide avatar__slide-4" data-color="purple">
+                        <div class="modal__avatar">
+                            <img src="img/avatar-purple.png" alt="">
+                        </div>
+                        <p class="modal__avatar-text">
+                            Расса
+                        </p>
+                        <p class="avatar__name">
+                            Астра Пинк
+                        </p>
+                        <p class="modal__avatar-text">
+                            (Фуксиевая Сирена)
+                        </p>
+                    </div>
+                    <div class="modal__avatar-slide avatar__slide-5" data-color="red">
+                        <div class="modal__avatar">
+                            <img src="img/avatar-red.png" alt="">
+                        </div>
+                        <p class="modal__avatar-text">
+                            Расса
+                        </p>
+                        <p class="avatar__name">
+                            Астра Пинк
+                        </p>
+                        <p class="modal__avatar-text">
+                            (Фуксиевая Сирена)
+                        </p>
+                    </div>
+                    <div class="modal__avatar-slide avatar__slide-6" data-color="yellow">
+                        <div class="modal__avatar">
+                            <img src="img/avatar-yellow.png" alt="">
+                        </div>
+                        <p class="modal__avatar-text">
+                            Расса
+                        </p>
+                        <p class="avatar__name">
+                            Астра Пинк
+                        </p>
+                        <p class="modal__avatar-text">
+                            (Фуксиевая Сирена)
+                        </p>
+                    </div>
+                </div>
+                <div class="modal__game-info">
+                    <div class="game__info-item">
+                        <div class="game__info-wrapper">
+                            <label for="name" class="input__label">Имя игрока</label>
+                            <input id="name" disabled type="text" placeholder="Имя игрока" value="NESHIMIR88" class="input">
+                        </div>
+                        <button type="button" class="game__info-btn">
+                            <img src="img/edit-name-icon.png" alt="">
                         </button>
                     </div>
+                    <div class="game__info-item">
+                        <div class="game__info-wrapper">
+                            <label for="level" class="input__label">Уровень игрока</label>
+                            <input id="level" disabled type="text" placeholder="Уровень игрока" value="375/1030" class="input">
+                        </div>
+                        <button type="button" class="game__info-btn">
+                            <img src="img/edit-level-icon.png" alt="">
+                        </button>
+                    </div>
+                    <div class="game__info-item">
+                        <div class="game__info-wrapper">
+                            <label for="experience" class="input__label">Очки опыта</label>
+                            <input id="experience" disabled type="text" placeholder="Очки опыта" value="100/250xp" class="input">
+                        </div>
+                        <button type="button" class="game__info-btn">
+                            <img src="img/edit-experience-icon.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="modal__profile-btns">
+                    <button type="button" class="btn btn__modal">
+                        <div class="btn__wrapper">
+                            <span>Изменить Аватар</span>
+                        </div>
+                    </button>
+                    <button type="button" class="btn btn__modal">
+                        <div class="btn__wrapper">
+                            <span>Редактировать Профиль</span>
+                        </div>
+                    </button>
+                    <button type="button" class="btn btn__modal">
+                        <div class="btn__wrapper">
+                            <img src="img/wallet-icon.png" alt="">
+                            <span>Wallet Connect</span>
+                        </div>
+                    </button>
                 </div>
             </div>
             <div class="modal__info-slider owl-carousel">
@@ -313,6 +311,483 @@
                         превращают их в крипто-монеты,
                         усиливая своих союзников.
                     </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="modal__section shop__section" id="shop">
+    <h2 class="main__title">
+        GramZone
+    </h2>
+    <div class="modal__wrapper">
+        <div class="modal__wrapper-shadow blue"></div>
+        <button type="button" class="btn__back">
+            <img src="img/arrow-back.png" alt="">
+            <span>Назад</span>
+        </button>
+        <h3 class="modal__title">
+            МАГАЗИН
+        </h3>
+        <hr class="modal__divider">
+        <div class="modal__block">
+            <div class="modal__main">
+                <h4 class="modal__main-title">
+                    Выбор скинов
+                </h4>
+                <div class="modal__avatar-slider owl-carousel">
+                    <div class="modal__avatar-slide avatar__slide-1" data-color="blue">
+                        <div class="modal__avatar">
+                            <img src="img/avatar-blue.png" alt="">
+                        </div>
+                        <p class="modal__avatar-text">
+                            Расса
+                        </p>
+                        <p class="avatar__name">
+                            Астра Пинк
+                        </p>
+                        <p class="modal__avatar-text">
+                            (Фуксиевая Сирена)
+                        </p>
+                    </div>
+                    <div class="modal__avatar-slide avatar__slide-2" data-color="green">
+                        <div class="modal__avatar">
+                            <img src="img/avatar-green.png" alt="">
+                        </div>
+                        <p class="modal__avatar-text">
+                            Расса
+                        </p>
+                        <p class="avatar__name">
+                            Астра Пинк
+                        </p>
+                        <p class="modal__avatar-text">
+                            (Фуксиевая Сирена)
+                        </p>
+                    </div>
+                    <div class="modal__avatar-slide avatar__slide-3" data-color="pink">
+                        <div class="modal__avatar">
+                            <img src="img/avatar-pink.png" alt="">
+                        </div>
+                        <p class="modal__avatar-text">
+                            Расса
+                        </p>
+                        <p class="avatar__name">
+                            Астра Пинк
+                        </p>
+                        <p class="modal__avatar-text">
+                            (Фуксиевая Сирена)
+                        </p>
+                    </div>
+                    <div class="modal__avatar-slide avatar__slide-4" data-color="purple">
+                        <div class="modal__avatar">
+                            <img src="img/avatar-purple.png" alt="">
+                        </div>
+                        <p class="modal__avatar-text">
+                            Расса
+                        </p>
+                        <p class="avatar__name">
+                            Астра Пинк
+                        </p>
+                        <p class="modal__avatar-text">
+                            (Фуксиевая Сирена)
+                        </p>
+                    </div>
+                    <div class="modal__avatar-slide avatar__slide-5" data-color="red">
+                        <div class="modal__avatar">
+                            <img src="img/avatar-red.png" alt="">
+                        </div>
+                        <p class="modal__avatar-text">
+                            Расса
+                        </p>
+                        <p class="avatar__name">
+                            Астра Пинк
+                        </p>
+                        <p class="modal__avatar-text">
+                            (Фуксиевая Сирена)
+                        </p>
+                    </div>
+                    <div class="modal__avatar-slide avatar__slide-6" data-color="yellow">
+                        <div class="modal__avatar">
+                            <img src="img/avatar-yellow.png" alt="">
+                        </div>
+                        <p class="modal__avatar-text">
+                            Расса
+                        </p>
+                        <p class="avatar__name">
+                            Астра Пинк
+                        </p>
+                        <p class="modal__avatar-text">
+                            (Фуксиевая Сирена)
+                        </p>
+                    </div>
+                </div>
+                <button type="button" class="btn btn__price">
+                    <div class="btn__wrapper">
+                        <img src="img/icon-cart-add.png" alt="">
+                        <span>1.99 $</span>
+                    </div>
+                </button>
+            </div>
+            <div class="shop__amplifiers">
+                <h3 class="amplifiers__title">
+                    Усилители
+                </h3>
+                <div class="amplifiers__wrapper">
+                    <div class="amplifire__item">
+                        <div class="amplifire__info"></div>
+                        <button type="button" class="btn btn__price">
+                            <div class="btn__wrapper">
+                                <img src="img/icon-cart-add.png" alt="">
+                                <span>0.99 $</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="amplifire__item">
+                        <div class="amplifire__info"></div>
+                        <button type="button" class="btn btn__price">
+                            <div class="btn__wrapper">
+                                <img src="img/icon-cart-add.png" alt="">
+                                <span>0.99 $</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="amplifire__item">
+                        <div class="amplifire__info"></div>
+                        <button type="button" class="btn btn__price">
+                            <div class="btn__wrapper">
+                                <img src="img/icon-cart-add.png" alt="">
+                                <span>0.99 $</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="amplifire__item">
+                        <div class="amplifire__info"></div>
+                        <button type="button" class="btn btn__price">
+                            <div class="btn__wrapper">
+                                <img src="img/icon-cart-add.png" alt="">
+                                <span>0.99 $</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="amplifire__item">
+                        <div class="amplifire__info"></div>
+                        <button type="button" class="btn btn__price">
+                            <div class="btn__wrapper">
+                                <img src="img/icon-cart-add.png" alt="">
+                                <span>0.99 $</span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="amplifire__item">
+                        <div class="amplifire__info"></div>
+                        <button type="button" class="btn btn__price">
+                            <div class="btn__wrapper">
+                                <img src="img/icon-cart-add.png" alt="">
+                                <span>0.99 $</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="modal__section statistic__section" id="statistic">
+    <h2 class="main__title">
+        GramZone
+    </h2>
+    <div class="modal__wrapper">
+        <div class="modal__wrapper-shadow blue"></div>
+        <button type="button" class="btn__back">
+            <img src="img/arrow-back.png" alt="">
+            <span>Назад</span>
+        </button>
+        <h3 class="modal__title">
+            СТАТИСТИКА
+        </h3>
+        <hr class="modal__divider">
+        <div class="modal__block">
+            <div class="modal__main">
+                <h4 class="statistic__player-title">
+                    Ваш аватар
+                </h4>
+                <div class="statistic__main-wrapper">
+                    <div class="statistic__player">
+                        <div class="modal__avatar">
+                            <img src="img/avatar-blue.png" alt="">
+                        </div>
+                        <p class="modal__avatar-text">
+                            Расса
+                        </p>
+                        <p class="avatar__name">
+                            Астра Пинк
+                        </p>
+                        <p class="modal__avatar-text">
+                            (Фуксиевая Сирена)
+                        </p>
+                    </div>
+                    <div class="modal__game-info">
+                        <div class="game__info-item">
+                            <div class="game__info-wrapper">
+                                <label for="name" class="input__label">Имя игрока</label>
+                                <input id="name" disabled type="text" placeholder="Имя игрока" value="NESHIMIR88" class="input">
+                            </div>
+                            <button type="button" class="game__info-btn">
+                                <img src="img/edit-name-icon.png" alt="">
+                            </button>
+                        </div>
+                        <div class="game__info-item">
+                            <div class="game__info-wrapper">
+                                <label for="level" class="input__label">Общий счёт</label>
+                                <input id="level" disabled type="text" placeholder="Общий счёт" value="10030xp" class="input">
+                            </div>
+                            <button type="button" class="game__info-btn">
+                                <img src="img/edit-check-icon.png" alt="">
+                            </button>
+                        </div>
+                        <div class="game__info-item">
+                            <div class="game__info-wrapper">
+                                <label for="experience" class="input__label">Время игры</label>
+                                <input id="experience" disabled type="text" placeholder="Время игры" value="250 ч 48 мин" class="input">
+                            </div>
+                            <button type="button" class="game__info-btn">
+                                <img src="img/edit-time-icon.png" alt="">
+                            </button>
+                        </div>
+                        <div class="game__info-item">
+                            <div class="game__info-wrapper">
+                                <label for="experience" class="input__label">Количество побед</label>
+                                <input id="experience" disabled type="text" placeholder="Количество побед" value="76" class="input">
+                            </div>
+                            <button type="button" class="game__info-btn">
+                                <img src="img/edit-win-icon.png" alt="">
+                            </button>
+                        </div>
+                        <div class="game__info-item">
+                            <div class="game__info-wrapper">
+                                <label for="experience" class="input__label">Количество поглощений</label>
+                                <input id="experience" disabled type="text" placeholder="Количество поглощений" value="3956" class="input">
+                            </div>
+                            <button type="button" class="game__info-btn">
+                                <img src="img/edit-eat-icon.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__statistic">
+                <h4 class="statistic__player-title">
+                    Таблица лидеров
+                </h4>
+                <div class="statistic__table-wrapper">
+                    <h5 class="statistic__table-title">
+                        Количество Игр
+                    </h5>
+                    <table class="statistic__table">
+                        <thead>
+                            <tr>
+                                <th>МЕСТО</th>
+                                <th>ИМЯ</th>
+                                <th>ИГРЫ</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>
+                                    <img src="img/table-icon.png" alt="">
+                                    <span>KhasanXXX</span>
+                                </td>
+                                <td>480</td>
+                            </tr>
+                            <tr class="active">
+                                <td>2.</td>
+                                <td>
+                                    <img src="img/table-icon.png" alt="">
+                                    NESHIMIR88
+                                </td>
+                                <td>410</td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>
+                                    <img src="img/table-icon.png" alt="">
+                                    Xxnetro33
+                                </td>
+                                <td>370</td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>
+                                    <img src="img/table-icon.png" alt="">
+                                    Alexstarwars
+                                </td>
+                                <td>165</td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>
+                                    <img src="img/table-icon.png" alt="">
+                                    PahatamUA
+                                </td>
+                                <td>95</td>
+                            </tr>
+                            <tr>
+                                <td>6.</td>
+                                <td>
+                                    <img src="img/table-icon.png" alt="">
+                                    CRAZYFROG
+                                </td>
+                                <td>70</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="statistic__next">
+                    <p class="statistic__next-text">
+                        Топ таблиц
+                    </p>
+                    <button type="button" class="btn btn__next">
+                        <div class="btn__wrapper">
+                            <img src="img/icon-next.png" alt="">
+                            <span>Следующий</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="modal__section settings__section" id="settings">
+    <h2 class="main__title">
+        GramZone
+    </h2>
+    <div class="modal__wrapper">
+        <div class="modal__wrapper-shadow blue"></div>
+        <button type="button" class="btn__back">
+            <img src="img/arrow-back.png" alt="">
+            <span>Назад</span>
+        </button>
+        <h3 class="modal__title">
+            НАСТРОЙКИ
+        </h3>
+        <hr class="modal__divider">
+        <div class="modal__block">
+            <div class="settings__block">
+                <h2 class="settings__block-title">
+                    Управление
+                </h2>
+                <div class="settings__title">
+                    <img src="img/icon-controll.png" alt="">
+                    <span>Выбор управления</span>
+                </div>
+                <div class="settings__items-wrapper">
+                    <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="check__box"></span>
+                        <span class="checkbox__text">Джойстик</span>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="check__box"></span>
+                        <span class="checkbox__text">Сенсор</span>
+                    </label>
+                </div>
+                <div class="settings__img-wrapper">
+                    <img src="img/icon-joystick.png" alt="">
+                    <img src="img/icon-sensor.png" alt="">
+                </div>
+                <div class="settings__title">
+                    <img src="img/icon-setting.png" alt="">
+                    <span>Настройка сенсорного управления</span>
+                </div>
+                <div class="settings__items-wrapper">
+                    <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input" checked>
+                        <span class="check__box"></span>
+                        <span class="checkbox__text">Слева</span>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="check__box"></span>
+                        <span class="checkbox__text">Больше</span>
+                    </label>
+                </div>
+                <div class="settings__items-wrapper">
+                    <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="check__box"></span>
+                        <span class="checkbox__text">Справа</span>
+                    </label>
+                    <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="check__box"></span>
+                        <span class="checkbox__text">Меньше</span>
+                    </label>
+                </div>
+            </div>
+            <div class="settings__block settings__block-center">
+                <h2 class="settings__block-title">
+                    Графика
+                </h2>
+                <div class="settings__title">
+                    <img src="img/icon-prize.png" alt="">
+                    <span>Качество графики</span>
+                </div>
+                <div class="settings__range">
+                    <div class="input__range-wrapper">
+                        <input type="range" class="input__range" value="0" min="0" max="100">
+                        <span class="range__track"></span>
+                    </div>
+                    <span class="range__value">00%</span>
+                </div>
+                <div class="settings__title">
+                    <img src="img/icon-magic.png" alt="">
+                    <span>Анимации элементов</span>
+                </div>
+                <div class="settings__items-wrapper">
+                    <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="check__box"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="settings__block">
+                <h2 class="settings__block-title">
+                    Звук
+                </h2>
+                <div class="settings__title">
+                    <img src="img/icon-volume.png" alt="">
+                    <span>Громкость музыки</span>
+                </div>
+                <div class="settings__range">
+                    <div class="input__range-wrapper">
+                        <input type="range" class="input__range" value="0" min="0" max="100">
+                        <span class="range__track"></span>
+                    </div>
+                    <span class="range__value">00%</span>
+                </div>
+                <div class="settings__title">
+                    <img src="img/icon-effect.png" alt="">
+                    <span>Громкость звуковых эффектов</span>
+                </div>
+                <div class="settings__range">
+                    <div class="input__range-wrapper">
+                        <input type="range" class="input__range" value="80" min="0" max="100">
+                        <span class="range__track"></span>
+                    </div>
+                    <span class="range__value">00%</span>
+                </div>
+                <div class="settings__title">
+                    <img src="img/icon-off.png" alt="">
+                    <span>Включить/выключить</span>
+                </div>
+                <div class="settings__items-wrapper">
+                    <label class="checkbox">
+                        <input type="checkbox" class="checkbox__input">
+                        <span class="check__box"></span>
+                    </label>
                 </div>
             </div>
         </div>

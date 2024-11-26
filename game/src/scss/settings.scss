@@ -1,0 +1,245 @@
+.settings__section {
+    .modal__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 30px;
+    }
+    .modal__wrapper {
+        padding: 30px 30px 50px;
+    }
+}
+
+.settings__block {
+    width: 33%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+
+    &:first-child {
+        padding: 0;
+        padding-right: 20px;
+    }
+
+    &:last-child {
+        padding-left: 20px;
+    }
+}
+
+.settings__block-center {
+    border: 1px solid #353662;
+    border-top: none;
+    border-bottom: none;
+    padding: 0 25px;
+    width: 34%;
+}
+
+.settings__block-title {
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+.settings__title {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    color: #fff;
+
+    img {
+        margin-right: 10px;
+    }
+}
+
+.settings__items-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.checkbox {
+    width: 50%;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.check__box {
+    width: 90px;
+    height: 40px;
+    display: block;
+    position: relative;
+    margin-right: 10px;
+    box-sizing: border-box;
+    border-radius: 40px;
+    border: 2px solid rgba(183,152,70,1);
+    overflow: hidden;
+
+    &:before {
+        content: "";
+        width: 37px;
+        height: 37px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        background-image: url(../img/icon-checkbox.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transition: 0.3s ease;
+        z-index: 1;
+        box-sizing: border-box;
+    }
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 40px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background-color: #464891;
+        transform: translateX(-100%);
+        transition: 0.3s ease;
+        box-sizing: border-box;
+    }
+}
+
+.checkbox__input {
+    appearance: none;
+    position: absolute;
+}
+
+.checkbox__text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 16px;
+}
+
+.checkbox__input:checked + .check__box {
+    &:before {
+        transform: translate(48px, -50%);
+    }
+    &:after {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.settings__img-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+
+    img {
+        width: 83px;
+        height: auto;
+    }
+
+    &:before {
+        content: "";
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #30315d;
+    }
+}
+
+.settings__range {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input__range-wrapper {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    background: #202030;
+    border-radius: 40px;
+    border: 2px solid rgba(183,152,70,1);
+    overflow: hidden;
+    flex-shrink: 1;
+}
+
+.input__range {
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    width: 100%;
+    flex-shrink: 1;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+
+    &:focus {
+        background-color: transparent;
+        outline: none;
+    }
+}
+
+.range__track {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #464891;
+    // border-radius: 40px;
+}
+
+.input__range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 100%;
+}
+
+.input__range::-webkit-slider-thumb {
+    height: 100%;
+    width: 0px;
+    background: transparent;
+    cursor: pointer;
+    appearance: none;
+}
+
+
+.range__value {
+    width: 40px;
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+    flex-shrink: 0;
+}
