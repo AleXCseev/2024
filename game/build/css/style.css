@@ -238,6 +238,11 @@ body {
   position: absolute;
   width: 72px;
   height: auto;
+  opacity: 0;
+  -webkit-transform: scale(0.6);
+      -ms-transform: scale(0.6);
+       -o-transform: scale(0.6);
+          transform: scale(0.6);
   -webkit-animation: gram 4s infinite;
           animation: gram 4s infinite;
 }
@@ -1928,6 +1933,26 @@ body {
   font-weight: 700;
   font-size: 14px;
   cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.play__info-btn:hover {
+  opacity: 0.8;
+}
+.play__info-btn.active {
+  opacity: 1;
+}
+.play__info-btn.active:hover {
+  opacity: 1;
+}
+.play__info-btn:disabled {
+  cursor: auto;
+  opacity: 0.2;
+}
+.play__info-btn:disabled:hover {
+  opacity: 0.2;
 }
 
 @media (max-width: 1920px) {

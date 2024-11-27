@@ -66,7 +66,33 @@ var landingFunctions = {
 
 		$(".input__range").on("input", range);
 
-		$(".input__range").each(range)
+		$(".input__range").each(range);
+
+		$(".btn__mode").hover(
+			function() {
+				const mode = $(this).data("mode");
+				$(".play__info-item").hide().removeClass("active");
+				$(`.play__info-item[data-mode="${mode}"]`).fadeIn(300).addClass("active");
+				$(`.play__info-item[data-mode="${mode}"]`).find(".play__info-text").show()
+				$(`.play__info-item[data-mode="${mode}"]`).find(".play__info-btns").hide(300)
+			}, 
+			function() {
+
+			}
+		)
+
+		$(".btn__mode").click(function() {
+			const mode = $(this).data("mode");
+			// $(".play__info-item").hide().removeClass("active");
+			// $(`.play__info-item[data-mode="${mode}"]`).fadeIn(300).addClass("active");
+			$(`.play__info-item[data-mode="${mode}"]`).find(".play__info-text").hide()
+			$(`.play__info-item[data-mode="${mode}"]`).find(".play__info-btns").fadeIn(300)
+		})
+
+		$(".play__info-btn").click(function() {
+			$(".play__info-btn").removeClass("active");
+			$(this).addClass("active");
+		})
 	},
 
 	animations: function() {

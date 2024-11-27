@@ -13,7 +13,7 @@
             ИГРОВОЙ РЕЖИМ
         </h3>
         <hr class="modal__divider">
-        <div class="modal__block">
+        <div class="modal__block"> 
             <div class="play__block">
                 <h3 class="play__block-title">
                     Выбор режима
@@ -27,7 +27,7 @@
                             Режим 1
                         </p>
                     </div>
-                    <button type="button" class="btn btn__rounded btn__rounded-small" data-mode="1">
+                    <button type="button" class="btn btn__rounded btn__rounded-small btn__mode" data-mode="1">
                         <div class="btn__wrapper">
                             <span>FFA</span>
                         </div>
@@ -42,7 +42,7 @@
                             Режим 2
                         </p>
                     </div>
-                    <button type="button" class="btn btn__rounded btn__rounded-small" data-mode="2">
+                    <button type="button" class="btn btn__rounded btn__rounded-small btn__mode" data-mode="2">
                         <div class="btn__wrapper">
                             <span>Free2earn</span>
                         </div>
@@ -57,7 +57,7 @@
                             Режим 3
                         </p>
                     </div>
-                    <button type="button" class="btn btn__rounded btn__rounded-small" data-mode="3">
+                    <button type="button" class="btn btn__rounded btn__rounded-small btn__mode" data-mode="3">
                         <div class="btn__wrapper">
                             <span>Pay2Play</span>
                         </div>
@@ -72,7 +72,7 @@
                             Режим 4
                         </p>
                     </div>
-                    <button type="button" class="btn btn__rounded btn__rounded-small" data-mode="4">
+                    <button type="button" class="btn btn__rounded btn__rounded-small btn__mode" data-mode="4">
                         <div class="btn__wrapper">
                             <span>BR Pay2Play</span>
                         </div>
@@ -80,7 +80,7 @@
                 </div>
             </div>
             <div class="play__info">
-                <div class="play__info-item play__info-item-1" data-mode="1">
+                <div class="play__info-item play__info-item-1 active" data-mode="1">
                     <div class="play__info-wrapper">
                         <h3 class="play__info-title">
                             Бесплатно для всех
@@ -96,7 +96,7 @@
                             <button type="button" class="play__info-btn" data-complexity="2">
                                 Средний
                             </button>
-                            <button type="button" class="play__info-btn" data-complexity="3">
+                            <button type="button" disabled class="play__info-btn" data-complexity="3">
                                 Сложный
                             </button>
                             <button type="button" class="play__info-btn" data-complexity="4">
@@ -110,7 +110,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="play__info-item play__info-item-2 active" data-mode="2">
+                <div class="play__info-item play__info-item-2" data-mode="2">
                     <div class="play__info-wrapper">
                         <h3 class="play__info-title">
                             Первый Условный
@@ -126,7 +126,67 @@
                             <button type="button" class="play__info-btn" data-complexity="2">
                                 Средний
                             </button>
-                            <button type="button" class="play__info-btn" data-complexity="3">
+                            <button type="button" disabled class="play__info-btn" data-complexity="3">
+                                Сложный
+                            </button>
+                            <button type="button" class="play__info-btn" data-complexity="4">
+                                Экспертный
+                            </button>
+                        </div>
+                        <button type="button" class="btn btn__rounded btn__rounded-small btn__play">
+                            <div class="btn__wrapper">
+                                <span>НАЧАТЬ ИГРУ</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="play__info-item play__info-item-3" data-mode="3">
+                    <div class="play__info-wrapper">
+                        <h3 class="play__info-title">
+                            Первый Платный
+                        </h3>
+                        <img src="img/play-mode-3.jpg" alt="" class="play__info-img">
+                        <p class="play__info-text">
+                            В этом режиме игроки платят за участие. Режим предлагает эксклюзивный контент и преимужества, недоступные в бесплатных режимах. Оплата за вход даёт доступ к дополнительным возможностям и наградам.
+                        </p>
+                        <div class="play__info-btns">
+                            <button type="button" class="play__info-btn" data-complexity="1">
+                                Лёгкий
+                            </button>
+                            <button type="button" class="play__info-btn" data-complexity="2">
+                                Средний
+                            </button>
+                            <button type="button" disabled class="play__info-btn" data-complexity="3">
+                                Сложный
+                            </button>
+                            <button type="button" class="play__info-btn" data-complexity="4">
+                                Экспертный
+                            </button>
+                        </div>
+                        <button type="button" class="btn btn__rounded btn__rounded-small btn__play">
+                            <div class="btn__wrapper">
+                                <span>НАЧАТЬ ИГРУ</span>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="play__info-item play__info-item-4" data-mode="4">
+                    <div class="play__info-wrapper">
+                        <h3 class="play__info-title">
+                            Королевская битва
+                        </h3>
+                        <img src="img/play-mode-4.jpg" alt="" class="play__info-img">
+                        <p class="play__info-text">
+                            Этот режим является вариацией платного режима, где большое количество игроков соревнуются до тех пор, пока не останется оди победитель. Входной взнос может способствовать увеличению потенциальных выигрышей или призов.
+                        </p>
+                        <div class="play__info-btns">
+                            <button type="button" class="play__info-btn active" data-complexity="1">
+                                Лёгкий
+                            </button>
+                            <button type="button" class="play__info-btn" data-complexity="2">
+                                Средний
+                            </button>
+                            <button type="button" disabled class="play__info-btn" data-complexity="3">
                                 Сложный
                             </button>
                             <button type="button" class="play__info-btn" data-complexity="4">
