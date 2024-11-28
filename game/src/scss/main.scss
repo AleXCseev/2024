@@ -11,8 +11,8 @@
 
 .gram__icons {
 	position: absolute;
-	width: 1920px;
-	height: 1080px;
+	width: 3200px;
+    height: 1800px;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -20,7 +20,7 @@
 
 .gram__icon {
 	position: absolute;
-	width: 72px;
+	width: 3.1%;
 	height: auto;
 	opacity: 0;
 	transform: scale(0.6);
@@ -52,79 +52,79 @@
 }
 
 .gram__icon-1 {
-	top: 504px;
-    right: 502px;
+	top: 47.3%;
+    right: 26.5%;
 }
 
 .gram__icon-2 {
-	top: 424px;
-    right: 358px;
+	top: 39.6%;
+    right: 19%;
 	animation-delay: 1s;
 }
 
 .gram__icon-3 {
-	top: 585px;
-    right: 358px;
+	top: 54.6%;
+    right: 19%;
 	animation-delay: 2s;
 }
 
 .gram__icon-4 {
-	bottom: 100px;
-    right: 358px;
+	bottom: 9.8%;
+    right: 19%;
 	animation-delay: 3s;
 }
 
 .gram__icon-5 {
-    bottom: 180px;
-    right: 502px;
+	bottom: 17.4%;
+    right: 26.5%;
 	animation-delay: 1s;
 }
 
 .gram__icon-6 {
-    bottom: 100px;
-    right: 646px;
+    bottom: 9.8%;
+    right: 34%;
 	animation-delay: 3s;
 }
 
 .gram__icon-7 {
-    top: 344px;
-    left: 476px;
+	top: 32.3%;
+    left: 25%;
 	animation-delay: 2s;
 }
 
 .gram__icon-8 {
-	top: 504px;
-    left: 476px;
+	top: 47.2%;
+    left: 25%;
 	animation-delay: 1s;
 }
 
 .gram__icon-9 {
-	top: 424px;
-    left: 330px;
+	top: 39.8%;
+    left: 17.5%;
 }
 
 .gram__icon-10 {
-	bottom: 260px;
-    left: 620px;
+	bottom: 17%;
+    left: 25%;
 	animation-delay: 1s;
 }
 
 .gram__icon-11 {
-	bottom: 178px;
-    left: 474px;
+	bottom: 9.8%;
+    left: 17.5%;
 	animation-delay: 3s;
 }
 
 .main__page-center {
 	h1 {
-		margin-bottom: 50px;
+		margin-bottom: 2.5vw;
 	}
 }
 
 .main__title {
 	font-family: "Wormbox", sans-serif;
 	text-align: center;
-	font-size: 116px;
+	font-size: 6vw;
 	line-height: normal;
 	color: #fff;
 }
@@ -133,12 +133,12 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 30px;
+	gap: 1.5vw;
 }
 
 .btn {
 	width: auto;
-	height: 140px;
+	height: 7.3vw;
 	background: linear-gradient(90deg, rgba(164,128,48,1) 0%, rgba(248,228,143,1) 50%, rgba(183,152,70,1) 100%);
 	padding: 2px;
 	border: none;
@@ -156,10 +156,11 @@
 	span {
 		font-family: "Tactic Sans Extended", sans-serif;
 		font-weight: 400;
-		font-size: 35px;
+		font-size: 1.9vw;
 		color: #fff;
 		position: relative;
 		z-index: 2;
+		user-select: none;
 	}
 
 	img {
@@ -183,7 +184,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 35px;
+	gap: 1.8vw;
 	border: 4px solid #202030;
 	overflow: hidden;
 	position: relative;
@@ -216,47 +217,59 @@
 }
 
 .btn__rounded {
-	border-radius: 140px;
-	min-width: 430px;
+	border-radius: 8vw;
+	min-width: 22.4vw;
+
+	img {
+		width: auto;
+		height: auto;
+		max-width: 4vw;
+		max-height: 5vw;
+	}
 
 	.btn__wrapper {
-		border-radius: 140px;
+		border-radius: 8vw;
 	}
 }
 
 .btn__rectangle {
-	min-width: 310px;
-	border-radius: 20px;
+	min-width: 17vw;
+	border-radius: 1vw;
 
 	span {
-		font-size: 20px;
+		font-size: 1.1vw;
+	}
+
+	img {
+		width: 5.2vw;
+		height: auto;
 	}
 
 	.btn__wrapper {
 		gap: 10px;
-		border-radius: 20px;
+		border-radius: 1vw;
 	}
 }
 
 .btn__settings {
 	position: fixed;
-	top: 60px;
-	left: 80px;
+	top: 3vw;
+	left: 4vw;
 }
 
 .btn__statistic {
 	position: fixed;
-	top: 60px;
-	right: 80px;
+	top: 3vw;
+	right: 4vw;
 }
 
 .btn__price {
-	min-width: 182px;
-	height: 60px;
-	border-radius: 60px;
+	min-width: 10vw;
+    height: 3.2vw;
+    border-radius: 4vw;
 
 	img {
-		width: 38px;
+		width: 2vw;
 		height: auto;
 	}
 
@@ -266,7 +279,7 @@
 	}
 
 	span {
-		font-size: 20px;
+		font-size: 1.1vw;
 	}
 
 	&:hover {
@@ -274,3 +287,17 @@
 	}
 }
 
+
+
+
+
+.test__btns {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	width: auto;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
+}
