@@ -1,11 +1,19 @@
 var landingFunctions = {
 	init: function() {
+		this.preloader();
 		this.carousel();
 		this.animations();
 		this.modals();
 		this.play();
 		this.range();
 	}, 
+
+	preloader: function() {
+		setTimeout(function() {
+			$(".preload__section").hide();
+			$(".main__page").addClass("active");
+		}, 5000);
+	},
 
 	carousel: function() {
 		
@@ -56,10 +64,10 @@ var landingFunctions = {
 	},
 
 	animations: function() {
-		function moveRandomlyWithTransform(element) {
+		function moveRandomlyWithTransform(element, step) {
 			const $element = $(element);
 		
-			const distance = Math.floor(Math.random() * 51) + 100;
+			const distance = Math.floor(Math.random() * 51) + step;
 		
 			const angle = Math.random() * 360;
 		
@@ -73,9 +81,17 @@ var landingFunctions = {
 
 		setInterval(function() {
 			$(".bg__light").each(function() {
-				moveRandomlyWithTransform($(this));
+				moveRandomlyWithTransform($(this), 100);
 			})
 		}, 2000);
+
+		$(".character__icon").each(function() {
+			moveRandomlyWithTransform($(this), 0);
+		})
+
+		// setInterval(function() {
+			
+		// }, 3000);
 	},
 
 	modals: function() {

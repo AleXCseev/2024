@@ -95,7 +95,7 @@ body {
   content: "";
   width: 60%;
   height: 60%;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -117,7 +117,7 @@ body {
 }
 
 .bg__light {
-  position: absolute;
+  position: fixed;
   border-radius: 100%;
   z-index: -1;
   -webkit-filter: blur(10px);
@@ -212,6 +212,12 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "Radiotechnika";
+  src: url("../fonts/Radiotechnika.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 .main__page {
   width: 100%;
   height: 100%;
@@ -230,6 +236,15 @@ body {
           justify-content: center;
   position: relative;
   z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease;
+}
+.main__page.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .gram__icons {
@@ -339,8 +354,6 @@ body {
 .gram__icon-4 {
   bottom: 9.8%;
   right: 19%;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
 }
 
 .gram__icon-5 {
@@ -599,6 +612,10 @@ body {
           align-items: center;
   gap: 10px;
 }
+.test__btns a {
+  text-decoration: none;
+  color: #fff;
+}
 
 .modal__section {
   position: absolute;
@@ -621,7 +638,7 @@ body {
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center;
-  padding: 10px 0;
+  padding: 0.5vw 0;
   opacity: 0;
   -webkit-transition: 0.2s ease;
   -o-transition: 0.2s ease;
@@ -2364,6 +2381,358 @@ body {
   position: fixed;
   bottom: 5vw;
   right: 12vw;
+}
+
+.components__page {
+  height: auto;
+  min-height: 100vh;
+  overflow: auto;
+  background-attachment: fixed;
+}
+
+.components__wrapper {
+  width: 100%;
+  height: auto;
+  padding: 5vw;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  gap: 1vw;
+}
+
+.game__chat, .rating__block {
+  width: 43.65vw;
+  height: auto;
+  max-height: 100%;
+  position: relative;
+  z-index: 2;
+  border-radius: 2.5vw;
+  border: 4px solid #FFB745;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 4vw 2.3vw;
+}
+
+.chat__title {
+  font-size: 2.1vw;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0.5vw;
+}
+
+.game__chat-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+  gap: 1.1vw;
+  max-height: 30vw;
+  overflow: auto;
+}
+
+.chat__item {
+  width: 100%;
+  height: auto;
+}
+
+.chat__name {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 1.9vw;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 0.5vw;
+  padding: 0 0.5vw;
+}
+
+.chat__item-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  gap: 2.5vw;
+}
+
+.chat__message {
+  width: 100%;
+  height: auto;
+  padding: 1.6vw;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 42px;
+  text-align: left;
+  color: #fff;
+  background-color: #3b3b6d;
+  border-radius: 20px;
+  line-height: normal;
+}
+.chat__message::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: -6px;
+  right: -11px;
+  background-image: url(../img/chat-bg-blue.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.chat__photo {
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+  width: 4.4vw;
+  height: auto;
+}
+.chat__photo img {
+  width: 100%;
+  height: auto;
+}
+
+.chat__item-answer .chat__name {
+  text-align: right;
+}
+.chat__item-answer .chat__item-wrapper {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.chat__item-answer .chat__message {
+  background-color: #a37b3b;
+}
+.chat__item-answer .chat__message:before {
+  background-image: url(../img/chat-bg-red.png);
+  right: auto;
+  left: -11px;
+}
+
+.rating__block {
+  padding: 3vw 2.3vw;
+}
+.rating__block .game__chat-wrapper {
+  max-height: 20.5vw;
+}
+
+.rating__top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-bottom: 3.5vw;
+}
+
+.rating__title {
+  font-weight: 400;
+  font-size: 3.4vw;
+  color: #fff;
+}
+
+.rating__prize-main {
+  width: 11.8vw;
+}
+
+.rating__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+  gap: 2.3vw;
+  padding-right: 4vw;
+}
+
+.rating__list-item {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-weight: 400;
+  font-size: 2.1vw;
+  color: #fff;
+}
+.rating__list-item.active {
+  color: #ffca6e;
+}
+
+.preload__section {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.preload__section .gram__icon-1 {
+  top: 24.4%;
+  right: 49%;
+}
+.preload__section .gram__icon-2 {
+  top: 9.5%;
+  right: 33.9%;
+}
+.preload__section .gram__icon-3 {
+  top: 9.5%;
+  right: auto;
+  left: 32.5%;
+}
+.preload__section .gram__icon-4 {
+  bottom: 39.4%;
+  right: 18.9%;
+}
+.preload__section .gram__icon-5 {
+  bottom: 39.4%;
+  right: auto;
+  left: 17.5%;
+}
+
+.character__icon {
+  position: absolute;
+  height: auto;
+  -webkit-transition: 4s ease-out;
+  -o-transition: 4s ease-out;
+  transition: 4s ease-out;
+  border-radius: 100%;
+}
+
+.character__icon-1 {
+  top: 12%;
+  right: 13%;
+  width: 12%;
+  box-shadow: 0px 0px 30px 0px #fb0022;
+}
+
+.character__icon-2 {
+  bottom: 10%;
+  right: 30%;
+  width: 10%;
+  box-shadow: 0px 0px 30px 0px #008ce3;
+}
+
+.character__icon-3 {
+  top: 22%;
+  left: 16%;
+  width: 8%;
+  box-shadow: 0px 0px 30px 0px #00b200;
+}
+
+.character__icon-4 {
+  bottom: 16%;
+  left: 26%;
+  width: 6%;
+  box-shadow: 0px 0px 30px 0px #ff13d4;
+}
+
+.character__icon-5 {
+  bottom: 24%;
+  right: 10%;
+  width: 4%;
+  box-shadow: 0px 0px 30px 0px #ffbd00;
+}
+
+.preloader__center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  gap: 1vw;
+  margin-top: 4vw;
+}
+
+.preloader__title {
+  font-family: "Wormbox", sans-serif;
+  text-align: center;
+  font-size: 11.5vw;
+  line-height: normal;
+  color: #fff;
+}
+
+.preloader__info {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-radius: 5vw;
+  border: 2px solid #ffcb38;
+  padding: 0.6vw 2vw;
+}
+
+.preloader__info-text {
+  font-family: "Radiotechnika", sans-serif;
+  font-size: 1vw;
+  color: #fff;
+  letter-spacing: 0.5em;
+  line-height: 1;
+}
+
+.preloader__info-divider {
+  width: 1px;
+  height: 2vw;
+  background-color: #ffce44;
+  margin: 0 1.1vw;
 }
 
 @media (max-width: 1920px) {

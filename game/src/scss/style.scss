@@ -86,7 +86,7 @@ body {
         content: "";
         width: 60%;
         height: 60%;
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -108,7 +108,7 @@ body {
 }
 
 .bg__light {
-    position: absolute;
+    position: fixed;
     border-radius: 100%;
     z-index: -1;
     filter: blur(10px);
@@ -166,7 +166,6 @@ body {
     animation-delay: 3s;
 }
 
-
 @import "fonts";
 @import "main";
 @import "modal";
@@ -176,6 +175,8 @@ body {
 @import "play";
 @import "game-over";
 @import "exit";
+@import "components";
+@import "preloader";
 
 
 @media (max-width: 1920px) {

@@ -7,6 +7,14 @@
 	justify-content: center;
 	position: relative;
 	z-index: 2;
+	opacity: 0;
+	visibility: hidden;
+	transition: 1s ease;
+
+	&.active {
+		opacity: 1;
+		visibility: visible;
+	}
 }
 
 .gram__icons {
@@ -16,6 +24,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	// z-index: 2;
 }
 
 .gram__icon {
@@ -71,7 +80,7 @@
 .gram__icon-4 {
 	bottom: 9.8%;
     right: 19%;
-	animation-delay: 3s;
+	// animation-delay: 3s;
 }
 
 .gram__icon-5 {
@@ -300,4 +309,9 @@
 	justify-content: flex-start;
 	align-items: center;
 	gap: 10px;
+
+	a {
+		text-decoration: none;
+		color: #fff;
+	}
 }

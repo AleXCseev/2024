@@ -1,0 +1,176 @@
+.components__page {
+    height: auto;
+    min-height: 100vh;
+    overflow: auto;
+    background-attachment: fixed;
+}
+
+.components__wrapper {
+    width: 100%;
+    height: auto;
+    padding: 5vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+
+.game__chat, .rating__block {
+    width: 43.65vw;
+    height: auto;
+    max-height: 100%;
+    position: relative;
+    z-index: 2;
+    border-radius: 2.5vw;
+    border: 4px solid #FFB745;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 4vw 2.3vw;
+}
+
+.chat__title {
+    font-size: 2.1vw;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0.5vw;
+}
+
+.game__chat-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.1vw;
+    max-height: 30vw;
+    overflow: auto;
+}
+
+.chat__item {
+    width: 100%;
+    height: auto;
+}
+
+.chat__name {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 1.9vw;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 0.5vw;
+    padding: 0 0.5vw;
+}
+
+.chat__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5vw;
+}
+
+.chat__message {
+    width: 100%;
+    height: auto;
+    padding: 1.6vw;
+    position: relative;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 42px;
+    text-align: left;
+    color: #fff;
+    background-color: #3b3b6d;
+    border-radius: 20px;
+    line-height: normal;
+
+    &::before {
+        content: "";
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        bottom: -6px;
+        right: -11px;
+        background-image: url(../img/chat-bg-blue.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.chat__photo {
+    flex-shrink: 0;
+    width: 4.4vw;
+    height: auto;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.chat__item-answer {
+    .chat__name {
+        text-align: right;
+    }
+    .chat__item-wrapper {
+        flex-direction: row-reverse;
+    }
+
+    .chat__message {
+        background-color: #a37b3b;
+
+        &:before {
+            background-image: url(../img/chat-bg-red.png);
+            right: auto;
+            left: -11px;
+        }
+    }
+}
+
+
+.rating__block {
+    padding: 3vw 2.3vw;
+
+    .game__chat-wrapper {
+        max-height: 20.5vw;
+    }
+}
+
+.rating__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.5vw;
+}
+
+.rating__title {
+    font-weight: 400;
+    font-size: 3.4vw;
+    color: #fff;
+}
+
+.rating__prize-main {
+    width: 11.8vw;
+}
+
+.rating__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.3vw;
+    padding-right: 4vw;
+}
+
+.rating__list-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 2.1vw;
+    color: #fff;
+
+    &.active {
+        color: #ffca6e;
+    }
+}
+
+
