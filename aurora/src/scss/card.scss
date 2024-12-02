@@ -47,6 +47,10 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 85px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .card__left {
@@ -73,6 +77,12 @@
         height: auto;
         transition: 0.3s ease;
     }
+
+    &:hover {
+        img {
+            transform: scale(1.05);
+        }
+    }
 }
 
 .card__photos {
@@ -88,39 +98,174 @@
     height: auto;
     border-radius: 20px;
     overflow: hidden;
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 
     img {
         width: 100%;
         height: auto;
         transition: 0.3s ease;
     }
+
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
 }
 
 .card__content {
+    width: 517px;
+    height: auto;
+    flex-shrink: 0;
 }
+
 .card__title {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 15px;
 }
+
 .card__info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 7px;
+
+    span {
+        font-weight: 500;
+        font-size: 18px;
+        color: #fff;
+        flex-shrink: 0;
+        line-height: normal;
+    }
 }
+
 .divider {
+    width: 100%;
+    height: auto;
+    flex-shrink: 1;
+    border-bottom: 1px dotted #fff;
+    margin: 0 3px;
 }
+
 .card__info-bold {
+    font-weight: 800;
+    font-size: 18px;
+    text-align: right;
+    color: #fff;
 }
+
 .price {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    flex-shrink: 0;
+
+    .new__price {
+        font-family: "Unbounded", sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+        text-align: center;
+        color: #5086d5;
+        margin-right: 6px;
+    }
+    
+    .old__price {
+        font-weight: 800;
+        font-size: 18px;
+        text-decoration: line-through;
+        text-align: center;
+        color: #fff;
+    }
 }
-.new__price {
-}
-.old__price {
-}
+
 .card__form {
+    width: 100%;
+    height: auto;
+    padding-top: 8px;
 }
+
 .card__input-wrapper {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
 }
+
 .card__input {
+    width: 100%;
+    height: 46px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    background: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: #141924;
 }
-.select {
+
+.select__wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 46px;
+        height: 46px;
+        background-color:#d9d9d9;
+        background-image: url(../img/tringle.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 10px;
+        top: 0;
+        right: 0;
+        pointer-events: none;
+    }
 }
+
 .card__submit {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background: #5086d5;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover {
+        background-color: #fff;
+        color: #141924;
+    }
 }
+
 .card__discount {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+    margin-top: 17px;
+
+    span {
+        font-weight: 800;
+        color: #5086d5;
+    }
 }
