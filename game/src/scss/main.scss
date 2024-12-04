@@ -6,7 +6,7 @@
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	z-index: 2;
+	z-index: 10;
 	opacity: 0;
 	visibility: hidden;
 	transition: 1s ease;
@@ -19,17 +19,17 @@
 
 .gram__icons {
 	position: absolute;
-	width: 3200px;
-    height: 1800px;
+	width: 100vw;
+    height: 56.25vw;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	// z-index: 2;
+	z-index: -1;
 }
 
 .gram__icon {
 	position: absolute;
-	width: 3.1%;
+	width: 3.8%;
 	height: auto;
 	opacity: 0;
 	transform: scale(0.6);
@@ -61,79 +61,78 @@
 }
 
 .gram__icon-1 {
-	top: 47.3%;
-    right: 26.5%;
+	top: 40%;
+    right: 27.6%;
 }
 
 .gram__icon-2 {
-	top: 39.6%;
-    right: 19%;
+	top: 33.3%;
+    right: 21%;
 	animation-delay: 1s;
 }
 
 .gram__icon-3 {
-	top: 54.6%;
-    right: 19%;
+	top: 46.8%;
+    right: 21%;
 	animation-delay: 2s;
 }
 
 .gram__icon-4 {
-	bottom: 9.8%;
-    right: 19%;
-	// animation-delay: 3s;
+	bottom: 6%;
+    right: 21%;
 }
 
 .gram__icon-5 {
-	bottom: 17.4%;
-    right: 26.5%;
+	bottom: 6%;
+    right: 34.5%;
 	animation-delay: 1s;
 }
 
 .gram__icon-6 {
-    bottom: 9.8%;
-    right: 34%;
+    bottom: 12.8%;
+    right: 27.6%;
 	animation-delay: 3s;
 }
 
 .gram__icon-7 {
-	top: 32.3%;
-    left: 25%;
+	top: 33.3%;
+    left: 21.2%;
 	animation-delay: 2s;
 }
 
 .gram__icon-8 {
-	top: 47.2%;
-    left: 25%;
+	top: 47%;
+    left: 21.2%;
 	animation-delay: 1s;
 }
 
 .gram__icon-9 {
-	top: 39.8%;
-    left: 17.5%;
+	top: 40%;
+    left: 14.5%;
 }
 
 .gram__icon-10 {
-	bottom: 17%;
-    left: 25%;
+	bottom: 19.6%;
+    left: 21.2%;
 	animation-delay: 1s;
 }
 
 .gram__icon-11 {
-	bottom: 9.8%;
-    left: 17.5%;
+	bottom: 12.8%;
+    left: 14.5%;
 	animation-delay: 3s;
 }
 
 .main__page-center {
 	h1 {
-		margin-bottom: 2.5vw;
+		margin-bottom: 2vw;
 	}
 }
 
 .main__title {
 	font-family: "Wormbox", sans-serif;
 	text-align: center;
-	font-size: 6vw;
+	font-size: 5vw;
 	line-height: normal;
 	color: #fff;
 }
@@ -142,18 +141,27 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 1.5vw;
+	gap: 1vw;
+
+	.btn__rounded {
+		.btn__wrapper {
+			&:after {
+				background-image: linear-gradient(150deg, rgba(255, 255, 255, 0) 70%, rgba(69, 73, 255, 0.8) 100%);
+			}
+		}
+	}
 }
 
 .btn {
 	width: auto;
-	height: 7.3vw;
+	height: 6vw;
 	background: linear-gradient(90deg, rgba(164,128,48,1) 0%, rgba(248,228,143,1) 50%, rgba(183,152,70,1) 100%);
 	padding: 2px;
 	border: none;
 	box-shadow: 0px 0px 20px 5px rgba(70, 73, 255, 0.7);
 	transition: 0.2s ease;
 	cursor: pointer;
+	will-change: transform;
 
 	&:hover {
 		// animation: btn-hover 2s infinite;
@@ -162,10 +170,19 @@
 		transform: scale(1.02);
 	}
 
+	&.active {
+		box-shadow: 0px 0px 20px 5px #B79846;
+	}
+
+	&:active {
+		box-shadow: 0px 0px 20px 5px #B79846;
+		transform: scale(1.02);
+	}
+
 	span {
 		font-family: "Tactic Sans Extended", sans-serif;
 		font-weight: 400;
-		font-size: 1.9vw;
+		font-size: 1.6vw;
 		color: #fff;
 		position: relative;
 		z-index: 2;
@@ -193,7 +210,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 1.8vw;
+	gap: 1.5vw;
 	border: 4px solid #202030;
 	overflow: hidden;
 	position: relative;
@@ -226,31 +243,34 @@
 }
 
 .btn__rounded {
-	border-radius: 8vw;
-	min-width: 22.4vw;
+	border-radius: 7vw;
+	min-width: 18vw;
 
 	img {
 		width: auto;
 		height: auto;
-		max-width: 4vw;
-		max-height: 5vw;
+		max-width: 3vw;
+		max-height: 4vw;
 	}
 
 	.btn__wrapper {
-		border-radius: 8vw;
+		border-radius: 7vw;
+
+		
 	}
 }
 
 .btn__rectangle {
-	min-width: 17vw;
+	min-width: 12vw;
 	border-radius: 1vw;
+	height: 5vw;
 
 	span {
-		font-size: 1.1vw;
+		font-size: 0.8vw;
 	}
 
 	img {
-		width: 5.2vw;
+		width: 3.6vw;
 		height: auto;
 	}
 
@@ -262,42 +282,39 @@
 
 .btn__settings {
 	position: fixed;
-	top: 3vw;
-	left: 4vw;
+	top: 2vw;
+	left: 3vw;
 }
 
 .btn__statistic {
 	position: fixed;
-	top: 3vw;
-	right: 4vw;
+	top: 2vw;
+	right: 3vw;
 }
 
 .btn__price {
-	min-width: 10vw;
-    height: 3.2vw;
+	min-width: 9vw;
+    height: 2.8vw;
     border-radius: 4vw;
 
 	img {
-		width: 2vw;
+		width: 1.6vw;
 		height: auto;
 	}
 
 	.btn__wrapper {
 		gap: 10px;
-		border-radius: 60px;
+		border-radius: 4vw;
 	}
 
 	span {
-		font-size: 1.1vw;
+		font-size: 0.9vw;
 	}
 
 	&:hover {
 		transform: none;
 	}
 }
-
-
-
 
 
 .test__btns {

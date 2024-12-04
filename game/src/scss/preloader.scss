@@ -11,30 +11,30 @@
     align-items: center;
 
     .gram__icon-1 {
-        top: 24.4%;
-        right: 49%;
+        top: 19.4%;
+        right: 48%;
     }
 
     .gram__icon-2 {
-        top: 9.5%;
-        right: 33.9%;
+        top: 6.5%;
+        right: 34.6%;
     }
 
     .gram__icon-3 {
-        top: 9.5%;
+        top: 6.5%;
         right: auto;
-        left: 32.5%;
+        left: 34.6%;
     }
 
     .gram__icon-4 {
-        bottom: 39.4%;
-        right: 18.9%;
+        bottom: 33.4%;
+        right: 20.9%;
     }
 
     .gram__icon-5 {
-        bottom: 39.4%;
+        bottom: 33.4%;
         right: auto;
-        left: 17.5%;
+        left: 21.3%;
     }
 }
 
@@ -53,31 +53,31 @@
 // }
 
 .character__icon-1 {
-    top: 12%;
-    right: 13%;
-    width: 12%;
+    top: 14%;
+    right: 14%;
+    width: 10%;
     box-shadow: 0px 0px 30px 0px #fb0022;
     
 }
 
 .character__icon-2 {
-    bottom: 10%;
+    bottom: 14%;
     right: 30%;
-    width: 10%;
+    width: 8%;
     box-shadow: 0px 0px 30px 0px #008ce3;
 }
 
 .character__icon-3 {
-    top: 22%;
-    left: 16%;
-    width: 8%;
+    top: 24%;
+    left: 18%;
+    width: 6%;
     box-shadow: 0px 0px 30px 0px #00b200;
 }
 
 .character__icon-4 {
     bottom: 16%;
     left: 26%;
-    width: 6%;
+    width: 5%;
     box-shadow: 0px 0px 30px 0px #ff13d4;
 }
 
@@ -93,14 +93,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1vw;
-    margin-top: 4vw;
+    gap: 0.8vw;
+    margin-top: 3.2vw;
 }
 
 .preloader__title {
     font-family: "Wormbox", sans-serif;
 	text-align: center;
-    font-size: 11.5vw;
+    font-size: 9vw;
 	line-height: normal;
 	color: #fff;
 }
@@ -111,14 +111,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5vw;
+    border-radius: 4vw;
     border: 2px solid #ffcb38;
-    padding: 0.6vw 2vw;
+    padding: 0.45vw 1.6vw;
 }
 
 .preloader__info-text {
     font-family: "Radiotechnika", sans-serif;
-    font-size: 1vw;
+    font-size: 0.8vw;
     color: #fff;
     letter-spacing: 0.5em;
     line-height: 1;
@@ -126,9 +126,9 @@
 
 .preloader__info-divider {
     width: 1px;
-    height: 2vw;
+    height: 1.6vw;
     background-color: #ffce44;
-    margin: 0 1.1vw;
+    margin: 0 0.9vw;
 }
 
 

@@ -13,9 +13,50 @@ var landingFunctions = {
 			$(".preload__section").hide();
 			$(".main__page").addClass("active");
 		}, 5000);
+
+		setTimeout(function() {
+			$(".bg__light").addClass("show");
+		}, 500)
+		
 	},
 
 	carousel: function() {
+		function initialize(){
+			if($(window).width() < 500) {
+			  	$(".amplifiers__wrapper").addClass("owl-carousel").owlCarousel({
+					items: 1,
+					margin: 0,
+					dots: false,
+					dotsEach: false,
+					nav: true,
+					loop: true,
+					mouseDrag: false,
+					touchDrag: false,
+					animateOut: 'fadeOut',
+					responsive: {
+						0: {
+							mouseDrag: true,
+							touchDrag: true,
+						},
+						1025: {
+							mouseDrag: false,
+							touchDrag: false,
+						}
+					}
+				});
+			} else {
+				$(".amplifiers__wrapper").owlCarousel('destroy');
+			}
+		}
+
+		var id;
+
+		$(window).resize( function() {
+			clearTimeout(id);
+			id = setTimeout(initialize, 500);
+		});
+
+		initialize();
 		
 		const owl = $('.modal__avatar-slider').owlCarousel({
 			items: 1,
@@ -26,7 +67,17 @@ var landingFunctions = {
 			loop: true,
 			mouseDrag: false,
 			touchDrag: false,
-			animateOut: 'fadeOut'
+			animateOut: 'fadeOut',
+			responsive: {
+				0: {
+					mouseDrag: true,
+					touchDrag: true,
+				},
+				1025: {
+					mouseDrag: false,
+					touchDrag: false,
+				}
+			}
 		});
 
 		const owlInfo = $('.modal__info-slider').owlCarousel({
@@ -88,10 +139,6 @@ var landingFunctions = {
 		$(".character__icon").each(function() {
 			moveRandomlyWithTransform($(this), 0);
 		})
-
-		// setInterval(function() {
-			
-		// }, 3000);
 	},
 
 	modals: function() {
@@ -131,13 +178,24 @@ var landingFunctions = {
 	},
 
 	play: function() {
+
+		if($(window).width() <= 1080) {
+			$(".btn__mode").eq(0).addClass("active");
+		}
+
 		$(".btn__mode").hover(
 			function() {
+				$(".btn__mode").removeClass("active");
 				const mode = $(this).data("mode");
 				$(".play__info-item").hide().removeClass("active");
 				$(`.play__info-item[data-mode="${mode}"]`).fadeIn(300).addClass("active");
 				$(`.play__info-item[data-mode="${mode}"]`).find(".play__info-text").show()
-				$(`.play__info-item[data-mode="${mode}"]`).find(".play__info-btns").hide(300)
+
+				if($(window).width() <= 1080) {
+					$(`.play__info-item[data-mode="${mode}"]`).find(".play__info-btns").show()
+				} else {
+					$(`.play__info-item[data-mode="${mode}"]`).find(".play__info-btns").hide(300)
+				}
 			}, 
 			function() {
 
@@ -146,8 +204,17 @@ var landingFunctions = {
 
 		$(".btn__mode").click(function() {
 			const mode = $(this).data("mode");
+			$(".btn__mode").removeClass("active");
+			$(this).addClass("active");
+
+			if($(window).width() <= 1080) {
+				$(`.play__info-item[data-mode="${mode}"]`).find(".play__info-text").show()
+				return
+			}	
+
 			$(`.play__info-item[data-mode="${mode}"]`).find(".play__info-text").hide()
 			$(`.play__info-item[data-mode="${mode}"]`).find(".play__info-btns").fadeIn(300)
+			
 		})
 
 		$(".play__info-btn").click(function() {

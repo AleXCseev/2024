@@ -8,29 +8,33 @@
 
     .modal__block {
         height: 100%;
+        align-items: stretch;
     }
 
     .game__info-btn {
         cursor: auto;
     }
 
+    .modal__main {
+        width: 29vw;
+    }
 }
 
 .statistic__player-title {
-    width: 12.5vw;
+    width: 10vw;
     text-align: center;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
-    font-size: 1.2vw;
+    font-size: 1vw;
     color: #fff;
-    margin-bottom: 1.1vw;
+    margin-bottom: 0.9vw;
 }
 
 .statistic__main-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 2.3vw;
+    gap: 1.8vw;
 
     .game__info-item {
         margin-bottom: 5px;
@@ -38,7 +42,7 @@
 }
 
 .statistic__player {
-    width: 12.5vw;
+    width: 10vw;
     height: auto;
 
     .modal__avatar {
@@ -47,7 +51,7 @@
 }
 
 .modal__statistic {
-    width: 21.5vw;
+    width: 17.2vw;
     height: auto;
     position: relative;
     z-index: 1;
@@ -59,17 +63,17 @@
 
 .statistic__table-wrapper {
     width: 100%;
-    height: auto;
+    height: 25.6vw;
     border-radius: 15px;
     border: 4px solid #F8E48F;
-    margin-bottom: 2vw;
+    // margin-bottom: 2vw;
     background-color: #202030;
     background-image: url(../img/court.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
-    padding-bottom: 1vw;
+    // padding-bottom: 1vw;
 
     &:before {
         content: "";
@@ -104,7 +108,7 @@
 }
 
 .statistic__table-overflow {
-    max-height: 14.3vw;
+    max-height: 23vw;
     overflow: auto;
     position: relative;
     z-index: 2;
@@ -112,7 +116,7 @@
 
 .statistic__table {
     width: 100%;
-    height: auto;
+    height: 100%;
 
     thead {
         width: 100%;

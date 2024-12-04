@@ -4,10 +4,10 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        padding-top: 1.5vw;
+        padding-top: 1.2vw;
     }
     .modal__wrapper {
-        padding: 1.5vw 1.5vw 2.5vw;
+        padding: 1.2vw 1.2vw 2vw;
     }
 }
 
@@ -24,11 +24,11 @@
 
     &:first-child {
         padding: 0;
-        padding-right: 1vw;
+        padding-right: 0.8vw;
     }
 
     &:last-child {
-        padding-left: 1vw;
+        padding-left: 0.8vw;
     }
 }
 
@@ -36,16 +36,16 @@
     border: 1px solid #353662;
     border-top: none;
     border-bottom: none;
-    padding: 0 1.25vw;
-    padding-bottom: 2.5vw;
+    padding: 0 1vw;
+    padding-bottom: 2vw;
     width: 34%;
 }
 
 .settings__block-title {
-    font-size: 1.2vw;
+    font-size: 0.9vw;
     text-align: center;
     color: #fff;
-    margin-bottom: 3vw;
+    margin-bottom: 2.3vw;
 }
 
 .settings__title {
@@ -54,14 +54,19 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 20px;
-    font-size: 0.75vw;
+    margin-bottom: 1vw;
+    font-size: 0.6vw;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     color: #fff;
 
     img {
-        margin-right: 0.5vw;
+        width: auto;
+        height: auto;
+        object-fit: cover;
+        max-width: 2vw;
+        max-height: 3vw;
+        margin-right: 0.4vw;
     }
 }
 
@@ -70,8 +75,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 1vw;
-    gap: 0.5vw;
+    margin-bottom: 0.8vw;
+    gap: 0.4vw;
 }
 
 .checkbox {
@@ -85,20 +90,21 @@
 }
 
 .check__box {
-    width: 4.6vw;
-    height: 2vw;
+    width: 3.8vw;
+    height: 1.6vw;
     display: block;
     position: relative;
-    margin-right: 0.5vw;
+    margin-right: 0.4vw;
     box-sizing: border-box;
-    border-radius: 2vw;
+    border-radius: 1.6vw;
     border: 2px solid rgba(183,152,70,1);
     overflow: hidden;
+    will-change: transform;
 
     &:before {
         content: "";
-        width: 1.9vw;
-        height: 1.9vw;
+        width: 1.5vw;
+        height: 1.5vw;
         position: absolute;
         top: 50%;
         left: 0;
@@ -108,7 +114,7 @@
         background-position: center;
         background-size: contain;
         transition: 0.3s ease;
-        z-index: 1;
+        z-index: 2;
         box-sizing: border-box;
     }
 
@@ -116,7 +122,7 @@
         content: "";
         width: 100%;
         height: 100%;
-        border-radius: 2vw;
+        border-radius: 1.6vw;
         position: absolute;
         top: 0;
         left: 0;
@@ -137,13 +143,13 @@
     font-family: "Raleway", sans-serif;
     font-weight: 500;
     color: #fff;
-    font-size: 0.8vw;
+    font-size: 0.65vw;
     user-select: none;
 }
 
 .checkbox__input:checked + .check__box {
     &:before {
-        transform: translate(2.45vw, -50%);
+        transform: translate(2.15vw, -50%);
     }
     &:after {
         transform: translateX(0%);
@@ -157,10 +163,10 @@
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-    margin-bottom: 0.5vw;
+    margin-bottom: 0.4vw;
 
     img {
-        width: 4.3vw;
+        width: 3.8vw;
         height: auto;
     }
 
@@ -181,18 +187,19 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    margin-bottom: 1vw;
+    margin-bottom: 0.8vw;
 }
 
 .input__range-wrapper {
     width: 100%;
-    height: 2vw;
+    height: 1.6vw;
     position: relative;
     background: #202030;
-    border-radius: 2vw;
+    border-radius: 1.6vw;
     border: 2px solid rgba(183,152,70,1);
     overflow: hidden;
     flex-shrink: 1;
+    will-change: transform;
 }
 
 .input__range {
@@ -246,17 +253,21 @@
 }
 
 .range__value {
-    width: 2vw;
+    width: 1.6vw;
     display: inline-block;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
     color: #fff;
-    font-size: 1vw;
-    margin-left: 0.5vw;
+    font-size: 0.8vw;
+    margin-left: 0.4vw;
     flex-shrink: 0;
     user-select: none;
 }
 
 .settings__save {
     margin-top: auto;
+
+    &:hover {
+        transform: scale(1.03);
+    }
 }

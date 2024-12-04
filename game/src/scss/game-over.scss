@@ -1,9 +1,9 @@
 .game-over__section {
     .modal__wrapper {
-        width: 54vw;
+        width: 44vw;
     }
     .modal__main {
-        width: 34vw;
+        width: 27vw;
         padding-bottom: 0;
     }
     .modal__block {
@@ -13,21 +13,21 @@
         flex-wrap: wrap;
     }
     .modal__main:before {
-        right: -2vw;
+        right: -1.6vw;
     }
     .modal__game-info {
-        width: 19.5vw;
+        width: 15.6vw;
     }
 }
 
 .game-over__result {
     position: relative;
     z-index: 2;
-    width: 11.5vw;
+    width: 10.6vw;
     height: auto;
 
     .statistic__player-title {
-        margin-bottom: 2.5vw;
+        margin-bottom: 2vw;
     }
 }
 
@@ -37,30 +37,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1.5vw;
+    margin-top: 1.2vw;
     gap: 0.2vw;
 }
 
 .result__text {
     font-family: "Raleway", sans-serif;
-    font-size: 1vw;
+    font-size: 0.9vw;
     font-weight: 500;
     color: #fff;
 }
 
 .result__number {
-    width: 3.3vw;
-    height: 2.5vw;
+    width: 2.8vw;
+    height: 2.1vw;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #202030;
     border: 1px solid #494954;
     font-family: "Raleway", sans-serif;
-    font-size: 1vw;
+    font-size: 0.8vw;
     font-weight: 500;
     color: #fff;
-    border-radius: 0.5vw;
+    border-radius: 0.4vw;
     flex-shrink: 0;
 }
 
@@ -70,26 +70,26 @@
     justify-content: space-around;
     position: relative;
     z-index: 2;
-    margin-top: 3vw;
+    margin-top: 2.3vw;
 }
 
 .btn__game-over {
-    width: 13.1vw;
-    height: 5vw;
+    width: 10.6vw;
+    height: 4vw;
 
     span {
         text-align: center;
-        font-size: 1vw;
+        font-size: 0.8vw;
     }
 
     img {
         width: auto;
-        height: 2.6vw;
+        height: 2.1vw;
     }
 
     .btn__wrapper {
-        gap: 0.5vw;
+        gap: 0.4vw;
         justify-content: center;
-        padding: 0 1vw;
+        padding: 0 0.8vw;
     }
 }
