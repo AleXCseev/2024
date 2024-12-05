@@ -89,24 +89,23 @@ var landingFunctions = {
 			loop: true,
 		});
 
-		// $('.review__slider').owlCarousel({
-		// 	items: 3,
-		// 	margin: 20,
-		// 	dots: false,
-		// 	dotsEach: true,
-		// 	nav: true,
-		// 	loop: true,
-		// 	stagePadding: 2,
-		// 	autoHeight: true,
-		// 	responsive:{
-		// 		0:{
-		// 			items:1,
-		// 		},
-		// 		1081:{
-		// 			items:3,
-		// 		}
-		// 	}
-		// });
+		$('.review__slider').owlCarousel({
+			items: 3,
+			margin: 20,
+			dots: true,
+			dotsEach: true,
+			nav: false,
+			loop: true,
+			autoHeight: true,
+			responsive:{
+				0:{
+					items:1,
+				},
+				1081:{
+					items:3,
+				}
+			}
+		});
 
 		// if($(window).width() <= 1080) {
 		// 	$('.galary').addClass('owl-carousel').owlCarousel({
