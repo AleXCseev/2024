@@ -107,32 +107,39 @@ var landingFunctions = {
 			}
 		});
 
-		// if($(window).width() <= 1080) {
-		// 	$('.galary').addClass('owl-carousel').owlCarousel({
-		// 		items: 2,
-		// 		margin: 45,
-		// 		dots: false,
-		// 		dotsEach: true,
-		// 		nav: true,
-		// 		loop: true,
-		// 	});
-		// }
+		function initialize(){
+			if($(window).width() <= 700) {
+			  	$(".card__photos").addClass("owl-carousel").owlCarousel({
+					items: 4,
+					margin: 10,
+					dots: true,
+					dotsEach: true,
+					nav: false,
+					loop: true,
+					// responsive: {
+					// 	0: {
+					// 		mouseDrag: true,
+					// 		touchDrag: true,
+					// 	},
+					// 	1025: {
+					// 		mouseDrag: false,
+					// 		touchDrag: false,
+					// 	}
+					// }
+				});
+			} else {
+				$(".card__photos").removeClass("owl-carousel").owlCarousel('destroy');
+			}
+		}
 
-		// $(window).on("resize", function() {
-		// 	if($(window).width() <= 1080) {
-		// 		$('.galary').addClass('owl-carousel').owlCarousel({
-		// 			items: 2,
-		// 			margin: 45,
-		// 			dots: false,
-		// 			dotsEach: true,
-		// 			nav: true,
-		// 			loop: true,
-		// 		});
-		// 	} else {
-		// 		$('.galary.owl-carousel').owlCarousel('destroy');
-		// 		$('.galary').removeClass('owl-carousel');
-		// 	}
-		// });
+		var id;
+
+		$(window).resize( function() {
+			clearTimeout(id);
+			id = setTimeout(initialize, 500);
+		});
+
+		initialize();
 
 		// AOS.init({
 		// 	disable : function() {
