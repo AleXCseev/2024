@@ -18,6 +18,7 @@ var landingFunctions = {
 			$(".bg__light").addClass("show");
 		}, 500)
 		
+		
 	},
 
 	carousel: function() {
@@ -143,9 +144,46 @@ var landingFunctions = {
 
 	modals: function() {
 
+		$(".balance__section td").each(function() {
+			str = $(this).text().trim();
+
+			if (str.length < 10) {
+				return
+			}
+
+			str = str.substring(0,10) + '...';
+			$(this).text(str);
+		})
+
+		function referal() {
+			$('.referal__btn').click(function(e) {
+				const link = $(".referal__link").val()
+				navigator.clipboard.writeText(link);
+				console.log(link)
+			})
+
+			let summ = [];
+			let currency = ''
+
+			$(".ref__res").each(function() {
+				const item = parseInt($(this).text());
+				currency = $(this).text().replace(/[0-9]/g, '');
+				summ.push(item)
+			})
+			
+			const res = summ.reduce((accum, item) => {
+				return accum + item
+			}, 0)
+
+			$(".ref__summ-result").text(res + " " + currency)
+		}
+		
+		referal()
+
 		const timer = this.timer
 
 		$(".modal-open-triggle").click(function() {
+			$(".modal__section").removeClass("active");
 			$(".modal__wrapper-shadow").hide()
 			$(".main__page").hide();
 			$(".main").addClass("hide");

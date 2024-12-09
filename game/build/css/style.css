@@ -61,6 +61,12 @@ table {
   border-spacing: 0;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 body {
   font-size: 15px;
   font-family: "Tactic Sans Extended", sans-serif;
@@ -271,7 +277,7 @@ body {
 
 .gram__icon {
   position: absolute;
-  width: 3.8%;
+  width: 8.4%;
   height: auto;
   opacity: 0;
   -webkit-transform: scale(0.6);
@@ -295,13 +301,13 @@ body {
   }
   50% {
     opacity: 1;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   80% {
     opacity: 1;
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   100% {
     opacity: 0;
@@ -325,15 +331,15 @@ body {
   }
   50% {
     opacity: 1;
-    -webkit-transform: scale(0.8);
-         -o-transform: scale(0.8);
-            transform: scale(0.8);
+    -webkit-transform: scale(0.9);
+         -o-transform: scale(0.9);
+            transform: scale(0.9);
   }
   80% {
     opacity: 1;
-    -webkit-transform: scale(0.8);
-         -o-transform: scale(0.8);
-            transform: scale(0.8);
+    -webkit-transform: scale(0.9);
+         -o-transform: scale(0.9);
+            transform: scale(0.9);
   }
   100% {
     opacity: 0;
@@ -343,72 +349,72 @@ body {
   }
 }
 .gram__icon-1 {
-  top: 40%;
-  right: 27.6%;
+  top: 35.6%;
+  right: 25.4%;
 }
 
 .gram__icon-2 {
-  top: 33.3%;
-  right: 21%;
+  top: 29%;
+  right: 18.6%;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
 .gram__icon-3 {
-  top: 46.8%;
-  right: 21%;
+  top: 42.4%;
+  right: 18.6%;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
 
 .gram__icon-4 {
-  bottom: 6%;
-  right: 21%;
+  bottom: 2%;
+  right: 18.6%;
 }
 
 .gram__icon-5 {
-  bottom: 6%;
-  right: 34.5%;
+  bottom: 2%;
+  right: 32%;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
 .gram__icon-6 {
-  bottom: 12.8%;
-  right: 27.6%;
+  bottom: 9.2%;
+  right: 25.4%;
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
 
 .gram__icon-7 {
-  top: 33.3%;
-  left: 21.2%;
+  top: 28.8%;
+  left: 19%;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
 
 .gram__icon-8 {
-  top: 47%;
-  left: 21.2%;
+  top: 42.4%;
+  left: 19%;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
 .gram__icon-9 {
-  top: 40%;
-  left: 14.5%;
+  top: 35.6%;
+  left: 12.2%;
 }
 
 .gram__icon-10 {
-  bottom: 19.6%;
-  left: 21.2%;
+  bottom: 16%;
+  left: 19%;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
 .gram__icon-11 {
-  bottom: 12.8%;
-  left: 14.5%;
+  bottom: 9.2%;
+  left: 12.2%;
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
 }
@@ -565,9 +571,17 @@ body {
   height: auto;
   max-width: 3vw;
   max-height: 4vw;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+}
+.btn__rounded span {
+  display: inline-block;
+  width: 60%;
 }
 .btn__rounded .btn__wrapper {
   border-radius: 7vw;
+  padding: 0 1vw;
+  gap: 0.8vw;
 }
 
 .btn__rectangle {
@@ -841,6 +855,21 @@ body {
 }
 .btn__back:hover img {
   box-shadow: 0px 0px 5px 1px #B79846;
+}
+
+.exit__profile {
+  color: #9595bf;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4vw;
+  cursor: pointer;
+  position: absolute;
+  top: 1.7vw;
+  right: 4vw;
+  width: auto;
+  z-index: 2;
+  background: none;
+  border: none;
 }
 
 .modal__title {
@@ -1222,6 +1251,66 @@ body {
 }
 .modal__info-text span {
   font-weight: 800;
+}
+
+.unregister__section .modal__block {
+  height: 100%;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+          align-items: stretch;
+}
+.unregister__section .modal__main {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  padding: 0;
+  padding-bottom: 3vw;
+}
+.unregister__section .modal__main:before {
+  display: none;
+}
+.unregister__section .statistic__player-title {
+  width: 100%;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 1.4vw;
+  color: #fff;
+  margin-bottom: 0.9vw;
+}
+.unregister__section .statistic__player {
+  margin-bottom: 1vw;
+}
+.unregister__section .modal__avatar {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.btn-register {
+  max-width: 18vw;
+  min-width: auto;
+}
+.btn-register .btn__wrapper {
+  padding: 0 1.8vw;
+}
+.btn-register span {
+  font-size: 1.4vw;
+}
+.btn-register img {
+  max-width: 4vw;
+  max-height: 5vw;
 }
 
 .shop__section .modal__main {
@@ -1863,6 +1952,49 @@ body {
       -ms-transform: scale(1.03);
        -o-transform: scale(1.03);
           transform: scale(1.03);
+}
+
+.balance__section .statistic__table td:last-child {
+  text-align: right;
+}
+.balance__section .statistic__table-wrapper {
+  width: 100%;
+  height: 14.6vw;
+}
+.balance__section .statistic__table-overflow {
+  max-height: 10vw;
+}
+.balance__section .statistic__table td {
+  font-size: 0.8vw;
+  text-overflow: ellipsis;
+}
+
+.add__balance {
+  width: 10vw;
+  height: 4vw;
+}
+.add__balance span {
+  font-size: 0.8vw;
+}
+.add__balance img {
+  width: 2.5vw;
+}
+.add__balance .btn__wrapper {
+  gap: 0.4vw;
+}
+
+.ref__summ {
+  margin-top: 1vw;
+}
+
+.balance {
+  text-align: center;
+  font-size: 1.2vw;
+  line-height: normal;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 1vw;
 }
 
 .play__section .modal__block {
@@ -2669,26 +2801,26 @@ body {
           align-items: center;
 }
 .preload__section .gram__icon-1 {
-  top: 19.4%;
-  right: 48%;
+  top: 15.5%;
+  right: 45.6%;
 }
 .preload__section .gram__icon-2 {
-  top: 6.5%;
-  right: 34.6%;
+  top: 2%;
+  right: 32.2%;
 }
 .preload__section .gram__icon-3 {
-  top: 6.5%;
+  top: 2%;
   right: auto;
-  left: 34.6%;
+  left: 32.6%;
 }
 .preload__section .gram__icon-4 {
-  bottom: 33.4%;
-  right: 20.9%;
+  bottom: 29.4%;
+  right: 18.6%;
 }
 .preload__section .gram__icon-5 {
-  bottom: 33.4%;
+  bottom: 29.4%;
   right: auto;
-  left: 21.3%;
+  left: 19%;
 }
 
 .character__icon {
@@ -2795,7 +2927,7 @@ body {
 
 @media (max-width: 1080px) {
   .gram__icon {
-    width: 5%;
+    width: 8.4%;
   }
   .main {
     background-size: 38%;
@@ -2805,48 +2937,48 @@ body {
     height: 92vw;
   }
   .gram__icon-1 {
-    top: 41.2%;
-    right: 18.7%;
+    top: 39.2%;
+    right: 16.7%;
   }
   .gram__icon-2 {
-    top: 35.8%;
-    right: 9.4%;
+    top: 33.2%;
+    right: 7.4%;
   }
   .gram__icon-3 {
-    top: 47.2%;
-    right: 9.4%;
+    top: 45%;
+    right: 7.4%;
   }
   .gram__icon-4 {
-    bottom: 12.6%;
-    right: 9.4%;
+    bottom: 10.6%;
+    right: 7.4%;
   }
   .gram__icon-5 {
-    bottom: 12.6%;
-    right: 28.5%;
+    bottom: 10.6%;
+    right: 26.5%;
   }
   .gram__icon-6 {
-    bottom: 18.2%;
-    right: 18.6%;
+    bottom: 16.2%;
+    right: 16.8%;
   }
   .gram__icon-7 {
-    top: 41.3%;
-    left: 19%;
+    top: 39.2%;
+    left: 17.2%;
   }
   .gram__icon-8 {
-    top: 53%;
-    left: 19.2%;
+    top: 50.6%;
+    left: 17.2%;
   }
   .gram__icon-9 {
-    top: 47.2%;
-    left: 9.7%;
+    top: 45%;
+    left: 7.7%;
   }
   .gram__icon-10 {
-    bottom: 18.6%;
-    left: 19.2%;
+    bottom: 16.2%;
+    left: 17.2%;
   }
   .gram__icon-11 {
-    bottom: 12.6%;
-    left: 9.7%;
+    bottom: 10.6%;
+    left: 7.7%;
   }
   .btn__settings {
     top: 3vw;
@@ -2911,6 +3043,11 @@ body {
   }
   .btn__back img {
     width: 2.4vw;
+  }
+  .exit__profile {
+    font-size: 2vw;
+    top: 2vw;
+    right: 5.5vw;
   }
   .modal__title {
     font-size: 2vw;
@@ -3288,24 +3425,24 @@ body {
     margin: 0 1.6vw;
   }
   .preload__section .gram__icon-1 {
-    top: 24%;
-    right: 47.3%;
+    top: 21.6%;
+    right: 45.3%;
   }
   .preload__section .gram__icon-2 {
-    top: 18%;
-    right: 37.8%;
+    top: 16%;
+    right: 35.8%;
   }
   .preload__section .gram__icon-3 {
-    top: 18%;
-    left: 38.6%;
+    top: 16%;
+    left: 36.6%;
   }
   .preload__section .gram__icon-4 {
-    bottom: 30%;
-    right: 18.6%;
+    bottom: 28%;
+    right: 16.6%;
   }
   .preload__section .gram__icon-5 {
-    bottom: 30%;
-    left: 19.4%;
+    bottom: 28%;
+    left: 17.4%;
   }
   .character__icon-1 {
     top: 15%;
@@ -3387,6 +3524,29 @@ body {
     width: 90%;
     height: 40%;
   }
+  .unregister__section .statistic__player-title {
+    font-size: 2vw;
+    margin-bottom: 1vw;
+  }
+  .unregister__section .modal__main {
+    padding: 0;
+  }
+  .add__balance {
+    height: 5vw;
+  }
+  .add__balance .btn__wrapper {
+    gap: 0.6vw;
+  }
+  .balance__section .statistic__table-wrapper {
+    width: 100%;
+    height: 20vw;
+  }
+  .balance__section .statistic__table-overflow {
+    max-height: 15vw;
+  }
+  .balance {
+    font-size: 2vw;
+  }
 }
 @media (max-width: 960px) and (max-height: 460px) {
   .main::after {
@@ -3413,53 +3573,56 @@ body {
     width: 150px;
     height: 150px;
   }
+  .gram__icon {
+    width: 11%;
+  }
   .gram__icons {
     width: 116vw;
     height: 62vw;
   }
   .gram__icon-1 {
-    top: 37.2%;
-    right: 22.7%;
+    top: 31.2%;
+    right: 19.7%;
   }
   .gram__icon-2 {
-    top: 28.8%;
-    right: 14.4%;
+    top: 22.4%;
+    right: 11.6%;
   }
   .gram__icon-3 {
-    top: 46%;
-    right: 14.4%;
+    top: 39.8%;
+    right: 11.6%;
   }
   .gram__icon-4 {
-    bottom: 10.6%;
-    right: 14.4%;
+    bottom: 5.6%;
+    right: 11.6%;
   }
   .gram__icon-5 {
-    bottom: 10.6%;
-    right: 31%;
+    bottom: 5.6%;
+    right: 28%;
   }
   .gram__icon-6 {
-    bottom: 19.4%;
-    right: 22.6%;
+    bottom: 14.2%;
+    right: 19.8%;
   }
   .gram__icon-7 {
-    top: 37.3%;
-    left: 23.1%;
+    top: 31%;
+    left: 20.1%;
   }
   .gram__icon-8 {
-    top: 54%;
-    left: 23.1%;
+    top: 48%;
+    left: 20.1%;
   }
   .gram__icon-9 {
-    top: 45.6%;
-    left: 14.8%;
+    top: 39.6%;
+    left: 12%;
   }
   .gram__icon-10 {
-    bottom: 10.6%;
-    left: 31.2%;
+    bottom: 5.6%;
+    left: 28.2%;
   }
   .gram__icon-11 {
-    bottom: 0.6%;
-    left: 23.1%;
+    bottom: -2%;
+    left: 20.1%;
   }
   .btn__settings {
     top: 2vw;
@@ -3604,24 +3767,24 @@ body {
     margin: 0 1.6vw;
   }
   .preload__section .gram__icon-1 {
-    top: 28.4%;
-    right: 47.3%;
+    top: 22.4%;
+    right: 44.4%;
   }
   .preload__section .gram__icon-2 {
-    top: 20%;
-    right: 39%;
+    top: 14%;
+    right: 36.2%;
   }
   .preload__section .gram__icon-3 {
-    top: 20%;
-    left: 39.6%;
+    top: 14%;
+    left: 36.6%;
   }
   .preload__section .gram__icon-4 {
-    bottom: 19.8%;
-    right: 22.6%;
+    bottom: 14%;
+    right: 19.8%;
   }
   .preload__section .gram__icon-5 {
-    bottom: 19.8%;
-    left: 23.2%;
+    bottom: 14%;
+    left: 20.2%;
   }
   .btn {
     box-shadow: 0px 0px 10px 2px rgba(70, 73, 255, 0.7);
@@ -3642,51 +3805,51 @@ body {
     height: 160vw;
   }
   .gram__icon {
-    width: 12%;
+    width: 27%;
   }
   .gram__icon-1 {
-    top: 9.2%;
-    right: 22.2%;
+    top: 4.6%;
+    right: 14.2%;
   }
   .gram__icon-2 {
-    top: 1.8%;
-    right: 1.4%;
+    top: -3%;
+    right: -6.6%;
   }
   .gram__icon-3 {
-    top: 16.2%;
-    right: 1.4%;
+    top: 11.2%;
+    right: -6.6%;
   }
   .gram__icon-4 {
-    bottom: 1.6%;
-    right: 1.4%;
+    bottom: -3.4%;
+    right: -6.6%;
   }
   .gram__icon-5 {
-    bottom: 1.6%;
-    right: 43.5%;
+    bottom: -3.4%;
+    right: 36.2%;
   }
   .gram__icon-6 {
-    bottom: 9.2%;
-    right: 22.6%;
+    bottom: 4.6%;
+    right: 14.6%;
   }
   .gram__icon-7 {
-    top: 31.3%;
-    left: 1%;
+    top: 26.3%;
+    left: -6%;
   }
   .gram__icon-8 {
-    top: 46.4%;
-    left: 1%;
+    top: 41.4%;
+    left: -6%;
   }
   .gram__icon-9 {
-    top: 39.2%;
-    left: -18.3%;
+    top: 35.2%;
+    left: -24.3%;
   }
   .gram__icon-10 {
-    bottom: 16.6%;
-    left: 1.2%;
+    bottom: 11.6%;
+    left: -5.8%;
   }
   .gram__icon-11 {
-    bottom: 1.6%;
-    left: -19.3%;
+    bottom: 3.6%;
+    left: -23.3%;
   }
   .main::after {
     background-color: rgb(58, 63, 221);
@@ -3787,19 +3950,26 @@ body {
     border-radius: 3vw;
   }
   .btn__back {
-    top: 3vw;
+    top: 2.6vw;
     left: 3vw;
     font-size: 3.2vw;
+  }
+  .exit__profile {
+    font-size: 3.2vw;
+    top: 2.2vw;
+    right: 4.5vw;
   }
   .btn__back img {
     width: 3.6vw;
     margin-right: 1vw;
   }
   .modal__title {
-    font-size: 3vw;
+    font-size: 2.8vw;
+    margin-bottom: 0;
   }
   .modal__divider {
     margin-bottom: 2vw;
+    margin-top: 1.2vw;
   }
   .modal__block {
     -webkit-box-orient: vertical;
@@ -4336,24 +4506,24 @@ body {
     margin-top: 0;
   }
   .preload__section .gram__icon-1 {
-    top: 16.4%;
-    right: 43.5%;
+    top: 11.8%;
+    right: 36.5%;
   }
   .preload__section .gram__icon-2 {
-    top: 9%;
-    right: 22%;
+    top: 4.6%;
+    right: 15%;
   }
   .preload__section .gram__icon-3 {
-    top: 9%;
-    left: 23.8%;
+    top: 4.6%;
+    left: 15.8%;
   }
   .preload__section .gram__icon-5 {
-    bottom: 16.6%;
-    left: 1%;
+    bottom: 12%;
+    left: -5%;
   }
   .preload__section .gram__icon-4 {
-    bottom: 16.6%;
-    right: 0.9%;
+    bottom: 12%;
+    right: -6.4%;
   }
   .character__icon-1 {
     top: 23%;
@@ -4379,5 +4549,50 @@ body {
     bottom: 28%;
     right: 8%;
     width: 8%;
+  }
+  .unregister__section .statistic__player-title {
+    font-size: 4vw;
+    margin-bottom: 2vw;
+  }
+  .unregister__section .statistic__player {
+    margin-bottom: 2vw;
+  }
+  .btn-register {
+    height: 16vw;
+    min-width: 48vw;
+  }
+  .btn-register span {
+    font-size: 4vw;
+  }
+  .btn-register .btn__wrapper {
+    padding: 0 5vw;
+  }
+  .unregister__section .modal__main {
+    padding: 2vw 0 5vw;
+  }
+  .balance__section .settings__block-center {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+            order: 1;
+  }
+  .balance__section .settings__block {
+    margin-bottom: 3vw;
+  }
+  .balance__section .settings__block:last-child {
+    margin-bottom: 0;
+  }
+  .balance__section .statistic__table-wrapper {
+    width: 100%;
+    height: 40vw;
+  }
+  .balance__section .statistic__table-overflow {
+    max-height: 28vw;
+  }
+  .ref__summ {
+    margin-top: 3vw;
+  }
+  .balance {
+    font-size: 4vw;
+    margin-bottom: 2vw;
   }
 }

@@ -52,33 +52,6 @@ var landingFunctions = {
 			$(".info__box-" + item).fadeIn(300)
 		})
 
-		// let owl = $('.info__slider').owlCarousel({
-		// 	items: 5,
-		// 	margin: 0,
-		// 	center: true,
-		// 	dots: false,
-		// 	dotsEach: true,
-		// 	nav: true,
-		// 	loop: true,
-		// 	autoplay: true,
-		// 	mouseDrag: false,
-		// 	touchDrag: false,
-		// 	autoplayTimeout: 3000,
-		// 	autoplayHoverPause: true,
-		// });
-
-		// $('.info__next-btn').click(function() {
-		// 	owl.trigger('prev.owl.carousel');
-		// })
-
-		// $('.info__prev-btn').click(function() {
-		// 	owl.trigger('next.owl.carousel');
-		// })
-
-		// $('.info__slide').click(function() {
-		// 	const position = $(this).data("slide") - 1
-		// 	owl.trigger("to.owl.carousel", [position, 300])
-		// })
 
 		$('.gallery__slider').owlCarousel({
 			items: 1,
@@ -87,6 +60,9 @@ var landingFunctions = {
 			dotsEach: true,
 			nav: false,
 			loop: true,
+			autoplay: true,
+			autoplayTimeout: 3000,
+			autoplayHoverPause: true
 		});
 
 		$('.review__slider').owlCarousel({
@@ -101,7 +77,10 @@ var landingFunctions = {
 				0:{
 					items:1,
 				},
-				1081:{
+				1080:{
+					items:2,
+				},
+				1280:{
 					items:3,
 				}
 			}
@@ -116,16 +95,6 @@ var landingFunctions = {
 					dotsEach: true,
 					nav: false,
 					loop: true,
-					// responsive: {
-					// 	0: {
-					// 		mouseDrag: true,
-					// 		touchDrag: true,
-					// 	},
-					// 	1025: {
-					// 		mouseDrag: false,
-					// 		touchDrag: false,
-					// 	}
-					// }
 				});
 			} else {
 				$(".card__photos").removeClass("owl-carousel").owlCarousel('destroy');
@@ -141,17 +110,17 @@ var landingFunctions = {
 
 		initialize();
 
-		// AOS.init({
-		// 	disable : function() {
-		// 		if( $(window).width() <= 1080) {
-		// 			return true;
-		// 		}
-		// 		return false
-		// 	},
-		// 	once: true,
-		// 	duration: 1000,
-		// 	offset : 0,
-		// });
+		AOS.init({
+			disable : function() {
+				if( $(window).width() <= 1080) {
+					return true;
+				}
+				return false
+			},
+			once: true,
+			duration: 1000,
+			offset : 0,
+		});
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
