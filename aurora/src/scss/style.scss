@@ -304,6 +304,7 @@
         position: relative;
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         margin-top: 110px;
         margin-bottom: 30px;
     }
@@ -527,6 +528,7 @@
         position: relative;
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         margin-top: 140px;
         margin-bottom: 30px;
     }
@@ -872,5 +874,8 @@
     }
     .fancybox-slide {
         padding: 44px 15px;
+    }
+    select {
+        text-indent: 37% hanging;
     }
 }

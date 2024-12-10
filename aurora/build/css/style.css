@@ -1605,6 +1605,15 @@ body {
   pointer-events: none;
 }
 
+select {
+  text-align: -moz-center;
+  text-align: -webkit-center;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  -webkit-text-align-last: center;
+  text-indent: 42% hanging;
+}
+
 .card__submit {
   width: 100%;
   height: auto;
@@ -2051,6 +2060,7 @@ body {
   line-height: 1.5;
   color: #fff;
   margin-top: 15px;
+  text-align: center;
 }
 .footer__info span {
   font-weight: 800;
@@ -2416,6 +2426,9 @@ body {
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
             justify-content: flex-end;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
     margin-top: 110px;
     margin-bottom: 30px;
   }
@@ -2686,6 +2699,9 @@ body {
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
             justify-content: flex-end;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
     margin-top: 140px;
     margin-bottom: 30px;
   }
@@ -3022,5 +3038,8 @@ body {
   }
   .fancybox-slide {
     padding: 44px 15px;
+  }
+  select {
+    text-indent: 37% hanging;
   }
 }
