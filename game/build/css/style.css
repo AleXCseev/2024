@@ -203,6 +203,85 @@ body {
   right: 16vw;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.alert {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  max-width: 300px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #4CAF50;
+  -webkit-transform: translateY(200%);
+      -ms-transform: translateY(200%);
+       -o-transform: translateY(200%);
+          transform: translateY(200%);
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+}
+.alert.active {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+       -o-transform: translateY(0%);
+          transform: translateY(0%);
+  visibility: visible;
+}
+
+.alert-warning {
+  background-color: #E53935;
+  z-index: 200;
+}
+
 @font-face {
   font-family: "Tactic Sans Extended";
   src: url("../fonts/TacticSansExd-Bld.woff") format("woff");
@@ -818,7 +897,7 @@ body {
             transform: scale(0.95);
   }
 }
-.btn__back {
+.btn__back, .exit__profile {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: inline-flex;
@@ -837,6 +916,7 @@ body {
   font-weight: 500;
   font-family: "Raleway", sans-serif;
   font-size: 1.1vw;
+  line-height: normal;
   cursor: pointer;
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
@@ -845,7 +925,7 @@ body {
   padding: 0;
   margin: 0;
 }
-.btn__back img {
+.btn__back img, .exit__profile img {
   width: 2vw;
   border-radius: 100%;
   margin-right: 10px;
@@ -853,23 +933,21 @@ body {
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-.btn__back:hover img {
+.btn__back:hover img, .exit__profile:hover img {
   box-shadow: 0px 0px 5px 1px #B79846;
 }
 
 .exit__profile {
-  color: #9595bf;
-  font-weight: 500;
-  font-family: "Raleway", sans-serif;
-  font-size: 1.4vw;
-  cursor: pointer;
-  position: absolute;
-  top: 1.7vw;
-  right: 4vw;
-  width: auto;
-  z-index: 2;
-  background: none;
-  border: none;
+  left: auto;
+  right: 1.8vw;
+}
+.exit__profile img {
+  border-radius: 0;
+  margin: 0;
+  margin-left: 10px;
+}
+.exit__profile:hover img {
+  box-shadow: none;
 }
 
 .modal__title {
@@ -1304,6 +1382,7 @@ body {
 }
 .btn-register .btn__wrapper {
   padding: 0 1.8vw;
+  gap: 2vw;
 }
 .btn-register span {
   font-size: 1.4vw;
@@ -1966,7 +2045,6 @@ body {
 }
 .balance__section .statistic__table td {
   font-size: 0.8vw;
-  text-overflow: ellipsis;
 }
 
 .add__balance {
@@ -2095,6 +2173,7 @@ body {
   z-index: 1;
 }
 .btn__rounded-small span {
+  width: 100%;
   font-size: 0.95vw;
 }
 
@@ -3036,18 +3115,17 @@ body {
     -webkit-align-items: stretch;
             align-items: stretch;
   }
-  .btn__back {
+  .btn__back, .exit__profile {
     top: 2vw;
     left: 2vw;
     font-size: 2vw;
   }
-  .btn__back img {
+  .btn__back img, .exit__profile img {
     width: 2.4vw;
   }
   .exit__profile {
-    font-size: 2vw;
-    top: 2vw;
-    right: 5.5vw;
+    left: auto;
+    right: 2vw;
   }
   .modal__title {
     font-size: 2vw;
@@ -3795,6 +3873,15 @@ body {
   .game__chat, .rating__block {
     border-width: 2px;
   }
+  .balance__section .statistic__table td {
+    font-size: 1.4vw;
+  }
+  .statistic__table-wrapper {
+    height: 30vw;
+  }
+  .statistic__table-overflow {
+    max-height: 24vw;
+  }
 }
 @media (max-width: 430px) {
   .main {
@@ -3949,19 +4036,22 @@ body {
   .modal__wrapper:after {
     border-radius: 3vw;
   }
-  .btn__back {
+  .btn__back, .exit__profile {
     top: 2.6vw;
     left: 3vw;
     font-size: 3.2vw;
   }
-  .exit__profile {
-    font-size: 3.2vw;
-    top: 2.2vw;
-    right: 4.5vw;
-  }
-  .btn__back img {
+  .btn__back img, .exit__profile img {
     width: 3.6vw;
     margin-right: 1vw;
+  }
+  .exit__profile {
+    left: auto;
+    right: 3vw;
+  }
+  .exit__profile img {
+    margin-right: 0;
+    margin-left: 1vw;
   }
   .modal__title {
     font-size: 2.8vw;
@@ -4593,6 +4683,46 @@ body {
   }
   .balance {
     font-size: 4vw;
-    margin-bottom: 2vw;
+    margin: 3vw 0;
+  }
+  .balance__section .statistic__table td {
+    font-size: 3.4vw;
+    padding-right: 5px;
+  }
+  .modal__info-text {
+    font-size: 3vw;
+  }
+  .balance__section .settings__block {
+    margin-bottom: 8vw;
+  }
+  .add__balance {
+    width: 35vw;
+    height: 12vw;
+  }
+  .add__balance img {
+    width: 7vw;
+  }
+  .add__balance span {
+    font-size: 2.6vw;
+  }
+  .unregister__section {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+  }
+  .balance__section .input {
+    height: 8vw;
+  }
+  .balance__section .game__info-btn {
+    width: 8vw;
+  }
+  .balance__section .game__info-item {
+    margin-bottom: 4vw;
+  }
+  .tooltip .tooltiptext {
+    width: 23vw;
+    border-radius: 1vw;
+    padding: 1vw;
+    font-size: 3vw;
   }
 }

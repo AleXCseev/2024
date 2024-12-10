@@ -134,7 +134,7 @@
     }
 }
 
-.btn__back {
+.btn__back, .exit__profile {
     display: inline-flex;
     justify-content: flex-start;
     align-items: center;
@@ -147,6 +147,7 @@
     font-weight: 500;
     font-family: "Raleway", sans-serif;
     font-size: 1.1vw;
+    line-height: normal;
     cursor: pointer;
     transition: 0.3s ease;
     z-index: 2;
@@ -168,18 +169,20 @@
 }
 
 .exit__profile {
-    color: #9595bf;
-    font-weight: 500;
-    font-family: "Raleway", sans-serif;
-    font-size: 1.4vw;
-    cursor: pointer;
-    position: absolute;
-    top: 1.7vw;
-    right: 4vw;
-    width: auto;
-    z-index: 2;
-    background: none;
-    border: none;
+    left: auto;
+    right: 1.8vw;
+
+    img {
+        border-radius: 0;
+        margin: 0;
+        margin-left: 10px;
+    }
+
+    &:hover {
+        img {
+            box-shadow: none;
+        }
+    }
 }
 
 .modal__title {
@@ -570,6 +573,7 @@
 
     .btn__wrapper {
         padding: 0 1.8vw;
+        gap: 2vw;
     }
 
     span {

@@ -27,12 +27,12 @@
                 <div class="game__info-item">
                     <div class="game__info-wrapper">
                         <label for="experience" class="input__label">Пополнить баланс</label>
-                        <input id="experience" type="number" placeholder="введите сумму" value="" class="input">
+                        <input id="experience" type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  placeholder="введите сумму" class="input">
                     </div>
                 </div>
-                <button type="button" class="btn btn__modal add__balance">
+                <button type="button" class="btn btn__modal add__balance" id="add-balance">
                     <div class="btn__wrapper">
-                        <img src="img/wallet-icon.png" alt="">
+                        <img src="img/add-balance-icon.png" alt="">
                         <span>Пополнить баланс</span>
                     </div>
                 </button>
@@ -44,10 +44,10 @@
                 <div class="game__info-item">
                     <div class="game__info-wrapper">
                         <label for="experience" class="input__label">Вывести средства</label>
-                        <input id="experience" type="number" placeholder="введите сумму" value="" class="input">
+                        <input id="experience" type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  placeholder="введите сумму" class="input">
                     </div>
                 </div>
-                <button type="button" class="btn btn__modal add__balance">
+                <button type="button" class="btn btn__modal add__balance" id="withdrawal">
                     <div class="btn__wrapper">
                         <img src="img/withdrawal-icon.png" alt="">
                         <span>Вывести</span>
@@ -61,8 +61,9 @@
                         <label for="experience" class="input__label">Реферальная ссылка</label>
                         <input id="experience" disabled type="text" placeholder="Реферальная ссылка" value="username12" class="input referal__link">
                     </div>
-                    <button type="button" class="game__info-btn referal__btn">
+                    <button type="button" class="game__info-btn referal__btn tooltip">
                         <img src="img/copy-icon.png" alt="">
+                        <span class="tooltiptext" id="myTooltip">Скопировать ссылку</span>
                     </button>
                 </div>
                 <div class="statistic__table-wrapper">

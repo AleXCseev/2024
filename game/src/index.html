@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="stylesheet" href="libs/owl.carousel.min.css">
@@ -27,6 +27,13 @@
         @@include("_preloader.html")
         @@include("_unregister.html")
         @@include("_balance.html")
+
+        <div class="alert alert-success">
+            Вы успешно пополнили баланс!
+        </div>
+        <div class="alert alert-warning">
+            Ошибка. Что-то пошло не так!
+        </div>
     </main>
     <script src="libs/jquery.min.js"></script>
     <script src="libs/owl.carousel.min.js"></script>

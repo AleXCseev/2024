@@ -1,12 +1,95 @@
 var landingFunctions = {
 	init: function() {
+		this.utils();
 		this.preloader();
 		this.carousel();
 		this.animations();
 		this.modals();
 		this.play();
 		this.range();
-	}, 
+	},
+	
+	utils: function() {
+		$(".balance__section td").each(function() {
+			str = $(this).text().trim();
+
+			if (str.length < 10) {
+				return
+			}
+
+			str = str.substring(0,10) + '...';
+			$(this).text(str);
+		})
+
+		function referal() {
+			$('.referal__btn').click(function(e) {
+				const link = $(".referal__link").val()
+				navigator.clipboard.writeText(link);
+				console.log(link)
+
+				var tooltip = $("#myTooltip");
+  				tooltip.text("Скопировано: " + link);
+			})
+
+			$(".referal__link").hover(
+				function() {
+					var tooltip = $("#myTooltip");
+					tooltip.text("Скопировать ссылку");
+				},
+				function() {
+					
+				}
+			)
+
+			let summ = [];
+			let currency = ''
+
+			$(".ref__res").each(function() {
+				const item = parseInt($(this).text());
+				currency = $(this).text().replace(/[0-9]/g, '');
+				summ.push(item)
+			})
+			
+			const res = summ.reduce((accum, item) => {
+				return accum + item
+			}, 0)
+
+			$(".ref__summ-result").text(res + " " + currency)
+		}
+		
+		referal()
+
+		let timer;
+
+		function alertItem(success) {
+			if($('.alert').hasClass("active")) {
+				$('.alert').removeClass("active")
+				clearTimeout(timer)
+			}
+
+			if(success) {
+				$(".alert-success").addClass("active");
+
+				timer = setTimeout(function() {
+					$(".alert-success").removeClass("active");
+				}, 4000);
+			} else {
+				$(".alert-warning").addClass("active");
+
+				timer = setTimeout(function() {
+					$(".alert-warning").removeClass("active");
+				}, 4000);
+			}
+		}
+
+		$("#add-balance").click(function() {
+			alertItem(true)
+		})
+		
+		$("#withdrawal").click( function() {
+			alertItem()
+		})
+	},
 
 	preloader: function() {
 		setTimeout(function() {
@@ -143,42 +226,6 @@ var landingFunctions = {
 	},
 
 	modals: function() {
-
-		$(".balance__section td").each(function() {
-			str = $(this).text().trim();
-
-			if (str.length < 10) {
-				return
-			}
-
-			str = str.substring(0,10) + '...';
-			$(this).text(str);
-		})
-
-		function referal() {
-			$('.referal__btn').click(function(e) {
-				const link = $(".referal__link").val()
-				navigator.clipboard.writeText(link);
-				console.log(link)
-			})
-
-			let summ = [];
-			let currency = ''
-
-			$(".ref__res").each(function() {
-				const item = parseInt($(this).text());
-				currency = $(this).text().replace(/[0-9]/g, '');
-				summ.push(item)
-			})
-			
-			const res = summ.reduce((accum, item) => {
-				return accum + item
-			}, 0)
-
-			$(".ref__summ-result").text(res + " " + currency)
-		}
-		
-		referal()
 
 		const timer = this.timer
 
