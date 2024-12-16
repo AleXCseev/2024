@@ -1,0 +1,137 @@
+.header__section {
+    background-image: url(../img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header__section-wrapper {
+    padding: 30px 0 328px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;  
+}
+
+.header__nav-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 31px;
+}
+
+.header__logo {
+    width: 160px;
+    height: auto;
+}
+
+.header__nav {
+    width: 591px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__link {
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+
+    &:hover {
+        font-weight: 700;
+    }
+}
+
+.header__title, .header__subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 1.43;
+    text-transform: capitalize;
+    color: #fff;
+
+    img {
+        width: 180px;
+        height: auto;
+        border-radius: 20px;
+        margin: 0 30px;
+    }
+}
+
+.header__title {
+    margin-bottom: 10px;
+}
+
+.header__subtitle {
+    margin-bottom: 15px;
+}
+
+.header__text {
+    width: 100%;
+    max-width: 900px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.order__btn {
+    width: 280px;
+    height: 60px;
+    border: 1px solid #0e1c1c;
+    border-radius: 35px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 3px 3px 3px 30px;
+    transition: 0.3s ease;
+
+    span {
+        font-weight: 600;
+        font-size: 18px;
+        color: #0e1c1c;
+    }
+
+    &:hover {
+        background-color: #497271;
+        span {
+            color: #fff;
+        }
+    }
+}
+
+.order__btn-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #497271;
+}
+
+.header__img {
+    width: 100%;
+    height: 450px;
+    background-image: url(../img/header-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    margin-top: 35px;
+}
