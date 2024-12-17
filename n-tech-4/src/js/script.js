@@ -1,13 +1,13 @@
 var landingFunctions = {
 	init: function() {
-		this.initLibraris()
+		this.initLibraries()
 		this.time()
 		// this.video()
 		this.bar()
 		// this.card()
 	}, 
 
-	initLibraris: function() {
+	initLibraries: function() {
 		
 		$('[href*="#"]').on('click', function (e) {
 			var fixedOffset = 0;
@@ -21,41 +21,50 @@ var landingFunctions = {
 			e.preventDefault();
 		})
 
-		// $(".galary__slider").owlCarousel({
+		$(".gallery__slider").owlCarousel({
+			loop: true,
+			nav: false,
+			dots: true,
+			dotsEach: true,
+			items: 5,
+			margin: 10,
+			autoWidth:true,
+			// responsive:{
+			// 	0: {
+			// 		items: 1,
+			// 		center: false,
+			// 		margin: 20,
+			// 	},
+			// 	540: {
+			// 		items: 2,
+			// 		center: false,
+			// 		margin: 20,
+			// 	},
+			// 	1080: {
+			// 		items: 3,
+			// 		center: true,
+			// 		margin: 50,
+			// 	},
+			// 	1280: {
+			// 		items: 3,
+			// 		center: true,
+			// 		margin: 60,
+			// 	},
+			// 	1480: {
+			// 		items: 3,
+			// 		center: true,
+			// 		margin: 80,
+			// 	},
+			// }
+		});
+
+		// $(".review__slider").owlCarousel({
 		// 	loop: true,
-		// 	nav: true,
-		// 	center: true,
+		// 	nav: false,
 		// 	dots: false,
 		// 	dotsEach: true,
 		// 	items: 3,
-		// 	margin: 80,
-		// 	responsive:{
-		// 		0: {
-		// 			items: 1,
-		// 			center: false,
-		// 			margin: 20,
-		// 		},
-		// 		540: {
-		// 			items: 2,
-		// 			center: false,
-		// 			margin: 20,
-		// 		},
-		// 		1080: {
-		// 			items: 3,
-		// 			center: true,
-		// 			margin: 50,
-		// 		},
-		// 		1280: {
-		// 			items: 3,
-		// 			center: true,
-		// 			margin: 60,
-		// 		},
-		// 		1480: {
-		// 			items: 3,
-		// 			center: true,
-		// 			margin: 80,
-		// 		},
-		// 	}
+		// 	margin: 34,
 		// });
 
 
@@ -148,7 +157,7 @@ var landingFunctions = {
 		// $(".date__1").text(getDate(-5));
     	// $(".date__2").text(getDate(2));
 
-		$(".date").text(getDate(2))
+		// $(".date").text(getDate(2))
 		// $(".card__date .date").text(getDate(2))
 		
 		// $(".year").text(new Date().getFullYear())
@@ -226,8 +235,8 @@ var landingFunctions = {
 
 		if(localStorage.getItem("rotate")) {
 			$(".bar__section-wrapper").hide()
+			$(".gallery__section").addClass('hide__bar')
 			$(".card__section").show()
-			$(".sprey__section").show()
 			$(".review__section").show()
 			$(".footer__section").show()
 		}
@@ -261,7 +270,7 @@ var landingFunctions = {
 		function openClose() {
 			setTimeout(function() {
 				$(".bar__section-wrapper").hide(0)
-				$(".sprey__section").fadeIn(1000)
+				$(".gallery__section").addClass('hide__bar')
 				$(".review__section").fadeIn(1000)
 				$(".footer__section").fadeIn(1000)
 				$(".card__section").fadeIn(1000)

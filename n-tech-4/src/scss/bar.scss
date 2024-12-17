@@ -1,72 +1,27 @@
+.bar__section {
+    background-image: url(../img/bar-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .bar__section-wrapper {
-    padding: 0 0 100px;
+    padding: 0 0 61px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
 }
 
-.bar__decor {
-    position: absolute;
-    height: auto;
-}
-
-.bar__decor-1 {
-    width: 179px;
-    top: 228px;
-    left: -300px;
-    transform: rotate(77deg);
-}
-
-.bar__decor-2 {
-    width: 172px;
-    top: 337px;
-    left: -100px;
-    transform: rotate(120deg);
-}
-
-.bar__decor-3 {
-    width: 131px;
-    top: 482px;
-    right: -50px;
-    transform: scaleX(-1) rotate(255deg);
-}
-
-.bar__decor-4 {
-    width: 114px;
-    top: 326px;
-    right: -147px;
-    transform: rotate(67deg);
-}
-
-.bar__decor-5 {
-    width: 90px;
-    top: 395px;
-    right: -251px;
-    transform: rotate(115deg);
-}
-
-.bar__title {
-    font-weight: 300;
-    font-size: 72px;
-    line-height: 1.33;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-align: center;
-    color: #000;
-    margin-bottom: 25px;
-
-    span {
-        font-family: "Meddon", sans-serif;
-        font-weight: 400;
-    }
+.bar__info-block {
+    margin-bottom: 80px;
+    margin-top: -90px;
 }
 
 .bar {
     width: 100%;
     max-width: 1030px;
     height: 430px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     position: relative;
 }
   
@@ -75,8 +30,8 @@
     height: 100%;
     display: flex;
     justify-content: space-between;
-    box-shadow: inset 0 0 30px 0 #3f2404;
-    background: linear-gradient(180deg, #aa5f06 0%, #e89839 48.75%, #aa5f06 100%);
+    box-shadow: inset 0 0 30px 0 #0e1c1c;
+    background: linear-gradient(180deg, #0e1c1c 0%, #497172 48.75%, #0e1c1c 100%);
     overflow: hidden;
 }
   
@@ -197,27 +152,33 @@ content: "";
 }
 
 .order__btn-start {
-    width: 350px;
-    height: auto;
-    border-radius: 34px;
-    background: #e89839;
-    font-weight: 500;
+    width: 280px;
+    height: 60px;
+    border-radius: 35px;
+    background: #497271;
+    border-color: #497271;
+    font-weight: 600;
     font-size: 18px;
+    text-transform: uppercase;
     text-align: center;
-    color: #fff;
-    padding: 23px 10px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 
     &:hover {
-        background: #804c0d;
-        color: #fff;
+        background: #fff;
+        border-color: #0e1c1c;
+        
+        span {
+            color: #0e1c1c;
+        }
     }
     
     span {
         width: auto;
+        color: #fff;
     }
 
     .stop {
@@ -226,11 +187,10 @@ content: "";
 }
 
 .bar__info {
-    font-weight: 300;
     font-size: 18px;
     line-height: 1.5;
     text-align: center;
-    color: #000;
+    color: #fff;
     margin-top: 20px;
 
     span {
