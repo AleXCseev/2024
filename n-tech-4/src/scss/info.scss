@@ -151,6 +151,9 @@
     height: 425px;
     border-radius: 50px;
     background-image: url(../img/video-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
