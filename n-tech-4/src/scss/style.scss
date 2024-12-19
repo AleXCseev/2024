@@ -564,6 +564,12 @@
     .footer__section-wrapper {
         padding: 240px 0 80px;
     }
+    select {
+        text-indent: 44% hanging;
+    }
+    .card__2 .size {
+        text-indent: 49% hanging;
+    }
 }
 
 @media (max-width: 700px) {
@@ -954,5 +960,8 @@
     }
     .fancybox-content {
         padding: 44px 15px 20px;
+    }
+    select {
+        text-indent: 40% hanging;
     }
 }

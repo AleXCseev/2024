@@ -37,26 +37,33 @@ var landingFunctions = {
 			margin: 10,
 			autoWidth:true,
 			autoHeight: false,
+			autoplay: true,
+			autoplayTimeout: 3000,
+			autoplayHoverPause: true,
 			responsive:{
 				0: {
 					items: 1,
 					autoWidth: false,
 					autoHeight: true,
+					autoplay: false,
 				},
 				540: {
 					items: 2,
 					autoWidth: false,
 					autoHeight: false,
+					autoplay: true,
 				},
 				1080: {
 					items: 4,
 					autoWidth: true,
 					autoHeight: false,
+					autoplay: true,
 				},
 				1480: {
 					items: 5,
 					autoWidth: true,
 					autoHeight: false,
+					autoplay: true,
 				},
 			}
 		});
@@ -100,16 +107,6 @@ var landingFunctions = {
 
 		initialize();
 
-		// $(".review__slider").owlCarousel({
-		// 	loop: true,
-		// 	nav: false,
-		// 	dots: false,
-		// 	dotsEach: true,
-		// 	items: 3,
-		// 	margin: 34,
-		// });
-
-
 		var show = true;
 		var countbox = ".info__section";
 		$(window).on("scroll load resize", function () {
@@ -130,16 +127,21 @@ var landingFunctions = {
 			}
 		});
 	
-		// AOS.init({
-		// 	disable : 'mobile',
-		// 	once: true,
-		// 	duration: 1000,
-		// 	offset : 0,
-		// });
+		AOS.init({
+			disable : function() {
+				if( $(window).width() <= 1080) {
+					return true;
+				}
+				return false
+			},
+			once: true,
+			duration: 1000,
+			offset : 0,
+		});
 	
-		// $(window).resize(function() {
-		// 	AOS.refresh();
-		// })
+		$(window).resize(function() {
+			AOS.refresh();
+		})
 
 		$('[data-fancybox]').fancybox({
 			loop: true,
@@ -276,12 +278,12 @@ var landingFunctions = {
 				$(".card__section").fadeIn(1000)
 				$('[href="#order"]').attr('href', '#card')
 
-				$([document.documentElement, document.body]).animate(
-					{
-						scrollTop: $(".card__section-wrapper").offset().top,
-					},
-					1000
-				);
+				// $([document.documentElement, document.body]).animate(
+				// 	{
+				// 		scrollTop: $(".card__section-wrapper").offset().top,
+				// 	},
+				// 	1000
+				// );
 
 			}, 3000)
 		}

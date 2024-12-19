@@ -54,7 +54,7 @@ time, mark, audio, video, input, select, textarea, button {
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 article, aside, details, figcaption, figure,
@@ -147,6 +147,9 @@ option {
   text-decoration: none;
   color: inherit;
   background-color: transparent;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
 }
 
 img {
@@ -1475,6 +1478,10 @@ select {
   background-color: #fff;
   border-color: #0e1c1c;
   color: #0e1c1c;
+}
+
+.card__2 .size {
+  text-indent: 48% hanging;
 }
 
 .card__discount {
@@ -2953,6 +2960,12 @@ select {
   .footer__section-wrapper {
     padding: 240px 0 80px;
   }
+  select {
+    text-indent: 44% hanging;
+  }
+  .card__2 .size {
+    text-indent: 49% hanging;
+  }
 }
 @media (max-width: 700px) {
   .container {
@@ -3336,5 +3349,8 @@ select {
   }
   .fancybox-content {
     padding: 44px 15px 20px;
+  }
+  select {
+    text-indent: 40% hanging;
   }
 }
