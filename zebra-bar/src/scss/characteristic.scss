@@ -1,0 +1,137 @@
+.characteristic__section {
+    background-image: url(../img/charact-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.characteristic__section-wrapper {
+    padding: 127px 0 137px;
+}
+
+.characteristic__title {
+    font-family: "Haval", sans-serif;
+    font-weight: 400;
+    font-size: 76px;
+    text-align: center;
+    line-height: normal;
+    color: #fff;
+    margin-bottom: 52px;
+}
+
+.characteristic__table {
+    width: 100%;
+    height: auto;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+    background-color: rgba(30, 30, 30, 0.5);
+    backdrop-filter: blur(40px);
+}
+
+.table__item {
+    width: 33.33%;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.table__item-title {
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: normal;
+}
+
+.table__item-text {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+.characteristic__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 52px;
+}
+
+.characteristic__img {
+    width: 550px;
+    height: auto;
+}
+
+.characteristic__block-right {
+    width: 640px;
+    height: auto;
+}
+
+.characteristic__block-title {
+    font-family: "Haval", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    text-transform: uppercase;
+    line-height: normal;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.characteristic__block-text {
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.characteristic__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.characteristic__list {
+    width: 750px;
+    height: auto;
+}
+
+.characteristic__list-item {
+    padding-left: 20px;
+    position: relative;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+
+    span {
+        font-weight: 700;
+    }
+
+    &:before {
+        content: "";
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        position: absolute;
+        background-color: #fff;
+        top: 10px;
+        left: 5px;
+    }
+}
+
+.info__btn {
+}
