@@ -89,3 +89,110 @@
         margin-bottom: 35px;
     }
 }
+
+@media (max-width: 1480px) {
+    .service__item-1 {
+        width: 620px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .service__item-1 {
+        width: 520px;
+    }
+    .service__item-2 {
+        width: 450px;
+    }
+    .service__text {
+        font-size: 15px;
+        max-width: 480px;
+        margin-bottom: 10px;
+    }
+    .service__title {
+        font-size: 38px;
+        margin-bottom: 10px;
+    }
+    .service__item-1 .service__img {
+        margin-top: 56px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .service__section-wrapper {
+        padding: 100px 0 100px;
+    }
+    .service__section-title {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+    .service__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service__item-1 {
+        width: 100%;
+        border: none;
+        margin-bottom: 50px;
+    }
+    .service__item-1:before {
+        display: none;
+    }
+    .service__item-1 .service__img {
+        margin-top: 40px;
+    }
+    .service__text {
+        font-size: 18px;
+        max-width: 100%;
+        margin-bottom: 10px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    .service__item-2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .service__item-2 .service__img {
+        order: 3;
+        margin-bottom: 0;
+        margin-top: 40px;
+    }
+    .service__title {
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 540px) {
+    .service__section-wrapper {
+        padding: 24vw 0;
+    }
+    .service__section-title {
+        font-size: 11.8vw;
+        margin-bottom: 9.8vw;
+    }
+    .service__item-1 {
+        margin-bottom: 12vw;
+    }
+    .service__number {
+        font-size: 8vw;
+        margin-bottom: 2vw;
+    }
+    .service__title {
+        font-size: 8vw;
+        margin-bottom: 4.8vw;
+    }
+    .service__text {
+        font-size: 4.2vw;
+        margin-bottom: 2vw;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    .service__img {
+        margin-top: 9.8vw !important;
+    }
+}
