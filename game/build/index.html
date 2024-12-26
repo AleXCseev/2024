@@ -84,6 +84,28 @@
             </button>
         </div>
     </div>
+    <div class="lang__block">
+        <button type="button" class="btn btn__lang">
+            <div class="btn__wrapper">
+                <img src="img/lang-icons/en.svg" alt="">
+                <span>english</span>
+            </div>
+        </button>
+        <div class="lang__wrapper">
+            <button type="button" class="btn__lang-item" data-lang="en">
+                <img src="img/lang-icons/en.svg" alt="">
+                <span>english</span>
+            </button>
+            <button type="button" class="btn__lang-item" data-lang="ru">
+                <img src="img/lang-icons/ru.svg" alt="">
+                <span>русский</span>
+            </button>
+            <button type="button" class="btn__lang-item" data-lang="sp">
+                <img src="img/lang-icons/sp.svg" alt="">
+                <span>español</span>
+            </button>
+        </div>
+    </div>
 </div>
         <div class="modal__section" id="profile">
     <h2 class="main__title">
@@ -1095,30 +1117,30 @@
             </div>
             <div class="game-over__result">
                 <h4 class="statistic__player-title">
-                    Ваш аватар
+                    Статистика
                 </h4>
-                <div class="result__item">
-                    <p class="result__text">
-                        Общий счёт
-                    </p>
-                    <div class="result__number">
-                        186
+                <div class="game__info-item">
+                    <div class="game__info-wrapper">
+                        <label for="eaten-players" class="input__label" data-translate="game_over.users_eaten">Съедено пользователей</label>
+                        <input id="eaten-players" disabled type="text" placeholder="Съедено пользователей" value="0 players" class="input">
                     </div>
                 </div>
-                <div class="result__item">
-                    <p class="result__text">
-                        Достигнутый уровень
-                    </p>
-                    <div class="result__number">
-                        + 170
+                <div class="game__info-item">
+                    <div class="game__info-wrapper">
+                        <label for="eaten-food" class="input__label" data-translate="game_over.experience_earned">Получено опыта</label>
+                        <input id="eaten-food" disabled type="text" placeholder="Достигнутый уровень" value="0 exp." class="input">
                     </div>
                 </div>
-                <div class="result__item">
-                    <p class="result__text">
-                        Заработанные очки
-                    </p>
-                    <div class="result__number">
-                        + 86
+                <div class="game__info-item">
+                    <div class="game__info-wrapper">
+                        <label for="eaten-coins" class="input__label" data-translate="game_over.coins_earned">Заработано монет</label>
+                        <input id="eaten-coins" disabled type="text" placeholder="Заработано монет" value="0.000 GRAM" class="input">
+                    </div>
+                </div>
+                <div class="game__info-item">
+                    <div class="game__info-wrapper">
+                        <label for="time-played" class="input__label" data-translate="game_over.game_time">Время игры</label>
+                        <input id="time-played" disabled type="text" placeholder="Время игры" value="1 мин." class="input">
                     </div>
                 </div>
             </div>

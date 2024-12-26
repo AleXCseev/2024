@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="libs/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TON GAME</title>
+</head>
+<body data-path=".">
+    <main class="main">
+        <div class="bg__light bg__light-yellow"></div>
+        <div class="bg__light bg__light-green"></div>
+        <div class="bg__light bg__light-blue"></div>
+        <div class="bg__light bg__light-red"></div>
+        @@include("_main.html")
+        @@include("_profile.html")
+        @@include("_shop.html")
+        @@include("_statistic.html")
+        @@include("_settings.html")
+        @@include("_play.html")
+        @@include("_game-over.html")
+        @@include("_exit.html")
+        @@include("_preloader.html")
+        @@include("_unregister.html")
+        @@include("_balance.html")
+        @@include("_unshop.html")
+
+        <div class="alert alert-success">
+            Вы успешно пополнили баланс!
+        </div>
+        <div class="alert alert-warning">
+            Ошибка. Что-то пошло не так!
+        </div>
+    </main>
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

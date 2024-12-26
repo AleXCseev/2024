@@ -1,0 +1,240 @@
+.statistic__section {
+    .modal__main {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 100%;
+    }
+
+    .modal__block {
+        height: 100%;
+        align-items: stretch;
+    }
+
+    .game__info-btn {
+        cursor: auto;
+    }
+
+    .modal__main {
+        width: 29vw;
+    }
+}
+
+.statistic__player-title {
+    width: 10vw;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 1vw;
+    color: #fff;
+    margin-bottom: 0.9vw;
+}
+
+.statistic__main-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.8vw;
+
+    .game__info-item {
+        margin-bottom: 5px;
+    }
+}
+
+.statistic__player {
+    width: 10vw;
+    height: auto;
+
+    .modal__avatar {
+        background-image: url(../img/avatar-bg-blue.png);
+    }
+}
+
+.modal__statistic {
+    width: 17.2vw;
+    height: auto;
+    position: relative;
+    z-index: 1;
+
+    .statistic__player-title {
+        width: 100%;
+    }
+}
+
+.statistic__table-wrapper {
+    width: 100%;
+    height: 25.6vw;
+    border-radius: 15px;
+    border: 4px solid #F8E48F;
+    // margin-bottom: 2vw;
+    background-color: #202030;
+    background-image: url(../img/court.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    // padding-bottom: 1vw;
+
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 15px;
+        background: linear-gradient(0deg, rgba(44,47,130,0.7) 0%, rgba(255,255,255,0) 100%);
+        z-index: 1;
+    }
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 15px;
+        background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(32,32,48,1) 60%);
+    }
+}
+
+.statistic__table-title {
+    text-align: center;
+    padding: 0.5vw;
+    font-size: 0.9vw;
+    position: relative;
+    z-index: 2;
+}
+
+.statistic__table-overflow {
+    max-height: 23vw;
+    overflow: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.statistic__table {
+    width: 100%;
+    height: 100%;
+
+    thead {
+        width: 100%;
+        background-color: #303188;
+        font-size: 0.8vw;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    thead th {
+        padding: 0.2vw;
+        text-align: left;
+
+        &:first-child {
+            text-align: center;
+        }
+
+        &:last-child {
+            text-align: center;
+        }
+    }
+
+    tbody {
+
+        tr {
+            position: relative;
+            border-bottom: 1px solid #464891;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        tr.active {
+            td {
+                color: #ffc045;
+            }
+        }
+    }
+
+    td {
+        text-align: left;
+        padding: 0.25vw 0.5vw;
+        vertical-align: middle;
+        font-size: 1vw;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        color: #fff;
+
+        span {
+            vertical-align: middle;
+        }
+
+        img {
+            width: auto;
+            height: 1.4vw;
+            margin-right: 0.5vw;
+            vertical-align: middle;
+        }
+
+        &:first-child {
+            text-align: center;
+        }
+
+        &:last-child {
+            text-align: center;
+        }
+    }
+}
+
+.statistic__next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    padding: 0 10px;
+}
+
+.statistic__next-text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 1.1vw;
+    color: #fff;
+    width: auto;
+}
+
+
+.btn__next, .btn__prev {
+    min-width: 9.2vw;
+    height: 2.6vw;
+    border-radius: 3vw;
+
+    img {
+        width: 1.5vw;
+        height: auto;
+    }
+
+    span {
+        font-size: 0.7vw;
+    }
+
+    .btn__wrapper {
+        gap: 10px;
+        border-radius: 3vw;
+    }
+
+    &:hover {
+        // box-shadow: 0px 0px 20px 5px #B79846;
+        transform: none;
+    }
+}
+
+.btn__prev {
+    img {
+        transform: rotate(180deg);
+    }
+}
+
+
+

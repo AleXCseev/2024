@@ -1,0 +1,134 @@
+.preload__section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .gram__icon-1 {
+        top: 15.5%;
+        right: 45.6%;
+    }
+
+    .gram__icon-2 {
+        top: 2%;
+        right: 32.2%;
+    }
+
+    .gram__icon-3 {
+        top: 2%;
+        right: auto;
+        left: 32.6%;
+    }
+
+    .gram__icon-4 {
+        bottom: 29.4%;
+        right: 18.6%;
+    }
+
+    .gram__icon-5 {
+        bottom: 29.4%;
+        right: auto;
+        left: 19%;
+    }
+}
+
+.character__icon {
+    position: absolute;
+    height: auto;
+    transition: 4s ease-out;
+    border-radius: 100%;
+    // animation: character 2s ease infinite;
+}
+
+// @keyframes character {
+//     0% {
+//         transform: none;
+//     }
+// }
+
+.character__icon-1 {
+    top: 14%;
+    right: 14%;
+    width: 10%;
+    box-shadow: 0px 0px 30px 0px #fb0022;
+    
+}
+
+.character__icon-2 {
+    bottom: 14%;
+    right: 30%;
+    width: 8%;
+    box-shadow: 0px 0px 30px 0px #008ce3;
+}
+
+.character__icon-3 {
+    top: 24%;
+    left: 18%;
+    width: 6%;
+    box-shadow: 0px 0px 30px 0px #00b200;
+}
+
+.character__icon-4 {
+    bottom: 16%;
+    left: 26%;
+    width: 5%;
+    box-shadow: 0px 0px 30px 0px #ff13d4;
+}
+
+.character__icon-5 {
+    bottom: 24%;
+    right: 10%;
+    width: 4%;
+    box-shadow: 0px 0px 30px 0px #ffbd00;
+}
+
+.preloader__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8vw;
+    margin-top: 3.2vw;
+}
+
+.preloader__title {
+    font-family: "Wormbox", sans-serif;
+	text-align: center;
+    font-size: 9vw;
+	line-height: normal;
+	color: #fff;
+}
+
+.preloader__info {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4vw;
+    border: 2px solid #ffcb38;
+    padding: 0.45vw 1.6vw;
+}
+
+.preloader__info-text {
+    font-family: "Radiotechnika", sans-serif;
+    font-size: 0.8vw;
+    color: #fff;
+    letter-spacing: 0.5em;
+    line-height: 1;
+}
+
+.preloader__info-divider {
+    width: 1px;
+    height: 1.6vw;
+    background-color: #ffce44;
+    margin: 0 0.9vw;
+}
+
+

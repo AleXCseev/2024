@@ -55,6 +55,8 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
+html, body {position: fixed; top: 0; bottom: 0; left: 0; right: 0;}
+
 body {
 	font-size: 15px;
 	font-family: 'Tactic Sans Extended', sans-serif;
@@ -658,19 +660,6 @@ body {
     .game-over__result {
         width: 19.4vw;
     }
-    .result__item {
-        margin-top: 2vw;
-        gap: 0.5vw;
-    }
-    .result__text {
-        font-size: 1.4vw;
-    }
-    .result__number {
-        width: 5vw;
-        height: 3.5vw;
-        font-size: 1.4vw;
-        border-radius: 0.8vw;
-    }
     .btn__game-over {
         width: 18.4vw;
         height: 7.4vw;
@@ -819,8 +808,8 @@ body {
     }
     .game__chat-wrapper {
         gap: 0.8vw;
-        height: 35vw;
-        max-height: 40vw;
+        height: 31vw;
+        max-height: 31vw;
         overflow: auto;
     }
     .rating__title {
@@ -874,6 +863,40 @@ body {
     }
     .unshop__text {
         font-size: 1.8vw;
+    }
+    .btn__lang {
+        height: 4.6vw;
+
+        img {
+            height: 4vw;
+        }
+
+        span {
+            font-size: 1.4vw;
+        }
+    }
+    .lang__wrapper {
+        bottom: 6vw;
+    }
+    .btn__lang-item img {
+        width: 3vw;
+    }
+    .btn__lang-item span {
+        font-size: 1.4vw;
+    }
+    .game__chat-btn {
+        width: 3vw;
+        height: 3vw;
+    }
+    .game__chat-btn img {
+        width: 1.2vw;
+        height: auto;
+    }
+    .game__chat-send .input {
+        font-size: 1.3vw;
+    }
+    .btn-register span {
+        font-size: 1.5vw;
     }
 }
 
@@ -1128,6 +1151,9 @@ body {
     }
     .statistic__table-overflow {
         max-height: 24vw;
+    }
+    .btn-register span {
+        font-size: 1.6vw;
     }
 }
 
@@ -1652,19 +1678,6 @@ body {
             font-size: 5vw;
         }
     }
-    .result__item {
-        margin-top: 4vw;
-        gap: 1vw;
-    }
-    .result__text {
-        font-size: 4vw;
-    }
-    .result__number {
-        width: 12vw;
-        height: 8vw;
-        font-size: 3.4vw;
-        border-radius: 2vw;
-    }
     .btn__game-over {
         width: 27vw;
         height: 10vw;
@@ -1868,7 +1881,7 @@ body {
         min-width: 48vw;
 
         span {
-            font-size: 4vw;
+            font-size: 3vw;
         }
     }
     .btn-register .btn__wrapper {
@@ -1947,6 +1960,46 @@ body {
     }
     .unshop__text {
         font-size: 2.4vw;
+    }
+    .btn__lang {
+        height: 10vw;
+        border-radius: 10vw;
+
+        img {
+            height: 9vw;
+        }
+
+        span {
+            font-size: 3.6vw;
+        }
+
+        .btn__wrapper {
+            padding: 0 2vw 0 1vw;
+            border-radius: 10vw;
+        }
+    }
+    .lang__wrapper {
+        bottom: 12vw;
+        padding: 2vw;
+        border-radius: 3vw;
+        border-width: 1px;
+    }
+    .btn__lang-item img {
+        width: 7vw;
+    }
+    .btn__lang-item span {
+        font-size: 3vw;
+    }
+    .game__chat-btn {
+        width: 6vw;
+        height: 6vw;
+    }
+    .game__chat-btn img {
+        width: 2.2vw;
+        height: auto;
+    }
+    .game__chat-send .input {
+        font-size: 2.6vw;
     }
 }
 

@@ -1,0 +1,320 @@
+.settings__section {
+    .modal__block {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 1.2vw;
+    }
+    .modal__wrapper {
+        padding: 1.2vw 1.2vw 2vw;
+    }
+}
+
+.settings__block {
+    width: 33%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+
+    &:first-child {
+        padding: 0;
+        padding-right: 0.8vw;
+    }
+
+    &:last-child {
+        padding-left: 0.8vw;
+    }
+}
+
+.settings__block-center {
+    border: 1px solid #353662;
+    border-top: none;
+    border-bottom: none;
+    padding: 0 1vw;
+    padding-bottom: 2vw;
+    width: 34%;
+}
+
+.settings__block-title {
+    font-size: 0.9vw;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2.3vw;
+}
+
+.settings__title {
+    width: 100%;
+    height: 2vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1vw;
+    font-size: 0.6vw;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    color: #fff;
+
+    img {
+        width: auto;
+        height: auto;
+        object-fit: cover;
+        max-width: 2vw;
+        max-height: 3vw;
+        margin-right: 0.4vw;
+    }
+}
+
+.settings__items-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0.8vw;
+    gap: 0.4vw;
+}
+
+.checkbox {
+    width: 50%;
+    flex-shrink: 0;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.check__box {
+    width: 3.8vw;
+    height: 1.6vw;
+    display: block;
+    position: relative;
+    margin-right: 0.4vw;
+    box-sizing: border-box;
+    border-radius: 1.6vw;
+    border: 2px solid rgba(183,152,70,1);
+    overflow: hidden;
+    will-change: transform;
+
+    &:before {
+        content: "";
+        width: 1.5vw;
+        height: 1.5vw;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        background-image: url(../img/icon-checkbox.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transition: 0.3s ease;
+        z-index: 2;
+        box-sizing: border-box;
+    }
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 1.6vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background-color: #464891;
+        transform: translateX(-100%);
+        transition: 0.3s ease;
+        box-sizing: border-box;
+    }
+}
+
+.checkbox__input {
+    appearance: none;
+    position: absolute;
+}
+
+.checkbox__text {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 0.65vw;
+    user-select: none;
+}
+
+.checkbox__input:checked + .check__box {
+    &:before {
+        transform: translate(2.15vw, -50%);
+    }
+    &:after {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.settings__img-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    margin-bottom: 0.4vw;
+
+    img {
+        width: 3.8vw;
+        height: auto;
+    }
+
+    &:before {
+        content: "";
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #30315d;
+    }
+}
+
+.settings__range {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0.8vw;
+}
+
+.input__range-wrapper {
+    width: 100%;
+    height: 1.6vw;
+    position: relative;
+    background: #202030;
+    border-radius: 1.6vw;
+    border: 2px solid rgba(183,152,70,1);
+    overflow: hidden;
+    flex-shrink: 1;
+    will-change: transform;
+}
+
+.input__range {
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    width: 100%;
+    flex-shrink: 1;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+
+    &:focus {
+        background-color: transparent;
+        outline: none;
+    }
+}
+
+.range__track {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #464891;
+    // border-radius: 40px;
+}
+
+.input__range::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 100%;
+}
+
+.input__range::-webkit-slider-thumb {
+    height: 100%;
+    width: 0px;
+    background: transparent;
+    cursor: pointer;
+    appearance: none;
+    opacity: 0;
+}
+
+.input__range::-moz-range-thumb {
+    height: 100%;
+    width: 0px;
+    background: transparent;
+    cursor: pointer;
+    appearance: none;
+    opacity: 0;
+}
+
+.range__value {
+    width: 1.6vw;
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: #fff;
+    font-size: 0.8vw;
+    margin-left: 0.4vw;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+.settings__save {
+    margin-top: auto;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+.balance__section {
+    .statistic__table td:last-child {
+        text-align: right;
+    }
+    .statistic__table-wrapper {
+        width: 100%;
+        height: 14.6vw;
+    }
+    .statistic__table-overflow {
+        max-height: 10vw;
+    }  
+    .statistic__table td {
+        font-size: 0.8vw;
+    }  
+}
+
+.add__balance {
+    width: 10vw;
+    height: 4vw;
+
+    span {
+        font-size: 0.8vw;
+    }
+
+    img {
+        width: 2.5vw;
+    }
+
+    .btn__wrapper {
+        gap: 0.4vw;
+    }
+}
+
+.ref__summ {
+    margin-top: 1vw;
+}
+
+.balance {
+	text-align: center;
+	font-size: 1.2vw;
+	line-height: normal;
+	color: #fff;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 1vw;
+}

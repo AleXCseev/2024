@@ -67,6 +67,14 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+html, body {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 body {
   font-size: 15px;
   font-family: "Tactic Sans Extended", sans-serif;
@@ -730,10 +738,151 @@ body {
   -webkit-align-items: center;
           align-items: center;
   gap: 10px;
+  width: 50%;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 .test__btns a {
   text-decoration: none;
   color: #fff;
+}
+
+.lang__block {
+  position: fixed;
+  bottom: 2vw;
+  right: 3vw;
+}
+
+.btn__lang {
+  width: auto;
+  min-width: auto;
+  height: 3.6vw;
+  position: relative;
+  z-index: 5;
+  border-radius: 3.6vw;
+}
+.btn__lang .btn__wrapper {
+  padding: 0 1vw 0 0;
+  gap: 0.4vw;
+  border-radius: 3.6vw;
+}
+.btn__lang img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: 3.2vw;
+  padding: 0;
+}
+.btn__lang span {
+  width: 100%;
+  font-size: 1vw;
+  text-transform: uppercase;
+}
+
+.lang__wrapper {
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 4vw;
+  left: 50%;
+  -webkit-transform: translate(-50%, 2vw);
+      -ms-transform: translate(-50%, 2vw);
+       -o-transform: translate(-50%, 2vw);
+          transform: translate(-50%, 2vw);
+  padding: 1vw;
+  border: 2px solid rgb(248, 228, 143);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+  gap: 1vw;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+  border-radius: 1vw;
+  overflow: hidden;
+}
+.lang__wrapper:before {
+  content: "";
+  width: 200%;
+  height: 100%;
+  background-color: #383a6c;
+  -webkit-transform-origin: bottom left;
+      -ms-transform-origin: bottom left;
+       -o-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+}
+.lang__wrapper:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1vw;
+  background-color: #202030;
+  background-image: -webkit-linear-gradient(300deg, rgba(255, 255, 255, 0) 70%, rgba(51, 53, 153, 0.8) 100%);
+  background-image: linear-gradient(150deg, rgba(255, 255, 255, 0) 70%, rgba(51, 53, 153, 0.8) 100%);
+  z-index: -1;
+}
+.lang__wrapper.active {
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn__lang-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  gap: 0.4vw;
+  position: relative;
+  z-index: 1;
+}
+.btn__lang-item:hover span {
+  text-shadow: 0px 0 10px #B79846;
+}
+.btn__lang-item span {
+  font-size: 1vw;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+.btn__lang-item img {
+  width: 2vw;
+  height: auto;
 }
 
 .modal__section {
@@ -1385,7 +1534,7 @@ body {
   gap: 2vw;
 }
 .btn-register span {
-  font-size: 1.4vw;
+  font-size: 1.1vw;
 }
 .btn-register img {
   max-width: 4vw;
@@ -2320,8 +2469,11 @@ body {
   width: 10.6vw;
   height: auto;
 }
+.game-over__result .game__info-item {
+  margin-bottom: 5px;
+}
 .game-over__result .statistic__player-title {
-  margin-bottom: 2vw;
+  margin-bottom: 1vw;
 }
 
 .result__item {
@@ -2336,38 +2488,15 @@ body {
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center;
-  margin-top: 1.2vw;
-  gap: 0.2vw;
+  margin-top: 1.3vw;
+  gap: 0.4vw;
 }
 
 .result__text {
   font-family: "Raleway", sans-serif;
-  font-size: 0.9vw;
-  font-weight: 500;
-  color: #fff;
-}
-
-.result__number {
-  width: 2.8vw;
-  height: 2.1vw;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-          align-items: center;
-  background-color: #202030;
-  border: 1px solid #494954;
-  font-family: "Raleway", sans-serif;
   font-size: 0.8vw;
   font-weight: 500;
   color: #fff;
-  border-radius: 0.4vw;
-  -webkit-flex-shrink: 0;
-          flex-shrink: 0;
 }
 
 .game-over__btns {
@@ -2708,8 +2837,8 @@ body {
   -webkit-align-items: flex-start;
           align-items: flex-start;
   gap: 0.4vw;
-  height: 20vw;
-  max-height: 30vw;
+  height: 18vw;
+  max-height: 18vw;
   overflow: auto;
 }
 
@@ -2795,6 +2924,47 @@ body {
   background-image: url(../img/chat-bg-red.png);
   right: auto;
   left: -0.34vw;
+}
+
+.game__chat-send {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  gap: 0.1vw;
+  margin-top: 1vw;
+}
+.game__chat-send .input {
+  font-size: 0.8vw;
+}
+
+.game__chat-btn {
+  width: 2vw;
+  height: 2vw;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  background-color: #303188;
+  border: 2px solid #4a4a55;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+  cursor: pointer;
+}
+.game__chat-btn img {
+  width: 0.8vw;
+  height: auto;
 }
 
 .rating__block {
@@ -3418,19 +3588,6 @@ body {
   .game-over__result {
     width: 19.4vw;
   }
-  .result__item {
-    margin-top: 2vw;
-    gap: 0.5vw;
-  }
-  .result__text {
-    font-size: 1.4vw;
-  }
-  .result__number {
-    width: 5vw;
-    height: 3.5vw;
-    font-size: 1.4vw;
-    border-radius: 0.8vw;
-  }
   .btn__game-over {
     width: 18.4vw;
     height: 7.4vw;
@@ -3578,8 +3735,8 @@ body {
   }
   .game__chat-wrapper {
     gap: 0.8vw;
-    height: 35vw;
-    max-height: 40vw;
+    height: 31vw;
+    max-height: 31vw;
     overflow: auto;
   }
   .rating__title {
@@ -3632,6 +3789,38 @@ body {
   }
   .unshop__text {
     font-size: 1.8vw;
+  }
+  .btn__lang {
+    height: 4.6vw;
+  }
+  .btn__lang img {
+    height: 4vw;
+  }
+  .btn__lang span {
+    font-size: 1.4vw;
+  }
+  .lang__wrapper {
+    bottom: 6vw;
+  }
+  .btn__lang-item img {
+    width: 3vw;
+  }
+  .btn__lang-item span {
+    font-size: 1.4vw;
+  }
+  .game__chat-btn {
+    width: 3vw;
+    height: 3vw;
+  }
+  .game__chat-btn img {
+    width: 1.2vw;
+    height: auto;
+  }
+  .game__chat-send .input {
+    font-size: 1.3vw;
+  }
+  .btn-register span {
+    font-size: 1.5vw;
   }
 }
 @media (max-width: 960px) and (max-height: 460px) {
@@ -3889,6 +4078,9 @@ body {
   }
   .statistic__table-overflow {
     max-height: 24vw;
+  }
+  .btn-register span {
+    font-size: 1.6vw;
   }
 }
 @media (max-width: 430px) {
@@ -4446,19 +4638,6 @@ body {
     margin-bottom: 0;
     font-size: 5vw;
   }
-  .result__item {
-    margin-top: 4vw;
-    gap: 1vw;
-  }
-  .result__text {
-    font-size: 4vw;
-  }
-  .result__number {
-    width: 12vw;
-    height: 8vw;
-    font-size: 3.4vw;
-    border-radius: 2vw;
-  }
   .btn__game-over {
     width: 27vw;
     height: 10vw;
@@ -4660,7 +4839,7 @@ body {
     min-width: 48vw;
   }
   .btn-register span {
-    font-size: 4vw;
+    font-size: 3vw;
   }
   .btn-register .btn__wrapper {
     padding: 0 5vw;
@@ -4735,5 +4914,42 @@ body {
   }
   .unshop__text {
     font-size: 2.4vw;
+  }
+  .btn__lang {
+    height: 10vw;
+    border-radius: 10vw;
+  }
+  .btn__lang img {
+    height: 9vw;
+  }
+  .btn__lang span {
+    font-size: 3.6vw;
+  }
+  .btn__lang .btn__wrapper {
+    padding: 0 2vw 0 1vw;
+    border-radius: 10vw;
+  }
+  .lang__wrapper {
+    bottom: 12vw;
+    padding: 2vw;
+    border-radius: 3vw;
+    border-width: 1px;
+  }
+  .btn__lang-item img {
+    width: 7vw;
+  }
+  .btn__lang-item span {
+    font-size: 3vw;
+  }
+  .game__chat-btn {
+    width: 6vw;
+    height: 6vw;
+  }
+  .game__chat-btn img {
+    width: 2.2vw;
+    height: auto;
+  }
+  .game__chat-send .input {
+    font-size: 2.6vw;
   }
 }

@@ -1,0 +1,120 @@
+<div class="modal__section settings__section balance__section" id="balance">
+    <h2 class="main__title">
+        GramZone
+    </h2>
+
+    <div class="modal__wrapper-shadow main"></div>
+    
+    <div class="modal__wrapper">
+        <div class="modal__border"></div>
+        <button type="button" class="btn__back">
+            <img src="img/arrow-back.png" alt="">
+            <span>Назад</span>
+        </button>
+        <h3 class="modal__title">
+            Управление балансом
+        </h3>
+        <hr class="modal__divider">
+        <p class="balance">
+            Баланс: <span class="balance__result">123213 gram</span>
+        </p>
+        <div class="modal__block">
+            
+            <div class="settings__block">
+                <h2 class="settings__block-title">
+                    Пополнение баланса
+                </h2>
+                <div class="game__info-item">
+                    <div class="game__info-wrapper">
+                        <label for="experience" class="input__label">Пополнить баланс</label>
+                        <input id="experience" type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  placeholder="введите сумму" class="input">
+                    </div>
+                </div>
+                <button type="button" class="btn btn__modal add__balance" id="add-balance">
+                    <div class="btn__wrapper">
+                        <img src="img/add-balance-icon.png" alt="">
+                        <span>Пополнить баланс</span>
+                    </div>
+                </button>
+            </div>
+            <div class="settings__block settings__block-center">
+                <h2 class="settings__block-title">
+                    Вывод средств
+                </h2>
+                <div class="game__info-item">
+                    <div class="game__info-wrapper">
+                        <label for="experience" class="input__label">Вывести средства</label>
+                        <input id="experience" type="number" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  placeholder="введите сумму" class="input">
+                    </div>
+                </div>
+                <button type="button" class="btn btn__modal add__balance" id="withdrawal">
+                    <div class="btn__wrapper">
+                        <img src="img/withdrawal-icon.png" alt="">
+                        <span>Вывести</span>
+                    </div>
+                </button>
+            </div>
+            <div class="settings__block">
+                <h2 class="settings__block-title">Реферальная система</h2>
+                <div class="game__info-item">
+                    <div class="game__info-wrapper">
+                        <label for="experience" class="input__label">Реферальная ссылка</label>
+                        <input id="experience" disabled type="text" placeholder="Реферальная ссылка" value="username12" class="input referal__link">
+                    </div>
+                    <button type="button" class="game__info-btn referal__btn tooltip">
+                        <img src="img/copy-icon.png" alt="">
+                        <span class="tooltiptext" id="myTooltip">Скопировать ссылку</span>
+                    </button>
+                </div>
+                <div class="statistic__table-wrapper">
+                    <h5 class="statistic__table-title">
+                         Список рефералов
+                    </h5>
+                    <div class="statistic__table-overflow">
+                        <table class="statistic__table">
+                            <!-- <thead>
+                                <tr>
+                                    <th>МЕСТО</th>
+                                    <th>ИМЯ</th>
+                                </tr>
+                            </thead> -->
+                            <tbody>
+                                <tr>
+                                    <td>1.</td>
+                                    <td>
+                                        username1
+                                    </td>
+                                    <td class="ref__res">325 gram</td>
+                                </tr>
+                                <tr class="active">
+                                    <td>2.</td>
+                                    <td>
+                                        UQDys6u6W1
+                                    </td>
+                                    <td class="ref__res">312 gram</td>
+                                </tr>
+                                <tr>
+                                    <td>3.</td>
+                                    <td>
+                                        username2
+                                    </td>
+                                    <td class="ref__res">2 gram</td>
+                                </tr>
+                                <tr>
+                                    <td>4.</td>
+                                    <td>
+                                        UQDys6u6W1sgreg
+                                    </td>
+                                    <td class="ref__res">12 gram</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <p class="ref__summ modal__info-text">
+                    Сумма рефералов: <span class="ref__summ-result">123123</span> 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

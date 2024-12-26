@@ -1,0 +1,60 @@
+.shop__section {
+    .modal__main {
+        width: auto;
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+        padding-right: 2vw;
+    }
+
+    .modal__avatar-slider {
+        margin: 0 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .modal__main:before {
+        right: 0;
+    }
+}
+
+.shop__amplifiers {
+    width: 100%;
+    height: auto;
+    padding-left: 2vw;
+    position: relative;
+    z-index: 1;
+}
+
+.amplifiers__title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    font-size: 1.3vw;
+    margin-bottom: 2.2vw;
+}
+
+.amplifiers__wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.amplifire__item {
+    width: auto;
+    margin-bottom: 0.8vw;
+}
+
+.amplifire__info {
+    width: 100%;
+    height: 6.4vw;
+    object-fit: cover;
+}
+
+.unshop__text {
+    font-size: 1.2vw;
+    text-align: center;
+}

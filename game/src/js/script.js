@@ -10,6 +10,30 @@ var landingFunctions = {
 	},
 	
 	utils: function() {
+		function lang() {
+			$(".lang__block").click(function() {
+				$(".lang__wrapper").toggleClass("active");
+			});
+
+			$(".btn__lang-item").click(function() {
+				const imgSrc = $(this).find("img").attr("src");
+				const lang = $(this).find("span").text();
+
+				$(".btn__lang").find("img").attr("src", imgSrc);
+				$(".btn__lang").find("span").text(lang);
+
+				$(".lang__block").removeClass("active");
+			})
+
+			$(document).click(function(e) {
+				if (!$(e.target).closest(".lang__block").length) {
+					$(".lang__wrapper").removeClass("active");
+				}
+			});
+		}
+
+		lang()
+
 		$(".balance__section td").each(function() {
 			str = $(this).text().trim();
 
