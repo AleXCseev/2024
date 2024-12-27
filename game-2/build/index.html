@@ -919,7 +919,7 @@
                         </div>
                     </button>
                 </div>
-                <!-- <div class="play__item">
+                <div class="play__item">
                     <div class="play__item-info">
                         <h4 class="play__item-title">
                             Королевская Битва
@@ -927,13 +927,16 @@
                         <p class="play__item-text">
                             Режим 4
                         </p>
+                        <p class="play__item-description">
+                            Этот режим является вариацией платного режима, где большое количество игроков соревнуются до тех пор, пока не останется оди победитель. Входной взнос может способствовать увеличению потенциальных выигрышей или призов.
+                        </p>
                     </div>
                     <button type="button" class="btn btn__rounded btn__rounded-small btn__mode" data-mode="4">
                         <div class="btn__wrapper">
                             <span>BR Pay2Play</span>
                         </div>
                     </button>
-                </div> -->
+                </div>
             </div>
             <div class="play__info">
                 <div class="play__info-item play__info-item-1 active" data-mode="1">
@@ -943,9 +946,6 @@
                         </h3>
                         <img src="img/play-mode-1.jpg" alt="" class="play__info-img">
                         <ul class="play__info-list">
-                            <li class="play__list-item">
-                                <span>Авторизация:</span> Не требуется вход в систему.
-                            </li>
                             <li class="play__list-item play__list-item-free">
                                 <span>Цена: Бесплатно.</span>
                             </li>
@@ -967,9 +967,6 @@
                         </h3>
                         <img src="img/play-mode-2.jpg" alt="" class="play__info-img">
                         <ul class="play__info-list">
-                            <li class="play__list-item">
-                                <span>Авторизация:</span> Требуется вход.
-                            </li>
                             <li class="play__list-item play__list-item-free">
                                 <span>Цена: Бесплатно.</span>
                             </li>
@@ -1031,41 +1028,76 @@
                         </ul>
                         <ul class="play__info-list play__info-list-2">
                             <li class="play__list-item play__list-item-free">
-                                <span>Цена: 20 ГРАММ.</span>
+                                <span>Цена: 100 ГРАММ.</span>
                             </li>
                             <li class="play__list-item">
-                                <span>Цена выпадения:</span> 9 ГРАММ.
+                                <span>Цена выпадения:</span> 90 ГРАММ.
                             </li>
                             <li class="play__list-item">
-                                <span>Правило выпадения:</span>  Каждый игрок, который присоединяется к режиму, создает 90 бактерий, каждая из которых имеет ценность 0,1 ГРАММ.
+                                <span>Правило выпадения:</span>  Каждый игрок, который присоединяется к режиму, создает 90 бактерий, каждая из которых имеет ценность 1 ГРАММ.
                             </li>
                             <li class="play__list-item">
-                                <span>Опыт:</span> съеденная еда x10.
+                                <span>Опыт:</span> съеденная еда x100.
                             </li>
                         </ul>
                         <ul class="play__info-list play__info-list-3">
                             <li class="play__list-item play__list-item-free">
-                                <span>Цена: 30 ГРАММ.</span>
+                                <span>Цена: 1000 ГРАММ.</span>
                             </li>
                             <li class="play__list-item">
-                                <span>Цена выпадения:</span> 9 ГРАММ.
+                                <span>Цена выпадения:</span> 900 ГРАММ.
                             </li>
                             <li class="play__list-item">
-                                <span>Правило выпадения:</span>  Каждый игрок, который присоединяется к режиму, создает 90 бактерий, каждая из которых имеет ценность 0,1 ГРАММ.
+                                <span>Правило выпадения:</span>  Каждый игрок, который присоединяется к режиму, создает 90 бактерий, каждая из которых имеет ценность 10 ГРАММ.
                             </li>
                             <li class="play__list-item">
-                                <span>Опыт:</span> съеденная еда x10.
+                                <span>Опыт:</span> съеденная еда x1000.
                             </li>
                         </ul>
                         <ul class="play__info-list play__info-list-4">
                             <li class="play__list-item play__list-item-free">
-                                <span>Цена: 40 ГРАММ.</span> 
+                                <span>Цена: 10000 ГРАММ.</span> 
                             </li>
                             <li class="play__list-item">
-                                <span>Цена выпадения:</span> 9 ГРАММ.
+                                <span>Цена выпадения:</span> 9000 ГРАММ.
                             </li>
                             <li class="play__list-item">
-                                <span>Правило выпадения:</span>  Каждый игрок, который присоединяется к режиму, создает 90 бактерий, каждая из которых имеет ценность 0,1 ГРАММ.
+                                <span>Правило выпадения:</span> Каждый игрок, который присоединяется к режиму, создает 90 бактерий, каждая из которых имеет ценность 100 ГРАММ.
+                            </li>
+                            <li class="play__list-item">
+                                <span>Опыт:</span> съеденная еда x10000.
+                            </li>
+                        </ul>
+                        <div class="play__btns">
+                            <button type="button" class="btn btn__rounded btn__rounded-small btn__play btn__autorize">
+                                <div class="btn__wrapper">
+                                    <img src="img/wallet-icon.png" alt="">
+                                    <span>Wallet Connect</span>
+                                </div>
+                            </button>
+                            <button type="button" style="display: none;" class="btn btn__rounded btn__rounded-small btn__play">
+                                <div class="btn__wrapper">
+                                    <span>НАЧАТЬ ИГРУ</span>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="play__info-item play__info-item-4" data-mode="4">
+                    <div class="play__info-wrapper">
+                        <h3 class="play__info-title">
+                            Королевская битва
+                        </h3>
+                        <img src="img/play-mode-4.jpg" alt="" class="play__info-img">
+                        <ul class="play__info-list">
+                            <!-- <li class="play__list-item">
+                                <span>Авторизация:</span> Требуется вход.
+                            </li> -->
+                            <li class="play__list-item play__list-item-free">
+                                <span>Цена: 10 ГРАММ.</span>
+                            </li>
+                            <li class="play__list-item">
+                                <span>Награда:</span> Последний выживший игрок получает 9 ГРАММ за каждого другого игрока, присоединившегося к матчу.
                             </li>
                             <li class="play__list-item">
                                 <span>Опыт:</span> съеденная еда x10.
@@ -1086,36 +1118,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="play__info-item play__info-item-4" data-mode="4">
-                    <div class="play__info-wrapper">
-                        <h3 class="play__info-title">
-                            Королевская битва
-                        </h3>
-                        <img src="img/play-mode-4.jpg" alt="" class="play__info-img">
-                        <p class="play__info-text">
-                            Этот режим является вариацией платного режима, где большое количество игроков соревнуются до тех пор, пока не останется оди победитель. Входной взнос может способствовать увеличению потенциальных выигрышей или призов.
-                        </p>
-                        <div class="play__info-btns">
-                            <button type="button" class="play__info-btn active" data-complexity="1">
-                                Лёгкий
-                            </button>
-                            <button type="button" class="play__info-btn" data-complexity="2">
-                                Средний
-                            </button>
-                            <button type="button" disabled class="play__info-btn" data-complexity="3">
-                                Сложный
-                            </button>
-                            <button type="button" class="play__info-btn" data-complexity="4">
-                                Экспертный
-                            </button>
-                        </div>
-                        <button type="button" class="btn btn__rounded btn__rounded-small btn__play">
-                            <div class="btn__wrapper">
-                                <span>НАЧАТЬ ИГРУ</span>
-                            </div>
-                        </button>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>
